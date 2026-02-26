@@ -1,0 +1,39 @@
+# Weekly Routine Template
+# Makir's standard weekly schedule — adjust as needed
+
+timezone: "America/Toronto"  # Eastern Time
+last_updated: "2026-02-22"
+
+daily_routines:
+  morning_review:
+    time: "08:00"
+    trigger: "/gm"
+    description: "Daily briefing — calendar, emails, tasks, priorities"
+
+  email_triage:
+    time: "09:00"
+    trigger: "/triage"
+    description: "Process and categorize inbox"
+
+  end_of_day:
+    time: "17:00"
+    description: "Review completed tasks, update task list, prep for tomorrow"
+
+weekly_routines:
+  monday:
+    - time: "08:30"
+      description: "Week planning — review goals, set priorities"
+
+  friday:
+    - time: "16:00"
+      trigger: "/weekly-review"
+      description: "Weekly review — progress, carryover, next week prep"
+
+recurring_meetings: []
+# Example:
+# - title: "NRG Bloom team standup"
+#   day: monday
+#   time: "10:00"
+#   duration: 30
+#   attendees: ["team"]
+#   company: nrg_bloom

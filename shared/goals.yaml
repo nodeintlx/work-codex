@@ -1,0 +1,40 @@
+# Quarterly OKRs — Q1 2026
+# Update this file with actual goals. Makir reviews weekly.
+
+quarter: "Q1 2026"
+last_updated: "2026-02-22"
+
+nrg_bloom:
+  objective_1:
+    title: "TODO: Add NRG Bloom Q1 objective"
+    key_results:
+      - description: "TODO: Key result 1"
+        target: "TBD"
+        current: "TBD"
+        status: not_started
+      - description: "TODO: Key result 2"
+        target: "TBD"
+        current: "TBD"
+        status: not_started
+
+coldstorm:
+  objective_1:
+    title: "TODO: Add Coldstorm AI Q1 objective"
+    key_results:
+      - description: "TODO: Key result 1"
+        target: "TBD"
+        current: "TBD"
+        status: not_started
+      - description: "TODO: Key result 2"
+        target: "TBD"
+        current: "TBD"
+        status: not_started
+
+personal:
+  objective_1:
+    title: "TODO: Add personal Q1 objective"
+    key_results:
+      - description: "TODO: Key result 1"
+        target: "TBD"
+        current: "TBD"
+        status: not_started

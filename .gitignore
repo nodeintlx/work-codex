@@ -1,0 +1,29 @@
+# Secrets and credentials
+.env
+.env.*
+*.key
+*.pem
+*.p12
+credentials.json
+token.json
+
+# MCP config (contains credential references)
+.mcp.json
+
+# Local settings overrides
+.claude/settings.local.json
+
+# macOS
+.DS_Store
+._*
+
+# Logs
+.claude/logs/
+
+# Knowledge store
+knowledge/memory.jsonl
+
+# Temporary files
+*.tmp
+*.swp
+*~

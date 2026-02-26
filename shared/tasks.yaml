@@ -1,0 +1,183 @@
+# Active Task List
+# Format: Each task has an id, title, company, priority, status, due date, and notes.
+# Priorities: P0 (urgent), P1 (important), P2 (normal), P3 (low)
+# Statuses: todo, in_progress, blocked, done
+# Company: nrg_bloom, coldstorm, personal, both
+
+last_updated: "2026-02-25"
+
+tasks:
+  # --- COMPLETED TODAY (Feb 25) ---
+  - id: 1
+    title: "Operation Fresh Eyes — comprehensive evidence re-analysis"
+    company: nrg_bloom
+    priority: P0
+    status: done
+    due: "2026-02-25"
+    notes: "Re-analyzed all 9 WhatsApp chats + 150+ email threads with 3 parallel agents. Found 18 game-changers, 31 strengtheners. Output in 3 files: fresh-eyes-new-evidence, fresh-eyes-contradictions-financial, fresh-eyes-email-deep-dive."
+    created: "2026-02-25"
+
+  - id: 2
+    title: "Extract and analyze 4 new WhatsApp chat exports"
+    company: nrg_bloom
+    priority: P0
+    status: done
+    due: "2026-02-25"
+    notes: "Unzipped and analyzed: David Billay, Franklin Umole, Nana Umebese, Axxela 10MW group chat. Key finds: David's Apr 5 revenue model, Tyler-Franklin daily calls admission, Franklin's 'teams working together,' Nana's 'from your end.'"
+    created: "2026-02-25"
+
+  - id: 3
+    title: "Compile master evidence summary"
+    company: nrg_bloom
+    priority: P0
+    status: done
+    due: "2026-02-25"
+    notes: "Created master-evidence-summary-2026-02-25.md — ranked top 18 game-changers with deploy/hold strategy for March 5."
+    created: "2026-02-25"
+
+  - id: 4
+    title: "Create new evidence Google Doc and email Dayo"
+    company: nrg_bloom
+    priority: P0
+    status: done
+    due: "2026-02-25"
+    notes: "Google Doc: 'NEW Evidence — NRG Bloom v TON (Feb 25, 2026)' shared with Dayo and Julie. Email sent to dayo.adu@moroomafrica.com (CC julie@nrgbloom.com) asking how to deploy the new evidence."
+    created: "2026-02-25"
+
+  - id: 5
+    title: "Update position paper strengthened sections to v2"
+    company: nrg_bloom
+    priority: P1
+    status: done
+    due: "2026-02-25"
+    notes: "Created position-summary-strengthened-v2-2026-02-25.md with fresh eyes findings integrated. Also uploaded as Google Doc. Dayo to advise on integration into final position paper."
+    created: "2026-02-25"
+
+  # --- PENDING ---
+  - id: 6
+    title: "Finalize position paper for March 5 exchange"
+    company: nrg_bloom
+    priority: P0
+    status: in_progress
+    due: "2026-03-05"
+    notes: "Position papers exchange March 5, 10 AM Edmonton / 6 PM Lagos. Awaiting Dayo's guidance on how to integrate new evidence. Strengthened sections v2 ready. 5-page constraint from mediator."
+    created: "2026-02-25"
+
+  - id: 7
+    title: "Await Dayo's response on evidence deployment strategy"
+    company: nrg_bloom
+    priority: P0
+    status: blocked
+    due: "2026-03-01"
+    notes: "Email sent Feb 25 asking Dayo whether to include new WhatsApp evidence in position paper or hold for negotiation sessions. Need his input before finalizing."
+    created: "2026-02-25"
+
+  - id: 8
+    title: "Compile NRG Bloom expenditure ledger"
+    company: nrg_bloom
+    priority: P1
+    status: todo
+    due: "2026-03-03"
+    notes: "Fresh eyes analysis extracted extensive financial data from chats — container clearing N23.5M, barge/crane N15.9M, electrical N6.1M, security N3M, land N1.2M, fencing N4.2M, etc. Compile into a single ledger for quantum support."
+    created: "2026-02-25"
+
+  - id: 9
+    title: "Get Julie's written statement on 'calculated tactic'"
+    company: nrg_bloom
+    priority: P2
+    status: todo
+    due: "2026-03-03"
+    notes: "Julie was present when Tyler made the admission. Written statement would be valuable for arbitration. Less urgent now that Tyler's WhatsApp messages document the pattern directly."
+    created: "2026-02-25"
+
+  # --- OANDO PARTNERSHIP (New Business Development) ---
+  - id: 10
+    title: "Oando partnership — cold outreach sent, awaiting response"
+    company: nrg_bloom
+    priority: P1
+    status: in_progress
+    due: "2026-03-02"
+    notes: "Cold email sent Feb 25 to Chioma Anyamele (Biz Dev Lead) with proposal attached. CC'd Shenbanjo, Eduga, Onamade (Oando), plus Dayo and Julie. If no response by March 2, send follow-up nudge."
+    created: "2026-02-25"
+
+  - id: 11
+    title: "Oando — complete background research"
+    company: nrg_bloom
+    priority: P1
+    status: done
+    due: "2026-02-26"
+    notes: "COMPLETED Feb 25. Two reports saved: oando-research-2026-02-25.md (company deep dive, contacts, assets, strategy) and nigeria-market-research-2026-02-25.md (gas flaring regs, DC market, precedents, risks). Key finds: Dr. Ainojie Irune (MD, PhD CompSci) is primary target; OML 56 is best pilot site; Green Flare is active competitor with 53MW."
+    created: "2026-02-25"
+
+  - id: 12
+    title: "Oando — prep intro call brief when meeting is scheduled"
+    company: nrg_bloom
+    priority: P1
+    status: todo
+    due: "2026-03-07"
+    notes: "Once Oando responds and a call is scheduled, prepare meeting brief: attendee profiles, talking points, likely questions/objections, recommended ask/offer strategy."
+    created: "2026-02-25"
+
+  - id: 13
+    title: "Oando — follow-up nudge if no response"
+    company: nrg_bloom
+    priority: P2
+    status: todo
+    due: "2026-03-02"
+    notes: "If no reply from Chioma or anyone at Oando by March 2, draft a short follow-up email. Keep it light — reference the proposal and reiterate interest in a call."
+    created: "2026-02-25"
+
+  # --- FUNDING & GRANTS (Standing Workstream) ---
+  - id: 14
+    title: "Email TCS Lagos — introduce NRG Bloom, request initial call"
+    company: nrg_bloom
+    priority: P0
+    status: todo
+    due: "2026-02-28"
+    notes: "Email lagos-td@international.gc.ca. Introduce NRG Bloom, describe Oando partnership, request 30-min call with Godwin Aigbokhan (O&G Trade Commissioner). FREE service — no cost, high value. Clear Blue Technologies used TCS Nigeria successfully."
+    created: "2026-02-25"
+
+  - id: 15
+    title: "Call EDC — scope working capital and political risk insurance"
+    company: nrg_bloom
+    priority: P0
+    status: todo
+    due: "2026-02-28"
+    notes: "Call 1-800-229-0575. Ask for Trade Advisor for Sub-Saharan Africa. Scope TELP (working capital guarantee through your bank), Political Risk Insurance (90% coverage on Nigeria exposure), and cleantech programs. EDC exceeded $12B cleantech goal 2 years early — actively seeking deals."
+    created: "2026-02-25"
+
+  - id: 16
+    title: "Register on CanExport portal and begin application"
+    company: nrg_bloom
+    priority: P1
+    status: todo
+    due: "2026-03-07"
+    notes: "CanExport SMEs: 50% of Nigeria market development costs up to $50K CAD. Covers travel (Nigeria AND China), trade shows, marketing materials. Deadline May 29, 2026. Need: Certificate of Incorporation + GST 34 return. Apply 60 days before first activity. Portal: tradecommissioner.gc.ca"
+    created: "2026-02-25"
+
+  - id: 17
+    title: "Comprehensive Canadian grants application sweep"
+    company: nrg_bloom
+    priority: P1
+    status: done
+    due: "2026-03-15"
+    notes: "COMPLETED Feb 25. 28+ programs identified. Full report at ~/Work/nrg-bloom/projects/funding/canadian-grants-research-2026-02-25.md. SR&ED consultants report at sred-consultants-montreal-2026-02-25.md. Canada government support at ~/Work/nrg-bloom/projects/oando/canada-government-support-research-2026-02-25.md."
+    created: "2026-02-25"
+
+  - id: 18
+    title: "Futurpreneur application — in progress"
+    company: nrg_bloom
+    priority: P1
+    status: in_progress
+    due: "2026-03-15"
+    notes: "Application submitted Feb 25. Up to $75K loan + $40K follow-on + mentorship. Black Entrepreneur Startup Program. Awaiting response / next steps from Futurpreneur."
+    created: "2026-02-25"
+
+  - id: 19
+    title: "Confirm with Leyton Canada and Ayming Canada — SR&ED contingency"
+    company: nrg_bloom
+    priority: P0
+    status: todo
+    due: "2026-03-01"
+    notes: "Leyton: (514) 767-1227 | Ayming: (514) 931-0166. Both Montreal-based, contingency fee, handle SR&ED + Quebec CRIC. Free initial consultation. URGENT: FY2024 SR&ED deadline is June 30, 2026 (~4 months). Also confirm NRG Bloom's fiscal year-end — if not Dec 31, may have more runway."
+    created: "2026-02-25"

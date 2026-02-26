@@ -1,0 +1,81 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "WebSearch",
+      "WebFetch",
+      "mcp__google-workspace__gmail_search",
+      "mcp__google-workspace__gmail_get",
+      "mcp__google-workspace__gmail_list",
+      "mcp__google-workspace__calendar_list",
+      "mcp__google-workspace__calendar_get",
+      "mcp__google-workspace__drive_search",
+      "mcp__google-workspace__drive_get",
+      "mcp__filesystem__read_file",
+      "mcp__filesystem__list_directory",
+      "mcp__filesystem__search_files",
+      "mcp__memory__*"
+    ],
+    "deny": [
+      "mcp__google-workspace__gmail_send",
+      "Bash(sudo:*)",
+      "Bash(rm -rf:*)",
+      "Bash(chmod 777:*)",
+      "Bash(curl*|*sh:*)",
+      "Bash(wget*|*sh:*)",
+      "Read(**/.ssh/*)",
+      "Read(**/.aws/*)",
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(**/credentials.json)",
+      "Read(**/token.json)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ~/Work/.claude/hooks/validate-outbound.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__google-workspace__gmail_create_draft",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"ask\",\"permissionDecisionReason\":\"Email draft creation requires approval\"}}'"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__google-workspace__calendar_create_event",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"ask\",\"permissionDecisionReason\":\"Calendar event creation requires approval\"}}'"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ~/Work/.claude/hooks/audit-log.sh"
+          }
+        ]
+      }
+    ]
+  },
+  "env": {
+    "TZ": "America/Toronto"
+  }
+}
