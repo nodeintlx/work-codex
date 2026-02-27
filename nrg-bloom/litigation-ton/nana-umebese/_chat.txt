@@ -1,0 +1,87 @@
+[2025-02-17, 04:49:29] Nana Fatima Umebese: ‎Messages and calls are end-to-end encrypted. Only people in this chat can read, listen to, or share them.
+[2025-02-17, 04:49:29] Makir: Good morning Nana Fatima. 
+It’s Makir from NRG Bloom. 
+
+This Wednesday Feb 20 two of our investors & infrastructure builders will be flying in from Canada. Is it possible for us to meet and discuss how we want to help build the project. They would like to be introduced to Axxela. 
+
+Cheers
+[2025-05-12, 10:44:31] Nana Fatima Umebese: ‎Voice call, ‎8 min
+‎[2025-05-12, 10:46:42] Nana Fatima Umebese: ‎<attached: 00000004-PHOTO-2025-05-12-10-46-42.jpg>
+‎[2025-05-12, 10:47:35] Nana Fatima Umebese: ‎<attached: 00000005-PHOTO-2025-05-12-10-47-35.jpg>
+‎[2025-05-12, 10:47:35] Nana Fatima Umebese: ‎<attached: 00000006-PHOTO-2025-05-12-10-47-35.jpg>
+‎[2025-05-12, 10:47:35] Nana Fatima Umebese: ‎<attached: 00000007-PHOTO-2025-05-12-10-47-35.jpg>
+[2025-05-12, 11:14:59] Makir: Check email
+[2025-05-12, 11:17:23] Makir: The revised figures incorporate the latest data points as of today's date, specifically the average network difficulty (4.1%), power consumption, machine models and pricing, and the current Bitcoin price ($100,000).
+[2025-05-12, 11:45:29] Nana Fatima Umebese: Thanks, Makir. I have seen it. I will go through it.
+[2025-05-12, 15:11:27] Nana Fatima Umebese: Hi Makir. Good evening. Going the through the file, it appears to be based on 12.6 MW as against 9.6MW (which translates to 7 containers) as noted we are constrained by thr gas volumes available
+[2025-05-12, 15:12:42] Nana Fatima Umebese: Could the file be updated to reflect the 9.6MW capacity so that we are working the accurate bitcoin production
+‎[2025-05-12, 15:15:02] Makir: ‎<attached: 00000013-PHOTO-2025-05-12-15-15-02.jpg>
+[2025-05-12, 15:15:38] Makir: Cell F3 is the power consumption of the machines this is the accurate data to compute for this calculation
+‎[2025-05-12, 15:15:46] Nana Fatima Umebese: This is what i have ‎<attached: 00000015-PHOTO-2025-05-12-15-15-46.jpg>
+[2025-05-12, 15:16:36] Makir: The 12.6 is there to reflect the max power consumption on those containers. We’re only pulling 10.5
+[2025-05-12, 15:17:01] Nana Fatima Umebese: Oh ok. But it needs to be 9.6 max becuase that is what that gas available can support
+[2025-05-12, 15:17:17] Makir: Ok let me adjust it down
+[2025-05-12, 15:17:21] Nana Fatima Umebese: Thanks
+[2025-05-12, 15:17:50] Makir: 9.3 it is
+[2025-05-12, 15:17:59] Nana Fatima Umebese: Thanks
+‎[2025-05-13, 04:57:48] Nana Fatima Umebese: Good morning Makir. I am dropping this so i don't forget. I know it is still quite early at your end, so please respond when you are able. I wanted to understand the 30.44 in the cell. Does it represent number of days? ‎<attached: 00000022-PHOTO-2025-05-13-04-57-48.jpg>
+[2025-05-13, 08:45:52] Makir: I am currently boarding a flight let me get back to you once I land pls
+[2025-05-13, 13:03:53] Nana Fatima Umebese: Hi Makir, not sure if you have landed. if you have, then I hope you had a pleasant flight. Would also be able to share the historical bitcoin production from your current site?
+[2025-05-13, 13:17:25] Nana Fatima Umebese: In addition, I noted your forecast of BTC prices and wanted to understand it better, is it based on an independent source or what BTC has done in the past
+[2025-05-13, 13:22:07] Makir: Average day per month
+[2025-05-13, 13:22:19] Makir: I did just now and yeah I can
+[2025-05-13, 13:44:27] Makir: Based on the supply limit and network growth, included halvings.
+[2025-05-13, 14:46:15] Nana Fatima Umebese: Ok it's your own internal forecast
+[2025-05-13, 14:48:25] Nana Fatima Umebese: Then please can you confirm the name of the mining platform that we pay the 2% mining fee to
+[2025-05-13, 14:49:46] Makir: Its the mining pool. There are various but this is the approximate figure they charge to pool the hashrate
+[2025-05-13, 14:50:15] Makir: Luxor pool, viabtc, binance pool
+[2025-05-13, 14:50:17] Makir: For example
+[2025-05-13, 14:51:02] Nana Fatima Umebese: understood
+[2025-05-13, 15:36:11] Makir: So what do you think
+[2025-05-14, 04:30:10] Nana Fatima Umebese: Good morning Makir, I am looking at the income profile and I would like clarity on how the power cost would be met given the expected decline in bitcoin production and hence earnings (as there must be be a base power cost even in the 35% revenue share scenario). In addition,  which payout scheme would you typically work with in the mining pool - PPS, PPLNS or the PROP and why? are there associated income risks with the payout approach adopted?
+[2025-05-14, 11:02:03] Makir: The decline in bitcoin over the month is mitigated by the increased bitcoin price. The higher the price, the more people mine, thus driving difficulty increase. And vice versa for when bitcoin price drops. There’s nothing that can be done about the difficulty increase over time, this is something that’s universal for all miners, hence why miners need to upgrade their ASIC fleet over time.
+
+Concerning the payout method: 
+FPPS: higher fees, but are paid out more regularly.
+PPNLS: lower fees, but paid out more irregularly.
+
+Ultimately it will be the investor that chooses the method they want to use.
+
+For the base power cost, this is something we can set up, but in that case the hashrate share should be lowered, so we can create a viable plan for all parties. 
+
+If you have time, I’d like to set up a call with you and the person that creates our financial model so we can discuss it in an efficient way.
+[2025-05-14, 11:40:30] Makir: ‎Voice call, ‎No answer
+[2025-05-14, 11:41:15] Nana Fatima Umebese: ‎Voice call, ‎1 min
+[2025-05-19, 17:08:56] Makir: Hey! Hope you had a great weekend. I’m sitting here looking at all of what we’ve done and talked about but ultimately want to know for full transparency. What is the gas price per mcf
+[2025-05-20, 07:43:21] Nana Fatima Umebese: Hi Makir, We are happy to share. However, due to confidentiality restrictions with the upstream producer we need to clear this with them before we can do so.  
+Any feedback from your session with your investors (updated model etc)? It would be useful to know who they are and the timeline for fund deployment (are the funds just being raised or ready for deployment). Would Ton be the DC or is there another party (or is the same party you are working with Baylesa). Also, a follow up on the feedback on the historical performance I earlier requested.
+[2025-05-20, 08:28:34] Makir: What confidentiality restrictions, we gave you everything you requested, we can’t have the gas price?
+[2025-05-20, 09:18:14] Nana Fatima Umebese: ‎This message was deleted.
+[2025-05-20, 09:24:29] Nana Fatima Umebese: ‎Group call, ‎2 invited
+[2025-05-20, 09:41:42] Makir: Give me 10 min
+[2025-05-20, 09:50:10] Makir: Can we do it  in 40 minutes I’ll have them on the call please.
+[2025-05-20, 10:03:16] Nana Fatima Umebese: Its late in China
+[2025-05-20, 10:03:30] Nana Fatima Umebese: Its already 10pm there
+[2025-05-20, 10:04:42] Makir: Ok let’s do it now
+[2025-05-20, 10:05:02] Makir: Call and I will patch them in
+[2025-05-20, 10:07:29] Nana Fatima Umebese: ‎Group call, ‎3 invited
+[2025-06-04, 14:31:43] Makir: Hey nana
+
+Just checking in with you, have you had. A chance to calculate the latest model to see the cost/revenue and profitability of the project. Thanks
+[2025-06-05, 05:43:41] Nana Fatima Umebese: Hi Makir. Good morning. We have had a look, and Frank wanted to speak with Tyler but we understand he has been travelling but i think they should be discussing today
+[2025-06-05, 08:39:33] Makir: Thank you, we should be back in about 2 months I think you’ll have a chance to see the new container
+[2025-06-09, 13:50:55] Makir: What’s the latest ?
+[2025-06-09, 13:50:57] Makir: ‎Voice call, ‎No answer
+[2025-06-17, 14:25:36] Makir: ‎Group call, ‎2 invited
+[2025-06-27, 10:06:26] Makir: Hey Nana, any updates from your side? What are we waiting for at the current moment? Thanks
+[2025-06-28, 02:48:07] Nana Fatima Umebese: Hi Makir, i believe we are making good progress. we received the high-level  project schedule and are reviewing it. We  also shared the PPA expecting feedback from your end on that. The goal is close out very quickly ‎<This message was edited>
+[2025-06-28, 10:13:42] Makir: That’s good to hear but I didn’t receive the PPA
+[2025-06-28, 11:14:42] Nana Fatima Umebese: Please check with David Billay, I believe he has that. He has been the one driving the engagement so far from your end
+[2025-07-07, 11:34:53] Makir: ‎Voice call, ‎3 min
+[2025-07-07, 11:40:03] Makir: Share it to me directly to my email pls
+[2025-07-07, 12:00:31] Makir: Thank you.
+[2025-07-21, 12:26:12] Makir: Hey Nana, I know it’s after work in your time zone but would you be available for a call ?
+[2025-07-22, 02:48:17] Nana Fatima Umebese: Hi Makir, i was not available yesterday evening. Would be in meetings most of today. Can you send a message?
+[2025-07-22, 13:32:47] Makir: We’ve identified that the best way for us to move forward with a deal is for NRG Bloom to have a signed agreement with Axxela including rev share , and for NRG Bloom to have an agreement with TON on the operations side.
+[2025-07-23, 11:46:31] Nana Fatima Umebese: Hi Makir. I believe this should be a conversation and alignment with TON.
+[2025-07-23, 13:53:10] Makir: I hear you. But we’ve tried to get them to the negotiating table. They won’t budge. Therefore to move this along I am coming to you and asking that we creatively find a way to make this work.

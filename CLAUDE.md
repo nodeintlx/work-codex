@@ -20,6 +20,14 @@
 @shared/tasks.yaml
 @shared/schedules.yaml
 
+## Session Start Protocol
+On every new conversation, BEFORE responding to Makir's first message:
+1. Read ~/Work/shared/tasks.yaml — flag overdue or due-today items
+2. Check Gmail (makir@nrgbloom.com) for unread emails from key contacts: Dayo Adu, Julie Peeters, Oando contacts (Chioma, Eleas Eduga), TCS, Futurpreneur, Leyton/Ayming, accountant
+3. Check today's calendar for meetings
+4. If anything is urgent or time-sensitive, surface it at the top of your first response — even if Makir asked about something else
+5. Within an active session, proactively check for updates when relevant topics come up — don't wait to be asked
+
 ## Available Skills
 - **morning-review** — Daily briefing (calendar + emails + tasks + priorities)
 - **email-triage** — Categorize and process inbox

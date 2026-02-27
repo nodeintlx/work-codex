@@ -1,0 +1,9 @@
+[Interface]
+PrivateKey = GKNjG2jzXXJj4FUee5pmlsJv2QtL8bdLPpNNmLl1fkw=
+Address = 192.168.3.5/32
+DNS = 192.168.3.1
+
+[Peer]
+PublicKey = iUYZ4YRojN6phKtILA09wdx5SsiPS0BvPSVxx9O79wA=
+AllowedIPs = 0.0.0.0/0
+Endpoint = 143.105.102.180:51820

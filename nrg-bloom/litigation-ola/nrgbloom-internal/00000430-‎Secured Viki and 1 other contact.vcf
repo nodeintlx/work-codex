@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:;Secured Viki;;;
+FN:Secured Viki
+TEL;type=CELL;type=VOICE;waid=2349030447262:+234 903 044 7262
+END:VCARD_$!<VCard-Separator>!$_BEGIN:VCARD
+VERSION:3.0
+N:Victor;Securedviki;;;
+FN:Securedviki Victor
+TEL;waid=2349030447262:+234 903 044 7262
+END:VCARD
