@@ -1,0 +1,56 @@
+# Business Development Pipeline
+# Stages: prospect → outreach → response → meeting → proposal → negotiation → closed_won → closed_lost
+# Updated automatically by pipeline-tracker skill
+
+last_updated: "2026-03-02"
+
+deals:
+  # --- NRG BLOOM ---
+  - id: 1
+    name: "Oando Clean Energy — gas-to-power modular DC pilot"
+    company: nrg_bloom
+    counterparty: "Oando Clean Energy Limited"
+    stage: meeting
+    value: "$500K+ (pilot site deployment, revenue share TBD)"
+    contacts:
+      - name: "Chioma Anyamele"
+        role: "Contact (initial outreach)"
+        email: ""
+      - name: "Eleas Eduga"
+        role: "Gas Business (scheduling engagement call)"
+        email: ""
+      - name: "Ololade Shenbanjo"
+        role: "Oando team (CC'd)"
+        email: ""
+      - name: "Bayo Onamade"
+        role: "Oando team (CC'd)"
+        email: ""
+      - name: "Dr. Ainojie Irune"
+        role: "MD, Oando (PhD CompSci) — primary decision maker"
+        email: ""
+    first_contact: "2026-02-25"
+    last_contact: "2026-02-26"
+    next_action: "Await Eleas Eduga to schedule engagement call. If no response by March 3, send light follow-up."
+    next_action_date: "2026-03-03"
+    next_action_owner: counterparty
+    notes: "Cold email to Chioma Feb 25 → response within 24h → Eleas Eduga looped in for Gas Business engagement call. OML 56 identified as best pilot site. Competitor: Green Flare (53MW active). Intro call brief in preparation."
+    risk: low
+    related_files:
+      - "~/Work/nrg-bloom/projects/oando/intro-call-brief-2026-02-26.md"
+      - "~/Work/nrg-bloom/projects/oando/oando-research-2026-02-25.md"
+
+  # --- COLDSTORM AI ---
+  # No active deals yet — service offering not defined
+  # Goal: Define service packages, build website, sign first client by end of Q1
+
+prospects:
+  # Future prospects to pursue (from goals.yaml: "Identify 2 additional partnership prospects beyond Oando")
+  - name: "TBD — need to identify 2 additional energy partnership prospects"
+    company: nrg_bloom
+    notes: "Goal from Q1 OKRs. Consider: Sahara Energy, Niger Delta Power Holding Company, Geometric Power, other IOCs with flaring operations."
+    priority: P2
+
+  - name: "TBD — first Coldstorm AI client"
+    company: coldstorm
+    notes: "Need to define service offering first (packages, pricing, website). Then identify target clients — likely SMBs needing AI implementation, prompt engineering, or automation consulting."
+    priority: P1

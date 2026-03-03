@@ -4,7 +4,7 @@
 # Statuses: todo, in_progress, blocked, done
 # Company: nrg_bloom, coldstorm, personal, both
 
-last_updated: "2026-02-26"
+last_updated: "2026-03-02"
 
 tasks:
   # --- COMPLETED TODAY (Feb 25) ---
@@ -60,25 +60,25 @@ tasks:
     priority: P0
     status: in_progress
     due: "2026-03-05"
-    notes: "Position papers exchange March 5, 10 AM Edmonton / 6 PM Lagos. Awaiting Dayo's guidance on how to integrate new evidence. Strengthened sections v2 ready. 5-page constraint from mediator."
+    notes: "UPDATED Mar 2. NRG Bloom submitting Position Summary early on March 3 (Dayo confirmed). TON submitting by COB March 5 MST (Marley confirmed on record). McCarthy Tétrault correspondence being annexed as exhibit. Expenditure ledger, damages analysis, and Alberta litigation research all completed to support position. 5-page constraint from mediator."
     created: "2026-02-25"
 
   - id: 7
     title: "Dayo's team reviewing evidence — Jane has Drive access"
     company: nrg_bloom
     priority: P0
-    status: in_progress
+    status: done
     due: "2026-03-01"
-    notes: "UNBLOCKED Feb 26. Julie sent updated position summary with comments (red) + evidence Drive folder to Dayo. Jane Ibikunle (Moroom Africa associate) granted Drive access. Dayo's team now actively reviewing evidence and position document. Await Dayo's guidance on how to integrate new WhatsApp evidence into position paper."
+    notes: "COMPLETED. Dayo's team reviewed evidence and position document. Dayo confirmed Mar 2 that NRG Bloom will submit Position Summary on March 3. McCarthy correspondence being included as exhibit. Evidence review phase complete — now in final submission stage."
     created: "2026-02-25"
 
   - id: 8
     title: "Compile NRG Bloom expenditure ledger"
     company: nrg_bloom
     priority: P1
-    status: todo
+    status: done
     due: "2026-03-03"
-    notes: "Fresh eyes analysis extracted extensive financial data from chats — container clearing N23.5M, barge/crane N15.9M, electrical N6.1M, security N3M, land N1.2M, fencing N4.2M, etc. Compile into a single ledger for quantum support."
+    notes: "COMPLETED Mar 1. Full ledger at ~/Work/nrg-bloom/litigation-ton/nrg-bloom-expenditure-ledger-2026-03-01.md. Total: ~N68.4M (~$47,127 USD) across 8 categories. All amounts sourced from WhatsApp chat exports — direct contemporaneous evidence."
     created: "2026-02-25"
 
   - id: 9
@@ -152,7 +152,7 @@ tasks:
     priority: P0
     status: todo
     due: "2026-02-28"
-    notes: "Call 1-800-229-0575. Ask for Trade Advisor for Sub-Saharan Africa. Scope TELP (working capital guarantee through your bank), Political Risk Insurance (90% coverage on Nigeria exposure), and cleantech programs. EDC exceeded $12B cleantech goal 2 years early — actively seeking deals."
+    notes: "OVERDUE. Call 1-800-229-0575. Ask for Trade Advisor for Sub-Saharan Africa. Scope TELP (working capital guarantee through your bank), Political Risk Insurance (90% coverage on Nigeria exposure), and cleantech programs. EDC exceeded $12B cleantech goal 2 years early — actively seeking deals."
     created: "2026-02-25"
 
   - id: 16
@@ -188,7 +188,7 @@ tasks:
     priority: P0
     status: todo
     due: "2026-03-01"
-    notes: "Leyton: (514) 767-1227 | Ayming: (514) 931-0166. Both Montreal-based, contingency fee, handle SR&ED + Quebec CRIC. Free initial consultation. URGENT: FY2024 SR&ED deadline is June 30, 2026 (~4 months). Also confirm NRG Bloom's fiscal year-end — if not Dec 31, may have more runway."
+    notes: "OVERDUE. Leyton: (514) 767-1227 | Ayming: (514) 931-0166. Both Montreal-based, contingency fee, handle SR&ED + Quebec CRIC. Free initial consultation. URGENT: FY2024 SR&ED deadline is June 30, 2026 (~4 months). Also confirm NRG Bloom's fiscal year-end — if not Dec 31, may have more runway."
     created: "2026-02-25"
 
   # --- ACCOUNTING / TAX FILING ---
@@ -200,3 +200,85 @@ tasks:
     due: "2026-03-03"
     notes: "Accountant confirmed Feb 26 they are on it and committed to completing. Covers T2 (CRA) + CO-17 (Quebec) back filings. Follow up March 3 to confirm progress. If not done, escalate or consider self-filing (guide at ~/Work/knowledge/nrg-bloom-corporate-tax-filing-guide-2026-02-25.md). Getting filings current unlocks grant eligibility."
     created: "2026-02-26"
+
+  # --- LITIGATION — NEW TASKS (Mar 2) ---
+  - id: 22
+    title: "McCarthy Tétrault — confirm Dayo sent counterparty name for conflicts check"
+    company: nrg_bloom
+    priority: P0
+    status: todo
+    due: "2026-03-03"
+    notes: "Sarit Batner responded Feb 28 requesting counterparty name to run conflicts check before March 6 call. Dayo needs to reply with 'TON Infrastructure Ltd.' If conflicts clear, Sarit will circulate Teams link for 10am ET Friday. Check with Dayo that this was sent."
+    created: "2026-03-02"
+
+  - id: 23
+    title: "McCarthy Tétrault — introductory call with Sarit Batner"
+    company: nrg_bloom
+    priority: P0
+    status: in_progress
+    due: "2026-03-06"
+    notes: "Friday March 6, 10am ET (pending conflicts clearance). Priority items: (1) limitation period audit — when did 2-year clock start, (2) review arbitration clause in Section 7, (3) assess strongest legal theories on these facts, (4) determine if protective filing needed to preserve rights, (5) fee structure — confirm Dayo absorbs McCarthy costs, (6) NEW — Phoenix Trading FZCO v. Dennis Corp: Tyler's 2022 prior lawsuit as pattern-of-conduct evidence, admissibility as similar fact evidence, impact on punitive/aggravated damages threshold. Prep: Alberta litigation path analysis + expenditure ledger + damages analysis + Phoenix Trading analysis all ready to share."
+    created: "2026-03-02"
+
+  - id: 24
+    title: "NRG Bloom position summary — Dayo submitting March 3"
+    company: nrg_bloom
+    priority: P0
+    status: in_progress
+    due: "2026-03-03"
+    notes: "Dayo confirmed Mar 2 that NRG Bloom will submit Position Summary on Tuesday March 3 by COB. McCarthy Tétrault correspondence annexed as exhibit. Expenditure ledger and damages analysis support quantum position."
+    created: "2026-03-02"
+
+  - id: 25
+    title: "Await TON position summary — due March 5"
+    company: nrg_bloom
+    priority: P0
+    status: in_progress
+    due: "2026-03-05"
+    notes: "Marley confirmed Mar 2 that TON will submit by COB Thursday March 5 MST. NRG Bloom will have submitted 2 days earlier — strategic advantage. Review TON's paper immediately upon receipt for counter-arguments, quantum position, and evidence gaps."
+    created: "2026-03-02"
+
+  - id: 26
+    title: "Alberta litigation path analysis — completed"
+    company: nrg_bloom
+    priority: P1
+    status: done
+    due: "2026-03-01"
+    notes: "COMPLETED Mar 1. Five legal theories: breach of contract, duty of honest performance (Bhasin v. Hrynew), breach of fiduciary duty, breach of confidence (LAC Minerals), tortious interference. Conservative claim: $1.6M. Aggressive: $6M+. File: ~/Work/knowledge/alberta-litigation-path-analysis-2026-03-01.md"
+    created: "2026-03-01"
+
+  - id: 27
+    title: "Axxela circumvention damages analysis — completed"
+    company: nrg_bloom
+    priority: P1
+    status: done
+    due: "2026-03-01"
+    notes: "COMPLETED Mar 1. Layered claim: breach of non-circumvention + destruction of opportunity + progressive diminishment + manufactured termination + aggravated conduct. File: ~/Work/knowledge/axxela-circumvention-damages-analysis-2026-03-01.md"
+    created: "2026-03-01"
+
+  - id: 28
+    title: "Phoenix Trading FZCO v. Dennis Corp — Tyler's prior lawsuit analysis"
+    company: nrg_bloom
+    priority: P0
+    status: done
+    due: "2026-03-02"
+    notes: "COMPLETED Mar 2. Court decision forwarded by Segun Aluko (Sheppard Mullin) via Dayo. Tyler MacPhearson / The Crypto Can Man Ltd. named as defendants in 2022 U.S. crypto mining lawsuit (4:22-cv-02355, D.S.C.). 13 causes of action, 7 plaintiffs, 8 defendants across 4 countries. Establishes pattern of prior conduct. Full analysis: ~/Work/knowledge/phoenix-trading-fzco-v-dennis-corp-analysis-2026-03-02.md. PDFs archived at ~/Work/nrg-bloom/legal/."
+    created: "2026-03-02"
+
+  - id: 29
+    title: "Obtain full 2022 complaint (13 causes of action) + state court outcome"
+    company: nrg_bloom
+    priority: P1
+    status: todo
+    due: "2026-03-06"
+    notes: "Need full complaint (ECF No. 1-1) from Phoenix Trading FZCO v. Dennis Corp. Ask Dayo if Segun Aluko has it, or retrieve via PACER ($0.10/page). Also need state court outcome after remand — Dillon County Clerk of Court: (843) 774-1421, case 2022-CP-21-00291. Was it settled, dismissed, or judged? Also check Alberta Corporate Registry for The Crypto Can Man Ltd. to confirm Tyler as director/officer."
+    created: "2026-03-02"
+
+  - id: 30
+    title: "Prepare McCarthy Tétrault call brief — March 6"
+    company: nrg_bloom
+    priority: P0
+    status: todo
+    due: "2026-03-05"
+    notes: "Comprehensive brief for Friday March 6 10am ET call with Sarit Batner. Must cover: (1) case summary + timeline, (2) 5 legal theories from Alberta litigation analysis, (3) Phoenix Trading prior lawsuit as pattern-of-conduct evidence, (4) key questions for Sarit — limitation period, arbitration clause, protective filing, admissibility of similar fact evidence, punitive damages threshold, fee structure. Consolidate all analysis into a single call prep document."
+    created: "2026-03-02"

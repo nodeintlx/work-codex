@@ -65,7 +65,7 @@ if tool_name in ('Read', 'Edit', 'Write'):
             sys.exit(0)
 
 # --- Force confirmation on MCP outbound actions ---
-if 'gmail_send' in tool_name or 'gmail_create_draft' in tool_name or 'calendar_create_event' in tool_name or 'send_message' in tool_name:
+if 'gmail_send' in tool_name or 'send_gmail_message' in tool_name or 'draft_gmail_message' in tool_name or 'gmail_create_draft' in tool_name or 'manage_event' in tool_name or 'calendar_create_event' in tool_name or 'send_message' in tool_name or 'manage_drive_access' in tool_name or 'set_drive_file_permissions' in tool_name or 'modify_gmail_message_labels' in tool_name or 'manage_gmail_filter' in tool_name:
     print(json.dumps({
         'hookSpecificOutput': {
             'hookEventName': 'PreToolUse',

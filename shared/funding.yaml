@@ -1,0 +1,133 @@
+# Funding & Grants Pipeline
+# Statuses: researching → eligible → applying → submitted → under_review → approved → rejected
+# Updated automatically by grant-tracker skill
+
+last_updated: "2026-03-02"
+
+programs:
+  - id: 1
+    name: "SR&ED Tax Credit (FY2024)"
+    agency: "CRA (Canada Revenue Agency)"
+    type: tax_credit
+    amount: "$35K-$100K+ (estimate, depends on eligible R&D spend)"
+    company: nrg_bloom
+    status: researching
+    deadline: "2026-06-30"
+    prerequisites:
+      - requirement: "Corporate tax filings current (T2)"
+        met: false
+        notes: "Accountant working on back filings — follow up March 3"
+      - requirement: "Engage SR&ED consultant (contingency)"
+        met: false
+        notes: "OVERDUE — need to call Leyton (514-767-1227) and Ayming (514-931-0166)"
+      - requirement: "Confirm NRG Bloom fiscal year-end"
+        met: false
+        notes: "If not Dec 31, may have more runway"
+    next_action: "Call Leyton Canada and Ayming Canada for free initial consultation"
+    next_action_date: "2026-03-03"
+    contact: "Leyton: (514) 767-1227 | Ayming: (514) 931-0166"
+    notes: "FY2024 deadline June 30, 2026 (~4 months). Both firms are Montreal-based, work on contingency, handle SR&ED + Quebec CRIC. This is the single highest-value, lowest-barrier funding opportunity."
+    file: "~/Work/nrg-bloom/projects/funding/sred-consultants-montreal-2026-02-25.md"
+    risk: medium
+
+  - id: 2
+    name: "CanExport SMEs"
+    agency: "TCS (Trade Commissioner Service)"
+    type: grant
+    amount: "$50K CAD (50% cost reimbursement)"
+    company: nrg_bloom
+    status: researching
+    deadline: "2026-05-29"
+    prerequisites:
+      - requirement: "Certificate of Incorporation"
+        met: true
+        notes: "Have it"
+      - requirement: "GST 34 return"
+        met: false
+        notes: "Need tax filings current first"
+      - requirement: "Apply 60 days before first activity"
+        met: true
+        notes: "Within window"
+    next_action: "Register on CanExport portal and begin application"
+    next_action_date: "2026-03-07"
+    contact: "tradecommissioner.gc.ca"
+    notes: "Covers 50% of Nigeria market development costs: travel (Nigeria AND China), trade shows, marketing materials. Application deadline May 29, 2026."
+    file: "~/Work/nrg-bloom/projects/funding/canadian-grants-research-2026-02-25.md"
+    risk: low
+
+  - id: 3
+    name: "EDC — Working Capital & Political Risk Insurance"
+    agency: "Export Development Canada"
+    type: insurance
+    amount: "Varies — TELP working capital guarantee + 90% political risk coverage"
+    company: nrg_bloom
+    status: researching
+    deadline: "none"
+    prerequisites:
+      - requirement: "Scoping call with Trade Advisor"
+        met: false
+        notes: "OVERDUE — call 1-800-229-0575, ask for Sub-Saharan Africa Trade Advisor"
+    next_action: "Call EDC to scope TELP, Political Risk Insurance, and cleantech programs"
+    next_action_date: "2026-03-03"
+    contact: "EDC: 1-800-229-0575"
+    notes: "EDC exceeded $12B cleantech goal 2 years early — actively seeking deals. TELP is working capital guarantee through your bank. Political Risk Insurance covers 90% of Nigeria exposure. Cleantech programs may apply."
+    file: "~/Work/nrg-bloom/projects/funding/canadian-grants-research-2026-02-25.md"
+    risk: low
+
+  - id: 4
+    name: "Futurpreneur — Black Entrepreneur Startup Program"
+    agency: "Futurpreneur Canada"
+    type: loan
+    amount: "$75K loan + $40K follow-on + mentorship"
+    company: nrg_bloom
+    status: submitted
+    deadline: "none"
+    prerequisites:
+      - requirement: "Application submitted"
+        met: true
+        notes: "Submitted Feb 25"
+    next_action: "Await response / next steps from Futurpreneur"
+    next_action_date: "2026-03-15"
+    contact: "Futurpreneur Canada"
+    notes: "Application submitted Feb 25. Up to $75K loan + $40K follow-on + mentorship through Black Entrepreneur Startup Program. Awaiting response."
+    file: ""
+    risk: low
+
+  - id: 5
+    name: "TCS Client Registration + Lagos Intro"
+    agency: "Trade Commissioner Service"
+    type: advisory
+    amount: "Free (government advisory services)"
+    company: nrg_bloom
+    status: applying
+    deadline: "none"
+    prerequisites:
+      - requirement: "MyTCS portal registration"
+        met: true
+        notes: "Completed Feb 26"
+      - requirement: "Email to Quebec TCS office"
+        met: true
+        notes: "Sent to quebec.tcs-sdc@international.gc.ca Feb 26"
+    next_action: "Await Montreal TCS response, then warm handoff to TCS Lagos (Godwin Aigbokhan)"
+    next_action_date: "2026-03-05"
+    contact: "quebec.tcs-sdc@international.gc.ca | Lagos: Godwin Aigbokhan (O&G TC)"
+    notes: "Registered on MyTCS portal + email sent requesting intro meeting with Clean Tech / O&G TC. Expect response within 5 business days (~Mar 5). Do NOT email Lagos directly — wait for warm handoff."
+    file: "~/Work/knowledge/tcs-client-registration-guide-2026-02-26.md"
+    risk: low
+
+dependency_chains:
+  - name: "Tax filings → Grant eligibility"
+    steps:
+      - "Corporate tax filings current (T2 + CO-17)"
+      - "SR&ED FY2024 claim eligible"
+      - "CanExport application eligible"
+      - "Other government programs unlocked"
+    status: "Step 1 in progress — accountant working, follow up March 3"
+
+  - name: "EDC insurance → Bank financing"
+    steps:
+      - "EDC scoping call completed"
+      - "Political risk insurance quoted"
+      - "TELP working capital guarantee through bank"
+      - "Enables larger contract commitments with Oando/partners"
+    status: "Step 1 not started — OVERDUE"

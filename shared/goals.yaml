@@ -1,40 +1,93 @@
 # Quarterly OKRs — Q1 2026
-# Update this file with actual goals. Makir reviews weekly.
+# Makir reviews weekly. Agent uses for prioritization and proactive suggestions.
+# Last weekly review: TBD
 
 quarter: "Q1 2026"
-last_updated: "2026-02-22"
+last_updated: "2026-03-02"
 
 nrg_bloom:
   objective_1:
-    title: "TODO: Add NRG Bloom Q1 objective"
+    title: "Resolve TON Infrastructure dispute with favorable outcome"
     key_results:
-      - description: "TODO: Key result 1"
-        target: "TBD"
-        current: "TBD"
+      - description: "Achieve settlement of $450K+ (cash, complete disentangle)"
+        target: "$450,000 minimum"
+        current: "In structured negotiation — position papers exchanging March 3-5"
+        status: in_progress
+      - description: "Engage top-tier Canadian litigation counsel as credible escalation threat"
+        target: "McCarthy Tétrault retained, limitation period preserved"
+        current: "Intro call with Sarit Batner scheduled March 6"
+        status: in_progress
+      - description: "Complete evidence package for arbitration/litigation readiness"
+        target: "All evidence analyzed, indexed, and packaged"
+        current: "18 game-changers identified, expenditure ledger done, damages analysis done, Phoenix Trading prior lawsuit analyzed"
+        status: on_track
+
+  objective_2:
+    title: "Secure new energy partnership to replace TON dependency"
+    key_results:
+      - description: "Sign LOI or MOU with Oando Clean Energy for gas-to-power pilot"
+        target: "LOI signed by end of Q1"
+        current: "Engagement call being scheduled with Eleas Eduga (Gas Business)"
+        status: in_progress
+      - description: "Complete intro call and deliver proposal"
+        target: "Proposal submitted within 2 weeks of intro call"
+        current: "Call brief in preparation"
+        status: in_progress
+      - description: "Identify 2 additional partnership prospects beyond Oando"
+        target: "2 prospects in outreach stage"
+        current: "0 — focused on Oando and litigation"
         status: not_started
-      - description: "TODO: Key result 2"
-        target: "TBD"
-        current: "TBD"
+
+  objective_3:
+    title: "Secure funding runway for next 12 months"
+    key_results:
+      - description: "File SR&ED claim for FY2024 via contingency consultant"
+        target: "Claim filed before June 30, 2026 deadline"
+        current: "OVERDUE: Leyton/Ayming calls not yet made"
+        status: at_risk
+      - description: "Submit CanExport application for Nigeria market development"
+        target: "Application submitted by April 2026"
+        current: "Not started — need Certificate of Incorporation + GST 34"
         status: not_started
+      - description: "Scope EDC working capital guarantee and political risk insurance"
+        target: "EDC scoping call completed, products identified"
+        current: "OVERDUE: Call not yet made"
+        status: at_risk
+      - description: "Get corporate tax filings current (T2 + CO-17)"
+        target: "All back filings submitted to CRA and Revenu Québec"
+        current: "Accountant working on it — follow up March 3"
+        status: in_progress
 
 coldstorm:
   objective_1:
-    title: "TODO: Add Coldstorm AI Q1 objective"
+    title: "Define and launch Coldstorm AI service offering"
     key_results:
-      - description: "TODO: Key result 1"
-        target: "TBD"
-        current: "TBD"
+      - description: "Define core service packages and pricing"
+        target: "Service menu documented with 3 tiers"
+        current: "Not started"
         status: not_started
-      - description: "TODO: Key result 2"
-        target: "TBD"
-        current: "TBD"
+      - description: "Build company website or landing page"
+        target: "Live website with service descriptions and contact form"
+        current: "Not started"
+        status: not_started
+      - description: "Sign first paying client"
+        target: "1 client, any revenue"
+        current: "No pipeline"
         status: not_started
 
 personal:
   objective_1:
-    title: "TODO: Add personal Q1 objective"
+    title: "Complete Calgary relocation groundwork"
     key_results:
-      - description: "TODO: Key result 1"
-        target: "TBD"
-        current: "TBD"
-        status: not_started
+      - description: "Finalize relocation timeline and logistics plan"
+        target: "Plan documented with move date"
+        current: "Research completed — ~/Work/personal/calgary-relocation-plan-2026-02-28.md"
+        status: in_progress
+      - description: "Resolve Quebec speeding ticket"
+        target: "Ticket contested or paid"
+        current: "Contest guide prepared — ~/Work/personal/quebec-speeding-ticket-contest-guide-2026-02-28.md"
+        status: in_progress
+      - description: "Sort out dual license situation for Alberta"
+        target: "Clear path to Alberta driver's license"
+        current: "Research done — ~/Work/personal/dual-license-research-2026-02-28.md"
+        status: in_progress

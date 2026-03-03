@@ -1,37 +1,39 @@
-# Future MCP Integrations
+# Future MCP Integrations — Candidates
 
-## Brave Search
-When Brave Search API key is available, add to ~/Work/.mcp.json:
+## Already Activated (2026-03-02)
+- Brave Search — LIVE
+- Tavily — LIVE
+- Google Workspace extended tier — LIVE
+
+## Potential Future Additions
+
+### Slack MCP
+If NRG Bloom or Coldstorm adopts Slack for team communication:
 ```json
-"brave-search": {
+"slack": {
   "command": "npx",
-  "args": ["-y", "@modelcontextprotocol/server-brave-search"],
+  "args": ["-y", "@anthropic/mcp-server-slack"],
   "env": {
-    "BRAVE_API_KEY": "${BRAVE_API_KEY}"
+    "SLACK_BOT_TOKEN": "${SLACK_BOT_TOKEN}"
   }
 }
 ```
-- Free tier: 2,000 queries/month
-- Fast (<15 seconds per query)
-- Good for general web search
 
-## Tavily
-When Tavily API key is available, add to ~/Work/.mcp.json:
+### GitHub MCP
+If code repository management is needed:
 ```json
-"tavily": {
+"github": {
   "command": "npx",
-  "args": ["-y", "tavily-mcp"],
+  "args": ["-y", "@anthropic/mcp-server-github"],
   "env": {
-    "TAVILY_API_KEY": "${TAVILY_API_KEY}"
+    "GITHUB_TOKEN": "${GITHUB_TOKEN}"
   }
 }
 ```
-- Better source quality for deep research
-- Citation-quality results
 
-## Setup Steps
-1. Get API key from the respective service
-2. Store in macOS Keychain: `security add-generic-password -a "claude-agent" -s "[service]-api-key" -w "[key]"`
-3. Update claude-work launcher to export the new key
-4. Add the server config to ~/Work/.mcp.json
-5. Restart Claude Code and verify with `/mcp`
+### Google Workspace → Complete Tier
+Upgrade from `extended` to `complete` if needed:
+- Document comments (manage_document_comment) — useful for reviewing shared docs with Dayo
+- Batch Gmail label operations — useful for large inbox processing
+- Advanced Docs structure tools — tables, images, headers
+- Change `--tool-tier extended` to `--tool-tier complete` in .mcp.json

@@ -6,20 +6,46 @@
       "Grep",
       "WebSearch",
       "WebFetch",
-      "mcp__google-workspace__gmail_search",
-      "mcp__google-workspace__gmail_get",
-      "mcp__google-workspace__gmail_list",
-      "mcp__google-workspace__calendar_list",
-      "mcp__google-workspace__calendar_get",
-      "mcp__google-workspace__drive_search",
-      "mcp__google-workspace__drive_get",
+      "mcp__google-workspace__search_gmail_messages",
+      "mcp__google-workspace__get_gmail_message_content",
+      "mcp__google-workspace__get_gmail_messages_content_batch",
+      "mcp__google-workspace__get_gmail_thread_content",
+      "mcp__google-workspace__get_gmail_attachment_content",
+      "mcp__google-workspace__list_gmail_labels",
+      "mcp__google-workspace__list_gmail_filters",
+      "mcp__google-workspace__get_events",
+      "mcp__google-workspace__list_calendars",
+      "mcp__google-workspace__query_freebusy",
+      "mcp__google-workspace__search_drive_files",
+      "mcp__google-workspace__get_drive_file_content",
+      "mcp__google-workspace__get_drive_file_download_url",
+      "mcp__google-workspace__list_drive_items",
+      "mcp__google-workspace__get_drive_shareable_link",
+      "mcp__google-workspace__get_doc_content",
+      "mcp__google-workspace__get_doc_as_markdown",
+      "mcp__google-workspace__search_docs",
+      "mcp__google-workspace__list_docs_in_folder",
+      "mcp__google-workspace__export_doc_to_pdf",
+      "mcp__google-workspace__read_sheet_values",
+      "mcp__google-workspace__get_spreadsheet_info",
+      "mcp__google-workspace__list_spreadsheets",
+      "mcp__google-workspace__search_contacts",
+      "mcp__google-workspace__get_contact",
+      "mcp__google-workspace__list_contacts",
+      "mcp__google-workspace__get_task",
+      "mcp__google-workspace__list_tasks",
+      "mcp__google-workspace__get_form",
+      "mcp__google-workspace__get_presentation",
       "mcp__filesystem__read_file",
       "mcp__filesystem__list_directory",
       "mcp__filesystem__search_files",
-      "mcp__memory__*"
+      "mcp__filesystem__directory_tree",
+      "mcp__memory__*",
+      "mcp__brave-search__*",
+      "mcp__tavily__*"
     ],
     "deny": [
-      "mcp__google-workspace__gmail_send",
+      "mcp__google-workspace__send_gmail_message",
       "Bash(sudo:*)",
       "Bash(rm -rf:*)",
       "Bash(chmod 777:*)",
@@ -45,7 +71,7 @@
         ]
       },
       {
-        "matcher": "mcp__google-workspace__gmail_create_draft",
+        "matcher": "mcp__google-workspace__draft_gmail_message",
         "hooks": [
           {
             "type": "command",
@@ -54,11 +80,29 @@
         ]
       },
       {
-        "matcher": "mcp__google-workspace__calendar_create_event",
+        "matcher": "mcp__google-workspace__manage_event",
         "hooks": [
           {
             "type": "command",
-            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"ask\",\"permissionDecisionReason\":\"Calendar event creation requires approval\"}}'"
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"ask\",\"permissionDecisionReason\":\"Calendar event modification requires approval\"}}'"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__google-workspace__manage_drive_access",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"ask\",\"permissionDecisionReason\":\"Drive sharing/permission change requires approval\"}}'"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__google-workspace__set_drive_file_permissions",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"ask\",\"permissionDecisionReason\":\"Drive permission change requires approval\"}}'"
           }
         ]
       }
