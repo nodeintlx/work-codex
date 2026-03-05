@@ -1,31 +1,30 @@
 ---
 name: prep
-description: Prepare for the next upcoming meeting or a specific meeting — attendee research, talking points, related documents
+description: >-
+  Prepare for the next upcoming meeting or a specific meeting — attendee research,
+  talking points, related documents, and strategic recommendations.
 user-invocable: true
 ---
 
-# Meeting Prep
+Trigger the meeting-prep skill for the next upcoming meeting or a specified one.
 
-Trigger the meeting-prep skill for the next upcoming meeting (or a specified meeting).
+## Execution
 
-## Process
-1. Check Google Calendar for the next meeting within 48 hours
-2. If Makir specified a meeting (e.g., "/prep McCarthy call"), find that specific event
-3. Run the full meeting-prep skill: attendee profiles, recent communications, related documents, talking points
-4. Check ~/Work/shared/contacts/ for existing profiles on all attendees
-5. Search ~/Work/knowledge/ for any analysis or research related to the meeting topic
-6. If the meeting is litigation-related, also run litigation-tracker context
+1. **Find the meeting** — Use `gws` CLI to check calendar:
+   ```bash
+   gws calendar events list --params '{"calendarId": "primary", "timeMin": "NOW_ISO", "timeMax": "48H_LATER_ISO", "singleEvents": true, "orderBy": "startTime"}'
+   ```
+   If Makir specified a meeting (e.g., "/prep McCarthy call"), search for that specific event.
 
-## Enhanced Prep for Key Meeting Types
+2. **Run meeting-prep skill** — Full attendee profiles, recent communications, related documents, talking points.
 
-### Legal Calls (McCarthy, Moroom Africa)
-- Include: latest timeline status, outstanding legal questions, evidence inventory, strategic considerations
-- Pull from: ~/Work/nrg-bloom/legal/, ~/Work/knowledge/*litigation*.md, ~/Work/knowledge/*damages*.md
+3. **Check contacts** — Load attendee profiles from ~/Work/shared/contacts/.
 
-### Partnership Meetings (Oando, new prospects)
-- Include: company research, attendee LinkedIn context, competitive landscape, proposed deal structure
-- Pull from: ~/Work/nrg-bloom/projects/, market research files
+4. **Search related files** — Search ~/Work/knowledge/ and project directories for relevant analysis.
 
-### Funding Calls (EDC, TCS, grant bodies)
-- Include: program requirements, NRG Bloom eligibility summary, specific ask/scope
-- Pull from: ~/Work/nrg-bloom/projects/funding/
+5. **Type-specific prep**:
+   - **Legal calls** (McCarthy, Moroom): Include litigation status, legal theories, evidence inventory, strategic questions. Trigger litigation-tracker and arbitration-readiness skills for context.
+   - **Partnership meetings** (Oando, prospects): Include company research, competitive landscape, proposed deal structure. Trigger pipeline-tracker for context.
+   - **Funding calls** (EDC, TCS, IRAP): Include program requirements, eligibility summary, specific ask. Trigger grant-tracker for context.
+
+6. **Output** — Follow the meeting-prep skill format. Include strategic goals for each talking point.

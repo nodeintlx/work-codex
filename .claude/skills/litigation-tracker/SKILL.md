@@ -1,50 +1,82 @@
 ---
 name: litigation-tracker
-description: Track legal disputes, deadlines, evidence inventory, and counsel communications. Monitor the TON Infrastructure dispute and any future legal matters. Use when checking litigation status, preparing for legal calls, updating dispute timelines, or when legal developments arise in emails.
-allowed-tools: Read, Write, Edit, Glob, Grep, WebSearch, mcp__google-workspace__gmail_*, mcp__memory__*
+description: "Use this skill to track legal disputes, deadlines, evidence status, and counsel communications for NRG Bloom. Trigger it whenever Makir asks about the TON dispute status, any litigation deadline, the McCarthy Tetrault engagement, evidence readiness, or counsel communications. Also trigger when emails arrive from Dayo Adu, Marley Broda, Sarit Batner, Karl Tabbakh, Julie Peeters, or any mediator. Use it during /status and /gm to populate the litigation section. Use it when preparing for any legal call, when a new legal development surfaces in email, when checking limitation periods, or when Makir says anything about 'the case,' 'TON,' 'arbitration,' 'Dayo,' or 'McCarthy.'"
+allowed-tools: Read, Write, Edit, Glob, Grep, WebSearch, mcp__google-workspace__search_gmail_messages, mcp__google-workspace__get_gmail_message_content, mcp__google-workspace__get_gmail_thread_content, mcp__memory__*
 ---
 
-# Litigation Tracker Skill
+# Litigation Tracker
+
+## What This Skill Does
+
+Track every aspect of NRG Bloom's legal matters -- active disputes, upcoming deadlines, evidence inventory status, counsel engagement, and strategic developments. The skill exists because litigation has hard deadlines (limitation periods, filing dates, exchange dates) where missing even one can be catastrophic, and because the dispute touches multiple workstreams (settlement, arbitration prep, counsel engagement) that need a single coherent view.
 
 ## Active Matters
-Track all legal matters in their respective files:
-- TON dispute timeline: ~/Work/nrg-bloom/legal/ton-dispute-timeline-*.md
-- Evidence: ~/Work/nrg-bloom/legal/
-- Analysis files: ~/Work/knowledge/*litigation*.md, ~/Work/knowledge/*damages*.md
+
+The primary active matter is NRG Bloom v. TON Infrastructure. All litigation files live in:
+- Dispute timeline and evidence: ~/Work/nrg-bloom/litigation-ton/
+- Legal research and analysis: ~/Work/knowledge/
+- Case documents: ~/Work/nrg-bloom/legal/
+
+For the full evidence inventory with file paths and search patterns, read `references/evidence-inventory.md`.
 
 ## Process
-1. **Load Memory** — query Memory MCP for "TON Dispute" entity and related observations
-2. **Read timeline** — get current state of dispute from latest timeline file
-3. **Check Gmail** — search for emails from Dayo Adu, Marley Broda, Sarit Batner, Karl Tabbakh, Julie Peeters in last 48 hours
-4. **Check deadlines** — flag any litigation deadline within 7 days
-5. **Update** timeline and tasks.yaml with any new developments
-6. **Present** litigation status dashboard
+
+### Step 1: Load Context
+- Query Memory MCP for the "TON Dispute" entity and related observations. Memory often has the most recent status without needing to re-read large files.
+- Read ~/Work/nrg-bloom/litigation-ton/CONTEXT.md for dispute background (if it exists).
+- Check tasks.yaml for all litigation-tagged tasks.
+
+### Step 2: Check Communications
+Search Gmail for recent correspondence (last 48 hours) from:
+- **Counsel**: Dayo Adu (dayo.adu@moroomafrica.com), Sarit Batner (McCarthy Tetrault)
+- **Mediator/Opposing**: Marley Broda, Karl Tabbakh
+- **Internal**: Julie Peeters (julie@nrgbloom.com)
+
+Any email from opposing counsel or the mediator should be flagged immediately -- these often contain deadlines or require a response.
+
+### Step 3: Check Deadlines
+Scan for any litigation deadline within 7 days. Apply these escalation thresholds:
+- **7+ days out**: Inform -- mention in dashboard.
+- **3 days out**: Flag with a preparation checklist. Ensure all prerequisites are in motion.
+- **1 day out**: Urgent -- surface at the top of any response, even if Makir asked about something else.
+- **Overdue**: Critical -- escalate immediately with recommended action.
+
+Limitation periods deserve special handling because they are irrecoverable if missed. Flag them 6 months before expiry, and re-flag monthly until confirmed preserved.
+
+### Step 4: Update
+When new developments come in during a session:
+1. Update the relevant timeline file in ~/Work/nrg-bloom/litigation-ton/
+2. Update tasks.yaml with new action items or status changes
+3. Save key facts and status changes to Memory MCP
+4. Tell Makir what was updated.
+
+### Step 5: Present Dashboard
 
 ## Output Format
 
-### Litigation Status — [Date]
+### Litigation Status -- [Date]
 
-**Active Matters**: [X]
+**Active Matters**: [count]
 
-**[Matter Name]** — [Status: Negotiation / Pre-Litigation / Filed / Discovery / Trial]
+**[Matter Name]** -- [Status: Negotiation / Pre-Litigation / Filed / Discovery / Trial]
 
 **Critical Deadlines**
 | Date | Event | Status | Owner |
 |------|-------|--------|-------|
-| [Date] | [What] | [Confirmed/Pending/At Risk] | [Who] |
+| [Date] | [What] | Confirmed/Pending/At Risk | [Who] |
 
 **Recent Developments** (last 7 days)
 - [Date]: [Development summary]
 
 **Pending Actions**
-- [ ] [Action item] — Owner: [who] — Due: [date]
+- [ ] [Action item] -- Owner: [who] -- Due: [date]
 
-**Evidence Inventory**
+**Evidence Inventory** (summary -- see references/evidence-inventory.md for full index)
 | Category | Items | Status |
 |----------|-------|--------|
-| WhatsApp chats | [X] analyzed | Complete/In Progress |
-| Email threads | [X] analyzed | Complete/In Progress |
-| Documents | [list] | Collected/Needed |
+| WhatsApp chats | [X] verified | Complete/In Progress |
+| Email threads | [X] verified | Complete/In Progress |
+| Call transcripts | [X] | Complete/In Progress |
 | Court records | [list] | Obtained/Needed |
 
 **Counsel Status**
@@ -55,19 +87,8 @@ Track all legal matters in their respective files:
 **Strategic Notes**
 - [Key strategic consideration]
 
-## Deadline Alert Thresholds
-- **7+ days out**: Inform
-- **3 days out**: Flag with preparation checklist
-- **1 day out**: URGENT — surface at top of any response
-- **Overdue**: CRITICAL — escalate immediately
+## Confidentiality
 
-## Rules
-- NEVER share litigation details outside of NRG Bloom context
-- All litigation content is CONFIDENTIAL and PRIVILEGED
-- When new evidence or developments come in, update:
-  1. Timeline file
-  2. tasks.yaml
-  3. Memory MCP (add observations)
-- Flag any email from opposing counsel (TON) immediately — don't wait for Makir to ask
-- When preparing for lawyer calls, cross-reference all analysis files in ~/Work/knowledge/
-- Track limitation periods and flag 6 months before expiry
+All litigation content is confidential and privileged. Do not share litigation details outside of the NRG Bloom context, and do not include litigation information in Coldstorm outputs or cross-company summaries unless Makir explicitly requests it.
+
+When preparing for lawyer calls, read the relevant analysis files from the evidence inventory (references/evidence-inventory.md) to ensure talking points are grounded in documented evidence rather than memory or summaries.

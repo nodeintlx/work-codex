@@ -1,50 +1,61 @@
 ---
 name: weekly-review
-description: Full weekly review — completed tasks, next week calendar, goal progress, carryover items
+description: >-
+  Full weekly review — completed tasks, next week calendar, goal progress,
+  carryover items, stale follow-ups, and next week priorities.
 user-invocable: true
 ---
 
-# Weekly Review Process
+Conduct a comprehensive end-of-week review across all workstreams.
 
-Conduct a comprehensive end-of-week review:
+## Execution
 
-1. **Completed This Week**: Review ~/Work/shared/tasks.yaml for tasks marked done this week. Summarize accomplishments by company.
+1. **Completed this week** — Read ~/Work/shared/tasks.yaml. List all tasks marked done this week, grouped by company.
 
-2. **Carryover Items**: Identify tasks that were due this week but not completed. Recommend whether to carry forward, delegate, or drop.
+2. **Carryover items** — Identify tasks that were due this week but not completed. Recommend: carry forward, delegate, or drop.
 
-3. **Next Week Calendar**: Fetch next week's calendar events via Google Calendar MCP. Highlight key meetings and any prep needed.
+3. **Next week calendar** — Use `gws` CLI:
+   ```bash
+   gws calendar events list --params '{"calendarId": "primary", "timeMin": "NEXT_MON_DATET00:00:00-05:00", "timeMax": "NEXT_FRI_DATET23:59:59-05:00", "singleEvents": true, "orderBy": "startTime"}'
+   ```
+   Highlight key meetings and prep needed.
 
-4. **Goal Progress**: Review ~/Work/shared/goals.yaml. Update progress on key results where applicable. Flag any OKRs at risk.
+4. **Goal progress** — Read ~/Work/shared/goals.yaml. Update key results where progress occurred. Flag any OKRs at risk with specific reasons.
 
-5. **Email Follow-ups**: Check for sent emails awaiting responses longer than 3 days.
+5. **Stale follow-ups** — Search sent emails for unreplied threads:
+   ```bash
+   gws gmail users messages list --params '{"userId": "me", "q": "in:sent newer_than:14d"}'
+   ```
+   Flag any sent 3+ days ago with no response.
 
-6. **Action Items**: Generate a prioritized task list for next week.
+6. **Next week priorities** — Generate a ranked priority list for next week based on deadlines, OKR impact, and momentum.
+
+7. **Save context** — Update Memory MCP with key decisions and status changes from the review. Update tasks.yaml with carryover items and new priorities.
 
 ## Output Format
 
 ### Weekly Review — Week of [Date]
 
-**Completed This Week**
+**Wins This Week**
 - NRG Bloom: [items]
 - Coldstorm: [items]
-- Personal: [items]
 
 **Carried Over** (needs attention)
-- [Task]: [reason for delay] → [recommendation]
+- [Task]: [reason] -> [recommendation]
 
 **Next Week Preview**
 | Day | Key Events |
 |-----|-----------|
 | Mon | [events] |
-| ... | ... |
 
 **OKR Check-in**
-- [Objective]: [status] — [notes]
+- [Objective]: [status] — [what changed]
 
-**Awaiting Response**
-- [Person]: [subject] — sent [date]
+**Awaiting Response** (3+ days)
+| Sent To | Subject | Days Waiting | Action |
+|---------|---------|-------------|--------|
 
 **Next Week Priorities**
-1. [Priority item]
-2. [Priority item]
-3. [Priority item]
+1. [Priority — why it matters]
+2. [Priority — why it matters]
+3. [Priority — why it matters]

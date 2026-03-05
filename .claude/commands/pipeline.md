@@ -1,21 +1,32 @@
 ---
 name: pipeline
-description: Business development pipeline status — all active deals, prospects, and partnership opportunities
+description: >-
+  Business development pipeline status — all active deals, prospects, and
+  partnership opportunities across NRG Bloom and Coldstorm AI.
 user-invocable: true
 ---
 
-# Pipeline Review
+Trigger the pipeline-tracker skill to review all active business development opportunities.
 
-Trigger the pipeline-tracker skill to review all active business development opportunities across NRG Bloom and Coldstorm AI.
+## Execution
 
-## Process
-1. Run the pipeline-tracker skill
-2. If ~/Work/shared/pipeline.yaml doesn't exist yet, build it from tasks.yaml and known deals
-3. Check Gmail for any new business inquiries or responses from prospects
-4. Present the pipeline dashboard with recommended next actions
-5. Cross-reference goals.yaml — are we on track for partnership/client key results?
+1. **Load pipeline** — Read ~/Work/shared/pipeline.yaml. If it does not exist, build it from tasks.yaml and known deals.
 
-## Additional Context
-- For NRG Bloom: focus on energy partnerships (Oando, future prospects), not the TON dispute (that's litigation)
-- For Coldstorm: any client inquiries, consulting opportunities, or inbound interest
-- Suggest new prospects based on market research and existing relationships
+2. **Check email** — Use `gws` CLI to search for responses from pipeline contacts:
+   ```bash
+   gws gmail users messages list --params '{"userId": "me", "q": "is:unread from:oandoenergy.com OR from:eleas OR from:chioma"}'
+   ```
+   Also check for new business inquiries.
+
+3. **Cross-reference tasks** — Ensure pipeline next_actions and tasks.yaml are aligned.
+
+4. **Flag stale deals** — Any deal with no contact in 7+ days gets flagged with recommended action.
+
+5. **OKR check** — Cross-reference goals.yaml for partnership/client key results. Surface gaps.
+
+6. **Present dashboard** — Follow the pipeline-tracker skill output format.
+
+## Context
+- NRG Bloom: focus on energy partnerships (Oando, future prospects)
+- Coldstorm: client inquiries, consulting opportunities
+- Suggest new prospects based on market research

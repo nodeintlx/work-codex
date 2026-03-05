@@ -4,7 +4,7 @@
 # Statuses: todo, in_progress, blocked, done
 # Company: nrg_bloom, coldstorm, personal, both
 
-last_updated: "2026-03-02"
+last_updated: "2026-03-04"
 
 tasks:
   # --- COMPLETED TODAY (Feb 25) ---
@@ -55,12 +55,12 @@ tasks:
 
   # --- PENDING ---
   - id: 6
-    title: "Finalize position paper for March 5 exchange"
+    title: "Finalize position paper for March 5 simultaneous exchange"
     company: nrg_bloom
     priority: P0
     status: in_progress
     due: "2026-03-05"
-    notes: "UPDATED Mar 2. NRG Bloom submitting Position Summary early on March 3 (Dayo confirmed). TON submitting by COB March 5 MST (Marley confirmed on record). McCarthy Tétrault correspondence being annexed as exhibit. Expenditure ledger, damages analysis, and Alberta litigation research all completed to support position. 5-page constraint from mediator."
+    notes: "CORRECTED Mar 4. Both parties agreed on March 5 for simultaneous exchange of position papers. McCarthy Tétrault correspondence being annexed as exhibit. Expenditure ledger, damages analysis, and Alberta litigation research all completed to support position. 5-page constraint from mediator."
     created: "2026-02-25"
 
   - id: 7
@@ -174,21 +174,21 @@ tasks:
     created: "2026-02-25"
 
   - id: 18
-    title: "Futurpreneur application — in progress"
+    title: "Futurpreneur application — providing additional info"
     company: nrg_bloom
     priority: P1
     status: in_progress
     due: "2026-03-15"
-    notes: "Application submitted Feb 25. Up to $75K loan + $40K follow-on + mentorship. Black Entrepreneur Startup Program. Awaiting response / next steps from Futurpreneur."
+    notes: "UPDATED Mar 4. Application submitted Feb 25. Providing additional info as requested. Up to $75K loan + $40K follow-on + mentorship. Black Entrepreneur Startup Program."
     created: "2026-02-25"
 
   - id: 19
-    title: "Confirm with Leyton Canada and Ayming Canada — SR&ED contingency"
+    title: "Call Leyton and Ayming — SR&ED specialist review"
     company: nrg_bloom
     priority: P0
-    status: todo
-    due: "2026-03-01"
-    notes: "OVERDUE. Leyton: (514) 767-1227 | Ayming: (514) 931-0166. Both Montreal-based, contingency fee, handle SR&ED + Quebec CRIC. Free initial consultation. URGENT: FY2024 SR&ED deadline is June 30, 2026 (~4 months). Also confirm NRG Bloom's fiscal year-end — if not Dec 31, may have more runway."
+    status: in_progress
+    due: "2026-03-04"
+    notes: "UPDATED Mar 4. OVERDUE — call TODAY. Call scripts prepared at ~/Work/nrg-bloom/projects/funding/sred-call-scripts-2026-03-04.md. NEW INSIGHT: IQ offers bridge financing on tax credits — SR&ED refund can be accessed within weeks of filing, not 6 months. This makes specialist engagement even more valuable. Leyton: (514) 767-1227 | Ayming: (514) 931-0166."
     created: "2026-02-25"
 
   # --- ACCOUNTING / TAX FILING ---
@@ -221,21 +221,21 @@ tasks:
     created: "2026-03-02"
 
   - id: 24
-    title: "NRG Bloom position summary — Dayo submitting March 3"
+    title: "Position paper simultaneous exchange — March 5"
     company: nrg_bloom
     priority: P0
     status: in_progress
-    due: "2026-03-03"
-    notes: "Dayo confirmed Mar 2 that NRG Bloom will submit Position Summary on Tuesday March 3 by COB. McCarthy Tétrault correspondence annexed as exhibit. Expenditure ledger and damages analysis support quantum position."
+    due: "2026-03-05"
+    notes: "CORRECTED Mar 4. Both NRG Bloom and TON agreed on March 5 for simultaneous exchange of position papers. McCarthy Tétrault correspondence annexed as NRG Bloom exhibit. Expenditure ledger and damages analysis support quantum position. Review TON's paper immediately upon receipt for counter-arguments, quantum position, and evidence gaps."
     created: "2026-03-02"
 
   - id: 25
     title: "Await TON position summary — due March 5"
     company: nrg_bloom
     priority: P0
-    status: in_progress
+    status: done
     due: "2026-03-05"
-    notes: "Marley confirmed Mar 2 that TON will submit by COB Thursday March 5 MST. NRG Bloom will have submitted 2 days earlier — strategic advantage. Review TON's paper immediately upon receipt for counter-arguments, quantum position, and evidence gaps."
+    notes: "MERGED into Task 24. Both parties exchange simultaneously on March 5."
     created: "2026-03-02"
 
   - id: 26
@@ -282,3 +282,103 @@ tasks:
     due: "2026-03-05"
     notes: "Comprehensive brief for Friday March 6 10am ET call with Sarit Batner. Must cover: (1) case summary + timeline, (2) 5 legal theories from Alberta litigation analysis, (3) Phoenix Trading prior lawsuit as pattern-of-conduct evidence, (4) key questions for Sarit — limitation period, arbitration clause, protective filing, admissibility of similar fact evidence, punitive damages threshold, fee structure. Consolidate all analysis into a single call prep document."
     created: "2026-03-02"
+
+  # --- FUNDING SPRINT (Mar 4) ---
+  - id: 31
+    title: "DROPPED — BDC Inclusive Entrepreneurship Loan"
+    company: nrg_bloom
+    priority: P3
+    status: done
+    due: "2026-03-04"
+    notes: "DROPPED Mar 4. BDC ties to personal credit — not viable. Pivoting to grants-only strategy."
+    created: "2026-03-04"
+
+  - id: 32
+    title: "Apply — FACE Black Entrepreneurship Loan Fund (up to $250K)"
+    company: nrg_bloom
+    priority: P0
+    status: in_progress
+    due: "2026-03-07"
+    notes: "Apply at facecoalition.com/en/loans or email info@facecoalition.com. Up to $250K, startups eligible, no revenue minimum."
+    created: "2026-03-04"
+
+  - id: 33
+    title: "Call Afro-Entrepreneurs Fund (Quebec)"
+    company: nrg_bloom
+    priority: P0
+    status: in_progress
+    due: "2026-03-07"
+    notes: "Call 1-888-525-2075. Quebec-specific program for Black entrepreneurs, $50K-$500K."
+    created: "2026-03-04"
+
+  - id: 34
+    title: "Call Innovation Canada (Clean Growth Hub replacement) — 1-833-201-4358"
+    company: nrg_bloom
+    priority: P0
+    status: todo
+    due: "2026-03-04"
+    notes: "UPDATED Mar 4. Clean Growth Hub is DEAD (shutting down Mar 31, no new clients). Innovation Canada is the live replacement — same department (ISED), 24-hour response time. Call 1-833-201-4358. They assign an Innovation Advisor who maps you to all eligible programs + warm intros to program officers. Also email Clean Growth Hub for a referral before shutdown: cleangrowthhub-carrefourdelacroissancepropre@ised-isde.gc.ca. Full guide: ~/Work/knowledge/clean-growth-hub-and-innovation-canada-guide-2026-03-04.md"
+    created: "2026-03-04"
+
+  - id: 35
+    title: "Call NRC IRAP — get assigned a free Industrial Technology Advisor"
+    company: nrg_bloom
+    priority: P0
+    status: todo
+    due: "2026-03-07"
+    notes: "Call 1-877-994-4727. Up to $10M (typical $100K-$500K) NON-REPAYABLE. April 1 = new fiscal year = fresh budget. The ITA is free and proactively finds ALL programs you qualify for. One call unlocks multiple funding streams."
+    created: "2026-03-04"
+
+  - id: 36
+    title: "Apply — District 3 (Concordia) free accelerator + $100K AWS credits"
+    company: nrg_bloom
+    priority: P0
+    status: todo
+    due: "2026-03-07"
+    notes: "Free accelerator, no equity, no fees, IP stays yours. Open to public — no Concordia affiliation needed. HIDDEN BENEFIT: District 3 is an AWS Activate Provider — admission unlocks $100K in AWS credits. Apply at district3.co/services."
+    created: "2026-03-04"
+
+  - id: 37
+    title: "Apply — Cloud credits (AWS + Google + Microsoft) — up to $500K+ free"
+    company: both
+    priority: P0
+    status: todo
+    due: "2026-03-07"
+    notes: "Stack all three: (1) AWS Activate Founders $1K immediate at aws.amazon.com/startups/credits, (2) Google Cloud for Startups $100K-$350K at cloud.google.com/startup — use Coldstorm AI (AI framing = higher tier), (3) Microsoft for Startups $5K-$150K at foundershub.startups.microsoft.com. Apply to all — separate programs, can stack."
+    created: "2026-03-04"
+
+  - id: 38
+    title: "Visit PME MTL hub — clean tech grant ($60K) + young business ($15K)"
+    company: nrg_bloom
+    priority: P1
+    status: todo
+    due: "2026-03-10"
+    notes: "NON-REPAYABLE grants. Clean tech adoption: up to $60K (75% of costs). Young business: up to $15K. Bring business plan + 2-year financial forecasts. URL: pmemtl.com/en"
+    created: "2026-03-04"
+
+  - id: 39
+    title: "Contact ECO Canada — DS4Y program (government pays intern salary)"
+    company: nrg_bloom
+    priority: P1
+    status: todo
+    due: "2026-03-14"
+    notes: "Digital Skills for Youth: government reimburses up to $30K to hire a recent grad. Through ECO Canada (clean tech focus): up to $18K reimbursed (80% of costs). Apply BEFORE hiring. URL: eco.ca. Most entrepreneurs don't know this exists."
+    created: "2026-03-04"
+
+  - id: 40
+    title: "Explore Scale AI Training Grant (up to $1M) for Coldstorm AI"
+    company: coldstorm
+    priority: P1
+    status: todo
+    due: "2026-03-14"
+    notes: "NON-REPAYABLE. Up to $1M for custom AI training. Rolling applications, no deadline. Coldstorm AI training delivery = direct fit. Join Thursday 3pm ET info session at scaleai.ca/projects/. Requires Quebec NEQ number."
+    created: "2026-03-04"
+
+  - id: 41
+    title: "Find alternative SR&ED specialist — Leyton no answer, Ayming didn't understand"
+    company: nrg_bloom
+    priority: P0
+    status: todo
+    due: "2026-03-07"
+    notes: "Leyton no answer, Ayming didn't understand. Try other Montreal SR&ED firms: G6 Consulting, Northbridge Consultants, RDBASE. SR&ED + CRIC combined = up to 65% refund. IQ bridge financing gets cash within weeks of filing. Contingency fee = zero risk."
+    created: "2026-03-04"
