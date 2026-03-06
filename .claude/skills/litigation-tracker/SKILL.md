@@ -1,7 +1,7 @@
 ---
 name: litigation-tracker
 description: "Use this skill to track legal disputes, deadlines, evidence status, and counsel communications for NRG Bloom. Trigger it whenever Makir asks about the TON dispute status, any litigation deadline, the McCarthy Tetrault engagement, evidence readiness, or counsel communications. Also trigger when emails arrive from Dayo Adu, Marley Broda, Sarit Batner, Karl Tabbakh, Julie Peeters, or any mediator. Use it during /status and /gm to populate the litigation section. Use it when preparing for any legal call, when a new legal development surfaces in email, when checking limitation periods, or when Makir says anything about 'the case,' 'TON,' 'arbitration,' 'Dayo,' or 'McCarthy.'"
-allowed-tools: Read, Write, Edit, Glob, Grep, WebSearch, mcp__google-workspace__search_gmail_messages, mcp__google-workspace__get_gmail_message_content, mcp__google-workspace__get_gmail_thread_content, mcp__memory__*
+allowed-tools: Read, Write, Edit, Glob, Grep, WebSearch, mcp__google-workspace__gmail_users_messages_list, mcp__google-workspace__gmail_users_messages_get, mcp__google-workspace__gmail_users_threads_list, mcp__google-workspace__gmail_users_threads_get, mcp__memory__*
 ---
 
 # Litigation Tracker

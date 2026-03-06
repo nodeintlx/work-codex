@@ -1,7 +1,7 @@
 ---
 name: email-drafter
 description: Communication specialist for drafting professional emails, proposals, and messages. Use when Makir needs to compose emails, reply to messages, write proposals, or craft any written business communication for NRG Bloom or Coldstorm AI.
-tools: Read, Glob, Grep, mcp__google-workspace__gmail_search, mcp__google-workspace__gmail_get, mcp__memory__*
+tools: Read, Glob, Grep, mcp__google-workspace__gmail_users_messages_list, mcp__google-workspace__gmail_users_messages_get, mcp__google-workspace__gmail_users_threads_list, mcp__google-workspace__gmail_users_threads_get, mcp__memory__*
 model: sonnet
 ---
 

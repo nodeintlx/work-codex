@@ -1,7 +1,7 @@
 ---
 name: settlement-tracker
 description: "Use this skill to track settlement negotiations -- offers, counter-offers, concessions, red lines, and negotiation dynamics across rounds. Trigger it whenever Makir asks about settlement status, the current offer gap, walk-away position, negotiation history, or concession strategy. Also trigger when settlement-related emails arrive from Dayo Adu, Marley Broda, TON counsel, or the mediator. Use during /status to populate the negotiation section. Use when Makir says 'where are we on settlement,' 'what did they offer,' 'should we accept,' 'update the tracker,' or when any new offer, counter-offer, or mediator proposal comes in. Also use when preparing for negotiation sessions to review what concessions remain available."
-allowed-tools: Read, Write, Edit, Glob, Grep, mcp__google-workspace__search_gmail_messages, mcp__google-workspace__get_gmail_message_content, mcp__google-workspace__get_gmail_thread_content, mcp__memory__*
+allowed-tools: Read, Write, Edit, Glob, Grep, mcp__google-workspace__gmail_users_messages_list, mcp__google-workspace__gmail_users_messages_get, mcp__google-workspace__gmail_users_threads_list, mcp__google-workspace__gmail_users_threads_get, mcp__memory__*
 ---
 
 # Settlement Negotiation Tracker

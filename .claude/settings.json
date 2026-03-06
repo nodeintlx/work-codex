@@ -6,46 +6,48 @@
       "Grep",
       "WebSearch",
       "WebFetch",
-      "mcp__google-workspace__search_gmail_messages",
-      "mcp__google-workspace__get_gmail_message_content",
-      "mcp__google-workspace__get_gmail_messages_content_batch",
-      "mcp__google-workspace__get_gmail_thread_content",
-      "mcp__google-workspace__get_gmail_attachment_content",
-      "mcp__google-workspace__list_gmail_labels",
-      "mcp__google-workspace__list_gmail_filters",
-      "mcp__google-workspace__get_events",
-      "mcp__google-workspace__list_calendars",
-      "mcp__google-workspace__query_freebusy",
-      "mcp__google-workspace__search_drive_files",
-      "mcp__google-workspace__get_drive_file_content",
-      "mcp__google-workspace__get_drive_file_download_url",
-      "mcp__google-workspace__list_drive_items",
-      "mcp__google-workspace__get_drive_shareable_link",
-      "mcp__google-workspace__get_doc_content",
-      "mcp__google-workspace__get_doc_as_markdown",
-      "mcp__google-workspace__search_docs",
-      "mcp__google-workspace__list_docs_in_folder",
-      "mcp__google-workspace__export_doc_to_pdf",
-      "mcp__google-workspace__read_sheet_values",
-      "mcp__google-workspace__get_spreadsheet_info",
-      "mcp__google-workspace__list_spreadsheets",
-      "mcp__google-workspace__search_contacts",
-      "mcp__google-workspace__get_contact",
-      "mcp__google-workspace__list_contacts",
-      "mcp__google-workspace__get_task",
-      "mcp__google-workspace__list_tasks",
-      "mcp__google-workspace__get_form",
-      "mcp__google-workspace__get_presentation",
+      "mcp__google-workspace__gmail_users_messages_list",
+      "mcp__google-workspace__gmail_users_messages_get",
+      "mcp__google-workspace__gmail_users_messages_attachments_get",
+      "mcp__google-workspace__gmail_users_threads_list",
+      "mcp__google-workspace__gmail_users_threads_get",
+      "mcp__google-workspace__gmail_users_labels_list",
+      "mcp__google-workspace__gmail_users_settings_filters_list",
+      "mcp__google-workspace__gmail_users_getProfile",
+      "mcp__google-workspace__gmail_users_history_list",
+      "mcp__google-workspace__calendar_events_list",
+      "mcp__google-workspace__calendar_events_get",
+      "mcp__google-workspace__calendar_calendarList_list",
+      "mcp__google-workspace__calendar_calendarList_get",
+      "mcp__google-workspace__calendar_freebusy_query",
+      "mcp__google-workspace__drive_files_list",
+      "mcp__google-workspace__drive_files_get",
+      "mcp__google-workspace__drive_files_export",
+      "mcp__google-workspace__drive_files_download",
+      "mcp__google-workspace__drive_about_get",
+      "mcp__google-workspace__drive_drives_list",
+      "mcp__google-workspace__drive_changes_list",
+      "mcp__google-workspace__docs_documents_get",
+      "mcp__google-workspace__sheets_spreadsheets_get",
+      "mcp__google-workspace__sheets_spreadsheets_values_get",
+      "mcp__google-workspace__sheets_spreadsheets_values_batchGet",
       "mcp__filesystem__read_file",
+      "mcp__filesystem__read_text_file",
+      "mcp__filesystem__read_multiple_files",
       "mcp__filesystem__list_directory",
+      "mcp__filesystem__list_directory_with_sizes",
       "mcp__filesystem__search_files",
       "mcp__filesystem__directory_tree",
+      "mcp__filesystem__get_file_info",
       "mcp__memory__*",
       "mcp__brave-search__*",
       "mcp__tavily__*"
     ],
     "deny": [
-      "mcp__google-workspace__send_gmail_message",
+      "mcp__google-workspace__gmail_users_messages_send",
+      "mcp__google-workspace__gmail_users_messages_delete",
+      "mcp__google-workspace__gmail_users_messages_batchDelete",
+      "mcp__google-workspace__gmail_users_threads_delete",
       "Bash(sudo:*)",
       "Bash(rm -rf:*)",
       "Bash(chmod 777:*)",
@@ -71,7 +73,7 @@
         ]
       },
       {
-        "matcher": "mcp__google-workspace__draft_gmail_message",
+        "matcher": "mcp__google-workspace__gmail_users_drafts_create",
         "hooks": [
           {
             "type": "command",
@@ -80,7 +82,43 @@
         ]
       },
       {
-        "matcher": "mcp__google-workspace__manage_event",
+        "matcher": "mcp__google-workspace__gmail_users_drafts_update",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"ask\",\"permissionDecisionReason\":\"Email draft update requires approval\"}}'"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__google-workspace__gmail_users_drafts_send",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"ask\",\"permissionDecisionReason\":\"Sending email draft requires approval\"}}'"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__google-workspace__gmail_users_messages_send",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"deny\",\"permissionDecisionReason\":\"Direct email sending is blocked — use drafts workflow\"}}'"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__google-workspace__calendar_events_insert",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"ask\",\"permissionDecisionReason\":\"Calendar event creation requires approval\"}}'"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__google-workspace__calendar_events_update",
         "hooks": [
           {
             "type": "command",
@@ -89,7 +127,16 @@
         ]
       },
       {
-        "matcher": "mcp__google-workspace__manage_drive_access",
+        "matcher": "mcp__google-workspace__calendar_events_delete",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"ask\",\"permissionDecisionReason\":\"Calendar event deletion requires approval\"}}'"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__google-workspace__drive_permissions_create",
         "hooks": [
           {
             "type": "command",
@@ -98,11 +145,38 @@
         ]
       },
       {
-        "matcher": "mcp__google-workspace__set_drive_file_permissions",
+        "matcher": "mcp__google-workspace__drive_permissions_update",
         "hooks": [
           {
             "type": "command",
             "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"ask\",\"permissionDecisionReason\":\"Drive permission change requires approval\"}}'"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__google-workspace__drive_permissions_delete",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"ask\",\"permissionDecisionReason\":\"Drive permission removal requires approval\"}}'"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__google-workspace__drive_files_delete",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"ask\",\"permissionDecisionReason\":\"Drive file deletion requires approval\"}}'"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__google-workspace__drive_files_update",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"ask\",\"permissionDecisionReason\":\"Drive file modification requires approval\"}}'"
           }
         ]
       }

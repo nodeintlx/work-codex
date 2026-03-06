@@ -1,6 +1,7 @@
 #!/bin/bash
 # PreToolUse hook: validates tool calls before execution
 # Blocks destructive commands and forces confirmation on outbound actions
+# Updated 2026-03-05: Aligned with gws MCP tool names (gmail_users_*, calendar_events_*, drive_*)
 
 # Read tool call data from stdin into variable
 INPUT=$(cat)
@@ -64,16 +65,69 @@ if tool_name in ('Read', 'Edit', 'Write'):
             }))
             sys.exit(0)
 
-# --- Force confirmation on MCP outbound actions ---
-if 'gmail_send' in tool_name or 'send_gmail_message' in tool_name or 'draft_gmail_message' in tool_name or 'gmail_create_draft' in tool_name or 'manage_event' in tool_name or 'calendar_create_event' in tool_name or 'send_message' in tool_name or 'manage_drive_access' in tool_name or 'set_drive_file_permissions' in tool_name or 'modify_gmail_message_labels' in tool_name or 'manage_gmail_filter' in tool_name:
-    print(json.dumps({
-        'hookSpecificOutput': {
-            'hookEventName': 'PreToolUse',
-            'permissionDecision': 'ask',
-            'permissionDecisionReason': \"Outbound action requires Makir's approval\"
-        }
-    }))
-    sys.exit(0)
+# --- Force confirmation on MCP outbound actions (gws MCP tool names) ---
+outbound_patterns = [
+    # Gmail write operations
+    'gmail_users_messages_send',
+    'gmail_users_drafts_create',
+    'gmail_users_drafts_update',
+    'gmail_users_drafts_send',
+    'gmail_users_messages_modify',
+    'gmail_users_messages_trash',
+    'gmail_users_messages_delete',
+    'gmail_users_messages_batchDelete',
+    'gmail_users_messages_batchModify',
+    'gmail_users_messages_import',
+    'gmail_users_messages_insert',
+    'gmail_users_labels_create',
+    'gmail_users_labels_update',
+    'gmail_users_labels_delete',
+    'gmail_users_settings_filters_create',
+    'gmail_users_settings_filters_delete',
+    # Calendar write operations
+    'calendar_events_insert',
+    'calendar_events_update',
+    'calendar_events_delete',
+    'calendar_events_move',
+    # Drive write operations
+    'drive_permissions_create',
+    'drive_permissions_update',
+    'drive_permissions_delete',
+    'drive_files_delete',
+    'drive_files_update',
+    'drive_files_create',
+    # Docs write operations
+    'docs_documents_batchUpdate',
+    'docs_documents_create',
+    # Sheets write operations
+    'sheets_spreadsheets_batchUpdate',
+    'sheets_spreadsheets_values_update',
+    'sheets_spreadsheets_values_append',
+    'sheets_spreadsheets_values_clear',
+    'sheets_spreadsheets_values_batchUpdate',
+    'sheets_spreadsheets_values_batchClear',
+    # Legacy tool names (workspace-mcp fallback)
+    'send_gmail_message',
+    'draft_gmail_message',
+    'gmail_create_draft',
+    'manage_event',
+    'calendar_create_event',
+    'manage_drive_access',
+    'set_drive_file_permissions',
+    'modify_gmail_message_labels',
+    'manage_gmail_filter',
+]
+
+for pattern in outbound_patterns:
+    if pattern in tool_name:
+        print(json.dumps({
+            'hookSpecificOutput': {
+                'hookEventName': 'PreToolUse',
+                'permissionDecision': 'ask',
+                'permissionDecisionReason': \"Outbound action requires Makir's approval\"
+            }
+        }))
+        sys.exit(0)
 
 # Allow everything else
 sys.exit(0)

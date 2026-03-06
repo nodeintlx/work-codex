@@ -11,7 +11,7 @@ description: >-
   name comes up in conversation that does not have a contact file yet, suggest
   creating one — relationship context compounds over time and the sooner a
   record exists, the more useful it becomes.
-allowed-tools: Read, Write, Glob, Grep, WebSearch, mcp__google-workspace__search_gmail_messages, mcp__google-workspace__get_gmail_message_content, mcp__memory__*
+allowed-tools: Read, Write, Glob, Grep, WebSearch, mcp__google-workspace__gmail_users_messages_list, mcp__google-workspace__gmail_users_messages_get, mcp__google-workspace__gmail_users_threads_get, mcp__memory__*
 ---
 
 # Contact Enrichment

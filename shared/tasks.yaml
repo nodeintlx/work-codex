@@ -4,7 +4,7 @@
 # Statuses: todo, in_progress, blocked, done
 # Company: nrg_bloom, coldstorm, personal, both
 
-last_updated: "2026-03-04"
+last_updated: "2026-03-05"
 
 tasks:
   # --- COMPLETED TODAY (Feb 25) ---
@@ -278,9 +278,9 @@ tasks:
     title: "Prepare McCarthy Tétrault call brief — March 6"
     company: nrg_bloom
     priority: P0
-    status: todo
+    status: done
     due: "2026-03-05"
-    notes: "Comprehensive brief for Friday March 6 10am ET call with Sarit Batner. Must cover: (1) case summary + timeline, (2) 5 legal theories from Alberta litigation analysis, (3) Phoenix Trading prior lawsuit as pattern-of-conduct evidence, (4) key questions for Sarit — limitation period, arbitration clause, protective filing, admissibility of similar fact evidence, punitive damages threshold, fee structure. Consolidate all analysis into a single call prep document."
+    notes: "COMPLETED Mar 5 (night). Comprehensive 17-section brief at ~/Work/nrg-bloom/litigation-ton/mccarthy-call-brief-2026-03-06.md. Covers: case summary, 4 agreements, 5 legal theories, TON's defenses (from their position paper received tonight), damages quantification, Phoenix Trading analysis, limitation period audit, arbitration clause scope, protective filing strategy, fee structure questions, evidence deployment tiers, genuine risks, 12 ranked priority questions, recommended 60-minute call flow, and pre-call action items. Updated with TON's $10K offer and Dayo's rejection."
     created: "2026-03-02"
 
   # --- FUNDING SPRINT (Mar 4) ---

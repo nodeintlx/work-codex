@@ -48,16 +48,19 @@ gws gmail users threads get --params '{"userId": "me", "id": "THREAD_ID"}'
 
 # List labels
 gws gmail users labels list --params '{"userId": "me"}'
+
+# Get user profile (message count, etc.)
+gws gmail users getProfile --params '{"userId": "me"}'
 ```
 
 ### Calendar
 
 ```bash
-# Get today's events (replace DATE with YYYY-MM-DD)
-gws calendar events list --params '{"calendarId": "primary", "timeMin": "DATE T00:00:00-05:00", "timeMax": "DATET23:59:59-05:00", "singleEvents": true, "orderBy": "startTime"}'
+# Get today's events (replace YYYY-MM-DD with actual date)
+gws calendar events list --params '{"calendarId": "primary", "timeMin": "YYYY-MM-DDT00:00:00-05:00", "timeMax": "YYYY-MM-DDT23:59:59-05:00", "singleEvents": true, "orderBy": "startTime"}'
 
-# Get next 7 days of events
-gws calendar events list --params '{"calendarId": "primary", "timeMin": "START_DATET00:00:00-05:00", "timeMax": "END_DATET23:59:59-05:00", "singleEvents": true, "orderBy": "startTime"}'
+# Get next 7 days of events (replace START and END with YYYY-MM-DD)
+gws calendar events list --params '{"calendarId": "primary", "timeMin": "START-DATET00:00:00-05:00", "timeMax": "END-DATET23:59:59-05:00", "singleEvents": true, "orderBy": "startTime"}'
 
 # Get a specific event
 gws calendar events get --params '{"calendarId": "primary", "eventId": "EVENT_ID"}'
@@ -86,6 +89,9 @@ gws drive files get --params '{"fileId": "FILE_ID", "alt": "media"}' --output ./
 
 # List shared drives
 gws drive drives list
+
+# Get account info (storage quota)
+gws drive about get --params '{"fields": "user,storageQuota"}'
 ```
 
 ### Docs
@@ -98,14 +104,20 @@ gws docs documents get --params '{"documentId": "DOC_ID"}'
 ### Sheets
 
 ```bash
-# Read spreadsheet values
-gws sheets spreadsheets values get --params '{"spreadsheetId": "SHEET_ID", "range": "Sheet1!A1:Z100"}'
+# Read spreadsheet values — use heredoc to avoid shell escaping issues with '!'
+gws sheets spreadsheets values get --params "$(cat <<'EOF'
+{"spreadsheetId": "SHEET_ID", "range": "Sheet1!A1:Z100"}
+EOF
+)"
 
-# Get spreadsheet metadata
+# Get spreadsheet metadata (no escaping issue)
 gws sheets spreadsheets get --params '{"spreadsheetId": "SHEET_ID"}'
+
+# Create a spreadsheet (use --json for request body)
+gws sheets spreadsheets create --json '{"properties": {"title": "My Spreadsheet"}}'
 ```
 
-### Contacts
+### Contacts (People API)
 
 ```bash
 # List contacts
@@ -118,14 +130,38 @@ gws people people searchContacts --params '{"query": "Dayo", "readMask": "names,
 ## Output Handling
 
 ```bash
-# Default output is JSON — pipe through jq for extraction
-gws gmail users messages list --params '{"userId": "me", "q": "is:unread", "maxResults": 5}' | jq '.messages[].id'
+# Default output is JSON — pipe through python3 for extraction (jq not installed)
+gws gmail users messages list --params '{"userId": "me", "q": "is:unread", "maxResults": 5}' | python3 -c "import sys,json; data=json.load(sys.stdin); [print(m['id']) for m in data.get('messages',[])]"
+
+# Extract specific fields from a message
+gws gmail users messages get --params '{"userId": "me", "id": "MSG_ID", "format": "metadata"}' | python3 -c "import sys,json; data=json.load(sys.stdin); print(data.get('snippet',''))"
 
 # Table format for human-readable output
 gws drive files list --params '{"pageSize": 5}' --format table
 
-# Auto-paginate for bulk operations
-gws gmail users messages list --params '{"userId": "me", "q": "is:unread"}' --page-all | jq -s '.[].messages[]'
+# Auto-paginate for bulk operations (outputs NDJSON — one JSON object per page)
+gws gmail users messages list --params '{"userId": "me", "q": "is:unread"}' --page-all | python3 -c "
+import sys, json
+msgs = []
+for line in sys.stdin:
+    line = line.strip()
+    if line:
+        page = json.loads(line)
+        msgs.extend(page.get('messages', []))
+print(json.dumps(msgs, indent=2))
+"
+```
+
+## Write Operations — Syntax Note
+
+For write operations, use `--json` (not `--body`) to pass the request body:
+
+```bash
+# Create a spreadsheet
+gws sheets spreadsheets create --json '{"properties": {"title": "Test Sheet"}}'
+
+# Delete a file
+gws drive files delete --params '{"fileId": "FILE_ID"}'
 ```
 
 ## Error Handling

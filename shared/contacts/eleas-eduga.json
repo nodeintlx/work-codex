@@ -2,12 +2,33 @@
   "name": "Eleas Eduga",
   "email": "Eleas.Eduga@oandoenergyresources.com",
   "company": "Oando Energy Resources",
+  "role": "Gas Business, OER",
   "industry": "Oil & Gas",
   "location": "Lagos, Nigeria",
-  "relationship": "prospect",
-  "context": "CC'd on NRG Bloom modular data center proposal. Feb 2026.",
-  "related_company": "nrg_bloom",
-  "tags": ["oando", "nigeria", "prospect"],
+  "relationship": "NRG Bloom prospect",
+  "tags": ["oando", "oer", "gas-business", "nigeria", "prospect", "naoc-integration"],
   "first_contact": "2026-02-25",
-  "last_contact": "2026-02-25"
+  "last_contact": "2026-03-05",
+  "next_follow_up": "2026-03-06",
+  "interaction_history": [
+    {
+      "date": "2026-02-25",
+      "type": "email",
+      "summary": "CC'd on initial NRG Bloom proposal to Chioma Anyamele"
+    },
+    {
+      "date": "2026-02-26",
+      "type": "email",
+      "summary": "Chioma routed to Eleas as Gas Business contact to set up engagement call"
+    },
+    {
+      "date": "2026-03-05",
+      "type": "email",
+      "summary": "Eleas sent Teams meeting invite for March 6 engagement call. He organized it — strong ownership signal."
+    }
+  ],
+  "background": "Likely joined OER as part of the NAOC personnel integration (August 2024). Research indicates 'Comrade Eleas Eduga' served as National Financial Secretary of PENGASSAN (petroleum sector union) from NAOC base. Internal operator, not public-facing executive. No LinkedIn profile found.",
+  "notes": "Key evaluator for the NRG Bloom proposal. Chioma specifically routed to Gas Business (not legal, not BD generalists) — he's assessing whether NRG Bloom's gas offtake model is technically and commercially workable at the field level. Speak his language: mmscf/d, BTU, PAFG, Gas Connection Agreement.",
+  "decision_role": "technical_evaluator",
+  "related_company": "nrg_bloom"
 }
