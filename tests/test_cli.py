@@ -111,6 +111,30 @@ leverage_points:
     impact: "Critical"
 """
 
+MATTER_STATUS_YAML = """
+matter: "NRG Bloom Inc. v. TON Infrastructure Ltd."
+status: active
+phase: negotiation
+representation:
+  mode: self_directed_with_ai
+  canadian_counsel: paused
+  nigerian_counsel: active
+forum:
+  current_track: negotiation
+  canadian_path: under_evaluation
+filing:
+  filing_readiness: in_progress
+  limitation_status: not_expired
+  protective_filing_needed: to_be_determined
+settlement:
+  opening: "$727,000 USD"
+  floor: "$500,000 USD"
+next_actions:
+  - "Refresh filing strategy."
+notes: "Live posture overrides stale references."
+last_updated: "2026-03-07"
+"""
+
 
 class WorkCodexTests(unittest.TestCase):
     def setUp(self) -> None:
@@ -126,6 +150,7 @@ class WorkCodexTests(unittest.TestCase):
         (root / "knowledge" / "memory.jsonl").write_text(textwrap.dedent(MEMORY_JSONL).strip() + "\n", encoding="utf-8")
         (root / "nrg-bloom" / "litigation-ton" / "CONTEXT.md").write_text(textwrap.dedent(CONTEXT_MD).strip() + "\n", encoding="utf-8")
         (root / "nrg-bloom" / "litigation-ton" / "settlement-tracker.yaml").write_text(textwrap.dedent(SETTLEMENT_TRACKER_YAML).strip() + "\n", encoding="utf-8")
+        (root / "nrg-bloom" / "litigation-ton" / "matter-status.yaml").write_text(textwrap.dedent(MATTER_STATUS_YAML).strip() + "\n", encoding="utf-8")
         for filename in (
             "unified-chronology.md",
             "source-linked-evidence-index.md",
@@ -240,6 +265,46 @@ class WorkCodexTests(unittest.TestCase):
         self.assertIn("NRG Bloom Inc. v. TON Infrastructure Ltd.", output)
         self.assertIn("Negotiation Deadline", output)
         self.assertIn("Axxela email trail", output)
+        self.assertIn("self_directed_with_ai", output)
+        self.assertIn("Refresh filing strategy.", output)
+
+    def test_litigation_and_settlement_updates(self) -> None:
+        stdout = StringIO()
+        with patch("sys.stdout", stdout):
+            code = run(
+                [
+                    "--workspace",
+                    str(self.root),
+                    "litigation-update",
+                    "--set",
+                    "phase=filing_preparation",
+                    "--set",
+                    "forum.current_track=canadian_pre_filing",
+                    "--set-json",
+                    'next_actions=["Draft claim","Audit limitation"]',
+                ]
+            )
+        self.assertEqual(code, 0)
+        text = (self.root / "nrg-bloom" / "litigation-ton" / "matter-status.yaml").read_text(encoding="utf-8")
+        self.assertIn("phase: filing_preparation", text)
+        self.assertIn("current_track: canadian_pre_filing", text)
+        self.assertIn("- Draft claim", text)
+
+        stdout = StringIO()
+        with patch("sys.stdout", stdout):
+            code = run(
+                [
+                    "--workspace",
+                    str(self.root),
+                    "settlement-round-add",
+                    "--json",
+                    '{"date":"2026-03-07","type":"strategy_update","assessment":"Now self-directed","next_step":"Draft filing plan"}',
+                ]
+            )
+        self.assertEqual(code, 0)
+        tracker_text = (self.root / "nrg-bloom" / "litigation-ton" / "settlement-tracker.yaml").read_text(encoding="utf-8")
+        self.assertIn("type: strategy_update", tracker_text)
+        self.assertIn("next_step: Draft filing plan", tracker_text)
 
 
 if __name__ == "__main__":

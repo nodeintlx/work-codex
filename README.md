@@ -27,6 +27,7 @@ python3 -m work_codex.cli validate --workspace .
 python3 -m work_codex.cli status --workspace .
 python3 -m work_codex.cli followup --workspace .
 python3 -m work_codex.cli litigation-status --workspace .
+python3 -m work_codex.cli litigation-update --workspace . --set phase=filing_strategy
 ```
 
 What it does now:
@@ -36,6 +37,7 @@ What it does now:
 - reports overdue next actions in pipeline and funding
 - updates tasks, pipeline, funding, and memory through audited CLI commands
 - loads and validates the TON litigation matter from the live case folder
+- supports safe updates to litigation posture and settlement tracker state
 
 ## Repository Layout
 

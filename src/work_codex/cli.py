@@ -72,6 +72,20 @@ def _build_parser() -> argparse.ArgumentParser:
 
     litigation_validate = subparsers.add_parser("litigation-validate")
     litigation_validate.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+
+    litigation_update = subparsers.add_parser("litigation-update")
+    litigation_update.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    litigation_update.add_argument("--set", action="append", default=[])
+    litigation_update.add_argument("--set-json", action="append", default=[])
+
+    settlement_update = subparsers.add_parser("settlement-update")
+    settlement_update.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    settlement_update.add_argument("--set", action="append", default=[])
+    settlement_update.add_argument("--set-json", action="append", default=[])
+
+    settlement_round_add = subparsers.add_parser("settlement-round-add")
+    settlement_round_add.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    settlement_round_add.add_argument("--json", required=True, help="JSON object for a settlement round")
     return parser
 
 
@@ -186,7 +200,16 @@ def run(argv: list[str] | None = None) -> int:
             overdue, upcoming = litigation_deadlines(matter, today)
             print(matter.matter)
             print(f"status: {matter.status}")
+            print(f"phase: {matter.phase}")
             print(f"framework: {matter.mechanism}")
+            print(f"representation mode: {matter.representation_mode}")
+            print(f"canadian counsel: {matter.canadian_counsel}")
+            print(f"nigerian counsel: {matter.nigerian_counsel}")
+            print(f"current track: {matter.current_track}")
+            print(f"canadian path: {matter.canadian_path}")
+            print(f"filing readiness: {matter.filing_readiness}")
+            print(f"limitation status: {matter.limitation_status}")
+            print(f"protective filing needed: {matter.protective_filing_needed}")
             print(f"opening: {matter.opening}")
             print(f"floor: {matter.floor}")
             print(f"estimated TON zone: {matter.ton_zone}")
@@ -194,6 +217,12 @@ def run(argv: list[str] | None = None) -> int:
                 print(f"latest round: {matter.latest_round} ({matter.latest_round_date.isoformat() if matter.latest_round_date else 'unknown'})")
             print(f"assessment: {matter.latest_assessment}")
             print(f"next step: {matter.latest_next_step}")
+            if matter.live_next_actions:
+                print("live next actions")
+                for action in matter.live_next_actions:
+                    print(f"  {action}")
+            if matter.live_notes:
+                print(f"live notes: {matter.live_notes}")
             print(f"context phase: {snapshot.get('phase', '')}")
             print(f"context key deadline: {snapshot.get('key_deadline', '')}")
             print("tracked litigation deadlines")
@@ -222,6 +251,22 @@ def run(argv: list[str] | None = None) -> int:
             for point in matter.leverage_points:
                 if point.get("deployed"):
                     print(f"  {point.get('name')}: {point.get('impact')}")
+            return 0
+
+        if args.command == "litigation-update":
+            result = store.update_litigation_status(_parse_field_assignments(args.set, args.set_json))
+            print(result.message)
+            return 0
+
+        if args.command == "settlement-update":
+            result = store.update_settlement_tracker(_parse_field_assignments(args.set, args.set_json))
+            print(result.message)
+            return 0
+
+        if args.command == "settlement-round-add":
+            payload = json.loads(args.json)
+            result = store.append_settlement_round(payload)
+            print(result.message)
             return 0
 
         validation_errors = workspace.validate()

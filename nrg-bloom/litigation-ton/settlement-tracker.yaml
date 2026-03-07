@@ -1,7 +1,7 @@
 # Settlement Negotiation Tracker — NRG Bloom v. TON Infrastructure
 # CONFIDENTIAL — ATTORNEY-CLIENT PRIVILEGED
 
-last_updated: "2026-03-05"
+last_updated: "2026-03-07"
 matter: "NRG Bloom Inc. v. TON Infrastructure Ltd."
 status: active
 framework:
@@ -107,6 +107,13 @@ rounds:
     assessment: "Dayo's response was powerful. Rejected the 5-day deadline. Phoenix Trading drop forces TON to reassess their exposure. Multi-jurisdictional threat adds pressure. Ball is now in TON's court."
     next_step: "McCarthy call March 6 — protective filing strategy, limitation period, Section 5 analysis"
 
+  - round: 3
+    date: '2026-03-07'
+    type: strategy_update
+    nrg_bloom:
+      action: Shifted Canadian path to self-directed strategy with AI runtime support
+    assessment: McCarthy Tetrault is paused. Canadian path is now being organized as a self-directed, filing-ready matter with structured runtime support.
+    next_step: Build protective Alberta filing package and convert evidence/chronology into pleading-ready structure.
 red_lines:
   - "Walk-away floor: $500,000 USD — no settlement below this"
   - "No settlement without mutual release of all claims"

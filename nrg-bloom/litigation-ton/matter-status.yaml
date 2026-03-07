@@ -1,0 +1,34 @@
+# Live matter posture for the TON dispute.
+# This file is the current operational truth for the litigation agent.
+
+matter: "NRG Bloom Inc. v. TON Infrastructure Ltd."
+status: active
+phase: filing_strategy
+
+representation:
+  mode: self_directed_with_ai
+  canadian_counsel: paused
+  nigerian_counsel: active
+
+forum:
+  current_track: negotiation_plus_canadian_pre_filing
+  canadian_path: under_active_evaluation
+  nigerian_path: active
+
+filing:
+  filing_readiness: in_progress
+  limitation_status: not_expired
+  protective_filing_needed: to_be_determined
+
+settlement:
+  opening: "$727,000 USD (₦1.2B)"
+  floor: "$500,000 USD"
+  current_posture: awaiting_counterparty_response
+
+next_actions:
+  - "Decide whether to prepare a protective Alberta filing package now."
+  - "Update settlement tracker to reflect self-directed Canadian litigation posture."
+  - "Convert core claims, chronology, and evidence map into filing-ready structure."
+
+notes: "McCarthy Tetrault engagement is paused. Canadian path is now self-directed with AI support. The runtime should prefer this file over older March 2026 references that assume a live McCarthy call."
+last_updated: "2026-03-07"

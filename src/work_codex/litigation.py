@@ -27,7 +27,16 @@ class MatterArtifact:
 class LitigationMatter:
     matter: str
     status: str
+    phase: str
     mechanism: str
+    representation_mode: str
+    canadian_counsel: str
+    nigerian_counsel: str
+    current_track: str
+    canadian_path: str
+    filing_readiness: str
+    limitation_status: str
+    protective_filing_needed: str
     start_date: date | None
     negotiation_deadline: date | None
     mediation_deadline: date | None
@@ -38,6 +47,8 @@ class LitigationMatter:
     latest_round_date: date | None
     latest_assessment: str
     latest_next_step: str
+    live_next_actions: list[str]
+    live_notes: str
     red_lines: list[str]
     leverage_points: list[dict[str, Any]]
     deadlines: list[MatterDeadline]
@@ -63,25 +74,37 @@ def load_litigation_matter(root: Path) -> LitigationMatter:
     rounds = tracker.get("rounds", [])
     red_lines = tracker.get("red_lines", [])
     leverage_points = tracker.get("leverage_points", [])
+    matter_status = _load_matter_status(matter_root / "matter-status.yaml")
 
     latest_round = rounds[-1] if rounds else {}
     artifacts = _build_artifacts(matter_root)
     deadlines = _build_deadlines(framework)
 
     return LitigationMatter(
-        matter=str(tracker.get("matter", "")),
-        status=str(tracker.get("status", "")),
+        matter=str(matter_status.get("matter", tracker.get("matter", ""))),
+        status=str(matter_status.get("status", tracker.get("status", ""))),
+        phase=str(matter_status.get("phase", "")),
         mechanism=str(framework.get("mechanism", "")),
+        representation_mode=str(_nested(matter_status, "representation.mode")),
+        canadian_counsel=str(_nested(matter_status, "representation.canadian_counsel")),
+        nigerian_counsel=str(_nested(matter_status, "representation.nigerian_counsel")),
+        current_track=str(_nested(matter_status, "forum.current_track")),
+        canadian_path=str(_nested(matter_status, "forum.canadian_path")),
+        filing_readiness=str(_nested(matter_status, "filing.filing_readiness")),
+        limitation_status=str(_nested(matter_status, "filing.limitation_status")),
+        protective_filing_needed=str(_nested(matter_status, "filing.protective_filing_needed")),
         start_date=_parse_date(framework.get("start_date")),
         negotiation_deadline=_parse_date(framework.get("negotiation_deadline")),
         mediation_deadline=_parse_date(framework.get("mediation_deadline")),
-        opening=str(parameters.get("nrg_bloom_opening", "")),
-        floor=str(parameters.get("nrg_bloom_floor", "")),
+        opening=str(_nested(matter_status, "settlement.opening") or parameters.get("nrg_bloom_opening", "")),
+        floor=str(_nested(matter_status, "settlement.floor") or parameters.get("nrg_bloom_floor", "")),
         ton_zone=str(parameters.get("ton_estimated_zone", "")),
         latest_round=int(latest_round["round"]) if latest_round.get("round") is not None else None,
         latest_round_date=_parse_date(latest_round.get("date")),
         latest_assessment=str(latest_round.get("assessment", "")),
-        latest_next_step=str(latest_round.get("next_step", "")),
+        latest_next_step=str(_first_live_next_action(matter_status) or latest_round.get("next_step", "")),
+        live_next_actions=[str(item) for item in matter_status.get("next_actions", []) if isinstance(item, str)],
+        live_notes=str(matter_status.get("notes", "")),
         red_lines=[str(item) for item in red_lines],
         leverage_points=[item for item in leverage_points if isinstance(item, dict)],
         deadlines=deadlines,
@@ -130,6 +153,7 @@ def _build_deadlines(framework: dict[str, Any]) -> list[MatterDeadline]:
 
 def _build_artifacts(matter_root: Path) -> list[MatterArtifact]:
     required = [
+        ("Matter Status", matter_root / "matter-status.yaml"),
         ("Context", matter_root / "CONTEXT.md"),
         ("Settlement Tracker", matter_root / "settlement-tracker.yaml"),
         ("Unified Chronology", matter_root / "unified-chronology.md"),
@@ -159,3 +183,30 @@ def _extract_section_value(text: str, label: str) -> str:
     pattern = re.compile(rf"- \*\*{re.escape(label)}:\*\* (.+)")
     match = pattern.search(text)
     return match.group(1).strip() if match else ""
+
+
+def _load_matter_status(path: Path) -> dict[str, Any]:
+    if not path.exists():
+        return {}
+    with path.open("r", encoding="utf-8") as handle:
+        data = yaml.safe_load(handle)
+    return data if isinstance(data, dict) else {}
+
+
+def _nested(data: dict[str, Any], dotted_key: str) -> Any:
+    current: Any = data
+    for part in dotted_key.split("."):
+        if not isinstance(current, dict):
+            return ""
+        current = current.get(part, "")
+    return current
+
+
+def _first_live_next_action(data: dict[str, Any]) -> str:
+    actions = data.get("next_actions", [])
+    if not isinstance(actions, list) or not actions:
+        return ""
+    for action in actions:
+        if isinstance(action, str) and action.strip():
+            return action
+    return ""

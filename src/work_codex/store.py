@@ -238,6 +238,40 @@ class SafeWorkspaceStore:
         self.workspace.memory_record_count()
         return MutationResult(path=path, message=f"appended memory record: {record['name']}")
 
+    def update_litigation_status(self, fields: dict[str, Any]) -> MutationResult:
+        path = self.root / "nrg-bloom" / "litigation-ton" / "matter-status.yaml"
+        data = self._load_roundtrip_yaml(path) if path.exists() else self._default_matter_status()
+        for key, value in fields.items():
+            _set_nested_value(data, key, value)
+        data["last_updated"] = date.today().isoformat()
+        self._write_yaml(path, data, action="litigation_status_update", details={"fields": sorted(fields.keys())})
+        return MutationResult(path=path, message="updated litigation matter status")
+
+    def update_settlement_tracker(self, fields: dict[str, Any]) -> MutationResult:
+        path = self.root / "nrg-bloom" / "litigation-ton" / "settlement-tracker.yaml"
+        data = self._load_roundtrip_yaml(path)
+        for key, value in fields.items():
+            _set_nested_value(data, key, value)
+        data["last_updated"] = date.today().isoformat()
+        self._write_yaml(path, data, action="settlement_tracker_update", details={"fields": sorted(fields.keys())})
+        return MutationResult(path=path, message="updated settlement tracker")
+
+    def append_settlement_round(self, round_record: dict[str, Any]) -> MutationResult:
+        _ensure(isinstance(round_record, dict), "settlement round must be an object")
+        _ensure("date" in round_record, "settlement round must include 'date'")
+        _ensure("type" in round_record, "settlement round must include 'type'")
+        _parse_date_string(str(round_record["date"]))
+        path = self.root / "nrg-bloom" / "litigation-ton" / "settlement-tracker.yaml"
+        data = self._load_roundtrip_yaml(path)
+        rounds = data.setdefault("rounds", [])
+        _ensure(isinstance(rounds, list), "settlement-tracker rounds must be a list")
+        next_round = max((int(item.get("round", 0)) for item in rounds if isinstance(item, dict)), default=0) + 1
+        record = {"round": next_round, **round_record}
+        rounds.append(record)
+        data["last_updated"] = date.today().isoformat()
+        self._write_yaml(path, data, action="settlement_round_append", details={"round": next_round, "type": round_record["type"]})
+        return MutationResult(path=path, message=f"appended settlement round {next_round}")
+
     def _validate_workspace(self) -> None:
         errors = self.workspace.validate()
         if errors:
@@ -283,6 +317,36 @@ class SafeWorkspaceStore:
         with audit_path.open("a", encoding="utf-8") as handle:
             handle.write(json.dumps(event, ensure_ascii=True) + "\n")
 
+    def _default_matter_status(self):
+        return {
+            "matter": "NRG Bloom Inc. v. TON Infrastructure Ltd.",
+            "status": "active",
+            "phase": "negotiation",
+            "representation": {
+                "mode": "self_directed_with_ai",
+                "canadian_counsel": "paused",
+                "nigerian_counsel": "active",
+            },
+            "forum": {
+                "current_track": "negotiation",
+                "canadian_path": "under_evaluation",
+                "nigerian_path": "active",
+            },
+            "filing": {
+                "filing_readiness": "in_progress",
+                "limitation_status": "not_expired",
+                "protective_filing_needed": "to_be_determined",
+            },
+            "settlement": {
+                "opening": "$727,000 USD (₦1.2B)",
+                "floor": "$500,000 USD",
+                "current_posture": "awaiting_counterparty_response",
+            },
+            "next_actions": [],
+            "notes": "",
+            "last_updated": date.today().isoformat(),
+        }
+
 
 def _load_yaml_file(path: Path) -> dict[str, Any]:
     if not path.exists():
@@ -319,3 +383,13 @@ def _parse_date_string(value: str) -> str:
 def _ensure(condition: bool, message: str) -> None:
     if not condition:
         raise StoreError(message)
+
+
+def _set_nested_value(target: Any, dotted_key: str, value: Any) -> None:
+    current = target
+    parts = dotted_key.split(".")
+    for part in parts[:-1]:
+        if part not in current or not isinstance(current[part], dict):
+            current[part] = {}
+        current = current[part]
+    current[parts[-1]] = value
