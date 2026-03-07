@@ -4,7 +4,7 @@
 # Statuses: todo, in_progress, blocked, done
 # Company: nrg_bloom, coldstorm, personal, both
 
-last_updated: "2026-03-05"
+last_updated: "2026-03-06c"
 
 tasks:
   # --- COMPLETED TODAY (Feb 25) ---
@@ -113,9 +113,9 @@ tasks:
     title: "Oando — prep intro call brief"
     company: nrg_bloom
     priority: P1
-    status: in_progress
+    status: done
     due: "2026-03-07"
-    notes: "IN PROGRESS Feb 26. Oando responded — Eleas Eduga (Gas Business) to schedule engagement call. Brief being prepared: attendee profiles, talking points, likely questions/objections, recommended ask/offer strategy. Output: ~/Work/nrg-bloom/projects/oando/intro-call-brief-2026-02-26.md"
+    notes: "COMPLETED Mar 6. Call happened at 4 AM ET / 10 AM WAT. Oando interested but V1 proposal framing wrong — PPA/JV language doesn't resonate with gas business. Need V2 with gas-focused commercial structure."
     created: "2026-02-25"
 
   - id: 13
@@ -128,13 +128,50 @@ tasks:
     created: "2026-02-25"
 
   - id: 21
-    title: "Oando — await Eleas Eduga to schedule engagement call"
+    title: "Oando — engagement call completed"
     company: nrg_bloom
     priority: P1
-    status: in_progress
-    due: "2026-03-03"
-    notes: "Eleas Eduga (Gas Business, Oando) to schedule call with NRG Bloom team. If no response by March 3, send a light follow-up to Eleas directly (cc Chioma). Intro call brief being prepared in parallel."
+    status: done
+    due: "2026-03-06"
+    notes: "COMPLETED Mar 6. Call with Eleas Eduga, Chioma, Bayo, Ololade. Oando interested — need V2 proposal with gas-focused structure. See Task 42."
     created: "2026-02-26"
+
+  # --- COLDSTORM AI — SWISS FOX VERTICAL ---
+  - id: 43
+    title: "Swiss Fox — build OSINT sample deliverable on a public figure"
+    company: coldstorm
+    priority: P0
+    status: done
+    due: "2026-03-10"
+    notes: "COMPLETED Mar 6. Full 4-layer multi-agent OSINT pipeline executed on Prasad Bhamre. Pipeline: Collection (3 agents) → Verification (14 claims tested) → Contradictions (9 investigated, 2 CRITICAL found) → Reconciliation. 7 factual errors caught and corrected. V1 vs V2 comparison document demonstrates quality delta. Deliverables at ~/Work/coldstorm/deliverables/: FINAL report, verification matrix, contradictions analysis, V1-vs-V2 comparison. Ready for Makir's review before sending to Swiss Fox."
+    created: "2026-03-06"
+
+  - id: 44
+    title: "Swiss Fox — finalize pricing proposal"
+    company: coldstorm
+    priority: P0
+    status: in_progress
+    due: "2026-03-10"
+    notes: "UPDATED Mar 6. One-pager pricing corrected: retainer $6,000-$8,000/mo (was $3,000 — 40-60% underpriced). Per-case pricing updated: Standard EDD $2,000-$3,000, Enhanced EDD $3,500-$7,000, OSINT deep search $1,500-$3,000, crisis investigation $8,000-$25,000. Market research at ~/Work/knowledge/osint-edd-investigation-market-competitive-analysis-2026-03-06.md. One-pager updated at ~/Work/coldstorm/docs/swissfox-one-pager-2026-03-03.md. NEXT: Send updated one-pager + sample deliverable to Swiss Fox."
+    created: "2026-03-06"
+
+  - id: 45
+    title: "Swiss Fox — build agentic investigation framework (OSINT/EDD/sanctions)"
+    company: coldstorm
+    priority: P0
+    status: todo
+    due: "2026-03-14"
+    notes: "Build the actual agentic system for Swiss Fox's use cases: (1) OSINT deep search on individuals/entities, (2) sanctions/PEP/adverse media screening, (3) corporate registry + UBO mapping, (4) entity relationship linking, (5) structured report output. Stack: Claude API + ComplyAdvantage + OpenCorporates + OSINT APIs. This becomes Coldstorm's first productized vertical."
+    created: "2026-03-06"
+
+  - id: 42
+    title: "Oando — deliver V2 proposal (gas-focused commercial structure)"
+    company: nrg_bloom
+    priority: P0
+    status: in_progress
+    due: "2026-03-10"
+    notes: "V1 PPA/JV framing didn't land. V2 must address: (1) gas-focused commercial structure — they supply gas, participate downstream, (2) full value breakdown — hashrate share, fixed power cost, BTC holding, carbon credits, (3) scale roadmap beyond 5MW pilot, (4) deployment timeline with existing site proof, (5) clarity on gas-to-power — who procures/operates gensets, (6) win-win risk/reward structure. Makir already started rewrite. Once Oando comfortable with structure, they'll provide gas composition + volume data."
+    created: "2026-03-06"
 
   # --- FUNDING & GRANTS (Standing Workstream) ---
   - id: 14
@@ -205,19 +242,19 @@ tasks:
   - id: 22
     title: "McCarthy Tétrault — confirm Dayo sent counterparty name for conflicts check"
     company: nrg_bloom
-    priority: P0
-    status: todo
+    priority: P3
+    status: done
     due: "2026-03-03"
-    notes: "Sarit Batner responded Feb 28 requesting counterparty name to run conflicts check before March 6 call. Dayo needs to reply with 'TON Infrastructure Ltd.' If conflicts clear, Sarit will circulate Teams link for 10am ET Friday. Check with Dayo that this was sent."
+    notes: "ON PAUSE. Dayo decided Mar 6 not to proceed with McCarthy engagement. Makir taking direct ownership of legal strategy. Conflicts check no longer needed."
     created: "2026-03-02"
 
   - id: 23
     title: "McCarthy Tétrault — introductory call with Sarit Batner"
     company: nrg_bloom
-    priority: P0
-    status: in_progress
+    priority: P3
+    status: done
     due: "2026-03-06"
-    notes: "Friday March 6, 10am ET (pending conflicts clearance). Priority items: (1) limitation period audit — when did 2-year clock start, (2) review arbitration clause in Section 7, (3) assess strongest legal theories on these facts, (4) determine if protective filing needed to preserve rights, (5) fee structure — confirm Dayo absorbs McCarthy costs, (6) NEW — Phoenix Trading FZCO v. Dennis Corp: Tyler's 2022 prior lawsuit as pattern-of-conduct evidence, admissibility as similar fact evidence, impact on punitive/aggravated damages threshold. Prep: Alberta litigation path analysis + expenditure ledger + damages analysis + Phoenix Trading analysis all ready to share."
+    notes: "ON PAUSE. Dayo put McCarthy engagement on hold Mar 6. Call did not happen. Makir is now driving legal strategy directly — learning the Canadian legal system hands-on with AI assistance. All prep materials (call brief, litigation path analysis, damages analysis, Phoenix Trading analysis) remain available if McCarthy is reactivated later."
     created: "2026-03-02"
 
   - id: 24
@@ -277,10 +314,10 @@ tasks:
   - id: 30
     title: "Prepare McCarthy Tétrault call brief — March 6"
     company: nrg_bloom
-    priority: P0
+    priority: P1
     status: done
     due: "2026-03-05"
-    notes: "COMPLETED Mar 5 (night). Comprehensive 17-section brief at ~/Work/nrg-bloom/litigation-ton/mccarthy-call-brief-2026-03-06.md. Covers: case summary, 4 agreements, 5 legal theories, TON's defenses (from their position paper received tonight), damages quantification, Phoenix Trading analysis, limitation period audit, arbitration clause scope, protective filing strategy, fee structure questions, evidence deployment tiers, genuine risks, 12 ranked priority questions, recommended 60-minute call flow, and pre-call action items. Updated with TON's $10K offer and Dayo's rejection."
+    notes: "COMPLETED Mar 5 (night). Brief at ~/Work/nrg-bloom/litigation-ton/mccarthy-call-brief-2026-03-06.md. 17 sections. Call didn't happen — Dayo paused McCarthy engagement Mar 6. Brief remains valuable as Makir's own reference for self-directed legal strategy. Contains: 5 legal theories, TON's defenses, damages quantification, Phoenix Trading analysis, limitation period audit, arbitration clause scope, evidence deployment tiers."
     created: "2026-03-02"
 
   # --- FUNDING SPRINT (Mar 4) ---

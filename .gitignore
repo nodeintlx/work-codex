@@ -27,3 +27,15 @@ knowledge/memory.jsonl
 *.tmp
 *.swp
 *~
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+dist/
+build/
+*.egg-info/
+
+# Node
+node_modules/

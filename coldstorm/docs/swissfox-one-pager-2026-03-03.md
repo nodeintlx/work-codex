@@ -18,10 +18,10 @@ In 2024, Swiss Fox brought me in for crypto tracing — Chainalysis reports, tra
 
 | Service | What Your Client Gets | Turnaround |
 |---------|----------------------|------------|
+| **OSINT Deep Investigation** | Multi-agent intelligence reports — public records, corporate registries (Companies House, OpenCorporates), court records, media analysis, PEP/sanctions screening, entity relationship mapping. Every finding confidence-rated and source-verified. | 4-8 hours (was 2-3 days) |
+| **Enhanced Due Diligence** | Corporate affiliations, sanctions/PEP screening, litigation history, adverse media, beneficial ownership, contradictions analysis, cross-referenced verification | 4-8 hours (was 2-3 days) |
 | **Crypto Transaction Tracing** | Full blockchain trace reports — fund flows, entity identification, risk assessment, SAR-ready summaries | 2-4 hours (was 1-2 days) |
-| **Due Diligence Reports** | Enhanced DD — corporate affiliations, sanctions/PEP screening, litigation history, adverse media, beneficial ownership | 4-8 hours (was 2-3 days) |
 | **SAR/STR Drafting** | Complete SAR narratives formatted for FINMA/MROS, FINTRAC, FinCEN — ready for compliance officer sign-off | 2-3 hours (was full day) |
-| **OSINT & Intelligence Gathering** | Multi-source intelligence reports — public records, corporate registries, court records, media analysis | 1-3 hours (was half a day+) |
 | **Compliance Advisory** | FINMA crypto licensing prep, MiCA guidance, AML program design, market surveillance frameworks | Scoped per engagement |
 
 ---
@@ -44,11 +44,12 @@ In 2024, Swiss Fox brought me in for crypto tracing — Chainalysis reports, tra
 
 | Model | What | Cost |
 |-------|------|------|
-| **Per-Case** | Same as 2024 — you send me the work, I deliver the report | Per engagement (crypto traces, DD, SAR, OSINT) |
-| **Monthly Retainer** | Priority access, faster turnaround, ongoing investigations and compliance work on demand | Starting $3,000/mo (~CHF 2,700) |
+| **Per-Case** | Individual investigations — OSINT, EDD, crypto traces, SAR drafting | OSINT: $1,500-$3,000 / EDD: $2,000-$5,000 / Crypto: $1,500-$3,000 |
+| **Monthly Retainer** | Priority access, 4-8 standard investigations/month, ongoing cases, faster turnaround | $6,000-$8,000/mo (~CHF 5,400-7,200) |
+| **Embedded Partner** | Full investigative capacity — unlimited standard cases, complex multi-jurisdiction, compliance monitoring | $10,000-$20,000/mo (~CHF 9,000-18,000) |
 | **On-Site Sprint** | I fly to Zug, set up AI-powered workflows for your team, train analysts, configure systems | Project-based (1-2 weeks) |
 
-**Recommended:** Start with a few cases like before. See the difference AI makes. Then decide if a retainer or on-site sprint makes sense.
+**Recommended:** Start with a sample case — I've already prepared one. See the quality difference a multi-agent AI pipeline makes vs. manual research. Then decide on retainer or embedded partnership.
 
 ---
 

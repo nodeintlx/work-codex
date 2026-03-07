@@ -1,6 +1,6 @@
 ---
 name: arbitration-readiness
-description: "Use this skill to track readiness for formal arbitration or litigation proceedings -- evidence packages, witness preparation, legal theory completeness, procedural requirements, and filing deadlines. Trigger it when negotiations fail or show signs of failing, when preparing for the McCarthy Tetrault call, when assessing whether NRG Bloom is ready to file, when a limitation period question arises, or when Makir asks 'are we ready to go to arbitration,' 'what do we still need,' 'can we file,' or 'what's our readiness.' Also trigger during any discussion of protective filings, arbitration clause interpretation, witness statements, or expert witness engagement. If the settlement tracker shows stalling or the negotiation window is closing, proactively surface readiness status."
+description: "Use this skill to track readiness for formal arbitration or litigation proceedings -- evidence packages, witness preparation, legal theory completeness, procedural requirements, and filing deadlines. Trigger it when negotiations fail or show signs of failing, when assessing whether NRG Bloom is ready to file as a self-represented litigant, when a limitation period question arises, or when Makir asks 'are we ready to go to arbitration,' 'what do we still need,' 'can we file,' or 'what's our readiness.' Also trigger during any discussion of protective filings, arbitration clause interpretation, witness statements, or expert witness engagement. If the settlement tracker shows stalling or the negotiation window is closing, proactively surface readiness status. NOTE: McCarthy Tetrault engagement is ON PAUSE as of March 6, 2026 — Makir is self-representing with AI assistance. Coordinate with the legal-counsel skill for strategy."
 allowed-tools: Read, Write, Edit, Glob, Grep, WebSearch, mcp__memory__*, mcp__tavily__*
 ---
 
@@ -32,7 +32,7 @@ jurisdiction_primary:
 
 jurisdiction_secondary:
   forum: "Alberta Court of King's Bench"
-  counsel: "Sarit Batner -- McCarthy Tetrault"
+  counsel: "Self-Represented (AI-assisted) -- McCarthy Tetrault ON PAUSE since Mar 6"
   status: "ready | preparing | not_started"
 
 categories:
