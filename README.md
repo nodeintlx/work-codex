@@ -33,6 +33,8 @@ python3 -m work_codex.cli litigation-status --workspace .
 python3 -m work_codex.cli litigation-update --workspace . --set phase=filing_strategy
 python3 -m work_codex.cli filing-status --workspace .
 python3 -m work_codex.cli draft-alberta-skeleton --workspace .
+python3 -m work_codex.cli draft-write-bundle --workspace .
+python3 -m work_codex.cli litigation-next-actions --workspace .
 ```
 
 What it does now:
@@ -44,6 +46,7 @@ What it does now:
 - loads and validates the TON litigation matter from the live case folder
 - supports safe updates to litigation posture and settlement tracker state
 - builds structured filing readiness, exhibit scaffolds, and draft litigation sections from the TON matter state
+- writes versioned TON draft bundles and ranks the next highest-leverage litigation actions
 - provides a Codex-native environment check via `doctor`
 
 ## Repository Layout

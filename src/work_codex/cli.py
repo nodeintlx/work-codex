@@ -6,8 +6,15 @@ import json
 from pathlib import Path
 import sys
 
+from .actions import strategic_action_lines
 from .doctor import summarize_doctor
-from .drafting import alberta_skeleton_lines, claim_outline_lines, exhibit_list_lines, facts_section_lines
+from .drafting import (
+    alberta_skeleton_lines,
+    claim_outline_lines,
+    exhibit_list_lines,
+    facts_section_lines,
+    write_draft_bundle,
+)
 from .filing import filing_outline_lines, filing_validation_errors, load_filing_package
 from .scheduler import run_scheduler_loop, scheduler_lines
 from .store import SafeWorkspaceStore, StoreError
@@ -97,6 +104,12 @@ def _build_parser() -> argparse.ArgumentParser:
 
     draft_alberta = subparsers.add_parser("draft-alberta-skeleton")
     draft_alberta.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+
+    draft_write_bundle = subparsers.add_parser("draft-write-bundle")
+    draft_write_bundle.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+
+    litigation_next_actions = subparsers.add_parser("litigation-next-actions")
+    litigation_next_actions.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
 
     litigation_update = subparsers.add_parser("litigation-update")
     litigation_update.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
@@ -363,6 +376,22 @@ def run(argv: list[str] | None = None) -> int:
             package = load_filing_package(root)
             matter = load_litigation_matter(root)
             for line in alberta_skeleton_lines(package, matter):
+                print(line)
+            return 0
+
+        if args.command == "draft-write-bundle":
+            root = Path(args.workspace).resolve()
+            package = load_filing_package(root)
+            matter = load_litigation_matter(root)
+            paths = write_draft_bundle(root, package, matter)
+            print("wrote draft bundle")
+            for path in paths:
+                print(f"- {path}")
+            return 0
+
+        if args.command == "litigation-next-actions":
+            root = Path(args.workspace).resolve()
+            for line in strategic_action_lines(root, today):
                 print(line)
             return 0
 

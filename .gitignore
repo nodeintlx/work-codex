@@ -42,3 +42,6 @@ node_modules/
 
 # Work Codex runtime artifacts
 .work_codex/
+
+# Generated litigation work product
+nrg-bloom/litigation-ton/generated/

@@ -374,6 +374,25 @@ class WorkCodexTests(unittest.TestCase):
         self.assertIn("Protective Alberta Filing Skeleton", stdout.getvalue())
         self.assertIn("Court of King's Bench of Alberta", stdout.getvalue())
 
+        stdout = StringIO()
+        with patch("sys.stdout", stdout):
+            code = run(["--workspace", str(self.root), "draft-write-bundle"])
+        self.assertEqual(code, 0)
+        self.assertIn("wrote draft bundle", stdout.getvalue())
+        latest_dir = self.root / "nrg-bloom" / "litigation-ton" / "generated" / "latest"
+        self.assertTrue((latest_dir / "claim-outline.md").exists())
+        self.assertTrue((latest_dir / "next-actions.md").exists())
+
+    def test_litigation_next_actions_command(self) -> None:
+        stdout = StringIO()
+        with patch("sys.stdout", stdout), patch("work_codex.cli.date") as mocked_date:
+            mocked_date.today.return_value = date(2026, 3, 7)
+            code = run(["--workspace", str(self.root), "litigation-next-actions"])
+        self.assertEqual(code, 0)
+        output = stdout.getvalue()
+        self.assertIn("strategic actions", output)
+        self.assertIn("settlement", output.lower())
+
     def test_scheduler_run_command(self) -> None:
         stdout = StringIO()
         with patch("sys.stdout", stdout), patch("work_codex.cli.date") as mocked_date:

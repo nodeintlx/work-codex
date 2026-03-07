@@ -1,6 +1,10 @@
 from __future__ import annotations
 
-from .filing import FilingClaim, FilingEvidence, FilingEvent, FilingPackage
+from datetime import UTC, datetime
+from pathlib import Path
+
+from .actions import build_strategic_actions
+from .filing import FilingEvidence, FilingEvent, FilingPackage
 from .litigation import LitigationMatter
 
 
@@ -147,6 +151,32 @@ def alberta_skeleton_lines(package: FilingPackage, matter: LitigationMatter) -> 
     return lines
 
 
+def write_draft_bundle(root: Path, package: FilingPackage, matter: LitigationMatter) -> list[Path]:
+    matter_root = root / "nrg-bloom" / "litigation-ton"
+    bundle_dir = matter_root / "generated" / _bundle_stamp()
+    bundle_dir.mkdir(parents=True, exist_ok=True)
+
+    files = {
+        "claim-outline.md": claim_outline_lines(package),
+        "facts-section.md": facts_section_lines(package),
+        "exhibit-list.md": exhibit_list_lines(package),
+        "alberta-protective-skeleton.md": alberta_skeleton_lines(package, matter),
+        "next-actions.md": _next_actions_markdown(root),
+    }
+    written_paths: list[Path] = []
+    for name, lines in files.items():
+        path = bundle_dir / name
+        path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+        written_paths.append(path)
+
+    latest_dir = matter_root / "generated" / "latest"
+    latest_dir.mkdir(parents=True, exist_ok=True)
+    for path in written_paths:
+        latest_path = latest_dir / path.name
+        latest_path.write_text(path.read_text(encoding="utf-8"), encoding="utf-8")
+    return written_paths
+
+
 def _find_event(package: FilingPackage, event_id: str) -> FilingEvent | None:
     for event in package.chronology:
         if event.event_id == event_id:
@@ -169,3 +199,24 @@ def _ordered_unique(values):
             seen.add(value)
             ordered.append(value)
     return ordered
+
+
+def _bundle_stamp() -> str:
+    return datetime.now(UTC).strftime("%Y%m%dT%H%M%SZ")
+
+
+def _next_actions_markdown(root: Path) -> list[str]:
+    actions = build_strategic_actions(root, datetime.now(UTC).date())
+    lines = [
+        "# Next Actions",
+        "",
+        "Goal: make resistance more expensive than settlement while preserving filing readiness.",
+        "",
+    ]
+    for index, action in enumerate(actions, start=1):
+        lines.append(f"## {index}. {action.title}")
+        lines.append(f"- Priority: {action.priority}")
+        lines.append(f"- Why now: {action.rationale}")
+        lines.append(f"- Settlement pressure: {action.settlement_pressure}")
+        lines.append("")
+    return lines
