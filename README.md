@@ -26,6 +26,7 @@ The first runtime lives in `src/work_codex/` and exposes a CLI:
 python3 -m work_codex.cli validate --workspace .
 python3 -m work_codex.cli status --workspace .
 python3 -m work_codex.cli followup --workspace .
+python3 -m work_codex.cli litigation-status --workspace .
 ```
 
 What it does now:
@@ -34,6 +35,7 @@ What it does now:
 - reports at-risk OKRs
 - reports overdue next actions in pipeline and funding
 - updates tasks, pipeline, funding, and memory through audited CLI commands
+- loads and validates the TON litigation matter from the live case folder
 
 ## Repository Layout
 

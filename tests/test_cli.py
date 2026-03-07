@@ -74,6 +74,43 @@ MEMORY_JSONL = """
 {"type":"entity","name":"NRG Bloom Inc."}
 """
 
+CONTEXT_MD = """
+# TON Infrastructure Ltd. -- Litigation Context
+
+## Current Legal Posture
+
+- **Phase:** 30-day good faith negotiation
+- **Key deadline:** ~March 18, 2026
+- **If negotiation fails:** 45-day mediation, then arbitration under Nigerian law
+- **Last update:** February 22, 2026
+"""
+
+SETTLEMENT_TRACKER_YAML = """
+last_updated: "2026-03-05"
+matter: "NRG Bloom Inc. v. TON Infrastructure Ltd."
+status: active
+framework:
+  mechanism: "30-day negotiation -> 45-day mediation -> arbitration"
+  start_date: "2026-03-05"
+  negotiation_deadline: "2026-04-04"
+  mediation_deadline: "2026-05-19"
+parameters:
+  nrg_bloom_opening: "$727,000 USD"
+  nrg_bloom_floor: "$500,000 USD"
+  ton_estimated_zone: "$75K - $150K"
+rounds:
+  - round: 1
+    date: "2026-03-05"
+    assessment: "TON's position is weak."
+    next_step: "Prepare filing path."
+red_lines:
+  - "No settlement below floor"
+leverage_points:
+  - name: "Axxela email trail"
+    deployed: true
+    impact: "Critical"
+"""
+
 
 class WorkCodexTests(unittest.TestCase):
     def setUp(self) -> None:
@@ -81,11 +118,30 @@ class WorkCodexTests(unittest.TestCase):
         root = Path(self.temp_dir.name)
         (root / "shared").mkdir()
         (root / "knowledge").mkdir()
+        (root / "nrg-bloom" / "litigation-ton" / "tyler-macpherson").mkdir(parents=True)
         (root / "shared" / "tasks.yaml").write_text(textwrap.dedent(TASKS_YAML).strip() + "\n", encoding="utf-8")
         (root / "shared" / "goals.yaml").write_text(textwrap.dedent(GOALS_YAML).strip() + "\n", encoding="utf-8")
         (root / "shared" / "pipeline.yaml").write_text(textwrap.dedent(PIPELINE_YAML).strip() + "\n", encoding="utf-8")
         (root / "shared" / "funding.yaml").write_text(textwrap.dedent(FUNDING_YAML).strip() + "\n", encoding="utf-8")
         (root / "knowledge" / "memory.jsonl").write_text(textwrap.dedent(MEMORY_JSONL).strip() + "\n", encoding="utf-8")
+        (root / "nrg-bloom" / "litigation-ton" / "CONTEXT.md").write_text(textwrap.dedent(CONTEXT_MD).strip() + "\n", encoding="utf-8")
+        (root / "nrg-bloom" / "litigation-ton" / "settlement-tracker.yaml").write_text(textwrap.dedent(SETTLEMENT_TRACKER_YAML).strip() + "\n", encoding="utf-8")
+        for filename in (
+            "unified-chronology.md",
+            "source-linked-evidence-index.md",
+            "verified-call-transcripts.md",
+            "axxela-analysis.md",
+            "risk-assessment.md",
+            "ton-response-analysis.md",
+            "master-evidence-summary-2026-02-25.md",
+            "nrg-bloom-expenditure-ledger-2026-03-01.md",
+            "dayo-demand-letter-to-ton.pdf",
+            "ton-response-to-demand-letter.pdf",
+            "ogboinbiri-site-development-agreement-signed.pdf",
+            "nrg-bloom-mutual-nda-non-compete.pdf",
+        ):
+            (root / "nrg-bloom" / "litigation-ton" / filename).write_text("placeholder\n", encoding="utf-8")
+        (root / "nrg-bloom" / "litigation-ton" / "tyler-macpherson" / "00000022-Joint_Venture_Agreement_NRG_BLOOM_TON_Feb_19_2025_Updated.pdf").write_text("placeholder\n", encoding="utf-8")
         self.root = root
 
     def tearDown(self) -> None:
@@ -173,6 +229,17 @@ class WorkCodexTests(unittest.TestCase):
         self.assertIn('"name": "Test Node"', memory_text)
         audit_text = (self.root / ".work_codex" / "audit.jsonl").read_text(encoding="utf-8")
         self.assertIn('"action": "memory_append"', audit_text)
+
+    def test_litigation_status_command(self) -> None:
+        stdout = StringIO()
+        with patch("sys.stdout", stdout), patch("work_codex.cli.date") as mocked_date:
+            mocked_date.today.return_value = date(2026, 3, 7)
+            exit_code = run(["--workspace", str(self.root), "litigation-status"])
+        output = stdout.getvalue()
+        self.assertEqual(exit_code, 0)
+        self.assertIn("NRG Bloom Inc. v. TON Infrastructure Ltd.", output)
+        self.assertIn("Negotiation Deadline", output)
+        self.assertIn("Axxela email trail", output)
 
 
 if __name__ == "__main__":

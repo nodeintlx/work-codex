@@ -7,6 +7,7 @@ from pathlib import Path
 import sys
 
 from .store import SafeWorkspaceStore, StoreError
+from .litigation import artifact_gaps, context_snapshot, litigation_deadlines, load_litigation_matter
 from .workspace import (
     Workspace,
     blocked_tasks,
@@ -65,6 +66,12 @@ def _build_parser() -> argparse.ArgumentParser:
     memory_append = subparsers.add_parser("memory-append")
     memory_append.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
     memory_append.add_argument("--json", required=True, help="JSON object to append as a JSONL record")
+
+    litigation_status = subparsers.add_parser("litigation-status")
+    litigation_status.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+
+    litigation_validate = subparsers.add_parser("litigation-validate")
+    litigation_validate.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
     return parser
 
 
@@ -159,6 +166,62 @@ def run(argv: list[str] | None = None) -> int:
             payload = json.loads(args.json)
             result = store.append_memory(payload)
             print(result.message)
+            return 0
+
+        if args.command == "litigation-validate":
+            matter = load_litigation_matter(Path(args.workspace).resolve())
+            gaps = artifact_gaps(matter)
+            if gaps:
+                print("litigation matter has missing artifacts")
+                for gap in gaps:
+                    print(f"- {gap.label}: {gap.path}")
+                return 1
+            print("litigation matter validation passed")
+            print(f"matter: {matter.matter}")
+            return 0
+
+        if args.command == "litigation-status":
+            matter = load_litigation_matter(Path(args.workspace).resolve())
+            snapshot = context_snapshot(Path(args.workspace).resolve())
+            overdue, upcoming = litigation_deadlines(matter, today)
+            print(matter.matter)
+            print(f"status: {matter.status}")
+            print(f"framework: {matter.mechanism}")
+            print(f"opening: {matter.opening}")
+            print(f"floor: {matter.floor}")
+            print(f"estimated TON zone: {matter.ton_zone}")
+            if matter.latest_round is not None:
+                print(f"latest round: {matter.latest_round} ({matter.latest_round_date.isoformat() if matter.latest_round_date else 'unknown'})")
+            print(f"assessment: {matter.latest_assessment}")
+            print(f"next step: {matter.latest_next_step}")
+            print(f"context phase: {snapshot.get('phase', '')}")
+            print(f"context key deadline: {snapshot.get('key_deadline', '')}")
+            print("tracked litigation deadlines")
+            for item in matter.deadlines:
+                print(f"  {item.label}: {item.due.isoformat()} ({item.source})")
+            print("overdue litigation deadlines")
+            if not overdue:
+                print("  none")
+            else:
+                for item in overdue:
+                    print(f"  {item.label}: {item.due.isoformat()} ({item.source})")
+            print("upcoming litigation deadlines")
+            if not upcoming:
+                print("  none")
+            else:
+                for item in upcoming:
+                    print(f"  {item.label}: {item.due.isoformat()} ({item.source})")
+            print("missing core artifacts")
+            gaps = artifact_gaps(matter)
+            if not gaps:
+                print("  none")
+            else:
+                for gap in gaps:
+                    print(f"  {gap.label}: {gap.path}")
+            print("active leverage points")
+            for point in matter.leverage_points:
+                if point.get("deployed"):
+                    print(f"  {point.get('name')}: {point.get('impact')}")
             return 0
 
         validation_errors = workspace.validate()
