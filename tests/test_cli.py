@@ -135,6 +135,61 @@ notes: "Live posture overrides stale references."
 last_updated: "2026-03-07"
 """
 
+CLAIMS_MAP_YAML = """
+last_updated: "2026-03-07"
+matter: "NRG Bloom Inc. v. TON Infrastructure Ltd."
+claims:
+  - id: C1
+    title: Bad-faith termination
+    forum_track: nigeria_primary
+    status: ready_to_plead
+    pleading_priority: critical
+    remedy_objective: Damages
+    theory: TON used termination as a takeover tool.
+    key_facts:
+      - Funding refusal preceded deterioration.
+    evidence_ids:
+      - E-SIGNED-SDA
+      - E-CALL-TRANSCRIPTS
+    chronology_event_ids:
+      - CH1
+    damages_anchor: Contract and conduct support damages.
+    pleading_notes: Start with termination sequence.
+"""
+
+CHRONOLOGY_MAP_YAML = """
+last_updated: "2026-03-07"
+matter: "NRG Bloom Inc. v. TON Infrastructure Ltd."
+events:
+  - id: CH1
+    date: "2025-05-16"
+    phase: restructuring
+    title: SDA signed
+    significance: Contract anchor.
+    evidence_ids:
+      - E-SIGNED-SDA
+"""
+
+EVIDENCE_MAP_YAML = """
+last_updated: "2026-03-07"
+matter: "NRG Bloom Inc. v. TON Infrastructure Ltd."
+evidence:
+  - id: E-SIGNED-SDA
+    title: Signed SDA
+    source_type: document
+    path: ogboinbiri-site-development-agreement-signed.pdf
+    strength: critical
+    issues:
+      - contract
+  - id: E-CALL-TRANSCRIPTS
+    title: Call transcripts
+    source_type: analysis
+    path: verified-call-transcripts.md
+    strength: critical
+    issues:
+      - admissions
+"""
+
 
 class WorkCodexTests(unittest.TestCase):
     def setUp(self) -> None:
@@ -152,6 +207,9 @@ class WorkCodexTests(unittest.TestCase):
         (root / "nrg-bloom" / "litigation-ton" / "CONTEXT.md").write_text(textwrap.dedent(CONTEXT_MD).strip() + "\n", encoding="utf-8")
         (root / "nrg-bloom" / "litigation-ton" / "settlement-tracker.yaml").write_text(textwrap.dedent(SETTLEMENT_TRACKER_YAML).strip() + "\n", encoding="utf-8")
         (root / "nrg-bloom" / "litigation-ton" / "matter-status.yaml").write_text(textwrap.dedent(MATTER_STATUS_YAML).strip() + "\n", encoding="utf-8")
+        (root / "nrg-bloom" / "litigation-ton" / "claims-map.yaml").write_text(textwrap.dedent(CLAIMS_MAP_YAML).strip() + "\n", encoding="utf-8")
+        (root / "nrg-bloom" / "litigation-ton" / "chronology-map.yaml").write_text(textwrap.dedent(CHRONOLOGY_MAP_YAML).strip() + "\n", encoding="utf-8")
+        (root / "nrg-bloom" / "litigation-ton" / "evidence-map.yaml").write_text(textwrap.dedent(EVIDENCE_MAP_YAML).strip() + "\n", encoding="utf-8")
         for filename in (
             "unified-chronology.md",
             "source-linked-evidence-index.md",
@@ -161,6 +219,9 @@ class WorkCodexTests(unittest.TestCase):
             "ton-response-analysis.md",
             "master-evidence-summary-2026-02-25.md",
             "nrg-bloom-expenditure-ledger-2026-03-01.md",
+            "master-verified-email-timeline-2025.md",
+            "ton-position-summary-counter-analysis-2026-03-05.md",
+            "ton-narrative-and-counterarguments.md",
             "dayo-demand-letter-to-ton.pdf",
             "ton-response-to-demand-letter.pdf",
             "ogboinbiri-site-development-agreement-signed.pdf",
@@ -268,6 +329,62 @@ class WorkCodexTests(unittest.TestCase):
         self.assertIn("Axxela email trail", output)
         self.assertIn("self_directed_with_ai", output)
         self.assertIn("Refresh filing strategy.", output)
+
+    def test_filing_commands(self) -> None:
+        stdout = StringIO()
+        with patch("sys.stdout", stdout):
+            status_code = run(["--workspace", str(self.root), "filing-status"])
+        output = stdout.getvalue()
+        self.assertEqual(status_code, 0)
+        self.assertIn("filing readiness", output)
+        self.assertIn("C1 Bad-faith termination", output)
+
+        stdout = StringIO()
+        with patch("sys.stdout", stdout):
+            validate_code = run(["--workspace", str(self.root), "filing-validate"])
+        self.assertEqual(validate_code, 0)
+        self.assertIn("validation passed", stdout.getvalue())
+
+    def test_draft_commands(self) -> None:
+        stdout = StringIO()
+        with patch("sys.stdout", stdout):
+            code = run(["--workspace", str(self.root), "draft-claim-outline"])
+        self.assertEqual(code, 0)
+        self.assertIn("Claim Outline", stdout.getvalue())
+        self.assertIn("Bad-faith termination", stdout.getvalue())
+
+        stdout = StringIO()
+        with patch("sys.stdout", stdout):
+            code = run(["--workspace", str(self.root), "draft-facts"])
+        self.assertEqual(code, 0)
+        self.assertIn("Draft Facts Section", stdout.getvalue())
+        self.assertIn("2025-05-16 - SDA signed", stdout.getvalue())
+
+        stdout = StringIO()
+        with patch("sys.stdout", stdout):
+            code = run(["--workspace", str(self.root), "draft-exhibits"])
+        self.assertEqual(code, 0)
+        self.assertIn("Exhibit 1", stdout.getvalue())
+        self.assertIn("ogboinbiri-site-development-agreement-signed.pdf", stdout.getvalue())
+
+        stdout = StringIO()
+        with patch("sys.stdout", stdout):
+            code = run(["--workspace", str(self.root), "draft-alberta-skeleton"])
+        self.assertEqual(code, 0)
+        self.assertIn("Protective Alberta Filing Skeleton", stdout.getvalue())
+        self.assertIn("Court of King's Bench of Alberta", stdout.getvalue())
+
+    def test_scheduler_run_command(self) -> None:
+        stdout = StringIO()
+        with patch("sys.stdout", stdout), patch("work_codex.cli.date") as mocked_date:
+            mocked_date.today.return_value = date(2026, 3, 7)
+            exit_code = run(["--workspace", str(self.root), "scheduler-run", "--cycles", "1"])
+        output = stdout.getvalue()
+        self.assertEqual(exit_code, 0)
+        self.assertIn("scheduler report generated", output)
+        self.assertIn("Protective filing decision", output)
+        heartbeat_path = self.root / ".work_codex" / "scheduler" / "last_run.json"
+        self.assertTrue(heartbeat_path.exists())
 
     def test_litigation_and_settlement_updates(self) -> None:
         stdout = StringIO()

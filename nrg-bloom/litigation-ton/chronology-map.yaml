@@ -1,0 +1,70 @@
+# Key pleading chronology for the TON matter.
+# This is not the full narrative chronology; it is the filing subset.
+
+last_updated: "2026-03-07"
+matter: "NRG Bloom Inc. v. TON Infrastructure Ltd."
+events:
+  - id: CH1
+    date: "2025-02-12"
+    phase: origination
+    title: Relationship launch and Nigeria trip planning begins
+    significance: Establishes NRG Bloom as the local originator and organizer of the relationship.
+    evidence_ids:
+      - E-CHRONOLOGY
+      - E-MASTER-EVIDENCE-SUMMARY
+
+  - id: CH2
+    date: "2025-05-16"
+    phase: restructuring
+    title: Site Development Agreement signed after earlier pressure sequence
+    significance: Anchors the later termination dispute and the defense case built around contract text.
+    evidence_ids:
+      - E-SIGNED-SDA
+      - E-JV-AGREEMENT
+      - E-RISK-ASSESSMENT
+
+  - id: CH3
+    date: "2025-06-18"
+    phase: circumvention
+    title: Axxela email exclusion window begins
+    significance: Marks the start of the documented exclusion sequence in the Axxela opportunity.
+    evidence_ids:
+      - E-AXXELA-EVIDENCE-INDEX
+      - E-EMAIL-TIMELINE
+
+  - id: CH4
+    date: "2025-07-04"
+    phase: circumvention
+    title: Marley sends direct-arrangement statement to Axxela
+    significance: Core misrepresentation event for the circumvention case and filing leverage.
+    evidence_ids:
+      - E-AXXELA-EVIDENCE-INDEX
+      - E-TON-NARRATIVE
+      - E-TON-RESPONSE-ANALYSIS
+
+  - id: CH5
+    date: "2025-12-04"
+    phase: pretext_build
+    title: Operating support refusal hardens the pre-termination pattern
+    significance: Links TON's funding refusal to the later site deterioration narrative.
+    evidence_ids:
+      - E-SOURCE-EVIDENCE
+      - E-RISK-ASSESSMENT
+
+  - id: CH6
+    date: "2026-02-20"
+    phase: dispute
+    title: TON response letter relies on contract framing and avoids specific circumvention facts
+    significance: Shows the expected defense architecture and non-denials.
+    evidence_ids:
+      - E-TON-RESPONSE
+      - E-TON-RESPONSE-ANALYSIS
+
+  - id: CH7
+    date: "2026-03-05"
+    phase: active_dispute
+    title: Negotiation framework starts after position paper exchange
+    significance: Starts the live dispute clock for negotiation, mediation, and protective filing decisions.
+    evidence_ids:
+      - E-SETTLEMENT-TRACKER
+      - E-MATTER-STATUS

@@ -1,0 +1,170 @@
+# Structured evidence register for filing preparation.
+# Each item should resolve to a real file in the workspace.
+
+last_updated: "2026-03-07"
+matter: "NRG Bloom Inc. v. TON Infrastructure Ltd."
+evidence:
+  - id: E-MATTER-STATUS
+    title: Live matter posture
+    source_type: workspace_state
+    path: matter-status.yaml
+    strength: operational
+    issues:
+      - litigation_posture
+      - filing_strategy
+
+  - id: E-SETTLEMENT-TRACKER
+    title: Settlement and negotiation tracker
+    source_type: workspace_state
+    path: settlement-tracker.yaml
+    strength: operational
+    issues:
+      - negotiation_framework
+      - deadlines
+
+  - id: E-CHRONOLOGY
+    title: Unified chronology
+    source_type: analysis
+    path: unified-chronology.md
+    strength: high
+    issues:
+      - origination
+      - relationship_history
+      - chronology
+
+  - id: E-SOURCE-EVIDENCE
+    title: Source-linked evidence index
+    source_type: analysis
+    path: source-linked-evidence-index.md
+    strength: high
+    issues:
+      - circumvention
+      - termination
+      - damages
+
+  - id: E-AXXELA-EVIDENCE-INDEX
+    title: Source-linked evidence index for Axxela points
+    source_type: analysis
+    path: source-linked-evidence-index.md
+    strength: critical
+    issues:
+      - axxela
+      - circumvention
+      - misrepresentation
+
+  - id: E-EMAIL-TIMELINE
+    title: Master verified email timeline
+    source_type: analysis
+    path: master-verified-email-timeline-2025.md
+    strength: critical
+    issues:
+      - axxela
+      - exclusion_window
+
+  - id: E-AXXELA-ANALYSIS
+    title: Axxela analysis
+    source_type: analysis
+    path: axxela-analysis.md
+    strength: high
+    issues:
+      - axxela
+      - leverage
+
+  - id: E-TON-NARRATIVE
+    title: TON narrative and counterarguments
+    source_type: analysis
+    path: ton-narrative-and-counterarguments.md
+    strength: high
+    issues:
+      - defense_map
+      - counterarguments
+
+  - id: E-TON-COUNTER-ANALYSIS
+    title: TON position summary counter analysis
+    source_type: analysis
+    path: ton-position-summary-counter-analysis-2026-03-05.md
+    strength: high
+    issues:
+      - defense_map
+      - response_strategy
+
+  - id: E-TON-RESPONSE
+    title: TON response letter PDF
+    source_type: document
+    path: ton-response-to-demand-letter.pdf
+    strength: high
+    issues:
+      - response_letter
+      - defense_positions
+
+  - id: E-TON-RESPONSE-ANALYSIS
+    title: TON response analysis
+    source_type: analysis
+    path: ton-response-analysis.md
+    strength: high
+    issues:
+      - response_letter
+      - non_denials
+
+  - id: E-RISK-ASSESSMENT
+    title: Risk assessment
+    source_type: analysis
+    path: risk-assessment.md
+    strength: high
+    issues:
+      - vulnerabilities
+      - leverage
+
+  - id: E-MASTER-EVIDENCE-SUMMARY
+    title: Master evidence summary
+    source_type: analysis
+    path: master-evidence-summary-2026-02-25.md
+    strength: high
+    issues:
+      - summary
+      - cross_reference
+
+  - id: E-EXPENDITURE-LEDGER
+    title: Expenditure ledger
+    source_type: analysis
+    path: nrg-bloom-expenditure-ledger-2026-03-01.md
+    strength: medium
+    issues:
+      - unjust_enrichment
+      - damages
+
+  - id: E-SIGNED-SDA
+    title: Signed Ogboinbiri site development agreement
+    source_type: document
+    path: ogboinbiri-site-development-agreement-signed.pdf
+    strength: critical
+    issues:
+      - contract
+      - termination
+
+  - id: E-MNDA
+    title: Mutual NDA and non-compete
+    source_type: document
+    path: nrg-bloom-mutual-nda-non-compete.pdf
+    strength: critical
+    issues:
+      - non_circumvention
+      - cross_border
+
+  - id: E-JV-AGREEMENT
+    title: Original JV agreement
+    source_type: document
+    path: tyler-macpherson/00000022-Joint_Venture_Agreement_NRG_BLOOM_TON_Feb_19_2025_Updated.pdf
+    strength: high
+    issues:
+      - origination
+      - exclusivity
+
+  - id: E-CALL-TRANSCRIPTS
+    title: Verified call transcripts
+    source_type: analysis
+    path: verified-call-transcripts.md
+    strength: critical
+    issues:
+      - admissions
+      - takeover

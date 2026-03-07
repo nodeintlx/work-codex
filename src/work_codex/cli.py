@@ -7,6 +7,9 @@ from pathlib import Path
 import sys
 
 from .doctor import summarize_doctor
+from .drafting import alberta_skeleton_lines, claim_outline_lines, exhibit_list_lines, facts_section_lines
+from .filing import filing_outline_lines, filing_validation_errors, load_filing_package
+from .scheduler import run_scheduler_loop, scheduler_lines
 from .store import SafeWorkspaceStore, StoreError
 from .litigation import artifact_gaps, context_snapshot, litigation_deadlines, load_litigation_matter
 from .workspace import (
@@ -74,6 +77,27 @@ def _build_parser() -> argparse.ArgumentParser:
     litigation_validate = subparsers.add_parser("litigation-validate")
     litigation_validate.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
 
+    filing_status = subparsers.add_parser("filing-status")
+    filing_status.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+
+    filing_validate = subparsers.add_parser("filing-validate")
+    filing_validate.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+
+    filing_outline = subparsers.add_parser("filing-outline")
+    filing_outline.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+
+    draft_claim_outline = subparsers.add_parser("draft-claim-outline")
+    draft_claim_outline.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+
+    draft_facts = subparsers.add_parser("draft-facts")
+    draft_facts.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+
+    draft_exhibits = subparsers.add_parser("draft-exhibits")
+    draft_exhibits.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+
+    draft_alberta = subparsers.add_parser("draft-alberta-skeleton")
+    draft_alberta.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+
     litigation_update = subparsers.add_parser("litigation-update")
     litigation_update.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
     litigation_update.add_argument("--set", action="append", default=[])
@@ -87,6 +111,14 @@ def _build_parser() -> argparse.ArgumentParser:
     settlement_round_add = subparsers.add_parser("settlement-round-add")
     settlement_round_add.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
     settlement_round_add.add_argument("--json", required=True, help="JSON object for a settlement round")
+
+    scheduler_status = subparsers.add_parser("scheduler-status")
+    scheduler_status.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+
+    scheduler_run = subparsers.add_parser("scheduler-run")
+    scheduler_run.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    scheduler_run.add_argument("--cycles", type=int, default=1)
+    scheduler_run.add_argument("--interval-seconds", type=float, default=0.0)
     return parser
 
 
@@ -261,6 +293,79 @@ def run(argv: list[str] | None = None) -> int:
                     print(f"  {point.get('name')}: {point.get('impact')}")
             return 0
 
+        if args.command == "filing-validate":
+            package = load_filing_package(Path(args.workspace).resolve())
+            errors = filing_validation_errors(package)
+            if errors:
+                print("filing package validation failed")
+                for error in errors:
+                    print(f"- {error}")
+                return 1
+            print("filing package validation passed")
+            print(f"matter: {package.matter}")
+            print(f"readiness: {package.readiness.level}")
+            return 0
+
+        if args.command == "filing-status":
+            package = load_filing_package(Path(args.workspace).resolve())
+            errors = filing_validation_errors(package)
+            print(package.matter)
+            print(f"filing readiness: {package.readiness.level}")
+            print(f"critical claims ready: {package.readiness.critical_claims_ready}")
+            print(f"critical evidence missing: {package.readiness.critical_evidence_missing}")
+            print("claims")
+            for claim in package.claims:
+                print(f"  [{claim.pleading_priority}] {claim.claim_id} {claim.title} ({claim.status}, {claim.forum_track})")
+            print("chronology")
+            for event in package.chronology:
+                print(f"  {event.date} {event.event_id} {event.title}")
+            print("evidence")
+            for item in package.evidence:
+                state = "ok" if item.exists else "missing"
+                print(f"  [{state}] {item.evidence_id}: {item.path}")
+            print("readiness recommendations")
+            for recommendation in package.readiness.recommendations:
+                print(f"  {recommendation}")
+            print("validation issues")
+            if not errors:
+                print("  none")
+            else:
+                for error in errors:
+                    print(f"  {error}")
+            return 0
+
+        if args.command == "filing-outline":
+            package = load_filing_package(Path(args.workspace).resolve())
+            for line in filing_outline_lines(package):
+                print(line)
+            return 0
+
+        if args.command == "draft-claim-outline":
+            package = load_filing_package(Path(args.workspace).resolve())
+            for line in claim_outline_lines(package):
+                print(line)
+            return 0
+
+        if args.command == "draft-facts":
+            package = load_filing_package(Path(args.workspace).resolve())
+            for line in facts_section_lines(package):
+                print(line)
+            return 0
+
+        if args.command == "draft-exhibits":
+            package = load_filing_package(Path(args.workspace).resolve())
+            for line in exhibit_list_lines(package):
+                print(line)
+            return 0
+
+        if args.command == "draft-alberta-skeleton":
+            root = Path(args.workspace).resolve()
+            package = load_filing_package(root)
+            matter = load_litigation_matter(root)
+            for line in alberta_skeleton_lines(package, matter):
+                print(line)
+            return 0
+
         if args.command == "litigation-update":
             result = store.update_litigation_status(_parse_field_assignments(args.set, args.set_json))
             print(result.message)
@@ -275,6 +380,29 @@ def run(argv: list[str] | None = None) -> int:
             payload = json.loads(args.json)
             result = store.append_settlement_round(payload)
             print(result.message)
+            return 0
+
+        if args.command == "scheduler-status":
+            report = run_scheduler_loop(Path(args.workspace).resolve(), today=today, cycles=1, interval_seconds=0.0)[0]
+            for line in scheduler_lines(report):
+                print(line)
+            return 0
+
+        if args.command == "scheduler-run":
+            if args.cycles < 1:
+                raise StoreError("--cycles must be at least 1")
+            if args.interval_seconds < 0:
+                raise StoreError("--interval-seconds must be non-negative")
+            reports = run_scheduler_loop(
+                Path(args.workspace).resolve(),
+                today=today,
+                cycles=args.cycles,
+                interval_seconds=args.interval_seconds,
+            )
+            for index, report in enumerate(reports, start=1):
+                print(f"cycle {index}/{len(reports)}")
+                for line in scheduler_lines(report):
+                    print(line)
             return 0
 
         validation_errors = workspace.validate()
