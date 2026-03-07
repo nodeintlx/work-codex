@@ -1,0 +1,126 @@
+last_updated: "2026-03-07"
+business: "Coldstorm AI investigation vertical"
+decision: "financially_attractive_if_productized"
+
+recommended_offers:
+  - name: "OSINT Deep Search"
+    price_usd:
+      low: 1500
+      target: 2000
+      high: 3000
+    variable_cost_usd:
+      low: 150
+      target: 300
+      high: 450
+    gross_margin_percent:
+      low: 70
+      target: 85
+      high: 95
+    turnaround: "4-8 hours"
+
+  - name: "Standard EDD"
+    price_usd:
+      low: 2000
+      target: 2500
+      high: 3500
+    variable_cost_usd:
+      low: 250
+      target: 450
+      high: 650
+    gross_margin_percent:
+      low: 68
+      target: 82
+      high: 93
+    turnaround: "4-8 hours"
+
+  - name: "Enhanced EDD"
+    price_usd:
+      low: 3500
+      target: 5000
+      high: 7000
+    variable_cost_usd:
+      low: 500
+      target: 800
+      high: 1200
+    gross_margin_percent:
+      low: 66
+      target: 84
+      high: 93
+    turnaround: "1 business day"
+
+  - name: "Litigation Intelligence Package"
+    price_usd:
+      low: 3500
+      target: 5000
+      high: 7000
+    variable_cost_usd:
+      low: 500
+      target: 900
+      high: 1500
+    gross_margin_percent:
+      low: 57
+      target: 82
+      high: 93
+    turnaround: "1-2 business days"
+
+  - name: "Partner Retainer"
+    price_usd:
+      low: 6000
+      target: 7000
+      high: 8000
+    variable_cost_usd:
+      low: 1200
+      target: 1800
+      high: 2500
+    gross_margin_percent:
+      low: 58
+      target: 74
+      high: 85
+    turnaround: "priority queue"
+
+monthly_scenarios:
+  - name: "Low-volume boutique"
+    revenue_usd: 7000
+    variable_cost_usd:
+      low: 1000
+      high: 1650
+    gross_profit_usd:
+      low: 5350
+      high: 6000
+
+  - name: "One retainer plus overflow"
+    revenue_usd: 12000
+    variable_cost_usd:
+      low: 2100
+      high: 3400
+    gross_profit_usd:
+      low: 8600
+      high: 9900
+
+  - name: "Focused investigation practice"
+    revenue_usd: 36000
+    variable_cost_usd:
+      low: 7000
+      high: 11500
+    gross_profit_usd:
+      low: 24500
+      high: 29000
+
+pricing_rules:
+  minimum_floor:
+    osint_deep_search_usd: 1500
+    standard_edd_usd: 2000
+    enhanced_edd_usd: 3500
+    monthly_retainer_usd: 6000
+  discount_policy:
+    - "Only discount for recurring volume"
+    - "Only discount for white-label partnership"
+    - "Only discount for reduced scope"
+    - "Never discount simply because the work uses AI"
+
+main_risks:
+  - "Underpricing"
+  - "Too much bespoke manual work"
+  - "Weak QA"
+  - "Overusing expensive proprietary APIs too early"
+  - "Founder review bottleneck"
