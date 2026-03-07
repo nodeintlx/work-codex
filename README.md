@@ -33,6 +33,7 @@ What it does now:
 - reports overdue, due-soon, and blocked tasks
 - reports at-risk OKRs
 - reports overdue next actions in pipeline and funding
+- updates tasks, pipeline, funding, and memory through audited CLI commands
 
 ## Repository Layout
 
@@ -53,6 +54,18 @@ Run locally from the repo root:
 ```bash
 python3 -m unittest discover -s tests
 ```
+
+Safe mutation commands:
+
+```bash
+PYTHONPATH=src python3 -m work_codex.cli task-add --workspace . --title "Follow up" --company nrg_bloom --priority P1 --due 2026-03-10 --notes "Call back"
+PYTHONPATH=src python3 -m work_codex.cli task-update --workspace . --id 15 --status in_progress --append-note "Called and left voicemail"
+PYTHONPATH=src python3 -m work_codex.cli pipeline-upsert --workspace . --name "Oando" --company nrg_bloom --set stage=proposal --set next_action_date=2026-03-10
+PYTHONPATH=src python3 -m work_codex.cli funding-upsert --workspace . --name "CanExport SMEs" --company nrg_bloom --set status=applying
+PYTHONPATH=src python3 -m work_codex.cli memory-append --workspace . --json '{"type":"entity","name":"Example","entityType":"note"}'
+```
+
+Mutations are written atomically, backed up under `.work_codex/backups/`, and logged to `.work_codex/audit.jsonl`.
 
 ## GitHub
 

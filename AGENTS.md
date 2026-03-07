@@ -18,10 +18,18 @@ Treat this repository as a software system with an operational knowledge base, n
 - Prefer changing runtime code over adding more prompt-only process when a rule can be enforced in software.
 - Keep workspace data human-readable.
 - Do not break compatibility with the existing YAML structure unless you also ship a migration.
+- Prefer the CLI mutation commands over direct manual edits when changing tracked workspace state.
 - Validate the workspace before relying on it:
 
 ```bash
 PYTHONPATH=src python3 -m work_codex.cli validate --workspace .
+```
+
+Examples:
+
+```bash
+PYTHONPATH=src python3 -m work_codex.cli task-update --workspace . --id 42 --status in_progress --append-note "Updated by Codex"
+PYTHONPATH=src python3 -m work_codex.cli memory-append --workspace . --json '{"type":"entity","name":"Example","entityType":"note"}'
 ```
 
 ## Near-term architecture

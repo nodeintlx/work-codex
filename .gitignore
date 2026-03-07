@@ -39,3 +39,6 @@ build/
 
 # Node
 node_modules/
+
+# Work Codex runtime artifacts
+.work_codex/

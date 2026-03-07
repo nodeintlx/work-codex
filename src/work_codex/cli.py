@@ -2,9 +2,11 @@ from __future__ import annotations
 
 import argparse
 from datetime import date
+import json
 from pathlib import Path
 import sys
 
+from .store import SafeWorkspaceStore, StoreError
 from .workspace import (
     Workspace,
     blocked_tasks,
@@ -21,7 +23,48 @@ def _build_parser() -> argparse.ArgumentParser:
     subparsers = parser.add_subparsers(dest="command", required=True)
     for command in ("validate", "status", "followup"):
         subparser = subparsers.add_parser(command)
-        subparser.add_argument("--workspace", default=".", help=argparse.SUPPRESS)
+        subparser.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+
+    task_add = subparsers.add_parser("task-add")
+    task_add.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    task_add.add_argument("--title", required=True)
+    task_add.add_argument("--company", required=True)
+    task_add.add_argument("--priority", required=True)
+    task_add.add_argument("--due")
+    task_add.add_argument("--notes", default="")
+    task_add.add_argument("--status", default="todo")
+    task_add.add_argument("--created")
+
+    task_update = subparsers.add_parser("task-update")
+    task_update.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    task_update.add_argument("--id", type=int, required=True)
+    task_update.add_argument("--title")
+    task_update.add_argument("--company")
+    task_update.add_argument("--priority")
+    task_update.add_argument("--status")
+    task_update.add_argument("--due")
+    task_update.add_argument("--notes")
+    task_update.add_argument("--append-note")
+
+    pipeline_upsert = subparsers.add_parser("pipeline-upsert")
+    pipeline_upsert.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    pipeline_upsert.add_argument("--id", type=int)
+    pipeline_upsert.add_argument("--name", required=True)
+    pipeline_upsert.add_argument("--company", required=True)
+    pipeline_upsert.add_argument("--set", action="append", default=[])
+    pipeline_upsert.add_argument("--set-json", action="append", default=[])
+
+    funding_upsert = subparsers.add_parser("funding-upsert")
+    funding_upsert.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    funding_upsert.add_argument("--id", type=int)
+    funding_upsert.add_argument("--name", required=True)
+    funding_upsert.add_argument("--company", required=True)
+    funding_upsert.add_argument("--set", action="append", default=[])
+    funding_upsert.add_argument("--set-json", action="append", default=[])
+
+    memory_append = subparsers.add_parser("memory-append")
+    memory_append.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    memory_append.add_argument("--json", required=True, help="JSON object to append as a JSONL record")
     return parser
 
 
@@ -50,24 +93,82 @@ def run(argv: list[str] | None = None) -> int:
     parser = _build_parser()
     args = parser.parse_args(argv)
     workspace = Workspace(Path(args.workspace).resolve())
+    store = SafeWorkspaceStore(Path(args.workspace).resolve())
     today = date.today()
 
-    if args.command == "validate":
-        errors = workspace.validate()
-        if errors:
-            print("validation failed")
-            for error in errors:
+    try:
+        if args.command == "validate":
+            errors = workspace.validate()
+            if errors:
+                print("validation failed")
+                for error in errors:
+                    print(f"- {error}")
+                return 1
+            print("validation passed")
+            print(f"memory records: {workspace.memory_record_count()}")
+            return 0
+
+        if args.command == "task-add":
+            result = store.add_task(
+                title=args.title,
+                company=args.company,
+                priority=args.priority,
+                due=args.due,
+                notes=args.notes,
+                status=args.status,
+                created=args.created,
+            )
+            print(result.message)
+            return 0
+
+        if args.command == "task-update":
+            result = store.update_task(
+                task_id=args.id,
+                title=args.title,
+                company=args.company,
+                priority=args.priority,
+                status=args.status,
+                due=args.due,
+                notes=args.notes,
+                append_note=args.append_note,
+            )
+            print(result.message)
+            return 0
+
+        if args.command == "pipeline-upsert":
+            result = store.upsert_pipeline(
+                deal_id=args.id,
+                name=args.name,
+                company=args.company,
+                fields=_parse_field_assignments(args.set, args.set_json),
+            )
+            print(result.message)
+            return 0
+
+        if args.command == "funding-upsert":
+            result = store.upsert_funding(
+                program_id=args.id,
+                name=args.name,
+                company=args.company,
+                fields=_parse_field_assignments(args.set, args.set_json),
+            )
+            print(result.message)
+            return 0
+
+        if args.command == "memory-append":
+            payload = json.loads(args.json)
+            result = store.append_memory(payload)
+            print(result.message)
+            return 0
+
+        validation_errors = workspace.validate()
+        if validation_errors:
+            print("workspace is not ready")
+            for error in validation_errors:
                 print(f"- {error}")
             return 1
-        print("validation passed")
-        print(f"memory records: {workspace.memory_record_count()}")
-        return 0
-
-    validation_errors = workspace.validate()
-    if validation_errors:
-        print("workspace is not ready")
-        for error in validation_errors:
-            print(f"- {error}")
+    except (StoreError, json.JSONDecodeError) as exc:
+        print(f"error: {exc}")
         return 1
 
     tasks = workspace.tasks()
@@ -118,6 +219,27 @@ def run(argv: list[str] | None = None) -> int:
 
     parser.print_help()
     return 1
+
+
+def _parse_field_assignments(pairs: list[str], json_pairs: list[str]) -> dict[str, object]:
+    fields: dict[str, object] = {}
+    for pair in pairs:
+        key, value = _split_assignment(pair)
+        fields[key] = value
+    for pair in json_pairs:
+        key, raw_value = _split_assignment(pair)
+        fields[key] = json.loads(raw_value)
+    return fields
+
+
+def _split_assignment(raw: str) -> tuple[str, str]:
+    if "=" not in raw:
+        raise StoreError(f"expected KEY=VALUE assignment, got: {raw}")
+    key, value = raw.split("=", 1)
+    key = key.strip()
+    if not key:
+        raise StoreError(f"empty field name in assignment: {raw}")
+    return key, value
 
 
 if __name__ == "__main__":
