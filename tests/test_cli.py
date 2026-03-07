@@ -142,6 +142,7 @@ class WorkCodexTests(unittest.TestCase):
         root = Path(self.temp_dir.name)
         (root / "shared").mkdir()
         (root / "knowledge").mkdir()
+        (root / "src" / "work_codex").mkdir(parents=True)
         (root / "nrg-bloom" / "litigation-ton" / "tyler-macpherson").mkdir(parents=True)
         (root / "shared" / "tasks.yaml").write_text(textwrap.dedent(TASKS_YAML).strip() + "\n", encoding="utf-8")
         (root / "shared" / "goals.yaml").write_text(textwrap.dedent(GOALS_YAML).strip() + "\n", encoding="utf-8")
@@ -305,6 +306,19 @@ class WorkCodexTests(unittest.TestCase):
         tracker_text = (self.root / "nrg-bloom" / "litigation-ton" / "settlement-tracker.yaml").read_text(encoding="utf-8")
         self.assertIn("type: strategy_update", tracker_text)
         self.assertIn("next_step: Draft filing plan", tracker_text)
+
+    def test_doctor_command(self) -> None:
+        vendor_root = self.root / ".vendor" / "ruamel" / "yaml"
+        vendor_root.mkdir(parents=True)
+        (vendor_root / "__init__.py").write_text("# placeholder\n", encoding="utf-8")
+        stdout = StringIO()
+        with patch("sys.stdout", stdout):
+            exit_code = run(["--workspace", str(self.root), "doctor"])
+        output = stdout.getvalue()
+        self.assertEqual(exit_code, 0)
+        self.assertIn("doctor for", output)
+        self.assertIn("runtime", output)
+        self.assertIn("litigation matter status", output)
 
 
 if __name__ == "__main__":

@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import sys
 
+from .doctor import summarize_doctor
 from .store import SafeWorkspaceStore, StoreError
 from .litigation import artifact_gaps, context_snapshot, litigation_deadlines, load_litigation_matter
 from .workspace import (
@@ -22,7 +23,7 @@ def _build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--workspace", default=".", help="Path to the workspace root")
 
     subparsers = parser.add_subparsers(dest="command", required=True)
-    for command in ("validate", "status", "followup"):
+    for command in ("validate", "status", "followup", "doctor"):
         subparser = subparsers.add_parser(command)
         subparser.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
 
@@ -128,6 +129,13 @@ def run(argv: list[str] | None = None) -> int:
             print("validation passed")
             print(f"memory records: {workspace.memory_record_count()}")
             return 0
+
+        if args.command == "doctor":
+            ok, lines = summarize_doctor(Path(args.workspace).resolve())
+            print(f"doctor for {Path(args.workspace).resolve()}")
+            for line in lines:
+                print(line)
+            return 0 if ok else 1
 
         if args.command == "task-add":
             result = store.add_task(

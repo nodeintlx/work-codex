@@ -10,6 +10,8 @@ The original repository already contains valuable operating data:
 
 This version starts turning that workspace into software.
 
+The architectural goal is a pure Codex-native agent system. Claude-era assets can remain as migration/reference material, but they are not the system root.
+
 ## Direction
 
 The immediate goal is not a full 24/7 autonomous system in one jump. The first goal is a stable runtime layer that can:
@@ -26,6 +28,7 @@ The first runtime lives in `src/work_codex/` and exposes a CLI:
 python3 -m work_codex.cli validate --workspace .
 python3 -m work_codex.cli status --workspace .
 python3 -m work_codex.cli followup --workspace .
+python3 -m work_codex.cli doctor --workspace .
 python3 -m work_codex.cli litigation-status --workspace .
 python3 -m work_codex.cli litigation-update --workspace . --set phase=filing_strategy
 ```
@@ -38,6 +41,7 @@ What it does now:
 - updates tasks, pipeline, funding, and memory through audited CLI commands
 - loads and validates the TON litigation matter from the live case folder
 - supports safe updates to litigation posture and settlement tracker state
+- provides a Codex-native environment check via `doctor`
 
 ## Repository Layout
 
@@ -59,6 +63,12 @@ Run locally from the repo root:
 python3 -m unittest discover -s tests
 ```
 
+Bootstrap a Mac clone:
+
+```bash
+scripts/bootstrap_mac.sh
+```
+
 Safe mutation commands:
 
 ```bash
@@ -74,3 +84,8 @@ Mutations are written atomically, backed up under `.work_codex/backups/`, and lo
 ## GitHub
 
 This repo is ready to become a private GitHub repository. See `docs/github-setup.md`.
+
+## Architecture
+
+- Codex-native architecture: `docs/codex-native.md`
+- Portability notes: `docs/portability.md`

@@ -12,6 +12,7 @@ Treat this repository as a software system with an operational knowledge base, n
 - Durable memory lives in `knowledge/memory.jsonl`
 - Company and project material lives under `nrg-bloom/`, `coldstorm/`, and `personal/`
 - Runtime code lives in `src/work_codex/`
+- `.claude/` is legacy compatibility material, not the canonical runtime
 
 ## Working rules
 
@@ -23,6 +24,7 @@ Treat this repository as a software system with an operational knowledge base, n
 
 ```bash
 PYTHONPATH=src python3 -m work_codex.cli validate --workspace .
+PYTHONPATH=src python3 -m work_codex.cli doctor --workspace .
 ```
 
 Examples:
@@ -37,6 +39,7 @@ PYTHONPATH=src python3 -m work_codex.cli memory-append --workspace . --json '{"t
 1. `shared/` remains the editable operating layer.
 2. `src/work_codex/` becomes the agent runtime layer.
 3. Future services should consume the runtime layer rather than reading workspace files ad hoc.
+4. `.claude/` remains optional migration/reference material until explicitly retired.
 
 ## Immediate next build targets
 
