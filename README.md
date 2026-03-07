@@ -95,3 +95,4 @@ This repo is ready to become a private GitHub repository. See `docs/github-setup
 
 - Codex-native architecture: `docs/codex-native.md`
 - Portability notes: `docs/portability.md`
+- TON operating procedure: `docs/ton-daily-operating-procedure.md`
