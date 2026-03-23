@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blockchain Investigation"
+  short_description: "Trace Bitcoin wallet footprints, pool payouts, and watchlists"
+  default_prompt: "Use $blockchain-investigation to identify the most likely fresh payout wallet for a pool-linked operation."

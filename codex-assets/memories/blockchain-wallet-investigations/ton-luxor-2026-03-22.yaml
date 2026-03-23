@@ -1,0 +1,43 @@
+case_id: ton-luxor-2026-03-22
+title: TON post-March-6 Luxor payout investigation
+updated_at: 2026-03-22T00:00:00-04:00
+status: monitoring
+objective: Track the fresh Bitcoin payout wallet associated with TON's larger post-March-6 mining operation.
+constraints:
+  startup_window:
+    from: 2026-03-06
+    to: 2026-03-07
+  expected_hashrate_ph:
+    low: 25
+    high: 31
+  freshness_rule: discard wallets active before the startup window
+known_addresses:
+  - label: TON_KNOWN
+    address: bc1qdcm607zgrgshnedv26nl70gkppm3zdpxtmkzsz
+    role: known_reference
+  - label: AGNES
+    address: 1MdJhN26akTPbW1MTr11xiSLFiuEMmyaSB
+    role: ground_reference
+candidate_addresses:
+  - label: TON_PRIMARY
+    address: bc1q38ck9dvr4c6qrkqn9690rcefvgrw53hxxxln7j
+    confidence: high
+    notes: Best fresh-start fit.
+  - label: TON_SIBLING
+    address: bc1qshnxdkkmup962764e7qhu09qakvtk7kwxvf46l
+    confidence: medium
+    notes: Smaller same-pattern sibling.
+watchlist:
+  - label: TON_PRIMARY
+    address: bc1q38ck9dvr4c6qrkqn9690rcefvgrw53hxxxln7j
+    trigger: first spend or payout interruption
+  - label: TON_SIBLING
+    address: bc1qshnxdkkmup962764e7qhu09qakvtk7kwxvf46l
+    trigger: merge or new payout
+findings:
+  - post-March-6 primary wallet average is about 0.01124447 BTC/day
+  - stable partnership-era combined baseline was about 0.00133430 BTC/day
+inferences:
+  - post-March-6 scale appears consistent with InfraFlow activation
+next_actions:
+  - trace first outbound transaction from the primary wallet

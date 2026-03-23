@@ -1,0 +1,97 @@
+case_id: ton-luxor-2026-03-22
+title: TON post-March-6 Luxor payout investigation
+updated_at: 2026-03-22T00:00:00-04:00
+status: active
+objective: Identify the most likely fresh Luxor-linked Bitcoin payout wallet for the TON operation that started around March 6 or March 7, 2026.
+constraints:
+  startup_window:
+    from: 2026-03-06
+    to: 2026-03-07
+  expected_hashrate_ph:
+    low: 25
+    high: 31
+  expected_payout_cadence: daily_or_weekly
+  exclusion_rules:
+    - discard wallets already mining in Luxor batches before the startup window
+    - prefer fresh or low-history wallets
+    - penalize mixed-use wallets with unrelated inflows
+sources:
+  - type: csv
+    name: Luxor daily stats
+    path: /mnt/c/Users/volcy/Downloads/dailystats_2026-03-23.csv
+  - type: sqlite
+    name: NRG Bloom telemetry
+    path: /mnt/c/Users/volcy/nrg_bloom.db
+  - type: api
+    name: Blockstream
+  - type: api
+    name: mempool.space
+known_addresses:
+  - label: TON_KNOWN
+    address: bc1qdcm607zgrgshnedv26nl70gkppm3zdpxtmkzsz
+    role: known_reference
+    confidence: high
+    first_seen: null
+    last_seen: 2026-02-02
+    evidence:
+      - supplied by user as known TON address
+    disqualifiers: []
+    notes: Reference wallet only; not the fresh post-March-6 wallet.
+candidate_addresses:
+  - label: TON_PRIMARY
+    address: bc1q38ck9dvr4c6qrkqn9690rcefvgrw53hxxxln7j
+    role: primary_candidate
+    confidence: high
+    first_seen: 2026-03-07
+    last_seen: 2026-03-22
+    evidence:
+      - first appears inside the startup window
+      - 15 straight daily Luxor receipts from 2026-03-08 through 2026-03-22
+      - average daily payout about 0.01124447 BTC
+      - no spends observed
+    disqualifiers: []
+    notes: Cleanest fresh-start payout wallet in the scan.
+  - label: TON_SIBLING
+    address: bc1qshnxdkkmup962764e7qhu09qakvtk7kwxvf46l
+    role: sibling_candidate
+    confidence: medium
+    first_seen: 2026-03-10
+    last_seen: 2026-03-22
+    evidence:
+      - fresh low-history wallet
+      - repeated daily Luxor receipts
+      - no spends observed
+    disqualifiers:
+      - starts later than the primary candidate
+      - payout scale is smaller
+    notes: Useful as a sibling watch target, not the lead wallet.
+watchlist:
+  - label: TON_PRIMARY
+    address: bc1q38ck9dvr4c6qrkqn9690rcefvgrw53hxxxln7j
+    priority: 1
+    trigger: alert on first spend or any interruption in daily receipts
+  - label: TON_SIBLING
+    address: bc1qshnxdkkmup962764e7qhu09qakvtk7kwxvf46l
+    priority: 2
+    trigger: alert on new payout or merge with the primary candidate
+timeline:
+  - date: 2025-12-22
+    event: Earliest hard Luxor CSV record for TON-NRG mining.
+  - date: 2026-01-27
+    event: Shutdown and sabotage phase.
+  - date: 2026-03-06
+    event: Old telemetry shows a bridge blip in TON-NRG.
+  - date: 2026-03-07
+    event: Primary fresh Luxor payout wallet first appears.
+findings:
+  - Stable partnership-era combined output was about 0.00133430 BTC/day.
+  - Primary post-March-6 wallet averages about 0.01124447 BTC/day.
+  - The post-March-6 operation is roughly 8.4x larger than the stable partnership-era baseline.
+inferences:
+  - The post-March-6 wallet likely reflects InfraFlow-scale TON-controlled mining rather than a simple restart of the earlier NRG-container phase.
+open_questions:
+  - When does the primary wallet make its first spend?
+  - Does the primary wallet merge with a service or exchange cluster?
+next_actions:
+  - monitor first spend from TON_PRIMARY
+  - continue scanning for fresh sibling wallets in the same payout band
