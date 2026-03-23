@@ -1,0 +1,71 @@
+agent_name: "BloomFlow"
+integration_target: "OpenClaw"
+created_at: "2026-03-11"
+channels:
+  - telegram
+  - slack
+  - whatsapp
+command_groups:
+  intelligence:
+    future:
+      - command: "/bloom btc"
+        target_skill: "bloom-btc-watch"
+        status: "not_implemented"
+      - command: "/bloom energy"
+        target_skill: "bloom-energy-watch"
+        status: "not_implemented"
+      - command: "/bloom africa"
+        target_skill: "bloom-africa-watch"
+        status: "not_implemented"
+      - command: "/bloom ai"
+        target_skill: "bloom-ai-infra-watch"
+        status: "not_implemented"
+      - command: "/bloom intel"
+        target_skill: "bloom-intel-aggregate"
+        status: "not_implemented"
+  generation:
+    current:
+      - command: "/bloom brief [raw text]"
+        local_command: "PYTHONPATH=src python3 -m work_codex.cli content-intake --workspace . --title '<title>' --idea '<idea>'"
+        status: "implemented"
+      - command: "/bloom run [brief]"
+        local_command: "PYTHONPATH=src python3 -m work_codex.cli content-draft --workspace . --brief '<brief_path>' && PYTHONPATH=src python3 -m work_codex.cli content-creative --workspace . --brief '<brief_path>'"
+        status: "partially_implemented"
+      - command: "/bloom news"
+        target_skill: "bloom-signal-router"
+        status: "not_implemented"
+  workflow:
+    current:
+      - command: "/bloom queue"
+        local_command: "PYTHONPATH=src python3 -m work_codex.cli content-editorial --workspace ."
+        status: "implemented"
+      - command: "/bloom approve [id]"
+        local_command: "PYTHONPATH=src python3 -m work_codex.cli content-status --workspace . --brief '<brief_path>' --set-status approved"
+        status: "implemented"
+      - command: "/bloom reject [id]"
+        local_command: "PYTHONPATH=src python3 -m work_codex.cli content-status --workspace . --brief '<brief_path>' --set-status drafting_ready"
+        status: "implemented"
+      - command: "/bloom schedule [id] [datetime]"
+        local_command: "PYTHONPATH=src python3 -m work_codex.cli content-status --workspace . --brief '<brief_path>' --set-status scheduled --scheduled-for '<date>'"
+        status: "implemented"
+      - command: "/bloom status [id]"
+        local_command: "PYTHONPATH=src python3 -m work_codex.cli content-app --workspace ."
+        status: "implemented"
+  system:
+    current:
+      - command: "/bloom health"
+        local_command: "PYTHONPATH=src python3 -m work_codex.cli content-validate --workspace . --brief '<brief_path>'"
+        status: "implemented"
+    future:
+      - command: "/bloom pause"
+        target_skill: "bloom-router-control"
+        status: "not_implemented"
+      - command: "/bloom resume"
+        target_skill: "bloom-router-control"
+        status: "not_implemented"
+      - command: "/bloom log"
+        target_skill: "bloom-signal-router"
+        status: "not_implemented"
+notes:
+  - "Current repo is strongest in the production and workflow layers."
+  - "Intelligence and autonomous routing layers remain to be built."

@@ -1,0 +1,9 @@
+{
+  "protocol_version": "agent-exchange-manifest/v1",
+  "artifact_path": "outgoing/20260323T033400Z-aegis-ton-mining-timeline-memo.md",
+  "artifact_type": "question_brief",
+  "source_agent": "Aegis",
+  "requested_action": "review_and_use_for_joint_human_legal_timeline",
+  "matter": "NRG Bloom Inc. v. TON Infrastructure Ltd.",
+  "created_at_utc": "2026-03-23T03:34:00Z"
+}

@@ -1,0 +1,117 @@
+id: CB-003
+created_at: '2026-03-10'
+updated_at: '2026-03-10'
+status: drafting_ready
+owner: makir
+source_type: content_intake
+source_ref: CM-010
+title: African data center expansion accelerates
+raw_idea: 'A major hyperscaler announced new African data center capacity tied to
+  AI demand growth. NRG Bloom angle: NRG Bloom can contrast hyperscaler capex with
+  modular, local-first deployment reality.'
+source_notes:
+- Generated from CM-010 via content-intake.
+original_language: en
+audience:
+  primary: diaspora_founders
+  secondary:
+  - x
+persona_problem: They want to build back home without losing control.
+content_pillar: builder_credibility
+funnel_stage: awareness
+campaign_theme: operator credibility
+business_goal: Build founder authority and grow relevant reach.
+primary_cta: Follow NRG Bloom for practical lessons on building energy and compute
+  infrastructure in hard markets.
+lead_magnet: Field Notes memo
+main_thesis: 'A major hyperscaler announced new African data center capacity tied
+  to AI demand growth. NRG Bloom angle: NRG Bloom can contrast hyperscaler capex with
+  modular, local-first deployment reality. That is the practical edge behind builder
+  credibility.'
+punch_idea: 'A major hyperscaler announced new African data center capacity tied to
+  AI demand growth. NRG Bloom angle: N...'
+contrarian_angle: What sounds obvious becomes valuable when explained through real
+  builder credibility experience.
+emotional_driver: earned confidence
+proof_points:
+- 'A major hyperscaler announced new African data center capacity tied to AI demand
+  growth. NRG Bloom angle: NRG Bloom can contrast hyperscaler capex with modular,
+  local-first deployment reality.'
+- This matters to diaspora founders building in africa because execution quality changes
+  trust and outcomes.
+hooks:
+- Most people talk about african data center expansion accelerates. Very few have
+  had to execute it in the field.
+- 'The expensive lesson behind this topic: A major hyperscaler announced new African
+  data center capacity tied to AI demand growth. NRG Bloom angle: NRG '
+- If you're building across borders, builder credibility matters earlier than most
+  founders think.
+supporting_points:
+- 'A major hyperscaler announced new African data center capacity tied to AI demand
+  growth. NRG Bloom angle: NRG Bloom can contrast hyperscaler capex with modular,
+  local-first deployment reality'
+- Builder credibility is usually a systems problem, not a talking-point problem.
+- The strongest content should end with a practical change in behavior.
+objections_to_answer:
+- Is this really a major issue?
+- Does this apply outside one edge case?
+closing_angle: 'A major hyperscaler announced new African data center capacity tied
+  to AI demand growth. NRG Bloom angle: N...'
+primary_format: linkedin_post
+primary_channel: linkedin
+repurpose_formats:
+- x_thread
+- email_note
+- short_video_script
+series_role: pillar_builder
+publish_window: '2026-04-02'
+creative_direction:
+  visual_theme: operator realism
+  thumbnail_concepts:
+  - 'Bold text pull-quote: A major hyperscaler announced new African data center capaci'
+  - Founder portrait plus one operational contrast visual
+  image_prompt_directions:
+  - builder credibility visual, practical infrastructure setting, no site-identifiable
+    details
+  - Editorial documentary style, commercially serious, no hype aesthetics
+  onscreen_text:
+  - 'A major hyperscaler announced new African data center capacity tied to AI demand
+    growth. NRG Bloom angle: N...'
+  carousel_frames:
+  - The core problem
+  - 'A major hyperscaler announced new African data center capacity tied to AI demand
+    growth. NRG Bloom angle: NRG Bloom can contrast hyperscaler capex with modular,
+    local-first deployment reality. That is the practical edge behind builder credibility.'
+  - 'A major hyperscaler announced new African data center capacity tied to AI demand
+    growth. NRG Bloom angle: NRG Bloom can contrast hyperscaler capex with modular,
+    local-first deployment reality'
+  - Builder credibility is usually a systems problem, not a talking-point problem.
+  - What to do differently
+  video_shot_ideas:
+  - Direct-to-camera founder lesson
+  - B-roll that reinforces builder credibility without exposing protected details
+guardrails:
+  brand_voice_rules:
+  - builder-first
+  - commercially clear
+  - field-tested
+  - future-facing
+  legal_risk_level: safe_public_generic
+  legal_notes:
+  - Keep this Phase 1-safe while TON proceedings remain active.
+  - Do not include identifiable counterparty, site, contract, or evidence details.
+  claims_to_avoid:
+  - Do not imply facts specific to the live dispute.
+  required_review: standard_editorial
+drafts:
+  linkedin: ''
+  x_thread: ''
+  email: ''
+  article_outline: ''
+  video_script: ''
+  faq: ''
+performance:
+  published_assets: []
+  performance_snapshot: {}
+  lessons_learned: []
+  next_derivatives: []

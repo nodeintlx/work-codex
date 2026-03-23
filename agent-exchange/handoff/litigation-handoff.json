@@ -1,0 +1,347 @@
+{
+  "agent": {
+    "domain": "litigation_operations",
+    "id": "codex-law-agent",
+    "workspace_root": "/home/dowsmasternode/repos/work-codex"
+  },
+  "agent_proposals": {
+    "items": [
+      {
+        "artifact_path": "nrg-bloom/litigation-ton/agent-intake/decision_memo/20260307T194554Z-claude-work-agent-alberta-protective-filing-decision-memo-2026-03-07.md",
+        "artifact_type": "decision_memo",
+        "created_at_utc": "2026-03-07T19:49:58.929135Z",
+        "path": "nrg-bloom/litigation-ton/agent-intake/proposals/20260307T194958Z-claude-work-agent-decision_memo.json",
+        "source_agent": "claude-work-agent",
+        "status": "pending_review"
+      },
+      {
+        "artifact_path": "nrg-bloom/litigation-ton/agent-intake/legal_analysis/20260307T200842Z-claude-work-agent-sda-section7-arbitration-clause-analysis-2026-03-07.md",
+        "artifact_type": "legal_analysis",
+        "created_at_utc": "2026-03-07T20:08:43.257980Z",
+        "path": "nrg-bloom/litigation-ton/agent-intake/proposals/20260307T200843Z-claude-work-agent-legal_analysis.json",
+        "source_agent": "claude-work-agent",
+        "status": "pending"
+      },
+      {
+        "artifact_path": "nrg-bloom/litigation-ton/agent-intake/strategic_context/20260307T200901Z-claude-work-agent-strategic-context-alberta-as-pressure-device-2026-03-07.md",
+        "artifact_type": "strategic_context",
+        "created_at_utc": "2026-03-07T20:09:01.919184Z",
+        "path": "nrg-bloom/litigation-ton/agent-intake/proposals/20260307T200901Z-claude-work-agent-strategic_context.json",
+        "source_agent": "claude-work-agent",
+        "status": "pending"
+      },
+      {
+        "artifact_path": "nrg-bloom/litigation-ton/agent-intake/codex_response/20260307T222011Z-claude-work-agent-claude-response-to-codex-questions-2026-03-07.md",
+        "artifact_type": "codex_response",
+        "created_at_utc": "2026-03-07T22:20:11.653918Z",
+        "path": "nrg-bloom/litigation-ton/agent-intake/proposals/20260307T222011Z-claude-work-agent-codex_response.json",
+        "source_agent": "claude-work-agent",
+        "status": "applied"
+      },
+      {
+        "artifact_path": "nrg-bloom/litigation-ton/agent-intake/strategic_plan/20260308T000915Z-sentinel-sentinel-strategic-plan-post-exchange-2026-03-07.md",
+        "artifact_type": "strategic_plan",
+        "created_at_utc": "2026-03-08T00:09:15.642760Z",
+        "path": "nrg-bloom/litigation-ton/agent-intake/proposals/20260308T000915Z-sentinel-strategic_plan.json",
+        "source_agent": "sentinel",
+        "status": "superseded"
+      },
+      {
+        "artifact_path": "nrg-bloom/litigation-ton/agent-intake/strategic_plan/20260308T000915Z-sentinel-sentinel-strategic-plan-v2-active-proceedings-2026-03-07.md",
+        "artifact_type": "strategic_plan",
+        "created_at_utc": "2026-03-08T00:09:16.253733Z",
+        "path": "nrg-bloom/litigation-ton/agent-intake/proposals/20260308T000916Z-sentinel-strategic_plan.json",
+        "source_agent": "sentinel",
+        "status": "applied"
+      },
+      {
+        "artifact_path": "nrg-bloom/litigation-ton/agent-intake/strategic_response/20260308T152403Z-sentinel-sentinel-response-content-use-risk-2026-03-08.md",
+        "artifact_type": "strategic_response",
+        "created_at_utc": "2026-03-08T15:24:04.015092Z",
+        "path": "nrg-bloom/litigation-ton/agent-intake/proposals/20260308T152404015014Z-sentinel-strategic_response.json",
+        "source_agent": "sentinel",
+        "status": "pending_review"
+      },
+      {
+        "artifact_path": "nrg-bloom/litigation-ton/agent-intake/case_development/20260308T160955Z-sentinel-sentinel-dayo-injunction-update-2026-03-08.md",
+        "artifact_type": "case_development",
+        "created_at_utc": "2026-03-08T16:09:55.211100Z",
+        "path": "nrg-bloom/litigation-ton/agent-intake/proposals/20260308T160955211075Z-sentinel-case_development.json",
+        "source_agent": "sentinel",
+        "status": "pending_review"
+      },
+      {
+        "artifact_path": "nrg-bloom/litigation-ton/agent-intake/case_development/20260308T221214Z-sentinel-sentinel-video-evidence-ton-ola-coordination-2026-03-08.md",
+        "artifact_type": "case_development",
+        "created_at_utc": "2026-03-08T22:12:15.482064Z",
+        "path": "nrg-bloom/litigation-ton/agent-intake/proposals/20260308T221215479437Z-sentinel-case_development.json",
+        "source_agent": "sentinel",
+        "status": "pending_review"
+      },
+      {
+        "artifact_path": "nrg-bloom/litigation-ton/agent-intake/session_summary/20260310T002414Z-sentinel-sentinel-session-update-2026-03-09.md",
+        "artifact_type": "session_summary",
+        "created_at_utc": "2026-03-10T00:24:14.948436Z",
+        "path": "nrg-bloom/litigation-ton/agent-intake/proposals/20260310T002414948406Z-sentinel-session_summary.json",
+        "source_agent": "sentinel",
+        "status": "pending_review"
+      }
+    ],
+    "pending_count": 2
+  },
+  "artifacts": {
+    "latest_generated_bundle": {
+      "files": [
+        "alberta-protective-skeleton.md",
+        "claim-outline.md",
+        "exhibit-list.md",
+        "facts-section.md",
+        "next-actions.md"
+      ],
+      "path": "nrg-bloom/litigation-ton/generated/latest"
+    },
+    "latest_incident_memos": [
+      "nrg-bloom/litigation-ton/incident-memo-mining-restart-2026-03-07.md"
+    ],
+    "missing_core_artifacts": []
+  },
+  "deadlines": {
+    "overdue": [
+      {
+        "due": "2026-03-05",
+        "label": "Negotiation Start",
+        "source": "settlement-tracker.yaml"
+      }
+    ],
+    "upcoming": []
+  },
+  "exported_at_utc": "2026-03-23T02:12:34.119985Z",
+  "filing": {
+    "chronology": [
+      {
+        "date": "2025-02-12",
+        "id": "CH1",
+        "phase": "origination",
+        "title": "Relationship launch and Nigeria trip planning begins"
+      },
+      {
+        "date": "2025-05-16",
+        "id": "CH2",
+        "phase": "restructuring",
+        "title": "Site Development Agreement signed after earlier pressure sequence"
+      },
+      {
+        "date": "2025-06-18",
+        "id": "CH3",
+        "phase": "circumvention",
+        "title": "Axxela email exclusion window begins"
+      },
+      {
+        "date": "2025-07-04",
+        "id": "CH4",
+        "phase": "circumvention",
+        "title": "Marley sends direct-arrangement statement to Axxela"
+      },
+      {
+        "date": "2025-12-04",
+        "id": "CH5",
+        "phase": "pretext_build",
+        "title": "Operating support refusal hardens the pre-termination pattern"
+      },
+      {
+        "date": "2026-02-20",
+        "id": "CH6",
+        "phase": "dispute",
+        "title": "TON response letter relies on contract framing and avoids specific circumvention facts"
+      },
+      {
+        "date": "2026-03-05",
+        "id": "CH7",
+        "phase": "active_dispute",
+        "title": "Negotiation framework starts after position paper exchange"
+      }
+    ],
+    "claims": [
+      {
+        "forum_track": "nigeria_primary",
+        "id": "C1",
+        "priority": "critical",
+        "remedy_objective": "Damages and pressure for early negotiated resolution",
+        "status": "ready_to_plead",
+        "title": "Bad-faith termination and appropriation"
+      },
+      {
+        "forum_track": "alberta_primary",
+        "id": "C2",
+        "priority": "critical",
+        "remedy_objective": "Preserve the highest-value leverage point and support any protective Alberta filing.",
+        "status": "ready_to_plead",
+        "title": "Axxela circumvention and non-circumvention breach"
+      },
+      {
+        "forum_track": "alberta_primary",
+        "id": "C3",
+        "priority": "high",
+        "remedy_objective": "Increase pressure by showing the exclusion was not accidental but affirmatively misrepresented.",
+        "status": "ready_to_plead",
+        "title": "Misrepresentation to Axxela and bad-faith conduct"
+      },
+      {
+        "forum_track": "nigeria_primary",
+        "id": "C4",
+        "priority": "high",
+        "remedy_objective": "Capture value for the 13 months of on-ground work, site support, logistics, and stakeholder management.",
+        "status": "in_progress",
+        "title": "Unjust enrichment and uncompensated operational work"
+      }
+    ],
+    "critical_claims_ready": 2,
+    "critical_evidence_missing": 0,
+    "readiness_level": "ready_for_draft",
+    "recommendations": [
+      "Resolve the high-priority claims still marked in_progress or needs_forum_review."
+    ]
+  },
+  "interoperability": {
+    "intended_consumers": [
+      "future_codex_agents",
+      "future_claude_agents",
+      "external_automation"
+    ],
+    "notes": "Consume this payload instead of scraping ad hoc markdown or chat transcripts.",
+    "source_of_truth": [
+      "nrg-bloom/litigation-ton/matter-status.yaml",
+      "nrg-bloom/litigation-ton/settlement-tracker.yaml",
+      "nrg-bloom/litigation-ton/claims-map.yaml",
+      "nrg-bloom/litigation-ton/chronology-map.yaml",
+      "nrg-bloom/litigation-ton/evidence-map.yaml"
+    ]
+  },
+  "matter": {
+    "canadian_path": "confirmed_pressure_filing",
+    "current_track": "negotiation_plus_canadian_pre_filing",
+    "doctrine": {
+      "anti_stay_posture": [
+        "1. Separate agreements, separate forums \u2014 MNDA and SDA are independent contracts with independent dispute resolution. SDA arbitration cannot override MNDA exclusive court clause.",
+        "2. Non-signatory Tyler MacPherson cannot be compelled to arbitrate \u2014 personal liability claims must proceed in court.",
+        "3. MNDA Section 6 'irrespective of legal theory' anti-avoidance language prevents recharacterization of MNDA claims as SDA claims."
+      ],
+      "strategy_principles": [
+        "Two-front architecture: Nigeria = battlefield (Dayo, SDA claims, agreed costs), Alberta = artillery (MNDA claims, $5K budget, pressure device).",
+        "Alberta filing exists to make settlement cheaper than resistance \u2014 not to be litigated to trial.",
+        "Every dollar NRG Bloom spends on Alberta should cost TON ten dollars to respond to."
+      ]
+    },
+    "filing_readiness": "ready_pending_lawyer",
+    "latest_round": {
+      "assessment": "This is not yet a fully verified revenue record, but it is a strong operations-and-control indicator: restored site power, active mining, then loss of NRG-side pool visibility consistent with takeover of machine configuration.",
+      "date": "2026-03-07",
+      "next_step": "Preserve and verify evidence that TON began mining on 2026-03-06 after terminating NRG Bloom.",
+      "number": 5
+    },
+    "leverage_points": [
+      {
+        "deployed": true,
+        "impact": "High \u2014 credible Alberta litigation threat",
+        "name": "McCarthy Tetrault"
+      },
+      {
+        "deployed": true,
+        "impact": "Critical \u2014 strongest evidence, undeniable",
+        "name": "Axxela email trail"
+      },
+      {
+        "deployed": false,
+        "impact": "High \u2014 impeachment ammunition for any claim of good faith",
+        "name": "Held-back WhatsApp evidence"
+      },
+      {
+        "deployed": false,
+        "impact": "High \u2014 pattern of conduct, punitive damages support",
+        "name": "Phoenix Trading prior lawsuit"
+      },
+      {
+        "deployed": false,
+        "impact": "Critical \u2014 Marley's admissions, Jeff's 'clearing the house'",
+        "name": "Call recordings (4 transcripts)"
+      },
+      {
+        "deployed": false,
+        "impact": "Nuclear \u2014 threatens TON's $15.3M deal",
+        "name": "Axxela injunction threat"
+      },
+      {
+        "concession_value": "Discontinuance worth $50K-$150K in saved defense costs to TON in any settlement.",
+        "deployed": false,
+        "impact": "Critical \u2014 forces TON into $50K-$150K defense obligation for $5K NRG Bloom cost. Creates discovery exposure on mining revenues. Names Tyler personally.",
+        "name": "Alberta protective filing (MNDA exclusive jurisdiction)"
+      }
+    ],
+    "limitation_status": "not_expired",
+    "live_next_actions": [
+      "Preserve and verify evidence that TON began mining on 2026-03-06 after terminating NRG Bloom.",
+      "Decide whether to prepare a protective Alberta filing package now.",
+      "Update settlement tracker to reflect self-directed Canadian litigation posture and the reported mining commencement.",
+      "Convert core claims, chronology, and evidence map into filing-ready structure."
+    ],
+    "live_notes": "McCarthy Tetrault engagement is paused. Canadian path is now self-directed with AI support. The runtime should prefer this file over older March 2026 references that assume a live McCarthy call. User reports TON began mining on 2026-03-06 after terminating NRG Bloom beforehand; treat this as a major damages and leverage development pending evidence preservation and verification. User also reports that the NRG pool dashboard showed renewed mining activity on 2026-03-06 followed by loss of visibility hours later, consistent with restored power/connectivity and a likely post-restart switch of pool wallet settings. Eyewitness/local team reports say the transformer was commissioned on the same date.",
+    "name": "NRG Bloom Inc. v. TON Infrastructure Ltd.",
+    "phase": "active_proceedings_preparation",
+    "protective_filing_needed": "to_be_determined",
+    "red_lines": [
+      "Walk-away floor: $500,000 USD \u2014 no settlement below this",
+      "No settlement without mutual release of all claims",
+      "No settlement without written acknowledgment of NRG Bloom's contribution (internal, non-public)",
+      "No settlement that waives Axxela-related claims without adequate compensation",
+      "No settlement that includes non-compete restricting NRG Bloom's Nigeria operations"
+    ],
+    "representation_mode": "self_directed_with_ai",
+    "settlement": {
+      "estimated_ton_zone": "$75K - $150K",
+      "floor": "$500,000 USD",
+      "opening": "$727,000 USD (\u20a61.2B)"
+    },
+    "status": "active"
+  },
+  "protocol_version": "law-agent-handoff/v1",
+  "strategy": {
+    "ranked_actions": [
+      {
+        "priority": "critical",
+        "rationale": "The Canadian track is still unresolved and the Axxela circumvention claim remains the main cross-border leverage point.",
+        "settlement_pressure": "A credible Alberta filing path makes it more expensive for TON to resist by preserving a second front tied to the Axxela opportunity.",
+        "title": "Decide and prepare the protective Alberta filing path"
+      },
+      {
+        "priority": "critical",
+        "rationale": "At least one tracked litigation deadline is already past in the live matter state.",
+        "settlement_pressure": "A clean live record reduces TON's ability to hide behind delay, drift, or ambiguity in the dispute process.",
+        "title": "Refresh the dispute clock and document the live negotiation posture"
+      },
+      {
+        "priority": "high",
+        "rationale": "The services and expenditure theory is identified, but the damages schedule is still not tight enough.",
+        "settlement_pressure": "A cleaner quantified schedule makes low settlement numbers harder for TON to justify.",
+        "title": "Quantify the unjust-enrichment and operations damages schedule"
+      },
+      {
+        "priority": "high",
+        "rationale": "The witness statement remains one of the fastest ways to harden a contested oral admission.",
+        "settlement_pressure": "Turning the admission into a clearer witness artifact increases mediation and trial risk for TON.",
+        "title": "Secure Julie's witness statement on the calculated-tactic admission"
+      },
+      {
+        "priority": "medium",
+        "rationale": "The prior lawsuit pattern is useful leverage but the record is still incomplete in the live queue.",
+        "settlement_pressure": "A fuller prior-pattern package increases reputational and litigation-cost pressure if TON forces escalation.",
+        "title": "Obtain the full 2022 complaint and outcome package"
+      }
+    ],
+    "top_action": {
+      "priority": "critical",
+      "rationale": "The Canadian track is still unresolved and the Axxela circumvention claim remains the main cross-border leverage point.",
+      "settlement_pressure": "A credible Alberta filing path makes it more expensive for TON to resist by preserving a second front tied to the Axxela opportunity.",
+      "title": "Decide and prepare the protective Alberta filing path"
+    }
+  }
+}

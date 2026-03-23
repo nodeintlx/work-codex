@@ -14,12 +14,14 @@ It provides:
 - deadline classification
 - validation of core case artifacts
 - a stable CLI surface for the agent to query before making recommendations
+- a stable JSON handoff surface for future agent-to-agent cooperation
 
 ## Commands
 
 ```bash
 PYTHONPATH=src python3 -m work_codex.cli litigation-validate --workspace .
 PYTHONPATH=src python3 -m work_codex.cli litigation-status --workspace .
+PYTHONPATH=src python3 -m work_codex.cli litigation-handoff --workspace .
 ```
 
 ## Why this matters

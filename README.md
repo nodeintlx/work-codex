@@ -35,6 +35,29 @@ python3 -m work_codex.cli filing-status --workspace .
 python3 -m work_codex.cli draft-alberta-skeleton --workspace .
 python3 -m work_codex.cli draft-write-bundle --workspace .
 python3 -m work_codex.cli litigation-next-actions --workspace .
+python3 -m work_codex.cli litigation-handoff --workspace .
+python3 -m work_codex.cli agent-exchange-init --workspace . --root ./agent-exchange
+python3 -m work_codex.cli litigation-handoff-write --workspace . --exchange-root ./agent-exchange
+python3 -m work_codex.cli agent-exchange-ingest --workspace . --exchange-root ./agent-exchange
+python3 -m work_codex.cli agent-proposal-status --workspace .
+python3 -m work_codex.cli agent-proposal-promote --workspace . --path ./nrg-bloom/litigation-ton/agent-intake/proposals/example.json
+python3 -m work_codex.cli agent-proposal-apply --workspace . --path ./nrg-bloom/litigation-ton/agent-intake/proposals/example.json
+python3 -m work_codex.cli agent-review-queue --workspace .
+python3 -m work_codex.cli content-intake --workspace . --title "What people misunderstand about building in Nigeria" --idea "Founders underestimate how much trust, logistics, and visible movement matter when executing real infrastructure projects in Nigeria."
+python3 -m work_codex.cli content-calendar --workspace .
+python3 -m work_codex.cli content-validate --workspace . --brief ./nrg-bloom/marketing/templates/content-brief-example.yaml
+python3 -m work_codex.cli content-draft --workspace . --brief ./nrg-bloom/marketing/templates/content-brief-example.yaml
+python3 -m work_codex.cli content-creative --workspace . --brief ./nrg-bloom/marketing/templates/content-brief-example.yaml
+python3 -m work_codex.cli content-editorial --workspace .
+python3 -m work_codex.cli content-status --workspace . --brief ./nrg-bloom/marketing/templates/content-brief-example.yaml --set-status scheduled --scheduled-for 2026-03-18
+python3 -m work_codex.cli content-backend --workspace .
+python3 -m work_codex.cli content-backend --workspace . --write
+python3 -m work_codex.cli content-app --workspace .
+python3 -m work_codex.cli content-app --workspace . --write
+python3 -m work_codex.cli signal-ingest --workspace . --domain ai_infra --headline "African data center expansion accelerates" --summary "A major hyperscaler announced new African data center capacity tied to AI demand growth." --nrg-angle "NRG Bloom can contrast hyperscaler capex with modular, local-first deployment reality." --source "Datacenter Dynamics" --published-at 2026-03-10 --pillar future_facing_authority --business-proximity 9 --content-opportunity 9 --recency-window 10 --topic-pillar-fit 9
+python3 -m work_codex.cli signal-route --workspace . --id SIG-001 --create-brief
+python3 -m work_codex.cli signal-log --workspace .
+python3 -m work_codex.cli signal-backend --workspace .
 ```
 
 What it does now:
@@ -47,6 +70,17 @@ What it does now:
 - supports safe updates to litigation posture and settlement tracker state
 - builds structured filing readiness, exhibit scaffolds, and draft litigation sections from the TON matter state
 - writes versioned TON draft bundles and ranks the next highest-leverage litigation actions
+- exports a stable litigation handoff payload for future Codex/Claude agent cooperation
+- captures raw NRG Bloom content ideas into structured briefs with audience, pillar, CTA, and queue placement
+- reports the current NRG Bloom content calendar
+- validates the NRG Bloom content system and canonical content briefs
+- generates multi-format draft packages from validated content briefs
+- generates creative packages with thumbnail concepts, image directions, carousel frames, and video storyboard notes
+- generates an editorial board view with next posts, ready backlog, funnel coverage, and gaps
+- updates content workflow state for review, approval, scheduling, and publishing
+- emits a frontend-ready backend summary payload for BloomFlow
+- emits a frontend contract payload with dashboard cards, brief detail views, and app actions
+- supports a local-first intelligence loop: signal ingest, router scoring, and auto-brief creation
 - provides a Codex-native environment check via `doctor`
 
 ## Repository Layout
@@ -96,3 +130,4 @@ This repo is ready to become a private GitHub repository. See `docs/github-setup
 - Codex-native architecture: `docs/codex-native.md`
 - Portability notes: `docs/portability.md`
 - TON operating procedure: `docs/ton-daily-operating-procedure.md`
+- Claude/Codex exchange spec: `docs/claude-codex-exchange-spec.md`

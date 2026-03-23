@@ -1,0 +1,41 @@
+{
+  "artifact_path": "nrg-bloom/litigation-ton/agent-intake/legal_analysis/20260307T200842Z-claude-work-agent-sda-section7-arbitration-clause-analysis-2026-03-07.md",
+  "artifact_type": "legal_analysis",
+  "created_at_utc": "2026-03-07T20:08:43.257980Z",
+  "patch": {
+    "claim_updates": [
+      {
+        "id": "C2",
+        "set": {
+          "forum_track": "alberta_primary",
+          "status": "ready_to_plead"
+        }
+      },
+      {
+        "id": "C3",
+        "set": {
+          "forum_track": "alberta_primary",
+          "status": "ready_to_plead"
+        }
+      }
+    ],
+    "strategy_principles_add": [
+      "Statement of Claim should be restructured to LEAD with MNDA claims. Prepare anti-stay arguments using the 6 arguments outlined in Part 7.2. The two-front advantage (Alberta court for MNDA claims + Nigerian arbitration for SDA claims) maximizes litigation cost pressure on TON."
+    ]
+  },
+  "promoted_at_utc": "2026-03-08T00:07:32.839099Z",
+  "protocol_version": "codex-state-patch/v1",
+  "source_agent": "claude-work-agent",
+  "status": "pending",
+  "suggested_updates": {
+    "claims_map": {
+      "C1_bad_faith_termination": "SDA claim \u2014 subject to potential Nigerian arbitration stay. Lower priority in Alberta filing.",
+      "C2_axxela_circumvention": "MNDA claim \u2014 exclusive Alberta court jurisdiction confirmed. IMMUNE to arbitration stay. This is the primary Alberta claim.",
+      "C3_misrepresentation": "MNDA subject matter \u2014 captured by 'irrespective of legal theory' language. Alberta court. Forum question RESOLVED.",
+      "C4_unjust_enrichment": "Independent restitutionary claim \u2014 arguable whether subject to stay. Strong argument it's independent of both agreements."
+    },
+    "evidence_map": "Add MNDA Section 6 (exclusive Alberta jurisdiction), MNDA Section 8 (non-circumvention verbatim), MNDA Section 4 (injunctive relief \u2014 contemplates court enforcement), MNDA Section 9 (2-year term expires Jan 10, 2027 \u2014 all circumvention within operative period) as critical procedural evidence.",
+    "filing_readiness": "Upgrade Alberta confidence level \u2014 the MNDA exclusive jurisdiction clause is a procedural asset, not a risk. The mandatory stay risk applies only to SDA-specific claims, not to the core circumvention/confidence claims.",
+    "strategy": "Statement of Claim should be restructured to LEAD with MNDA claims. Prepare anti-stay arguments using the 6 arguments outlined in Part 7.2. The two-front advantage (Alberta court for MNDA claims + Nigerian arbitration for SDA claims) maximizes litigation cost pressure on TON."
+  }
+}

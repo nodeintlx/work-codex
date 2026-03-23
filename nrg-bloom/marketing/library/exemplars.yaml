@@ -1,0 +1,79 @@
+last_updated: "2026-03-10"
+library:
+  description: "Structured writing exemplars for BloomFlow. These are not copied verbatim into outputs; they provide tone, pacing, and structural cues."
+  exemplars:
+    - id: "EX-001"
+      name: "Builder Positioning"
+      format: "linkedin"
+      pillars:
+        - "builder_credibility"
+        - "founder_lessons"
+      stages:
+        - "awareness"
+      opening_pattern: "Start with quiet authority. Contrast polished narrative with hard execution."
+      moves:
+        - "Use short stand-alone lines to build rhythm."
+        - "Name unseen work before naming the lesson."
+        - "Pivot from experience to operator identity."
+      closing_pattern: "Close by inviting the audience into future lessons, not by forcing a sale."
+      signature_lines:
+        - "Not the pitch."
+        - "The real work."
+        - "Not theory. Not recycled startup advice."
+      source_path: "nrg-bloom/litigation-ton/phase-1-draft-post-01-linkedin-positioning-2026-03-08.md"
+    - id: "EX-002"
+      name: "Public-Safe Founder Narrative"
+      format: "linkedin"
+      pillars:
+        - "field_storytelling"
+        - "nigeria_market_reality"
+      stages:
+        - "awareness"
+      opening_pattern: "Lead with what was learned in the field, without naming the dispute."
+      moves:
+        - "Stay calm and credible."
+        - "Frame the lesson as founder/operator knowledge, not accusation."
+        - "Move from what happened to what kind of operator it creates."
+      closing_pattern: "Point toward future projects, partnerships, or lessons."
+      signature_lines:
+        - "What you learned."
+        - "What kind of operator it made you."
+        - "What kind of projects or partnerships you want next."
+      source_path: "nrg-bloom/litigation-ton/public-safe-narrative-framework-2026-03-08.md"
+    - id: "EX-003"
+      name: "Nigeria Execution Insight"
+      format: "linkedin"
+      pillars:
+        - "nigeria_market_reality"
+      stages:
+        - "awareness"
+        - "consideration"
+      opening_pattern: "Open with a misconception, then replace it with ground truth."
+      moves:
+        - "State what outsiders usually miss."
+        - "Translate the issue into trust, timing, or local execution."
+        - "Finish with a behavior change."
+      closing_pattern: "End on a practical takeaway that changes how builders should move."
+      signature_lines:
+        - "What people misunderstand"
+        - "Why physical movement matters"
+        - "Execution reality vs investor fantasy"
+      source_path: "nrg-bloom/litigation-ton/phase-1-content-strategy-2026-03-08.md"
+    - id: "EX-004"
+      name: "Founder Lesson Thread"
+      format: "x"
+      pillars:
+        - "founder_lessons"
+        - "builder_credibility"
+      stages:
+        - "awareness"
+      opening_pattern: "Start sharp. One line should create tension and imply a hard lesson."
+      moves:
+        - "Each line should add a new layer."
+        - "Prefer consequence over explanation."
+        - "Thread should feel like escalation, not repetition."
+      closing_pattern: "End with the durable lesson in one clean line."
+      signature_lines:
+        - "If you don't control the leverage, you don't control the outcome."
+        - "Why operators see problems long before investors do."
+      source_path: "nrg-bloom/litigation-ton/phase-1-content-strategy-2026-03-08.md"

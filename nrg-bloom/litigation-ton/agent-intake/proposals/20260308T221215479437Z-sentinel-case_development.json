@@ -1,0 +1,47 @@
+{
+  "artifact_path": "nrg-bloom/litigation-ton/agent-intake/case_development/20260308T221214Z-sentinel-sentinel-video-evidence-ton-ola-coordination-2026-03-08.md",
+  "artifact_type": "case_development",
+  "created_at_utc": "2026-03-08T22:12:15.482064Z",
+  "patch": {},
+  "protocol_version": "codex-state-patch/v1",
+  "source_agent": "sentinel",
+  "status": "pending_review",
+  "suggested_updates": {
+    "evidence_register_add": {
+      "corroborating_witness": "Claudy D Claudius",
+      "date": "2026-03-07",
+      "deployment_tier": "Tier 1 \u2014 injunction application",
+      "id": "E-VIDEO-001",
+      "proves": [
+        "TON-Ola post-termination coordination",
+        "Jeff termination call denials false",
+        "NRG Bloom staff co-opted",
+        "Mining restart confirmed"
+      ],
+      "source": "X \u2014 @kadio_b",
+      "type": "video",
+      "url": "https://x.com/kadio_b/status/2030410616515510698"
+    },
+    "jeff_jespersen_credibility": "COMPROMISED \u2014 three termination call statements contradicted by video",
+    "live_notes_append": "March 8: Kadio X video proves TON operating Infraflow with Ola's people and former NRG Bloom security staff. Julie sent all evidence to Dayo. Court process beginning week of March 9-13.",
+    "matter_status": {
+      "alberta_filing": "ON HOLD pending Dayo call March 9",
+      "negotiation_status": "CLOSED",
+      "nigerian_proceedings": "injunction_application_in_preparation \u2014 court process expected week of March 9-13",
+      "phase": "active_proceedings_preparation"
+    },
+    "timeline_add": [
+      {
+        "date": "2026-03-07",
+        "milestone": "Kadio posts video on X showing operations inside Infraflow with former NRG Bloom staff",
+        "track": "evidence"
+      },
+      {
+        "date": "2026-03-08",
+        "milestone": "Julie sends video evidence package to Dayo \u2014 Claudy identifies former NRG Bloom security agents",
+        "track": "Nigeria"
+      }
+    ]
+  },
+  "supersedes": ""
+}

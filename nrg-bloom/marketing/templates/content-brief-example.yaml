@@ -1,0 +1,223 @@
+id: CB-001
+created_at: '2026-03-10'
+updated_at: '2026-03-10'
+status: approved_for_drafting
+owner: makir
+source_type: founder_idea
+source_ref: manual_intake
+title: Why physical movement matters in Nigerian project execution
+raw_idea: Founders from Canada often assume meetings and slide decks are enough, but
+  in Nigeria people need to see visible progress, local presence, and movement before
+  trust compounds.
+source_notes:
+- Could become LinkedIn post, thread, and short-form video.
+original_language: en
+audience:
+  primary: diaspora_founders
+  secondary:
+  - energy_infrastructure_partners
+persona_problem: They underestimate how much visible action and local presence drive
+  trust in Nigeria.
+content_pillar: nigeria_market_reality
+funnel_stage: awareness
+campaign_theme: building in West Africa
+business_goal: Strengthen founder authority and attract aligned operators and partners.
+primary_cta: Follow NRG Bloom for practical lessons on building energy and compute
+  infrastructure in hard markets.
+lead_magnet: Field Notes memo
+main_thesis: In Nigeria, trust compounds through visible movement, not just meetings
+  and planning.
+punch_idea: If people cannot see movement, they assume nothing is real.
+contrarian_angle: What looks like a communication problem is often a visibility problem.
+emotional_driver: hard-won credibility
+proof_points:
+- Cross-border execution in Nigeria demands visible progress.
+- Remote operators lose trust when local stakeholders do not see action.
+hooks:
+- Most founders think updates build trust. In Nigeria, visible movement does.
+- If your project only exists in calls and decks, many stakeholders will treat it
+  as unreal.
+- 'One of the most expensive cross-border lessons: trust needs to be seen.'
+supporting_points:
+- Physical presence changes stakeholder confidence.
+- Visible action reduces doubt faster than explanation.
+- Execution culture varies by market.
+objections_to_answer:
+- Is this just a communication issue?
+- Can remote teams solve this with better reporting?
+closing_angle: Serious operators design for local trust mechanics, not just internal
+  project plans.
+primary_format: linkedin_post
+primary_channel: linkedin
+repurpose_formats:
+- x_thread
+- email_note
+- short_video_script
+series_role: pillar_builder
+publish_window: '2026-03-19'
+creative_direction:
+  visual_theme: field realism
+  thumbnail_concepts:
+  - 'Bold text: ''Trust Needs Movement'''
+  - Contrast between slide deck planning and on-the-ground activity
+  image_prompt_directions:
+  - African infrastructure field scene, founder/operator realism, no site-identifiable
+    details
+  onscreen_text:
+  - If they cannot see movement, they will not trust the project.
+  carousel_frames:
+  - What founders assume
+  - What local stakeholders actually need
+  - What to do differently
+  video_shot_ideas:
+  - Direct-to-camera founder lesson
+  - B-roll of travel, roads, site-adjacent movement, laptops, calls
+guardrails:
+  brand_voice_rules:
+  - builder-first
+  - commercially clear
+  - future-facing
+  legal_risk_level: safe_public_generic
+  legal_notes:
+  - Keep it Phase 1-safe while TON proceedings remain active.
+  - Do not include identifiable site, counterparty, contract, or evidence details.
+  claims_to_avoid:
+  - Do not imply facts specific to the live dispute.
+  required_review: standard_editorial
+drafts:
+  linkedin: 'Most founders think updates build trust. In Nigeria, visible movement
+    does.
+
+
+    In Nigeria, trust compounds through visible movement, not just meetings and planning.
+
+
+    - Physical presence changes stakeholder confidence.
+
+    - Visible action reduces doubt faster than explanation.
+
+    - Execution culture varies by market.
+
+
+    If people cannot see movement, they assume nothing is real.
+
+
+    Follow NRG Bloom for practical lessons on building energy and compute infrastructure
+    in hard markets.'
+  x_thread: '1. Most founders think updates build trust. In Nigeria, visible movement
+    does.
+
+    2. In Nigeria, trust compounds through visible movement, not just meetings and
+    planning.
+
+    3. Physical presence changes stakeholder confidence.
+
+    4. Visible action reduces doubt faster than explanation.
+
+    5. Execution culture varies by market.
+
+    6. If people cannot see movement, they assume nothing is real.
+
+    7. Follow NRG Bloom for practical lessons on building energy and compute infrastructure
+    in hard markets.'
+  email: 'Subject: Why physical movement matters in Nigerian project execution
+
+
+    If your project only exists in calls and decks, many stakeholders will treat it
+    as unreal.
+
+
+    In Nigeria, trust compounds through visible movement, not just meetings and planning.
+
+
+    Why it matters:
+
+    - Physical presence changes stakeholder confidence.
+
+    - Visible action reduces doubt faster than explanation.
+
+    - Execution culture varies by market.
+
+
+    Bottom line: If people cannot see movement, they assume nothing is real.
+
+    Follow NRG Bloom for practical lessons on building energy and compute infrastructure
+    in hard markets.'
+  article_outline: '# Why physical movement matters in Nigerian project execution
+
+
+    ## Opening
+
+    In Nigeria, trust compounds through visible movement, not just meetings and planning.
+
+
+    ## Main Sections
+
+    - Physical presence changes stakeholder confidence.
+
+    - Visible action reduces doubt faster than explanation.
+
+    - Execution culture varies by market.
+
+
+    ## Objections To Answer
+
+    - Is this just a communication issue?
+
+    - Can remote teams solve this with better reporting?
+
+
+    ## Closing
+
+    Serious operators design for local trust mechanics, not just internal project
+    plans.'
+  video_script: 'Hook:
+
+    Most founders think updates build trust. In Nigeria, visible movement does.
+
+
+    Main point:
+
+    In Nigeria, trust compounds through visible movement, not just meetings and planning.
+
+
+    Beat 1:
+
+    Physical presence changes stakeholder confidence.
+
+
+    Beat 2:
+
+    Visible action reduces doubt faster than explanation.
+
+
+    Close:
+
+    If people cannot see movement, they assume nothing is real.
+
+    Follow NRG Bloom for practical lessons on building energy and compute infrastructure
+    in hard markets.
+
+
+    Visual note: field realism'
+  faq: 'Q: What is the main lesson behind ''Why physical movement matters in Nigerian
+    project execution''?
+
+    A: In Nigeria, trust compounds through visible movement, not just meetings and
+    planning.
+
+
+    Q: Why does this matter for builders?
+
+    A: If people cannot see movement, they assume nothing is real.
+
+
+    Q: What should they do next?
+
+    A: Follow NRG Bloom for practical lessons on building energy and compute infrastructure
+    in hard markets.'
+performance:
+  published_assets: []
+  performance_snapshot: {}
+  lessons_learned: []
+  next_derivatives: []

@@ -1,0 +1,99 @@
+last_updated: "2026-03-08"
+matter: "NRG Bloom Inc. v. TON Infrastructure Ltd."
+purpose: "Track TON-related marketing and creator assets for litigation-safe use."
+labels:
+  - safe_internal
+  - safe_public_generic
+  - needs_lawyer_review
+  - do_not_publish
+assets:
+  - id: CR-001
+    title: "Site visit photos and videos from February 2025 Nigeria trip"
+    asset_type: photo_video
+    creator: "Makir / NRG Bloom"
+    date_created: "2025-02"
+    source_reference: "ton-nrg-bloom-analysis.md"
+    evidence_reference: "ton-nrg-bloom-analysis.md#L82"
+    current_label: needs_lawyer_review
+    reasons:
+      - "Likely identifiable TON/site association"
+      - "Originally discussed for social posting"
+      - "May support authorship and origination proof"
+    allowed_uses_now:
+      - "counsel review"
+      - "evidence package"
+      - "authorship proof"
+    blocked_uses_now:
+      - "public posting"
+      - "dispute commentary"
+    notes: "Review whether neutral cropped versions can become generic founder-story material."
+
+  - id: CR-002
+    title: "Drone footage, facility videos, and edited marketing materials created for TON"
+    asset_type: edited_marketing_package
+    creator: "Makir / NRG Bloom"
+    date_created: "2025"
+    source_reference: "marley-broda-analysis.md"
+    evidence_reference: "marley-broda-analysis.md#L430"
+    current_label: needs_lawyer_review
+    reasons:
+      - "Created for TON-related use"
+      - "Possible dispute over licence or permitted use"
+      - "Likely identifiable site content"
+      - "High value as proof of work and appropriation"
+    allowed_uses_now:
+      - "counsel review"
+      - "damages support"
+      - "proof of contribution"
+    blocked_uses_now:
+      - "public reposting"
+      - "client-attributed portfolio use without review"
+    notes: "Strong candidate for rights analysis and possible later redacted portfolio version."
+
+  - id: CR-003
+    title: "Raw creator files proving authorship and editing workflow"
+    asset_type: source_files
+    creator: "Makir / NRG Bloom"
+    date_created: "2025"
+    source_reference: "to be inventoried"
+    evidence_reference: ""
+    current_label: safe_internal
+    reasons:
+      - "High evidentiary value"
+      - "Supports ownership/authorship proof"
+      - "No need for public use now"
+    allowed_uses_now:
+      - "counsel review"
+      - "evidence preservation"
+      - "authorship proof"
+    blocked_uses_now:
+      - "public release"
+    notes: "Preserve metadata, edit history, export history, and original timestamps."
+
+  - id: CR-004
+    title: "Legal correspondence, settlement materials, and mediation-related content"
+    asset_type: dispute_material
+    creator: "mixed"
+    date_created: "2026"
+    source_reference: "position-summary-updated-with-evidence-2026-02-25.md"
+    evidence_reference: "position-summary-updated-with-evidence-2026-02-25.md#L325"
+    current_label: do_not_publish
+    reasons:
+      - "High confidentiality / without-prejudice risk"
+      - "Could prejudice proceedings"
+      - "Could hand TON an easy counterattack"
+    allowed_uses_now:
+      - "counsel use only"
+      - "litigation record"
+    blocked_uses_now:
+      - "public posting"
+      - "social media"
+      - "content marketing"
+    notes: "Absolute hold unless counsel gives specific written clearance."
+
+review_rules:
+  default_label: safe_internal
+  if_identifiable_ton_or_site: needs_lawyer_review
+  if_dispute_or_mediation_related: do_not_publish
+  if_generic_and_non_identifying: safe_public_generic
+  if_uncertain: needs_lawyer_review

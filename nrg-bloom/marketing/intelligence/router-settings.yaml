@@ -1,0 +1,9 @@
+thresholds:
+  auto_fire: 75
+  advisory: 50
+weights:
+  business_proximity: 35
+  content_opportunity: 30
+  recency_window: 20
+  topic_pillar_fit: 15
+cooldown_hours: 6

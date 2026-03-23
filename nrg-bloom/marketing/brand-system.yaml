@@ -1,0 +1,148 @@
+last_updated: "2026-03-10"
+brand:
+  name: "NRG Bloom"
+  company: "NRG Bloom Inc."
+  voice:
+    - "builder-first"
+    - "commercially clear"
+    - "field-tested"
+    - "future-facing"
+  voice_system:
+    posture:
+      - "Write like an operator who has paid for the lesson."
+      - "Sound calm, direct, and commercially literate."
+      - "Prefer conviction over hype."
+    do:
+      - "Lead with what changed, why it matters, and what serious builders should do differently."
+      - "Use short sentences with some weight."
+      - "Make insights feel earned, not crowdsourced."
+      - "Tie market observations back to execution, leverage, trust, or economics."
+    avoid:
+      - "motivational founder fluff"
+      - "empty inspiration"
+      - "generic thought leadership"
+      - "breathless hype language"
+      - "obvious filler like 'in today's world'"
+    signature_patterns:
+      - "Most people see the headline. Operators see the constraint."
+      - "The real question is what this changes on the ground."
+      - "Serious builders read this differently."
+      - "This is a market-reading problem before it is a messaging problem."
+    format_rules:
+      linkedin:
+        structure:
+          - "Open with tension."
+          - "Name the operational change."
+          - "Give 2-3 grounded takeaways."
+          - "Close with a practical takeaway or CTA."
+      x:
+        structure:
+          - "Thread should escalate, not repeat."
+          - "Each line should add a new layer."
+      email:
+        structure:
+          - "Subject should sound specific, not clickbait."
+          - "Body should feel like a sharp operator note."
+      video:
+        structure:
+          - "Hook in one sentence."
+          - "Bridge to why it matters."
+          - "End with one durable takeaway."
+  working_goal: "Build founder authority that turns into investor, operator, and partner conversations."
+guardrails:
+  - "Follow nrg-bloom/litigation-ton/phase-1-content-strategy-2026-03-08.md for public-safe publishing."
+  - "If content could identify TON, the site, protected evidence, or live dispute details, send it for lawyer review."
+  - "Do not publish contracts, WhatsApp material, call-derived language, or specific disputed commercial figures."
+audiences:
+  founders:
+    label: "Cross-border founders"
+    pain_points:
+      - "They confuse contribution with leverage."
+      - "They underestimate documentation and control points."
+      - "They need practical lessons, not motivational content."
+  diaspora_founders:
+    label: "Diaspora founders building in Africa"
+    pain_points:
+      - "They want to build back home without losing control."
+      - "They need help navigating trust, local presence, and execution reality."
+      - "They resonate with cultural and operational honesty."
+  energy_infrastructure_partners:
+    label: "Energy and infrastructure partners"
+    pain_points:
+      - "They want serious operators who understand local execution."
+      - "They need confidence in project structure and field discipline."
+      - "They care about credible counterparties, not hype."
+  bitcoin_mining_buyers:
+    label: "Bitcoin mining and compute buyers"
+    pain_points:
+      - "They want reliable hosting and power economics."
+      - "They need operators who understand uptime, deployment, and hard environments."
+      - "They value technical clarity over narrative."
+  investors:
+    label: "Investors and strategic backers"
+    pain_points:
+      - "They want evidence of judgment, execution, and resilience."
+      - "They need confidence that lessons have become systems."
+      - "They respond to disciplined operators, not generic startup energy."
+content_pillars:
+  builder_credibility:
+    label: "Builder credibility"
+    outcomes:
+      - "Prove NRG Bloom has real operating experience."
+      - "Separate the brand from armchair commentary."
+  nigeria_market_reality:
+    label: "Nigeria market reality"
+    outcomes:
+      - "Make NRG Bloom useful for people evaluating West Africa."
+      - "Show practical ground truth from the field."
+  founder_lessons:
+    label: "Founder lessons"
+    outcomes:
+      - "Turn expensive mistakes into strategic authority."
+      - "Bridge infrastructure content to broader founder audiences."
+  field_storytelling:
+    label: "Field storytelling"
+    outcomes:
+      - "Create emotional pull without over-disclosing."
+      - "Make the work feel real and human."
+  future_facing_authority:
+    label: "Future-facing authority"
+    outcomes:
+      - "Keep the brand pointed at the next project, not the last dispute."
+      - "Create a path toward partner and investor conversations."
+funnel:
+  awareness:
+    label: "Top of funnel"
+    default_cta: "Follow NRG Bloom for practical lessons on building energy and compute infrastructure in hard markets."
+    lead_magnet: "Field Notes memo"
+    recommended_assets:
+      - "LinkedIn founder post"
+      - "X thread"
+      - "Short-form video"
+  consideration:
+    label: "Middle of funnel"
+    default_cta: "Reply 'checklist' if you want the operator checklist version of this lesson."
+    lead_magnet: "Operator checklist"
+    recommended_assets:
+      - "Framework post"
+      - "Email note"
+      - "Mini case study"
+  decision:
+    label: "Bottom of funnel"
+    default_cta: "DM NRG Bloom if you're evaluating a modular compute or stranded-energy project in West Africa."
+    lead_magnet: "Project diagnostic call"
+    recommended_assets:
+      - "Offer post"
+      - "Partner one-pager"
+      - "Direct outreach email"
+publishing:
+  primary_channels:
+    - "linkedin"
+    - "x"
+    - "email"
+  cadence:
+    weekly_posts: 3
+    publish_days:
+      - "Tuesday"
+      - "Thursday"
+      - "Friday"

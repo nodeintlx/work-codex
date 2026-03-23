@@ -1,0 +1,14 @@
+{
+  "artifact_path": "nrg-bloom/litigation-ton/agent-intake/decision_memo/20260307T194554Z-claude-work-agent-alberta-protective-filing-decision-memo-2026-03-07.md",
+  "artifact_type": "decision_memo",
+  "created_at_utc": "2026-03-07T19:49:58.929135Z",
+  "patch": {},
+  "protocol_version": "codex-state-patch/v1",
+  "source_agent": "claude-work-agent",
+  "status": "pending_review",
+  "suggested_updates": {
+    "claims_map": "C3 forum_track should be updated from needs_forum_review to canada_cross_border (Alberta tort claim \u2014 misrepresentation by Alberta party under Alberta-governed MNDA)",
+    "filing_readiness": "Should be updated from in_progress to ready_pending_lawyer (draft SOC complete, case law verified, only procedural steps remain)",
+    "strategy": "top_action should reflect that the decision memo is now delivered \u2014 next action is Alberta Corporate Registry search + limited-scope lawyer outreach"
+  }
+}

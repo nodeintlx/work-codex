@@ -1,0 +1,58 @@
+{
+  "artifact_path": "nrg-bloom/litigation-ton/agent-intake/session_summary/20260310T002414Z-sentinel-sentinel-session-update-2026-03-09.md",
+  "artifact_type": "session_summary",
+  "created_at_utc": "2026-03-10T00:24:14.948436Z",
+  "patch": {},
+  "protocol_version": "codex-state-patch/v1",
+  "source_agent": "sentinel",
+  "status": "pending_review",
+  "suggested_updates": {
+    "container_identification": {
+      "20ft_canada": "Mining container with 95 ASIC miners",
+      "infraflow": "40ft power distribution container",
+      "nrg_bloom_20ft": "Separate pre-existing container, 33 miners"
+    },
+    "documents_delivered_to_counsel": {
+      "chronology": "chronology-nrg-bloom-v-ton-2026-03-09.md \u2014 verified, 11 phases, Feb 4 2025 to Mar 9 2026",
+      "email_record": "ton-emails-complete-record-2026-03-09.md \u2014 199 emails, full headers and bodies, Jan 9 2025 to Mar 6 2026"
+    },
+    "evidence_update": {
+      "E-VIDEO-001_status": "DELIVERED_TO_COUNSEL \u2014 Julie sent full package to Dayo Mar 8"
+    },
+    "jeff_jespersen_credibility": "COMPROMISED",
+    "legal_team": {
+      "firm": "Moroom Africa LLP",
+      "members": [
+        "Dayo Adu (lead)",
+        "Jane Ibikunle",
+        "Mercy Airiohuodion (dispute resolution, NEW)",
+        "Joshua Adedokun (support, NEW)"
+      ],
+      "team_size": 4
+    },
+    "matter_status": {
+      "alberta_filing": "ON HOLD pending Dayo call March 9",
+      "negotiation_status": "CLOSED",
+      "nigerian_proceedings": "injunction_application_in_preparation \u2014 court process beginning week of March 9-13",
+      "phase": "active_court_proceedings"
+    },
+    "timeline_add": [
+      {
+        "date": "2026-03-09",
+        "milestone": "Legal team expanded to 4 \u2014 Mercy Airiohuodion and Joshua Adedokun join",
+        "track": "Nigeria"
+      },
+      {
+        "date": "2026-03-09",
+        "milestone": "Full chronology and 199-email record delivered to counsel",
+        "track": "evidence"
+      },
+      {
+        "date": "2026-03-09",
+        "milestone": "Dayo strategy call \u2014 injunction elaboration",
+        "track": "Nigeria"
+      }
+    ]
+  },
+  "supersedes": ""
+}

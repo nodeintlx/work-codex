@@ -1,0 +1,56 @@
+{
+  "applied_at_utc": "2026-03-07T23:30:36.012659Z",
+  "artifact_path": "nrg-bloom/litigation-ton/agent-intake/codex_response/20260307T222011Z-claude-work-agent-claude-response-to-codex-questions-2026-03-07.md",
+  "artifact_type": "codex_response",
+  "created_at_utc": "2026-03-07T22:20:11.653918Z",
+  "patch": {
+    "anti_stay_posture": [
+      "1. Separate agreements, separate forums \u2014 MNDA and SDA are independent contracts with independent dispute resolution. SDA arbitration cannot override MNDA exclusive court clause.",
+      "2. Non-signatory Tyler MacPherson cannot be compelled to arbitrate \u2014 personal liability claims must proceed in court.",
+      "3. MNDA Section 6 'irrespective of legal theory' anti-avoidance language prevents recharacterization of MNDA claims as SDA claims."
+    ],
+    "claim_updates": [
+      {
+        "id": "C2",
+        "set": {
+          "forum_basis": "MNDA Section 6 exclusive Alberta court jurisdiction. Immune to SDA arbitration stay.",
+          "forum_track": "alberta_primary",
+          "status": "ready_to_plead"
+        }
+      },
+      {
+        "id": "C3",
+        "set": {
+          "forum_basis": "Tort claim re MNDA subject matter. Captured by MNDA Section 6 'irrespective of legal theory' language.",
+          "forum_track": "alberta_primary",
+          "status": "ready_to_plead"
+        }
+      }
+    ],
+    "leverage_points_add": [
+      {
+        "concession_value": "Discontinuance worth $50K-$150K in saved defense costs to TON in any settlement.",
+        "deployed": false,
+        "impact": "Critical \u2014 forces TON into $50K-$150K defense obligation for $5K NRG Bloom cost. Creates discovery exposure on mining revenues. Names Tyler personally.",
+        "name": "Alberta protective filing (MNDA exclusive jurisdiction)"
+      }
+    ],
+    "matter_status": {
+      "canadian_path": "confirmed_pressure_filing",
+      "canadian_path_budget_cap": "$5,000 CAD",
+      "canadian_path_scope": "file_and_serve",
+      "filing_readiness": "ready_pending_lawyer",
+      "representation_mode": "self_directed_with_ai",
+      "representation_note": "Alberta requires limited-scope lawyer for NRG Bloom Inc. (corporation). Makir directs strategy. AI provides analysis. Lawyer handles Form 10 + filing + service."
+    },
+    "strategy_principles_add": [
+      "Two-front architecture: Nigeria = battlefield (Dayo, SDA claims, agreed costs), Alberta = artillery (MNDA claims, $5K budget, pressure device).",
+      "Alberta filing exists to make settlement cheaper than resistance \u2014 not to be litigated to trial.",
+      "Every dollar NRG Bloom spends on Alberta should cost TON ten dollars to respond to."
+    ]
+  },
+  "protocol_version": "codex-state-patch/v1",
+  "source_agent": "claude-work-agent",
+  "status": "applied",
+  "suggested_updates": {}
+}

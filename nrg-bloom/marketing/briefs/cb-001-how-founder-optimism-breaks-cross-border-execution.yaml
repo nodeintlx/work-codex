@@ -1,0 +1,114 @@
+id: CB-001
+created_at: '2026-03-10'
+updated_at: '2026-03-10'
+status: in_review
+owner: makir
+source_type: content_intake
+source_ref: CM-008
+title: How founder optimism breaks cross-border execution
+raw_idea: Founders often think good intent and momentum are enough, but cross-border
+  projects fail when leverage, documentation, and operating control are weak from
+  day one.
+source_notes:
+- Generated from CM-008 via content-intake.
+original_language: en
+audience:
+  primary: founders
+  secondary:
+  - x
+persona_problem: They confuse contribution with leverage.
+content_pillar: founder_lessons
+funnel_stage: awareness
+campaign_theme: founder discipline
+business_goal: Build founder authority and grow relevant reach.
+primary_cta: Follow NRG Bloom for practical lessons on building energy and compute
+  infrastructure in hard markets.
+lead_magnet: Field Notes memo
+main_thesis: Founders often think good intent and momentum are enough, but cross-border
+  projects fail when leverage, documentation, and operating control are weak from
+  day one. That is the practical edge behind founder lessons.
+punch_idea: Founders often think good intent and momentum are enough, but cross-border
+  projects fail when leverage, doc...
+contrarian_angle: What sounds obvious becomes valuable when explained through real
+  founder lessons experience.
+emotional_driver: disciplined caution
+proof_points:
+- Founders often think good intent and momentum are enough, but cross-border projects
+  fail when leverage, documentation, and operating control are weak from day one.
+- This matters to cross-border founders because execution quality changes trust and
+  outcomes.
+hooks:
+- Most people talk about how founder optimism breaks cross-border execution. Very
+  few have had to execute it in the field.
+- 'The expensive lesson behind this topic: Founders often think good intent and momentum
+  are enough, but cross-border projects fail when leverage, docume'
+- If you're building across borders, founder lessons matters earlier than most founders
+  think.
+supporting_points:
+- Founders often think good intent and momentum are enough, but cross-border projects
+  fail when leverage, documentation, and operating control are weak from day one
+- Founder lessons is usually a systems problem, not a talking-point problem.
+- The strongest content should end with a practical change in behavior.
+objections_to_answer:
+- Is this really a major issue?
+- Does this apply outside one edge case?
+closing_angle: Founders often think good intent and momentum are enough, but cross-border
+  projects fail when leverage, doc...
+primary_format: linkedin_post
+primary_channel: linkedin
+repurpose_formats:
+- x_thread
+- email_note
+- short_video_script
+series_role: pillar_builder
+publish_window: '2026-03-26'
+creative_direction:
+  visual_theme: sharp editorial
+  thumbnail_concepts:
+  - 'Bold text pull-quote: Founders often think good intent and momentum are enough,
+    bu'
+  - Founder portrait plus one operational contrast visual
+  image_prompt_directions:
+  - founder lessons visual, practical infrastructure setting, no site-identifiable
+    details
+  - Editorial documentary style, commercially serious, no hype aesthetics
+  onscreen_text:
+  - Founders often think good intent and momentum are enough, but cross-border projects
+    fail when leverage, doc...
+  carousel_frames:
+  - The core problem
+  - Founders often think good intent and momentum are enough, but cross-border projects
+    fail when leverage, documentation, and operating control are weak from day one.
+    That is the practical edge behind founder lessons.
+  - Founders often think good intent and momentum are enough, but cross-border projects
+    fail when leverage, documentation, and operating control are weak from day one
+  - Founder lessons is usually a systems problem, not a talking-point problem.
+  - What to do differently
+  video_shot_ideas:
+  - Direct-to-camera founder lesson
+  - B-roll that reinforces founder lessons without exposing protected details
+guardrails:
+  brand_voice_rules:
+  - builder-first
+  - commercially clear
+  - field-tested
+  - future-facing
+  legal_risk_level: safe_public_generic
+  legal_notes:
+  - Keep this Phase 1-safe while TON proceedings remain active.
+  - Do not include identifiable counterparty, site, contract, or evidence details.
+  claims_to_avoid:
+  - Do not imply facts specific to the live dispute.
+  required_review: standard_editorial
+drafts:
+  linkedin: ''
+  x_thread: ''
+  email: ''
+  article_outline: ''
+  video_script: ''
+  faq: ''
+performance:
+  published_assets: []
+  performance_snapshot: {}
+  lessons_learned: []
+  next_derivatives: []

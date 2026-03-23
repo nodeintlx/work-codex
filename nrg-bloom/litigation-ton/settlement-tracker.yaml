@@ -1,156 +1,195 @@
-# Settlement Negotiation Tracker — NRG Bloom v. TON Infrastructure
-# CONFIDENTIAL — ATTORNEY-CLIENT PRIVILEGED
-
-last_updated: "2026-03-07"
-matter: "NRG Bloom Inc. v. TON Infrastructure Ltd."
+last_updated: '2026-03-07'
+matter: NRG Bloom Inc. v. TON Infrastructure Ltd.
 status: active
 framework:
-  mechanism: "30-day negotiation → 45-day mediation → arbitration"
-  start_date: "2026-03-05"  # Position paper exchange date
-  negotiation_deadline: "2026-04-04"  # Estimated 30 days from exchange
-  mediation_deadline: "2026-05-19"  # Estimated 45 days after negotiation
-  mediator: "Marley Broda (self-appointed — no neutral mediator yet)"
-
+  mechanism: "30-day negotiation \u2192 45-day mediation \u2192 arbitration"
+  start_date: '2026-03-05'
+  negotiation_deadline: '2026-04-04'
+  mediation_deadline: '2026-05-19'
+  mediator: "Marley Broda (self-appointed \u2014 no neutral mediator yet)"
 parameters:
-  nrg_bloom_opening: "$727,000 USD (₦1.2B)"
-  nrg_bloom_floor: "$500,000 USD"
-  full_claim_range_naira: "₦1.8B - ₦4B"
-  full_claim_range_usd: "$1.1M - $2.4M"
-  mccarthy_litigation_conservative: "$1.6M"
-  mccarthy_litigation_aggressive: "$6M+"
-  ton_estimated_zone: "$75K - $150K"
-  realistic_arbitration_outcome: "$200K - $400K"
-
+  nrg_bloom_opening: "$727,000 USD (\u20A61.2B)"
+  nrg_bloom_floor: $500,000 USD
+  full_claim_range_naira: "\u20A61.8B - \u20A64B"
+  full_claim_range_usd: $1.1M - $2.4M
+  mccarthy_litigation_conservative: $1.6M
+  mccarthy_litigation_aggressive: $6M+
+  ton_estimated_zone: $75K - $150K
+  realistic_arbitration_outcome: $200K - $400K
 rounds:
-  - round: 1
-    date: "2026-03-05"
-    type: position_paper
-    nrg_bloom:
-      offer: "$727,000 USD (₦1.2B)"
-      key_arguments:
-        - "Axxela circumvention — 15-day, 15-email exclusion documented"
-        - "Marley's false statement to Axxela MD (Jul 4)"
-        - "Progressive devaluation: $9,000/month → $875/month → $0"
-        - "Manufactured termination: refused ops fee → cited non-operation"
-        - "7 causes of action under Nigerian law"
-        - "McCarthy Tetrault engagement (exhibit annexed)"
-      concessions_made:
-        - "Settlement = 30-65% of full claim range"
-        - "Excludes punitive damages entirely"
-        - "Excludes future lost profits beyond conservative period"
-      new_evidence_deployed:
-        - "Full Axxela email trail (email-by-email chronology)"
-        - "JV Agreement Section 5 exclusivity clause"
-        - "Axxela meeting minutes (TON = 'investors from Canada')"
-        - "Expenditure ledger (₦68.4M / ~$47,127 USD)"
-      evidence_held_back:
-        - "WhatsApp — David Billay (Tyler/Franklin daily calls)"
-        - "WhatsApp — Franklin Umole ('teams working together')"
-        - "WhatsApp — Nana Umebese ('from your end')"
-        - "Call transcripts (Jul 1, Jul 4, Jun 24, Feb 12)"
-        - "Phoenix Trading FZCO v. Dennis Corp (Tyler's 2022 prior lawsuit)"
-        - "David Billay's full financial model allocations"
-    ton:
-      offer: "$10,000 USD over 12 months"
-      key_arguments:
-        - "Site never commissioned — no Infraflow deployed, no revenue"
-        - "Axxela PPA never executed — claim is 'speculative'"
-        - "Shared Vision Proposal: 'Ogboinbiri falls outside scope' + $5K/MW Axxela valuation"
-        - "Section 5 of SDA bars damages from discontinuation"
-        - "Affirmation doctrine bars economic duress claim"
-        - "NRG Bloom Services Ltd (Nigeria) incorporated after SDA — standing challenge"
-        - "Budget overruns caused by NRG Bloom's understated projections"
-        - "Jan 27 investor sabotage — site already non-operational"
-        - "Dec 22 electrical deficiencies — NRG Bloom's operational failures"
-        - "Reserved but unasserted counterclaim for budget overruns"
-      concessions_detected:
-        - "Acknowledged NRG Bloom has some claim (offering $10K proves claim exists)"
-        - "Did NOT assert counterclaim — cannot quantify damages from NRG Bloom"
-        - "Invited Alberta jurisdiction — exposes to Bhasin/Callow/LAC Minerals"
-      new_arguments:
-        - "Named Gary Zimmermann (McLennan Ross) as Alberta counsel"
-        - "Set 5-day deadline expiring March 10 COB MST"
-        - "Sent directly to Dayo bypassing existing thread"
-      exhibits_attached:
-        - "A: Shared Vision Proposal"
-        - "B: Email thread — Shared Vision Proposal response"
-        - "C: Incident Report — Jan 27 unauthorized shutdown"
-        - "D: Draft Partnership Agreement (unsigned March 2025)"
-        - "E: Email thread — April 22 cost overrun discussion"
-        - "F: Email thread — 77% hashrate ultimatum (Jun 30)"
-        - "G: Meeting minutes — 20' Pod Electrical Review (Dec 22)"
-        - "H: Phase 1 Deployment Timeline"
-    gap: "$717,000 (NRG Bloom $727K vs TON $10K)"
-    assessment: "TON's position paper is aggressive in tone but substantively hollow. Every major claim contradicted by documentary evidence. $10K offer is not a serious proposal — it is a provocation. The paper reveals TON is scared of the Axxela claim and unaware of the full evidence base."
-    next_step: "Dayo has already rejected — focus on McCarthy call March 6 with updated priorities"
-
-  - round: 2
-    date: "2026-03-05"
-    type: rejection_response
-    nrg_bloom:
-      action: "Outright rejection of $10K offer — sent by Dayo within 40 minutes"
-      key_moves:
-        - "Rejected '$10K against $600K+ claim' as 'insult dressed in legal language'"
-        - "Dismantled TON's legal defenses point by point"
-        - "Dropped Phoenix Trading FZCO v. Dennis Corp bomb on Tyler"
-        - "Announced multi-jurisdictional proceedings commencing next week"
-        - "Stated 'this letter closes the negotiation chapter as conducted to date'"
-      new_evidence_deployed:
-        - "Phoenix Trading reference (oblique — 'Tyler's litigation history')"
-        - "Service of process announcement (Nigerian court)"
-      evidence_still_held_back:
-        - "WhatsApp — David Billay, Franklin Umole, Nana Umebese"
-        - "Full call transcripts (Jul 1, Jul 4, Jun 24, Feb 12)"
-        - "David Billay's financial model allocations"
-    ton:
-      expected_response: "Either escalation (filing in Alberta) or revised offer"
-    assessment: "Dayo's response was powerful. Rejected the 5-day deadline. Phoenix Trading drop forces TON to reassess their exposure. Multi-jurisdictional threat adds pressure. Ball is now in TON's court."
-    next_step: "McCarthy call March 6 — protective filing strategy, limitation period, Section 5 analysis"
-
-  - round: 3
-    date: '2026-03-07'
-    type: strategy_update
-    nrg_bloom:
-      action: Shifted Canadian path to self-directed strategy with AI runtime support
-    assessment: McCarthy Tetrault is paused. Canadian path is now being organized as a self-directed, filing-ready matter with structured runtime support.
-    next_step: Build protective Alberta filing package and convert evidence/chronology into pleading-ready structure.
+- round: 1
+  date: '2026-03-05'
+  type: position_paper
+  nrg_bloom:
+    offer: "$727,000 USD (\u20A61.2B)"
+    key_arguments:
+    - "Axxela circumvention \u2014 15-day, 15-email exclusion documented"
+    - Marley's false statement to Axxela MD (Jul 4)
+    - "Progressive devaluation: $9,000/month \u2192 $875/month \u2192 $0"
+    - "Manufactured termination: refused ops fee \u2192 cited non-operation"
+    - 7 causes of action under Nigerian law
+    - McCarthy Tetrault engagement (exhibit annexed)
+    concessions_made:
+    - Settlement = 30-65% of full claim range
+    - Excludes punitive damages entirely
+    - Excludes future lost profits beyond conservative period
+    new_evidence_deployed:
+    - Full Axxela email trail (email-by-email chronology)
+    - JV Agreement Section 5 exclusivity clause
+    - Axxela meeting minutes (TON = 'investors from Canada')
+    - "Expenditure ledger (\u20A668.4M / ~$47,127 USD)"
+    evidence_held_back:
+    - "WhatsApp \u2014 David Billay (Tyler/Franklin daily calls)"
+    - "WhatsApp \u2014 Franklin Umole ('teams working together')"
+    - "WhatsApp \u2014 Nana Umebese ('from your end')"
+    - Call transcripts (Jul 1, Jul 4, Jun 24, Feb 12)
+    - Phoenix Trading FZCO v. Dennis Corp (Tyler's 2022 prior lawsuit)
+    - David Billay's full financial model allocations
+  ton:
+    offer: $10,000 USD over 12 months
+    key_arguments:
+    - "Site never commissioned \u2014 no Infraflow deployed, no revenue"
+    - "Axxela PPA never executed \u2014 claim is 'speculative'"
+    - 'Shared Vision Proposal: ''Ogboinbiri falls outside scope'' + $5K/MW Axxela
+      valuation'
+    - Section 5 of SDA bars damages from discontinuation
+    - Affirmation doctrine bars economic duress claim
+    - "NRG Bloom Services Ltd (Nigeria) incorporated after SDA \u2014 standing challenge"
+    - Budget overruns caused by NRG Bloom's understated projections
+    - "Jan 27 investor sabotage \u2014 site already non-operational"
+    - "Dec 22 electrical deficiencies \u2014 NRG Bloom's operational failures"
+    - Reserved but unasserted counterclaim for budget overruns
+    concessions_detected:
+    - Acknowledged NRG Bloom has some claim (offering $10K proves claim exists)
+    - "Did NOT assert counterclaim \u2014 cannot quantify damages from NRG Bloom"
+    - "Invited Alberta jurisdiction \u2014 exposes to Bhasin/Callow/LAC Minerals"
+    new_arguments:
+    - Named Gary Zimmermann (McLennan Ross) as Alberta counsel
+    - Set 5-day deadline expiring March 10 COB MST
+    - Sent directly to Dayo bypassing existing thread
+    exhibits_attached:
+    - 'A: Shared Vision Proposal'
+    - "B: Email thread \u2014 Shared Vision Proposal response"
+    - "C: Incident Report \u2014 Jan 27 unauthorized shutdown"
+    - 'D: Draft Partnership Agreement (unsigned March 2025)'
+    - "E: Email thread \u2014 April 22 cost overrun discussion"
+    - "F: Email thread \u2014 77% hashrate ultimatum (Jun 30)"
+    - "G: Meeting minutes \u2014 20' Pod Electrical Review (Dec 22)"
+    - 'H: Phase 1 Deployment Timeline'
+  gap: $717,000 (NRG Bloom $727K vs TON $10K)
+  assessment: "TON's position paper is aggressive in tone but substantively hollow.\
+    \ Every major claim contradicted by documentary evidence. $10K offer is not a\
+    \ serious proposal \u2014 it is a provocation. The paper reveals TON is scared\
+    \ of the Axxela claim and unaware of the full evidence base."
+  next_step: "Dayo has already rejected \u2014 focus on McCarthy call March 6 with\
+    \ updated priorities"
+- round: 2
+  date: '2026-03-05'
+  type: rejection_response
+  nrg_bloom:
+    action: "Outright rejection of $10K offer \u2014 sent by Dayo within 40 minutes"
+    key_moves:
+    - Rejected '$10K against $600K+ claim' as 'insult dressed in legal language'
+    - Dismantled TON's legal defenses point by point
+    - Dropped Phoenix Trading FZCO v. Dennis Corp bomb on Tyler
+    - Announced multi-jurisdictional proceedings commencing next week
+    - Stated 'this letter closes the negotiation chapter as conducted to date'
+    new_evidence_deployed:
+    - "Phoenix Trading reference (oblique \u2014 'Tyler's litigation history')"
+    - Service of process announcement (Nigerian court)
+    evidence_still_held_back:
+    - "WhatsApp \u2014 David Billay, Franklin Umole, Nana Umebese"
+    - Full call transcripts (Jul 1, Jul 4, Jun 24, Feb 12)
+    - David Billay's financial model allocations
+  ton:
+    expected_response: Either escalation (filing in Alberta) or revised offer
+  assessment: Dayo's response was powerful. Rejected the 5-day deadline. Phoenix Trading
+    drop forces TON to reassess their exposure. Multi-jurisdictional threat adds pressure.
+    Ball is now in TON's court.
+  next_step: "McCarthy call March 6 \u2014 protective filing strategy, limitation\
+    \ period, Section 5 analysis"
+- round: 3
+  date: '2026-03-07'
+  type: strategy_update
+  nrg_bloom:
+    action: Shifted Canadian path to self-directed strategy with AI runtime support
+  assessment: McCarthy Tetrault is paused. Canadian path is now being organized as
+    a self-directed, filing-ready matter with structured runtime support.
+  next_step: Build protective Alberta filing package and convert evidence/chronology
+    into pleading-ready structure.
+- round: 4
+  date: '2026-03-07'
+  type: operations_update
+  nrg_bloom:
+    action: Reported that TON began mining on 2026-03-06 after terminating NRG Bloom
+      beforehand.
+  assessment: If verified, TONs mining commencement sharply increases damages credibility
+    and settlement pressure because the exclusion is no longer only preparatory or
+    speculative. It becomes an active appropriation/revenue event.
+  next_step: Preserve screenshots, meter/hashrate output, messages, photos, payout
+    records, or witness evidence proving the March 6 start and connect the start date
+    to termination chronology.
+- round: 5
+  date: '2026-03-07'
+  type: evidence_update
+  nrg_bloom:
+    action: Reported technical and witness indicators that TON restarted mining operations
+      on 2026-03-06.
+  new_evidence_deployed:
+  - NRG pool dashboard showed hashrate spike on 2026-03-06 before visibility disappeared
+    hours later.
+  - 'Operational inference: pool wallet/address settings were likely changed after
+    restart, cutting off NRG Bloom visibility and BTC reward collection.'
+  - Eyewitness/local team reports indicate the transformer was commissioned and align
+    with the same March 6 date.
+  assessment: 'This is not yet a fully verified revenue record, but it is a strong
+    operations-and-control indicator: restored site power, active mining, then loss
+    of NRG-side pool visibility consistent with takeover of machine configuration.'
+  next_step: Preserve dashboard evidence and identify any witness who can state when
+    the transformer was commissioned, who gave the order, and whether pool or wallet
+    settings were changed on site.
 red_lines:
-  - "Walk-away floor: $500,000 USD — no settlement below this"
-  - "No settlement without mutual release of all claims"
-  - "No settlement without written acknowledgment of NRG Bloom's contribution (internal, non-public)"
-  - "No settlement that waives Axxela-related claims without adequate compensation"
-  - "No settlement that includes non-compete restricting NRG Bloom's Nigeria operations"
-
+- "Walk-away floor: $500,000 USD \u2014 no settlement below this"
+- No settlement without mutual release of all claims
+- No settlement without written acknowledgment of NRG Bloom's contribution (internal,
+  non-public)
+- No settlement that waives Axxela-related claims without adequate compensation
+- No settlement that includes non-compete restricting NRG Bloom's Nigeria operations
 concessions_available:
-  - item: "Accept structured payment (50% within 14 days, balance within 90 days)"
-    value: "Low — timing concession only, already offered in position paper"
-    deploy_when: "TON is close to floor but needs cash flow flexibility"
-  - item: "Accept hybrid cash + ongoing revenue share from Ogboinbiri/Axxela"
-    value: "Medium — reduces upfront cash but ties to ongoing operations"
-    deploy_when: "TON can't pay lump sum but Axxela deal is generating revenue"
-  - item: "Narrow scope to Axxela circumvention + unpaid fees only"
-    value: "High — drops devaluation/duress claims to simplify"
-    deploy_when: "Only if TON is at $450K+ and wants limited mutual release"
-  - item: "Drop request for ongoing Axxela disclosure"
-    value: "Medium — gives TON privacy on current operations"
-    deploy_when: "Only as part of final settlement package above $500K"
-
+- item: Accept structured payment (50% within 14 days, balance within 90 days)
+  value: "Low \u2014 timing concession only, already offered in position paper"
+  deploy_when: TON is close to floor but needs cash flow flexibility
+- item: Accept hybrid cash + ongoing revenue share from Ogboinbiri/Axxela
+  value: "Medium \u2014 reduces upfront cash but ties to ongoing operations"
+  deploy_when: TON can't pay lump sum but Axxela deal is generating revenue
+- item: Narrow scope to Axxela circumvention + unpaid fees only
+  value: "High \u2014 drops devaluation/duress claims to simplify"
+  deploy_when: Only if TON is at $450K+ and wants limited mutual release
+- item: Drop request for ongoing Axxela disclosure
+  value: "Medium \u2014 gives TON privacy on current operations"
+  deploy_when: Only as part of final settlement package above $500K
 leverage_points:
-  - name: "McCarthy Tetrault"
-    deployed: true
-    impact: "High — credible Alberta litigation threat"
-  - name: "Axxela email trail"
-    deployed: true
-    impact: "Critical — strongest evidence, undeniable"
-  - name: "Held-back WhatsApp evidence"
-    deployed: false
-    impact: "High — impeachment ammunition for any claim of good faith"
-  - name: "Phoenix Trading prior lawsuit"
-    deployed: false
-    impact: "High — pattern of conduct, punitive damages support"
-  - name: "Call recordings (4 transcripts)"
-    deployed: false
-    impact: "Critical — Marley's admissions, Jeff's 'clearing the house'"
-  - name: "Axxela injunction threat"
-    deployed: false
-    impact: "Nuclear — threatens TON's $15.3M deal"
+- name: McCarthy Tetrault
+  deployed: true
+  impact: "High \u2014 credible Alberta litigation threat"
+- name: Axxela email trail
+  deployed: true
+  impact: "Critical \u2014 strongest evidence, undeniable"
+- name: Held-back WhatsApp evidence
+  deployed: false
+  impact: "High \u2014 impeachment ammunition for any claim of good faith"
+- name: Phoenix Trading prior lawsuit
+  deployed: false
+  impact: "High \u2014 pattern of conduct, punitive damages support"
+- name: Call recordings (4 transcripts)
+  deployed: false
+  impact: "Critical \u2014 Marley's admissions, Jeff's 'clearing the house'"
+- name: Axxela injunction threat
+  deployed: false
+  impact: "Nuclear \u2014 threatens TON's $15.3M deal"
+- concession_value: Discontinuance worth $50K-$150K in saved defense costs to TON
+    in any settlement.
+  deployed: false
+  impact: "Critical \u2014 forces TON into $50K-$150K defense obligation for $5K NRG\
+    \ Bloom cost. Creates discovery exposure on mining revenues. Names Tyler personally."
+  name: Alberta protective filing (MNDA exclusive jurisdiction)

@@ -1,0 +1,191 @@
+last_updated: '2026-03-10'
+cadence:
+  weekly_posts: 3
+  publish_days:
+  - Tuesday
+  - Thursday
+  - Friday
+items:
+- id: CM-001
+  status: planned
+  scheduled_for: '2026-03-12'
+  title: What a year of hard execution taught me
+  pillar: builder_credibility
+  audience: founders
+  funnel_stage: awareness
+  primary_channel: linkedin
+  repurpose_channels:
+  - x
+  - email
+  cta: Follow NRG Bloom for practical lessons on building energy and compute infrastructure
+    in hard markets.
+  lead_magnet: Field Notes memo
+  brief_path: nrg-bloom/litigation-ton/phase-1-draft-post-01-linkedin-positioning-2026-03-08.md
+  source: phase_1_seed
+- id: CM-002
+  status: planned
+  scheduled_for: '2026-03-13'
+  title: If you don't control leverage, you don't control the outcome
+  pillar: founder_lessons
+  audience: founders
+  funnel_stage: awareness
+  primary_channel: x
+  repurpose_channels:
+  - linkedin
+  - email
+  cta: Follow NRG Bloom for practical lessons on building energy and compute infrastructure
+    in hard markets.
+  lead_magnet: Field Notes memo
+  brief_path: nrg-bloom/litigation-ton/phase-1-content-calendar-2026-03-08.md
+  source: phase_1_seed
+- id: CM-003
+  status: planned
+  scheduled_for: '2026-03-17'
+  title: What people misunderstand about building in Nigeria
+  pillar: nigeria_market_reality
+  audience: diaspora_founders
+  funnel_stage: awareness
+  primary_channel: linkedin
+  repurpose_channels:
+  - x
+  - email
+  cta: Follow NRG Bloom for practical lessons on building energy and compute infrastructure
+    in hard markets.
+  lead_magnet: Field Notes memo
+  brief_path: nrg-bloom/litigation-ton/phase-1-content-calendar-2026-03-08.md
+  source: phase_1_seed
+- id: CM-004
+  status: planned
+  scheduled_for: '2026-03-20'
+  title: The hidden work behind infrastructure projects
+  pillar: builder_credibility
+  audience: energy_infrastructure_partners
+  funnel_stage: awareness
+  primary_channel: linkedin
+  repurpose_channels:
+  - x
+  - email
+  cta: Follow NRG Bloom for practical lessons on building energy and compute infrastructure
+    in hard markets.
+  lead_magnet: Field Notes memo
+  brief_path: nrg-bloom/litigation-ton/phase-1-content-calendar-2026-03-08.md
+  source: phase_1_seed
+- id: CM-005
+  status: planned
+  scheduled_for: '2026-03-24'
+  title: How I would structure the next cross-border project differently
+  pillar: future_facing_authority
+  audience: investors
+  funnel_stage: consideration
+  primary_channel: linkedin
+  repurpose_channels:
+  - x
+  - email
+  cta: Reply 'checklist' if you want the operator checklist version of this lesson.
+  lead_magnet: Operator checklist
+  brief_path: nrg-bloom/litigation-ton/phase-1-content-calendar-2026-03-08.md
+  source: phase_1_seed
+- id: CM-006
+  status: planned
+  scheduled_for: '2026-03-27'
+  title: I'm still building
+  pillar: future_facing_authority
+  audience: diaspora_founders
+  funnel_stage: awareness
+  primary_channel: linkedin
+  repurpose_channels:
+  - x
+  - email
+  cta: Follow NRG Bloom for practical lessons on building energy and compute infrastructure
+    in hard markets.
+  lead_magnet: Field Notes memo
+  brief_path: nrg-bloom/litigation-ton/phase-1-content-calendar-2026-03-08.md
+  source: phase_1_seed
+- id: CM-007
+  status: backlog
+  title: Why physical movement matters in Nigerian project execution
+  pillar: nigeria_market_reality
+  audience: diaspora_founders
+  funnel_stage: awareness
+  primary_channel: linkedin
+  repurpose_channels:
+  - x
+  - email
+  cta: Follow NRG Bloom for practical lessons on building energy and compute infrastructure
+    in hard markets.
+  lead_magnet: Field Notes memo
+  suggested_publish_date: '2026-03-19'
+  brief_path: nrg-bloom/marketing/ideas/2026-03-19-why-physical-movement-matters-in-nigerian-project-execution.md
+  source: content-intake
+- id: CM-008
+  brief_id: CB-001
+  status: in_review
+  title: How founder optimism breaks cross-border execution
+  pillar: founder_lessons
+  audience: founders
+  funnel_stage: awareness
+  primary_channel: linkedin
+  repurpose_channels:
+  - x
+  - email
+  cta: Follow NRG Bloom for practical lessons on building energy and compute infrastructure
+    in hard markets.
+  lead_magnet: Field Notes memo
+  suggested_publish_date: '2026-03-26'
+  brief_path: nrg-bloom/marketing/briefs/cb-001-how-founder-optimism-breaks-cross-border-execution.yaml
+  note_path: nrg-bloom/marketing/ideas/2026-03-26-how-founder-optimism-breaks-cross-border-execution.md
+  source: content-intake
+- id: CM-009
+  brief_id: CB-002
+  status: scheduled
+  title: African data center expansion accelerates
+  pillar: builder_credibility
+  audience: diaspora_founders
+  funnel_stage: awareness
+  primary_channel: linkedin
+  repurpose_channels:
+  - x
+  - email
+  cta: Follow NRG Bloom for practical lessons on building energy and compute infrastructure
+    in hard markets.
+  lead_magnet: Field Notes memo
+  brief_path: nrg-bloom/marketing/briefs/cb-002-african-data-center-expansion-accelerates.yaml
+  note_path: nrg-bloom/marketing/ideas/2026-03-31-african-data-center-expansion-accelerates.md
+  source: content-intake
+  scheduled_for: '2026-03-31'
+- id: CM-010
+  brief_id: CB-003
+  status: backlog
+  title: African data center expansion accelerates
+  pillar: builder_credibility
+  audience: diaspora_founders
+  funnel_stage: awareness
+  primary_channel: linkedin
+  repurpose_channels:
+  - x
+  - email
+  cta: Follow NRG Bloom for practical lessons on building energy and compute infrastructure
+    in hard markets.
+  lead_magnet: Field Notes memo
+  suggested_publish_date: '2026-04-02'
+  brief_path: nrg-bloom/marketing/briefs/cb-003-african-data-center-expansion-accelerates.yaml
+  note_path: nrg-bloom/marketing/ideas/2026-04-02-african-data-center-expansion-accelerates.md
+  source: content-intake
+- id: CM-011
+  brief_id: CB-004
+  status: scheduled
+  title: Nigeria flare gas enforcement tightens
+  pillar: nigeria_market_reality
+  audience: diaspora_founders
+  funnel_stage: awareness
+  primary_channel: linkedin
+  repurpose_channels:
+  - x
+  - email
+  cta: Follow NRG Bloom for practical lessons on building energy and compute infrastructure
+    in hard markets.
+  lead_magnet: Field Notes memo
+  brief_path: nrg-bloom/marketing/briefs/cb-004-nigeria-flare-gas-enforcement-tightens.yaml
+  note_path: nrg-bloom/marketing/ideas/2026-04-03-nigeria-flare-gas-enforcement-tightens.md
+  source: content-intake
+  scheduled_for: '2026-04-03'

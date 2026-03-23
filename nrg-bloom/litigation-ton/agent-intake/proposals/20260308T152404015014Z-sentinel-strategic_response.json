@@ -1,0 +1,14 @@
+{
+  "artifact_path": "nrg-bloom/litigation-ton/agent-intake/strategic_response/20260308T152403Z-sentinel-sentinel-response-content-use-risk-2026-03-08.md",
+  "artifact_type": "strategic_response",
+  "created_at_utc": "2026-03-08T15:24:04.015092Z",
+  "patch": {},
+  "protocol_version": "codex-state-patch/v1",
+  "source_agent": "sentinel",
+  "status": "pending_review",
+  "suggested_updates": {
+    "content_use_policy": "ACTIVE \u2014 default HOLD on all TON-related 2025 content. 7 hard-block categories. Safe lane exists for generic founder content with no TON identifiers. Full rule set in artifact.",
+    "live_notes_add": "Content-use rules effective March 8, 2026. Default = HOLD. Seven hard blocks. Ask Dayo before publishing anything borderline. Content is evidence \u2014 holding it is deploying it strategically."
+  },
+  "supersedes": ""
+}

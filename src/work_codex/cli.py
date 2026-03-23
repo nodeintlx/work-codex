@@ -7,6 +7,25 @@ from pathlib import Path
 import sys
 
 from .actions import strategic_action_lines
+from .content import (
+    content_app_payload,
+    calendar_lines,
+    content_backend_payload,
+    content_review_lines,
+    content_validation_lines,
+    create_content_brief,
+    editorial_lines,
+    generate_creative_package,
+    generate_content_package,
+    ingest_published_post,
+    load_content_brief,
+    log_post_performance,
+    update_content_status,
+    validate_content_brief,
+    validate_content_system,
+    write_content_app_payload,
+    write_content_backend_payload,
+)
 from .doctor import summarize_doctor
 from .drafting import (
     alberta_skeleton_lines,
@@ -15,7 +34,20 @@ from .drafting import (
     facts_section_lines,
     write_draft_bundle,
 )
+from .exchange import init_agent_exchange, write_exchange_payload
 from .filing import filing_outline_lines, filing_validation_errors, load_filing_package
+from .handoff import build_litigation_handoff
+from .ingest import ingest_exchange
+from .intelligence import (
+    ingest_signal,
+    intelligence_backend_payload,
+    route_signal,
+    signal_log_lines,
+    validate_intelligence_system,
+    write_intelligence_backend_payload,
+)
+from .proposals import apply_agent_proposal, list_agent_proposals, promote_agent_proposal
+from .review import review_queue_lines
 from .scheduler import run_scheduler_loop, scheduler_lines
 from .store import SafeWorkspaceStore, StoreError
 from .litigation import artifact_gaps, context_snapshot, litigation_deadlines, load_litigation_matter
@@ -111,6 +143,35 @@ def _build_parser() -> argparse.ArgumentParser:
     litigation_next_actions = subparsers.add_parser("litigation-next-actions")
     litigation_next_actions.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
 
+    litigation_handoff = subparsers.add_parser("litigation-handoff")
+    litigation_handoff.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+
+    exchange_init = subparsers.add_parser("agent-exchange-init")
+    exchange_init.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    exchange_init.add_argument("--root", required=True, help="Path to the shared exchange root")
+
+    litigation_handoff_write = subparsers.add_parser("litigation-handoff-write")
+    litigation_handoff_write.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    litigation_handoff_write.add_argument("--exchange-root", required=True, help="Path to the shared exchange root")
+
+    exchange_ingest = subparsers.add_parser("agent-exchange-ingest")
+    exchange_ingest.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    exchange_ingest.add_argument("--exchange-root", required=True, help="Path to the shared exchange root")
+
+    proposal_status = subparsers.add_parser("agent-proposal-status")
+    proposal_status.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+
+    proposal_apply = subparsers.add_parser("agent-proposal-apply")
+    proposal_apply.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    proposal_apply.add_argument("--path", required=True, help="Path to a proposal JSON file")
+
+    proposal_promote = subparsers.add_parser("agent-proposal-promote")
+    proposal_promote.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    proposal_promote.add_argument("--path", required=True, help="Path to a pending_review proposal JSON file")
+
+    review_queue = subparsers.add_parser("agent-review-queue")
+    review_queue.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+
     litigation_update = subparsers.add_parser("litigation-update")
     litigation_update.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
     litigation_update.add_argument("--set", action="append", default=[])
@@ -132,6 +193,99 @@ def _build_parser() -> argparse.ArgumentParser:
     scheduler_run.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
     scheduler_run.add_argument("--cycles", type=int, default=1)
     scheduler_run.add_argument("--interval-seconds", type=float, default=0.0)
+
+    content_intake = subparsers.add_parser("content-intake")
+    content_intake.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    content_intake.add_argument("--title", required=True)
+    content_intake.add_argument("--idea", required=True)
+    content_intake.add_argument("--audience")
+    content_intake.add_argument("--channel")
+    content_intake.add_argument("--suggested-date")
+
+    content_calendar = subparsers.add_parser("content-calendar")
+    content_calendar.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+
+    content_validate = subparsers.add_parser("content-validate")
+    content_validate.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    content_validate.add_argument("--brief", help="Path to a YAML content brief")
+
+    content_draft = subparsers.add_parser("content-draft")
+    content_draft.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    content_draft.add_argument("--brief", required=True, help="Path to a YAML content brief")
+
+    content_creative = subparsers.add_parser("content-creative")
+    content_creative.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    content_creative.add_argument("--brief", required=True, help="Path to a YAML content brief")
+
+    content_editorial = subparsers.add_parser("content-editorial")
+    content_editorial.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+
+    content_status = subparsers.add_parser("content-status")
+    content_status.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    content_status.add_argument("--brief", required=True, help="Path to a YAML content brief")
+    content_status.add_argument("--set-status", required=True, help="New brief workflow status")
+    content_status.add_argument("--scheduled-for")
+    content_status.add_argument("--published-at")
+
+    content_backend = subparsers.add_parser("content-backend")
+    content_backend.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    content_backend.add_argument("--write", action="store_true", help="Write backend summary JSON to the workspace")
+
+    content_app = subparsers.add_parser("content-app")
+    content_app.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    content_app.add_argument("--write", action="store_true", help="Write frontend contract JSON to the workspace")
+
+    post_ingest = subparsers.add_parser("post-ingest")
+    post_ingest.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    post_ingest.add_argument("--brief", required=True, help="Path to a YAML content brief")
+    post_ingest.add_argument("--channel", required=True)
+    post_ingest.add_argument("--body", required=True)
+    post_ingest.add_argument("--posted-at", required=True)
+    post_ingest.add_argument("--url")
+
+    performance_log = subparsers.add_parser("performance-log")
+    performance_log.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    performance_log.add_argument("--brief", required=True, help="Path to a YAML content brief")
+    performance_log.add_argument("--channel", required=True)
+    performance_log.add_argument("--captured-at", required=True)
+    performance_log.add_argument("--impressions", type=int)
+    performance_log.add_argument("--likes", type=int)
+    performance_log.add_argument("--comments", type=int)
+    performance_log.add_argument("--reposts", type=int)
+    performance_log.add_argument("--saves", type=int)
+    performance_log.add_argument("--profile-visits", type=int)
+    performance_log.add_argument("--dms", type=int)
+    performance_log.add_argument("--leads", type=int)
+
+    content_review = subparsers.add_parser("content-review")
+    content_review.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    content_review.add_argument("--brief", required=True, help="Path to a YAML content brief")
+
+    signal_ingest = subparsers.add_parser("signal-ingest")
+    signal_ingest.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    signal_ingest.add_argument("--domain", required=True)
+    signal_ingest.add_argument("--headline", required=True)
+    signal_ingest.add_argument("--summary", required=True)
+    signal_ingest.add_argument("--nrg-angle", required=True)
+    signal_ingest.add_argument("--source", required=True)
+    signal_ingest.add_argument("--published-at", required=True)
+    signal_ingest.add_argument("--pillar", required=True)
+    signal_ingest.add_argument("--business-proximity", type=int, required=True)
+    signal_ingest.add_argument("--content-opportunity", type=int, required=True)
+    signal_ingest.add_argument("--recency-window", type=int, required=True)
+    signal_ingest.add_argument("--topic-pillar-fit", type=int, required=True)
+
+    signal_route = subparsers.add_parser("signal-route")
+    signal_route.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    signal_route.add_argument("--id", required=True)
+    signal_route.add_argument("--create-brief", action="store_true")
+
+    signal_log = subparsers.add_parser("signal-log")
+    signal_log.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+
+    signal_backend = subparsers.add_parser("signal-backend")
+    signal_backend.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    signal_backend.add_argument("--write", action="store_true")
     return parser
 
 
@@ -395,6 +549,79 @@ def run(argv: list[str] | None = None) -> int:
                 print(line)
             return 0
 
+        if args.command == "litigation-handoff":
+            root = Path(args.workspace).resolve()
+            payload = build_litigation_handoff(root, today)
+            print(json.dumps(payload, indent=2, sort_keys=True))
+            return 0
+
+        if args.command == "agent-exchange-init":
+            exchange_root = Path(args.root).expanduser().resolve()
+            created = init_agent_exchange(exchange_root)
+            print(f"initialized agent exchange at {exchange_root}")
+            for path in created:
+                print(f"- {path}")
+            return 0
+
+        if args.command == "litigation-handoff-write":
+            root = Path(args.workspace).resolve()
+            exchange_root = Path(args.exchange_root).expanduser().resolve()
+            init_agent_exchange(exchange_root)
+            payload = build_litigation_handoff(root, today)
+            path = write_exchange_payload(exchange_root / "handoff", name="litigation-handoff.json", payload=payload)
+            print(f"wrote litigation handoff to {path}")
+            return 0
+
+        if args.command == "agent-exchange-ingest":
+            root = Path(args.workspace).resolve()
+            exchange_root = Path(args.exchange_root).expanduser().resolve()
+            ingested = ingest_exchange(root, exchange_root, today)
+            print(f"ingested {len(ingested)} artifact(s) from {exchange_root}")
+            for item in ingested:
+                print(f"- {item.artifact_type}: {item.stored_artifact}")
+            return 0
+
+        if args.command == "agent-proposal-status":
+            root = Path(args.workspace).resolve()
+            proposals = list_agent_proposals(root)
+            print(f"agent proposals: {len(proposals)}")
+            for item in proposals:
+                print(f"- [{item.status}] {item.path}")
+                print(f"  source_agent: {item.source_agent}")
+                print(f"  artifact_type: {item.artifact_type}")
+                print(f"  artifact_path: {item.artifact_path}")
+                if item.supersedes:
+                    print(f"  supersedes: {item.supersedes}")
+                if item.superseded_by:
+                    print(f"  superseded_by: {item.superseded_by}")
+                if item.suggested_updates:
+                    print(f"  suggested_updates: {json.dumps(item.suggested_updates, sort_keys=True)}")
+            return 0
+
+        if args.command == "agent-proposal-apply":
+            root = Path(args.workspace).resolve()
+            proposal_path = Path(args.path).expanduser().resolve()
+            applied = apply_agent_proposal(root, proposal_path, today)
+            print(f"applied proposal {proposal_path}")
+            for item in applied:
+                print(f"- {item}")
+            return 0
+
+        if args.command == "agent-proposal-promote":
+            root = Path(args.workspace).resolve()
+            proposal_path = Path(args.path).expanduser().resolve()
+            promoted = promote_agent_proposal(root, proposal_path, today)
+            print(f"promoted proposal {proposal_path}")
+            for item in promoted:
+                print(f"- {item}")
+            return 0
+
+        if args.command == "agent-review-queue":
+            root = Path(args.workspace).resolve()
+            for line in review_queue_lines(root):
+                print(line)
+            return 0
+
         if args.command == "litigation-update":
             result = store.update_litigation_status(_parse_field_assignments(args.set, args.set_json))
             print(result.message)
@@ -434,13 +661,190 @@ def run(argv: list[str] | None = None) -> int:
                     print(line)
             return 0
 
+        if args.command == "content-intake":
+            brief = create_content_brief(
+                Path(args.workspace).resolve(),
+                title=args.title,
+                idea=args.idea,
+                audience=args.audience,
+                channel=args.channel,
+                suggested_date=args.suggested_date,
+                today=today,
+            )
+            print(f"captured {brief.queue_id}: {brief.title}")
+            print(f"audience: {brief.audience_label}")
+            print(f"pillar: {brief.pillar_label}")
+            print(f"funnel stage: {brief.stage_label}")
+            print(f"primary channel: {brief.primary_channel}")
+            print(f"suggested publish date: {brief.suggested_publish_date}")
+            print(f"cta: {brief.cta}")
+            print(f"brief: {brief.brief_path}")
+            return 0
+
+        if args.command == "content-calendar":
+            for line in calendar_lines(Path(args.workspace).resolve()):
+                print(line)
+            return 0
+
+        if args.command == "content-validate":
+            root = Path(args.workspace).resolve()
+            brief_path = Path(args.brief).expanduser().resolve() if args.brief else None
+            for line in content_validation_lines(root, brief_path):
+                print(line)
+            errors = validate_content_system(root)
+            if brief_path is not None:
+                errors.extend(validate_content_brief(load_content_brief(brief_path)))
+            return 0 if not errors else 1
+
+        if args.command == "content-draft":
+            root = Path(args.workspace).resolve()
+            brief_path = Path(args.brief).expanduser().resolve()
+            package_path = generate_content_package(root, brief_path)
+            print(f"wrote content draft package: {package_path}")
+            return 0
+
+        if args.command == "content-creative":
+            root = Path(args.workspace).resolve()
+            brief_path = Path(args.brief).expanduser().resolve()
+            package_path = generate_creative_package(root, brief_path)
+            print(f"wrote content creative package: {package_path}")
+            return 0
+
+        if args.command == "content-editorial":
+            root = Path(args.workspace).resolve()
+            for line in editorial_lines(root, today):
+                print(line)
+            return 0
+
+        if args.command == "content-status":
+            root = Path(args.workspace).resolve()
+            brief_path = Path(args.brief).expanduser().resolve()
+            updated_path, status = update_content_status(
+                root,
+                brief_path=brief_path,
+                status=args.set_status,
+                scheduled_for=args.scheduled_for,
+                published_at=args.published_at,
+            )
+            print(f"updated content status: {status}")
+            print(f"brief: {updated_path}")
+            return 0
+
+        if args.command == "content-backend":
+            root = Path(args.workspace).resolve()
+            if args.write:
+                path = write_content_backend_payload(root, today)
+                print(f"wrote content backend summary: {path}")
+                return 0
+            print(json.dumps(content_backend_payload(root, today), indent=2, sort_keys=True))
+            return 0
+
+        if args.command == "content-app":
+            root = Path(args.workspace).resolve()
+            if args.write:
+                path = write_content_app_payload(root, today)
+                print(f"wrote content app contract: {path}")
+                return 0
+            print(json.dumps(content_app_payload(root, today), indent=2, sort_keys=True))
+            return 0
+
+        if args.command == "post-ingest":
+            root = Path(args.workspace).resolve()
+            brief_path = Path(args.brief).expanduser().resolve()
+            updated_path = ingest_published_post(
+                root,
+                brief_path=brief_path,
+                channel=args.channel,
+                body=args.body,
+                posted_at=args.posted_at,
+                url=args.url,
+            )
+            print(f"ingested published post: {updated_path}")
+            return 0
+
+        if args.command == "performance-log":
+            root = Path(args.workspace).resolve()
+            brief_path = Path(args.brief).expanduser().resolve()
+            updated_path = log_post_performance(
+                root,
+                brief_path=brief_path,
+                channel=args.channel,
+                captured_at=args.captured_at,
+                impressions=args.impressions,
+                likes=args.likes,
+                comments=args.comments,
+                reposts=args.reposts,
+                saves=args.saves,
+                profile_visits=args.profile_visits,
+                dms=args.dms,
+                leads=args.leads,
+            )
+            print(f"logged post performance: {updated_path}")
+            return 0
+
+        if args.command == "content-review":
+            root = Path(args.workspace).resolve()
+            brief_path = Path(args.brief).expanduser().resolve()
+            for line in content_review_lines(root, brief_path):
+                print(line)
+            return 0
+
+        if args.command == "signal-ingest":
+            root = Path(args.workspace).resolve()
+            signal = ingest_signal(
+                root,
+                domain=args.domain,
+                headline=args.headline,
+                summary=args.summary,
+                nrg_angle=args.nrg_angle,
+                source=args.source,
+                published_at=args.published_at,
+                pillar=args.pillar,
+                business_proximity=args.business_proximity,
+                content_opportunity=args.content_opportunity,
+                recency_window=args.recency_window,
+                topic_pillar_fit=args.topic_pillar_fit,
+            )
+            print(f"ingested signal: {signal['id']}")
+            print(f"headline: {signal['headline']}")
+            return 0
+
+        if args.command == "signal-route":
+            root = Path(args.workspace).resolve()
+            decision = route_signal(root, signal_id=args.id, create_brief=args.create_brief, today=today)
+            print(f"signal {decision.signal_id}: {decision.action} ({decision.score})")
+            print(f"reason: {decision.reason}")
+            if decision.brief_path is not None:
+                print(f"brief: {decision.brief_path}")
+            return 0
+
+        if args.command == "signal-log":
+            root = Path(args.workspace).resolve()
+            errors = validate_intelligence_system(root)
+            if errors:
+                for error in errors:
+                    print(error)
+                return 1
+            for line in signal_log_lines(root):
+                print(line)
+            return 0
+
+        if args.command == "signal-backend":
+            root = Path(args.workspace).resolve()
+            if args.write:
+                path = write_intelligence_backend_payload(root)
+                print(f"wrote intelligence backend summary: {path}")
+                return 0
+            print(json.dumps(intelligence_backend_payload(root), indent=2, sort_keys=True))
+            return 0
+
         validation_errors = workspace.validate()
         if validation_errors:
             print("workspace is not ready")
             for error in validation_errors:
                 print(f"- {error}")
             return 1
-    except (StoreError, json.JSONDecodeError) as exc:
+    except (StoreError, ValueError, json.JSONDecodeError) as exc:
         print(f"error: {exc}")
         return 1
 

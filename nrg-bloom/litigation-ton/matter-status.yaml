@@ -3,32 +3,47 @@
 
 matter: "NRG Bloom Inc. v. TON Infrastructure Ltd."
 status: active
-phase: filing_strategy
+phase: active_proceedings_preparation
 
 representation:
   mode: self_directed_with_ai
   canadian_counsel: paused
   nigerian_counsel: active
 
+  note: Alberta requires limited-scope lawyer for NRG Bloom Inc. (corporation). Makir directs strategy. AI provides analysis. Lawyer handles Form 10 + filing + service.
 forum:
   current_track: negotiation_plus_canadian_pre_filing
-  canadian_path: under_active_evaluation
+  canadian_path: confirmed_pressure_filing
   nigerian_path: active
 
+  canadian_path_budget_cap: $5,000 CAD
+  canadian_path_scope: file_and_serve
+  canadian_path_note: in_preparation — target March 28
+  nigerian_proceedings: Dayo initiating court service this week (March 9-13)
 filing:
-  filing_readiness: in_progress
+  filing_readiness: ready_pending_lawyer
   limitation_status: not_expired
   protective_filing_needed: to_be_determined
 
 settlement:
   opening: "$727,000 USD (₦1.2B)"
   floor: "$500,000 USD"
-  current_posture: awaiting_counterparty_response
+  current_posture: reported_post_termination_mining_start_awaiting_counsel_guidance
 
+  negotiation_status: CLOSED — Dayo rejected and closed chapter March 6
 next_actions:
-  - "Decide whether to prepare a protective Alberta filing package now."
-  - "Update settlement tracker to reflect self-directed Canadian litigation posture."
-  - "Convert core claims, chronology, and evidence map into filing-ready structure."
-
-notes: "McCarthy Tetrault engagement is paused. Canadian path is now self-directed with AI support. The runtime should prefer this file over older March 2026 references that assume a live McCarthy call."
+  - Preserve and verify evidence that TON began mining on 2026-03-06 after terminating NRG Bloom.
+  - Decide whether to prepare a protective Alberta filing package now.
+  - Update settlement tracker to reflect self-directed Canadian litigation posture and the reported mining commencement.
+  - Convert core claims, chronology, and evidence map into filing-ready structure.
+notes: "McCarthy Tetrault engagement is paused. Canadian path is now self-directed with AI support. The runtime should prefer this file over older March 2026 references that assume a live McCarthy call. User reports TON began mining on 2026-03-06 after terminating NRG Bloom beforehand; treat this as a major damages and leverage development pending evidence preservation and verification. User also reports that the NRG pool dashboard showed renewed mining activity on 2026-03-06 followed by loss of visibility hours later, consistent with restored power/connectivity and a likely post-restart switch of pool wallet settings. Eyewitness/local team reports say the transformer was commissioned on the same date."
 last_updated: "2026-03-07"
+doctrine:
+  anti_stay_posture:
+    - 1. Separate agreements, separate forums — MNDA and SDA are independent contracts with independent dispute resolution. SDA arbitration cannot override MNDA exclusive court clause.
+    - 2. Non-signatory Tyler MacPherson cannot be compelled to arbitrate — personal liability claims must proceed in court.
+    - 3. MNDA Section 6 'irrespective of legal theory' anti-avoidance language prevents recharacterization of MNDA claims as SDA claims.
+  strategy_principles:
+    - 'Two-front architecture: Nigeria = battlefield (Dayo, SDA claims, agreed costs), Alberta = artillery (MNDA claims, $5K budget, pressure device).'
+    - Alberta filing exists to make settlement cheaper than resistance — not to be litigated to trial.
+    - Every dollar NRG Bloom spends on Alberta should cost TON ten dollars to respond to.

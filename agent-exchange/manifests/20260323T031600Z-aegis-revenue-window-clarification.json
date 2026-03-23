@@ -1,0 +1,9 @@
+{
+  "protocol_version": "agent-exchange-manifest/v1",
+  "artifact_path": "outgoing/20260323T031600Z-aegis-revenue-window-clarification.md",
+  "artifact_type": "question_brief",
+  "source_agent": "Aegis",
+  "requested_action": "review_and_check_for_pre_jan6_luxor_history",
+  "matter": "NRG Bloom Inc. v. TON Infrastructure Ltd.",
+  "created_at_utc": "2026-03-23T03:16:00Z"
+}

@@ -1,0 +1,26 @@
+{
+  "applied_at_utc": "2026-03-08T00:14:31.353626Z",
+  "artifact_path": "nrg-bloom/litigation-ton/agent-intake/strategic_plan/20260308T000915Z-sentinel-sentinel-strategic-plan-v2-active-proceedings-2026-03-07.md",
+  "artifact_type": "strategic_plan",
+  "created_at_utc": "2026-03-08T00:09:16.253733Z",
+  "patch": {
+    "matter_status": {
+      "forum.canadian_path_note": "in_preparation \u2014 target March 28",
+      "forum.nigerian_proceedings": "Dayo initiating court service this week (March 9-13)",
+      "phase": "active_proceedings_preparation",
+      "settlement.negotiation_status": "CLOSED \u2014 Dayo rejected and closed chapter March 6"
+    }
+  },
+  "promoted_at_utc": "2026-03-08T00:10:43.039941Z",
+  "protocol_version": "codex-state-patch/v1",
+  "source_agent": "sentinel",
+  "status": "applied",
+  "suggested_updates": {
+    "matter_status": {
+      "alberta_filing": "in_preparation \u2014 target March 28",
+      "negotiation_status": "CLOSED \u2014 Dayo rejected and closed chapter March 6",
+      "nigerian_proceedings": "Dayo initiating court service this week (March 9-13)",
+      "phase": "active_proceedings_preparation"
+    }
+  }
+}

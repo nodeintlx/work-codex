@@ -4,7 +4,7 @@
 # Statuses: todo, in_progress, blocked, done
 # Company: nrg_bloom, coldstorm, personal, both
 
-last_updated: "2026-03-06c"
+last_updated: "2026-03-22"
 
 tasks:
   # --- COMPLETED TODAY (Feb 25) ---
@@ -419,3 +419,109 @@ tasks:
     due: "2026-03-07"
     notes: "Leyton no answer, Ayming didn't understand. Try other Montreal SR&ED firms: G6 Consulting, Northbridge Consultants, RDBASE. SR&ED + CRIC combined = up to 65% refund. IQ bridge financing gets cash within weeks of filing. Contingency fee = zero risk."
     created: "2026-03-04"
+  - id: 46
+    title: Preserve proof that TON started mining on March 6 after termination
+    company: nrg_bloom
+    priority: P0
+    status: in_progress
+    due: '2026-03-08'
+    notes: 'Capture and preserve evidence of TON mining commencement on 2026-03-06: screenshots, photos/videos, messages, hashrate dashboards, pool payouts, wallet flows, eyewitness statements, site reports, generator/fuel usage, and any admission from TON personnel. This is now central to damages and urgency.
+
+      Update Mar 7: User observed the site mining again through the NRG pool dashboard on 2026-03-06, followed by disconnection hours later. This indicates restored power and connectivity on site. Working inference: TON or its local crew likely changed pool wallet addresses after startup, cutting off NRG Bloom visibility and BTC rewards. Corroboration reported from eyewitnesses/local teams: transformer was commissioned, matching the March 6 restart date. Preserve dashboard screenshots/export, timestamps, account identifiers, and witness details.'
+    created: '2026-03-07'
+  - id: 47
+    title: Review ingested decision memo from claude-work-agent
+    company: nrg_bloom
+    priority: P1
+    status: todo
+    due: '2026-03-07'
+    notes: 'Ingested artifact: nrg-bloom/litigation-ton/agent-intake/decision_memo/20260307T194554Z-claude-work-agent-alberta-protective-filing-decision-memo-2026-03-07.md'
+    created: '2026-03-07'
+  - id: 48
+    title: Review ingested legal analysis from claude-work-agent
+    company: nrg_bloom
+    priority: P1
+    status: todo
+    due: '2026-03-07'
+    notes: "Ingested artifact: nrg-bloom/litigation-ton/agent-intake/legal_analysis/20260307T200842Z-claude-work-agent-sda-section7-arbitration-clause-analysis-2026-03-07.md\nPending proposal: nrg-bloom/litigation-ton/agent-intake/proposals/20260307T200843Z-claude-work-agent-legal_analysis.json"
+    created: '2026-03-07'
+  - id: 49
+    title: Review ingested strategic context from claude-work-agent
+    company: nrg_bloom
+    priority: P1
+    status: todo
+    due: '2026-03-07'
+    notes: "Ingested artifact: nrg-bloom/litigation-ton/agent-intake/strategic_context/20260307T200901Z-claude-work-agent-strategic-context-alberta-as-pressure-device-2026-03-07.md\nPending proposal: nrg-bloom/litigation-ton/agent-intake/proposals/20260307T200901Z-claude-work-agent-strategic_context.json"
+    created: '2026-03-07'
+  - id: 50
+    title: Review ingested codex response from claude-work-agent
+    company: nrg_bloom
+    priority: P1
+    status: todo
+    due: '2026-03-07'
+    notes: "Ingested artifact: nrg-bloom/litigation-ton/agent-intake/codex_response/20260307T222011Z-claude-work-agent-claude-response-to-codex-questions-2026-03-07.md\nPending proposal: nrg-bloom/litigation-ton/agent-intake/proposals/20260307T222011Z-claude-work-agent-codex_response.json"
+    created: '2026-03-07'
+  - id: 51
+    title: Review ingested agent identity from sentinel
+    company: nrg_bloom
+    priority: P1
+    status: todo
+    due: '2026-03-07'
+    notes: 'Ingested artifact: nrg-bloom/litigation-ton/agent-intake/agent_identity/20260307T225311Z-sentinel-sentinel-identity-declaration-2026-03-07.md'
+    created: '2026-03-07'
+  - id: 52
+    title: Review ingested strategic plan from sentinel
+    company: nrg_bloom
+    priority: P1
+    status: todo
+    due: '2026-03-07'
+    notes: "Ingested artifact: nrg-bloom/litigation-ton/agent-intake/strategic_plan/20260308T000915Z-sentinel-sentinel-strategic-plan-post-exchange-2026-03-07.md\nPending proposal: nrg-bloom/litigation-ton/agent-intake/proposals/20260308T000915Z-sentinel-strategic_plan.json"
+    created: '2026-03-07'
+  - id: 53
+    title: Review ingested strategic plan from sentinel
+    company: nrg_bloom
+    priority: P1
+    status: done
+    due: '2026-03-07'
+    notes: "Ingested artifact: nrg-bloom/litigation-ton/agent-intake/strategic_plan/20260308T000915Z-sentinel-sentinel-strategic-plan-v2-active-proceedings-2026-03-07.md\nPending proposal: nrg-bloom/litigation-ton/agent-intake/proposals/20260308T000916Z-sentinel-strategic_plan.json\nReviewed and applied via proposal 20260308T000916Z-sentinel-strategic_plan.json."
+    created: '2026-03-07'
+  - id: 54
+    title: Review ingested strategic response from sentinel
+    company: nrg_bloom
+    priority: P1
+    status: todo
+    due: '2026-03-08'
+    notes: "Ingested artifact: nrg-bloom/litigation-ton/agent-intake/strategic_response/20260308T152403Z-sentinel-sentinel-response-content-use-risk-2026-03-08.md\nPending proposal: nrg-bloom/litigation-ton/agent-intake/proposals/20260308T152404015014Z-sentinel-strategic_response.json"
+    created: '2026-03-08'
+  - id: 55
+    title: Review ingested case development from sentinel
+    company: nrg_bloom
+    priority: P1
+    status: todo
+    due: '2026-03-08'
+    notes: "Ingested artifact: nrg-bloom/litigation-ton/agent-intake/case_development/20260308T160955Z-sentinel-sentinel-dayo-injunction-update-2026-03-08.md\nPending proposal: nrg-bloom/litigation-ton/agent-intake/proposals/20260308T160955211075Z-sentinel-case_development.json"
+    created: '2026-03-08'
+  - id: 56
+    title: Review ingested case development from sentinel
+    company: nrg_bloom
+    priority: P1
+    status: todo
+    due: '2026-03-08'
+    notes: "Ingested artifact: nrg-bloom/litigation-ton/agent-intake/case_development/20260308T221214Z-sentinel-sentinel-video-evidence-ton-ola-coordination-2026-03-08.md\nPending proposal: nrg-bloom/litigation-ton/agent-intake/proposals/20260308T221215479437Z-sentinel-case_development.json"
+    created: '2026-03-08'
+  - id: 57
+    title: Review ingested session summary from sentinel
+    company: nrg_bloom
+    priority: P1
+    status: todo
+    due: '2026-03-09'
+    notes: "Ingested artifact: nrg-bloom/litigation-ton/agent-intake/session_summary/20260310T002414Z-sentinel-sentinel-session-update-2026-03-09.md\nPending proposal: nrg-bloom/litigation-ton/agent-intake/proposals/20260310T002414948406Z-sentinel-session_summary.json"
+    created: '2026-03-09'
+  - id: 58
+    title: Review ingested strategic context from sentinel
+    company: nrg_bloom
+    priority: P1
+    status: todo
+    due: '2026-03-22'
+    notes: 'Ingested artifact: nrg-bloom/litigation-ton/agent-intake/strategic_context/20260323T021231Z-sentinel-sentinel-full-sync-2026-03-22.md'
+    created: '2026-03-22'

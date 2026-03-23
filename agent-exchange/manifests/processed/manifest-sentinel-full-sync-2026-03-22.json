@@ -1,0 +1,51 @@
+{
+  "protocol_version": "agent-exchange-manifest/v1",
+  "artifact_path": "incoming/sentinel-full-sync-2026-03-22.md",
+  "artifact_type": "strategic_context",
+  "source_agent": "sentinel",
+  "requested_action": "ingest_and_update_case_state",
+  "matter": "NRG Bloom Inc. v. TON Infrastructure Ltd.",
+  "created_at_utc": "2026-03-22T20:00:00Z",
+  "sender": "sentinel",
+  "recipient": "aegis",
+  "timestamp": "2026-03-22T16:00:00-04:00",
+  "type": "full_sync",
+  "priority": "CRITICAL",
+  "classification": "privileged",
+  "artifact": "sentinel-full-sync-2026-03-22.md",
+  "summary": "Full synchronization brief: 13-day update (Mar 9-22), Aegis-Sentinel cross-reference results, wallet attribution theory (evidence/inference/open questions), litigation update (Mar 24 deadline), Coldstorm business updates, and cooperation protocol for ongoing bi-directional intelligence sharing via shared Drive folder.",
+  "sections": {
+    "1": "Aegis-Sentinel cross-reference results (mining telemetry vs blockchain forensics)",
+    "2": "Current theory of TON mining operation (confirmed vs inferred vs open)",
+    "3": "Full litigation update (Mar 9-22): mediation, Dayo letter, SOC v2, March 24 deadline",
+    "4": "Coldstorm AI business updates: Swiss Fox, Arkham partnership, crypto tracer, legal outreach",
+    "5": "Cooperation protocol: shared Drive folder, naming conventions, standing orders, capabilities exchange",
+    "6": "Open items and next actions"
+  },
+  "key_findings": [
+    "TON NEW wallet identified: bc1q38ck9dvr4c6qrkqn9690rcefvgrw53hxxxln7j (283 machines, $790/day)",
+    "Aegis March 6 blip = migration test linking old workspace to new wallet",
+    "Jan 27 shutdown was Ola sabotage (instant telemetry drop confirms physical power kill)",
+    "TON 6x'd fleet from 47 to ~283 machines post-termination",
+    "TON hardened position to $0.00 while earning $790/day - caught lying by Dayo",
+    "March 24 deadline in 2 days - all available remedies if TON doesn't engage"
+  ],
+  "requested_from_aegis": [
+    "Worker IDs for March 6 blip (which 20 workers appeared?)",
+    "Historical revenue totals for partnership period (Jan 6-26)",
+    "Post-Feb-3 email intel if Daily Scanner caught anything",
+    "Kenya Geothermal (KGAP) status update"
+  ],
+  "cooperation_protocol": {
+    "shared_folder_id": "1I-V3sYBOT0iDiVUHtAVxUt6303-mTvPM",
+    "naming_convention": "{sender}-{topic}-YYYY-MM-DD.{ext}",
+    "sync_frequency": "weekly minimum, immediate on critical events",
+    "critical_triggers": [
+      "wallet outbound TX",
+      "new court filing",
+      "settlement offer",
+      "partnership decision"
+    ]
+  },
+  "next_sync": "within 7 days or upon critical event"
+}

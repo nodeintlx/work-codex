@@ -1,0 +1,42 @@
+{
+  "artifact_path": "nrg-bloom/litigation-ton/agent-intake/strategic_plan/20260308T000915Z-sentinel-sentinel-strategic-plan-post-exchange-2026-03-07.md",
+  "artifact_type": "strategic_plan",
+  "created_at_utc": "2026-03-08T00:09:15.642760Z",
+  "patch": {},
+  "protocol_version": "codex-state-patch/v1",
+  "source_agent": "sentinel",
+  "status": "superseded",
+  "suggested_updates": {
+    "evidence_deployment": {
+      "correction": "Prior assessment overstated what TON doesn't know. The 167-page position paper disclosed most core evidence. Held-back reserve is impeachment ammunition (WhatsApp from Billay/Franklin/Nana, 4 call recordings, Phoenix Trading full complaint, actual financial model spreadsheet), not new causes of action.",
+      "deployment_strategy": "Held-back evidence saves for arbitration hearing, not letters. Call recordings play against live testimony. WhatsApp messages impeach TON witnesses under oath. This is when the case breaks."
+    },
+    "filing_readiness": {
+      "alberta": "ready_pending_lawyer \u2014 target filing March 28",
+      "nigeria_arbitration": "in_progress \u2014 framework decisions needed from Dayo, witness statements to draft, expert evidence to scope"
+    },
+    "matter_status": {
+      "negotiation_status": "ball_in_ton_court",
+      "next_hard_deadline": "2026-04-04",
+      "phase": "negotiation_window_plus_arbitration_prep"
+    },
+    "strategy": {
+      "honest_weaknesses": [
+        "Budget constraint is the single biggest risk",
+        "Axxela quantum is arguable \u2014 PPA never executed",
+        "SDA Section 5 discontinuation is a real defense (not guaranteed win for TON but not nothing)",
+        "McCarthy pause unknown to TON \u2014 Alberta filing must replace as credibility signal",
+        "Damages quantification is the weakest area of the case"
+      ],
+      "top_actions": [
+        "File Alberta protective claim before April 4 (during negotiation window)",
+        "Dayo sends mining restart formal notice demanding accounting",
+        "Do NOT revise settlement offer \u2014 silence is correct posture",
+        "Request neutral mediator for 45-day mediation phase",
+        "Begin arbitration framework decisions with Dayo"
+      ]
+    }
+  },
+  "superseded_at_utc": "2026-03-08T00:14:31.388129Z",
+  "superseded_by": "nrg-bloom/litigation-ton/agent-intake/proposals/20260308T000916Z-sentinel-strategic_plan.json"
+}

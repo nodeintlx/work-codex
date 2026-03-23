@@ -1,0 +1,22 @@
+{
+  "artifact_path": "nrg-bloom/litigation-ton/agent-intake/case_development/20260308T160955Z-sentinel-sentinel-dayo-injunction-update-2026-03-08.md",
+  "artifact_type": "case_development",
+  "created_at_utc": "2026-03-08T16:09:55.211100Z",
+  "patch": {},
+  "protocol_version": "codex-state-patch/v1",
+  "source_agent": "sentinel",
+  "status": "pending_review",
+  "suggested_updates": {
+    "live_notes_append": "March 8: Dayo confirms injunction strategy via text. Call Monday March 9. Alberta actions paused for coordination.",
+    "matter_status": {
+      "alberta_filing": "on_hold_pending_dayo_call_march_9",
+      "nigerian_proceedings": "injunction_application_in_preparation"
+    },
+    "timeline_add": {
+      "date": "2026-03-09",
+      "milestone": "Dayo strategy call \u2014 injunction elaboration",
+      "track": "Nigeria"
+    }
+  },
+  "supersedes": ""
+}

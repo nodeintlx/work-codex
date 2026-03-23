@@ -1,0 +1,75 @@
+{
+  "artifact_path": "nrg-bloom/litigation-ton/agent-intake/strategic_context/20260307T200901Z-claude-work-agent-strategic-context-alberta-as-pressure-device-2026-03-07.md",
+  "artifact_type": "strategic_context",
+  "created_at_utc": "2026-03-07T20:09:01.919184Z",
+  "patch": {
+    "claim_updates": [
+      {
+        "id": "C1",
+        "set": {
+          "forum_track": "nigeria_primary"
+        }
+      },
+      {
+        "id": "C2",
+        "set": {
+          "forum_track": "alberta_primary"
+        }
+      },
+      {
+        "id": "C3",
+        "set": {
+          "forum_track": "alberta_primary"
+        }
+      },
+      {
+        "id": "C4",
+        "set": {
+          "forum_track": "nigeria_primary"
+        }
+      }
+    ],
+    "leverage_points_add": [
+      {
+        "concession_value": "Alberta protective filing (MNDA exclusive jurisdiction) \u2014 concession value: discontinuance worth $50K-$150K in saved defense costs to TON",
+        "deployed": false,
+        "impact": "Critical \u2014 leverage point from structured strategic context.",
+        "name": "Alberta protective filing (MNDA exclusive jurisdiction)"
+      }
+    ],
+    "matter_status": {
+      "canadian_path": "confirmed_pressure_filing",
+      "canadian_path_note": "Alberta filing confirmed as pressure device, not primary battlefield. Nigeria remains primary track. Budget capped at $5K.",
+      "notes": "Makir confirmed March 7 that Nigeria is the primary battlefield and Alberta is a pressure filing only. Budget for Alberta capped at $5K total. Strategy is asymmetric \u2014 NRG Bloom spends $3K-$5K to force TON to spend $50K-$150K. The MNDA exclusive Alberta jurisdiction clause makes the filing bulletproof against dismissal."
+    },
+    "strategy_principles_add": [
+      "Two-front architecture: Nigeria = battlefield, Alberta = artillery. Alberta filing budget capped at $5K. No Alberta litigation beyond filing + service unless settlement fails completely.",
+      "NRG Bloom spends $3K-$5K to force TON to spend $50K-$150K. 1:12 to 1:35 cost ratio in NRG Bloom's favor."
+    ]
+  },
+  "promoted_at_utc": "2026-03-08T00:07:32.856028Z",
+  "protocol_version": "codex-state-patch/v1",
+  "source_agent": "claude-work-agent",
+  "status": "pending",
+  "suggested_updates": {
+    "claims_map": {
+      "C1": "forum: nigeria",
+      "C2": "forum: alberta (MNDA exclusive jurisdiction \u2014 confirmed)",
+      "C3": "forum: alberta (MNDA 'irrespective of legal theory' \u2014 confirmed)",
+      "C4": "forum: nigeria (or arguable \u2014 can be pled in both)",
+      "tyler_personal": "forum: alberta (non-signatory to SDA)"
+    },
+    "live_notes": "Makir confirmed March 7 that Nigeria is the primary battlefield and Alberta is a pressure filing only. Budget for Alberta capped at $5K total. Strategy is asymmetric \u2014 NRG Bloom spends $3K-$5K to force TON to spend $50K-$150K. The MNDA exclusive Alberta jurisdiction clause makes the filing bulletproof against dismissal.",
+    "matter_status": {
+      "canadian_path": "confirmed_pressure_filing",
+      "canadian_path_note": "Alberta filing confirmed as pressure device, not primary battlefield. Nigeria remains primary track. Budget capped at $5K."
+    },
+    "settlement_tracker": {
+      "new_leverage_point": "Alberta protective filing (MNDA exclusive jurisdiction) \u2014 concession value: discontinuance worth $50K-$150K in saved defense costs to TON"
+    },
+    "strategy": {
+      "asymmetric_warfare": "NRG Bloom spends $3K-$5K to force TON to spend $50K-$150K. 1:12 to 1:35 cost ratio in NRG Bloom's favor.",
+      "new_principle": "Two-front architecture: Nigeria = battlefield, Alberta = artillery. Alberta filing budget capped at $5K. No Alberta litigation beyond filing + service unless settlement fails completely."
+    }
+  }
+}
