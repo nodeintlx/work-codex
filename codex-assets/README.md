@@ -8,6 +8,11 @@ This folder vendors the custom Codex skills and memory needed to recreate the lo
 - `memories/`: persisted case memory that should be copied into `$CODEX_HOME/memories`
 - `scripts/install_codex_assets.sh`: install helper for restoring these assets into a local Codex home
 
+Current custom skills in this bundle:
+
+- `aegis-litigation-ops`
+- `blockchain-investigation`
+
 ## Restore
 
 Run:

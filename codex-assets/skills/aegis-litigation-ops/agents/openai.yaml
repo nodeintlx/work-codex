@@ -1,0 +1,4 @@
+interface:
+  display_name: "Aegis Litigation Ops"
+  short_description: "Run the TON litigation operations and Claude/Codex exchange loop."
+  default_prompt: "Operate as Aegis for the TON matter: ingest exchange artifacts, review proposals, maintain filing-ready state, and keep the Claude/Codex litigation loop aligned."
