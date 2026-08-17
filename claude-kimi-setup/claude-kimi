@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# claude-kimi-setup-version=1
+set -euo pipefail
+
+readonly CONFIG_DIR="${CLAUDE_KIMI_CONFIG_DIR:-$HOME/.claude-kimi}"
+readonly SETTINGS_FILE="$CONFIG_DIR/settings.json"
+
+if [[ ! -f "$SETTINGS_FILE" ]]; then
+  printf 'claude-kimi: isolated settings not found at %s\n' "$SETTINGS_FILE" >&2
+  exit 78
+fi
+
+claude_bin="${CLAUDE_KIMI_CLAUDE_BIN:-$(command -v claude || true)}"
+if [[ -z "$claude_bin" || ! -x "$claude_bin" ]]; then
+  printf 'claude-kimi: Claude Code executable was not found\n' >&2
+  exit 69
+fi
+
+unset ANTHROPIC_API_KEY ANTHROPIC_AUTH_TOKEN ANTHROPIC_CUSTOM_HEADERS
+unset ANTHROPIC_BASE_URL ANTHROPIC_BEDROCK_BASE_URL ANTHROPIC_VERTEX_BASE_URL
+unset ANTHROPIC_MODEL ANTHROPIC_SMALL_FAST_MODEL
+unset ANTHROPIC_DEFAULT_OPUS_MODEL ANTHROPIC_DEFAULT_SONNET_MODEL
+unset ANTHROPIC_DEFAULT_HAIKU_MODEL ANTHROPIC_DEFAULT_FABLE_MODEL
+unset CLAUDE_CODE_SUBAGENT_MODEL CLAUDE_CODE_OAUTH_TOKEN
+unset CLAUDE_CODE_USE_BEDROCK CLAUDE_CODE_USE_VERTEX CLAUDE_CODE_USE_FOUNDRY
+unset CLAUDE_KIMI_SECURITY_BIN CLAUDE_KIMI_TEST_SECURITY_BIN
+unset CLAUDE_KIMI_KEYCHAIN_ACCOUNT
+
+export CLAUDE_CONFIG_DIR="$CONFIG_DIR"
+exec "$claude_bin" --settings "$SETTINGS_FILE" "$@"

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "apiKeyHelper": "~/.claude-kimi/bin/fireworks-key-helper",
+  "env": {
+    "ANTHROPIC_BASE_URL": "https://api.fireworks.ai/inference",
+    "ANTHROPIC_MODEL": "accounts/fireworks/routers/kimi-k3-fast",
+    "ANTHROPIC_SMALL_FAST_MODEL": "accounts/fireworks/routers/kimi-k3-fast",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "accounts/fireworks/routers/kimi-k3-fast",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "accounts/fireworks/routers/kimi-k3-fast",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "accounts/fireworks/routers/kimi-k3-fast",
+    "ANTHROPIC_DEFAULT_FABLE_MODEL": "accounts/fireworks/routers/kimi-k3-fast",
+    "CLAUDE_CODE_SUBAGENT_MODEL": "accounts/fireworks/routers/kimi-k3-fast"
+  },
+  "model": "accounts/fireworks/routers/kimi-k3-fast"
+}

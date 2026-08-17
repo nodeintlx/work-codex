@@ -1,0 +1,62 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+readonly KEYCHAIN_SERVICE='com.makir.claude-kimi.fireworks'
+SECURITY_BIN='/usr/bin/security'
+
+if [[ -n "${CLAUDE_KIMI_TEST_SECURITY_BIN:-}" ]]; then
+  candidate="${CLAUDE_KIMI_TEST_SECURITY_BIN}"
+  helper_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
+  canonical_helper="$helper_dir/$(basename "${BASH_SOURCE[0]}")"
+  if [[ -L "${BASH_SOURCE[0]}" ]]; then
+    printf 'claude-kimi: Keychain test helper must not be a symlink\n' >&2
+    exit 69
+  fi
+  case "$canonical_helper" in
+    /private/tmp/claude-kimi-*) ;;
+    *)
+      printf 'claude-kimi: Keychain test seam is unavailable outside the test sandbox\n' >&2
+      exit 69
+      ;;
+  esac
+  if [[ ! -x "$candidate" || -L "$candidate" ]]; then
+    printf 'claude-kimi: Keychain test executable is invalid\n' >&2
+    exit 69
+  fi
+  candidate_dir="$(cd "$(dirname "$candidate")" && pwd -P)"
+  canonical_candidate="$candidate_dir/$(basename "$candidate")"
+  case "$canonical_candidate" in
+    /private/tmp/claude-kimi-*) SECURITY_BIN="$canonical_candidate" ;;
+    *)
+      printf 'claude-kimi: Keychain test executable is outside the test sandbox\n' >&2
+      exit 69
+      ;;
+  esac
+fi
+
+if [[ ! -x "$SECURITY_BIN" ]]; then
+  printf 'claude-kimi: macOS Keychain helper is unavailable\n' >&2
+  exit 69
+fi
+
+account="$(id -un)"
+api_key=''
+trap 'unset api_key' EXIT
+
+if ! api_key="$(
+  "$SECURITY_BIN" find-generic-password \
+    -a "$account" \
+    -s "$KEYCHAIN_SERVICE" \
+    -w 2>/dev/null
+)"; then
+  printf 'claude-kimi: Fireworks key is missing from macOS Keychain\n' >&2
+  exit 78
+fi
+
+case "$api_key" in
+  fw_?*) printf '%s\n' "$api_key" ;;
+  *)
+    printf 'claude-kimi: Keychain item is not a standard Fireworks fw_ key\n' >&2
+    exit 78
+    ;;
+esac
