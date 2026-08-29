@@ -1,0 +1,16 @@
+{
+  "archetype": "operator-proof",
+  "fact_ids": [
+    "ogboinbiri_operational_since_2025_02"
+  ],
+  "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T175321Z-source-of-truth-sprint/proof-before-promises",
+  "pillar": "remote-operations",
+  "publish_day": "Monday",
+  "slug": "proof-before-promises",
+  "target_channel": "linkedin-founder",
+  "title": "Proof Before Promises",
+  "verification": {
+    "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T175321Z-source-of-truth-sprint/proof-before-promises/verification.json",
+    "verified": true
+  }
+}

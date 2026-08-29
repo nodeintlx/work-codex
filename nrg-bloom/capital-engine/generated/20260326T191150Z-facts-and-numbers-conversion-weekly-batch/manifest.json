@@ -1,0 +1,12 @@
+{
+  "files": [
+    "/home/dowsmasternode/repos/work-codex/nrg-bloom/capital-engine/generated/20260326T191150Z-facts-and-numbers-conversion-weekly-batch/weekly-batch.md",
+    "/home/dowsmasternode/repos/work-codex/nrg-bloom/capital-engine/generated/20260326T191150Z-facts-and-numbers-conversion-weekly-batch/weekly-content-queue.yaml",
+    "/home/dowsmasternode/repos/work-codex/nrg-bloom/capital-engine/generated/20260326T191150Z-facts-and-numbers-conversion-weekly-batch/investor-touch-list.md"
+  ],
+  "generated_at": "2026-03-26T19:11:50.134848+00:00",
+  "plan": {
+    "slug": "facts-and-numbers-conversion",
+    "title": "NRG Bloom Facts and Numbers Conversion Layer"
+  }
+}

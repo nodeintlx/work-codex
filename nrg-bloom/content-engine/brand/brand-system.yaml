@@ -1,0 +1,63 @@
+name: "NRG Bloom"
+tagline: "Remote compute infrastructure on stranded energy"
+social_handle: "@NRGBloom"
+assets:
+  logo_white: "assets/nrg-bloom-logo-white.png"
+  founder_headshot: "assets/makir-headshot.png"
+signature:
+  name: "Makir Volcy"
+  title: "Founder & CEO"
+  image_asset: "founder_headshot"
+  website: "nrgbloom.com"
+  handle_tagline: "Remote Compute Infrastructure"
+colors:
+  bg: "#0A0E1A"
+  surface: "#111827"
+  border: "#1F2937"
+  accent: "#00C896"
+  accent_warm: "#F59E0B"
+  quote_accent: "#6BA3E8"
+  quote_accent_deep: "#14489B"
+  quote_surface: "#1A1A1A"
+  text: "#F9FAFB"
+  text_muted: "#9CA3AF"
+  text_dim: "#6B7280"
+fonts:
+  display: "Space Grotesk"
+  body: "Inter"
+voice:
+  traits:
+    - "technically authoritative"
+    - "economically rigorous"
+    - "operator-first"
+    - "field-proven"
+  founder_opening_frames:
+    - "Most people are reading this the wrong way."
+    - "The headline is not the useful part. The bottleneck is."
+    - "This is where the market still gets lazy."
+  founder_interpretation_frames:
+    - "The more useful read is this:"
+    - "What matters underneath the headline is simpler:"
+    - "The operating takeaway is straightforward:"
+  founder_conviction_frames:
+    - "My read is simple:"
+    - "The real bet is not theoretical:"
+    - "The point is not the headline. It is what the headline forces."
+  founder_close_frames:
+    - "That is where NRG Bloom intends to win."
+    - "That is the layer NRG Bloom is building around."
+    - "That is the part of the market NRG Bloom cares about."
+  avoid:
+    - "empty futurism"
+    - "crypto hype"
+    - "generic startup phrasing"
+design:
+  aesthetic: "clean credible industrial-technical"
+  backgrounds:
+    - "grid topology"
+    - "abstract energy flow"
+    - "subtle field-economics overlays"
+  imagery_rules:
+    - "use real site proof when available"
+    - "avoid literal mining-rig hero shots"
+    - "avoid coin imagery"

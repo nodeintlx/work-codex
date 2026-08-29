@@ -1,0 +1,82 @@
+{
+  "brand": {
+    "colors": {
+      "accent": "#00C896",
+      "accent_warm": "#F59E0B",
+      "bg": "#0A0E1A",
+      "border": "#1F2937",
+      "surface": "#111827",
+      "text": "#F9FAFB",
+      "text_dim": "#6B7280",
+      "text_muted": "#9CA3AF"
+    },
+    "fonts": {
+      "body": "Inter",
+      "display": "Space Grotesk"
+    },
+    "name": "NRG Bloom",
+    "tagline": "Remote compute infrastructure on stranded energy"
+  },
+  "briefs": [
+    {
+      "archetype": "market-bridge",
+      "fact_ids": [
+        "alberta_gas_heavyweight"
+      ],
+      "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T180258Z-north-america-analog-sprint/alberta-lessons",
+      "pillar": "stranded-energy",
+      "publish_day": "Monday",
+      "slug": "alberta-lessons",
+      "target_channel": "linkedin-founder",
+      "title": "Why Alberta Still Matters to the Flare-to-Compute Conversation",
+      "verification": {
+        "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T180258Z-north-america-analog-sprint/alberta-lessons/verification.json",
+        "verified": true
+      }
+    },
+    {
+      "archetype": "operator-map",
+      "fact_ids": [
+        "north_dakota_bakken_capture",
+        "crusoe_field_footprint_2025"
+      ],
+      "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T180258Z-north-america-analog-sprint/bakken-proving-ground",
+      "pillar": "flare-mitigation",
+      "publish_day": "Wednesday",
+      "slug": "bakken-proving-ground",
+      "target_channel": "linkedin-company",
+      "title": "The Bakken Was a Proving Ground, Not a Footnote",
+      "verification": {
+        "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T180258Z-north-america-analog-sprint/bakken-proving-ground/verification.json",
+        "verified": true
+      }
+    },
+    {
+      "archetype": "scale-thesis",
+      "fact_ids": [
+        "texas_permian_scale",
+        "giga_texas_to_nd_flare_path"
+      ],
+      "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T180258Z-north-america-analog-sprint/permian-scale",
+      "pillar": "modular-deployment",
+      "publish_day": "Friday",
+      "slug": "permian-scale",
+      "target_channel": "x-thread",
+      "title": "If You Want Scale, You Have to Understand Texas",
+      "verification": {
+        "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T180258Z-north-america-analog-sprint/permian-scale/verification.json",
+        "verified": true
+      }
+    }
+  ],
+  "campaign": {
+    "slug": "north-america-analog-sprint",
+    "title": "NRG Bloom North America Analog Sprint"
+  },
+  "generated_at": "2026-03-26T18:02:58.298368+00:00",
+  "verification": {
+    "enabled": true,
+    "fact_registry": "../facts/north-america-analog-facts-2026-03-26.yaml",
+    "standard": "3 local sources minimum per fact"
+  }
+}

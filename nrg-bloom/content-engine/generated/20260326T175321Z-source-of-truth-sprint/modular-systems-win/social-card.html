@@ -1,0 +1,168 @@
+<!doctype html>
+        <html lang="en">
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>Why Modular Systems Win at the Energy Edge</title>
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+          <style>
+            :root {
+              --bg: #0A0E1A;
+              --surface: #111827;
+              --border: #1F2937;
+              --accent: #00C896;
+              --accent-warm: #F59E0B;
+              --text: #F9FAFB;
+              --text-muted: #9CA3AF;
+              --text-dim: #6B7280;
+            }
+            * { box-sizing: border-box; }
+            body {
+              margin: 0;
+              min-height: 100vh;
+              font-family: "Inter", sans-serif;
+              background:
+                radial-gradient(circle at top right, rgba(0, 200, 150, 0.18), transparent 28%),
+                radial-gradient(circle at bottom left, rgba(245, 158, 11, 0.14), transparent 24%),
+                linear-gradient(180deg, #0a0e1a 0%, #0d1324 100%);
+              color: var(--text);
+              display: grid;
+              place-items: center;
+              padding: 32px;
+            }
+            .card {
+              width: 1080px;
+              min-height: 1080px;
+              padding: 72px;
+              border-radius: 36px;
+              background:
+                linear-gradient(180deg, rgba(17, 24, 39, 0.95), rgba(10, 14, 26, 0.98));
+              border: 1px solid rgba(31, 41, 55, 0.9);
+              position: relative;
+              overflow: hidden;
+              box-shadow: 0 28px 80px rgba(0, 0, 0, 0.45);
+            }
+            .card::before {
+              content: "";
+              position: absolute;
+              inset: 0;
+              background-image:
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+              background-size: 52px 52px;
+              mask-image: linear-gradient(180deg, rgba(255,255,255,0.35), transparent 70%);
+              pointer-events: none;
+            }
+            .topline {
+              display: inline-flex;
+              align-items: center;
+              gap: 12px;
+              padding: 10px 16px;
+              border: 1px solid rgba(0, 200, 150, 0.3);
+              border-radius: 999px;
+              color: var(--accent);
+              font-size: 20px;
+              font-weight: 600;
+              letter-spacing: 0.04em;
+              text-transform: uppercase;
+            }
+            .title {
+              margin: 28px 0 18px;
+              font-family: "Space Grotesk", sans-serif;
+              font-size: 74px;
+              line-height: 0.95;
+              max-width: 760px;
+            }
+            .hero-stat {
+              font-family: "Space Grotesk", sans-serif;
+              font-size: 38px;
+              line-height: 1.15;
+              color: var(--accent-warm);
+              max-width: 760px;
+              margin-bottom: 24px;
+            }
+            .thesis {
+              font-size: 32px;
+              line-height: 1.35;
+              max-width: 800px;
+              color: var(--text);
+            }
+            .panel {
+              margin-top: 40px;
+              padding: 28px 32px;
+              background: rgba(17, 24, 39, 0.82);
+              border: 1px solid rgba(0, 200, 150, 0.18);
+              border-radius: 26px;
+              max-width: 860px;
+            }
+            .panel h2 {
+              margin: 0 0 16px;
+              font-size: 20px;
+              letter-spacing: 0.08em;
+              text-transform: uppercase;
+              color: var(--text-muted);
+            }
+            ul {
+              margin: 0;
+              padding-left: 24px;
+              display: grid;
+              gap: 12px;
+              font-size: 26px;
+              line-height: 1.35;
+            }
+            .footer {
+              position: absolute;
+              left: 72px;
+              right: 72px;
+              bottom: 60px;
+              display: flex;
+              justify-content: space-between;
+              align-items: end;
+              gap: 24px;
+            }
+            .quote {
+              max-width: 700px;
+              font-size: 22px;
+              color: var(--text-muted);
+              line-height: 1.45;
+            }
+            .brand {
+              text-align: right;
+            }
+            .brand .name {
+              font-family: "Space Grotesk", sans-serif;
+              font-size: 30px;
+            }
+            .brand .tagline {
+              margin-top: 6px;
+              font-size: 18px;
+              color: var(--text-dim);
+            }
+          </style>
+        </head>
+        <body>
+          <article class="card">
+            <div class="topline">NRG Bloom / modular deployment</div>
+            <h1 class="title">Why Modular Systems Win at the Energy Edge</h1>
+            <div class="hero-stat">NRG Bloom's operating model is modular and containerized for remote energy-edge deployment.</div>
+            <p class="thesis">Modular, containerized systems fit remote energy-edge deployment because they move at the speed of real sites, not oversized assumptions.</p>
+            <section class="panel">
+              <h2>Operator Signals</h2>
+              <ul>
+                <li>NRG Bloom's documented model is modular and containerized by design.</li>
+<li>Portable systems match the realities of stranded gas, remote logistics, and phased deployment.</li>
+<li>At the energy edge, the ability to deploy, relocate, and standardize beats overbuilt permanence.</li>
+              </ul>
+            </section>
+            <footer class="footer">
+              <div class="quote">"The system that reaches the site fastest often earns the best economics."</div>
+              <div class="brand">
+                <div class="name">NRG Bloom</div>
+                <div class="tagline">Remote compute infrastructure on stranded energy</div>
+              </div>
+            </footer>
+          </article>
+        </body>
+        </html>

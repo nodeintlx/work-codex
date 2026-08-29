@@ -1,0 +1,17 @@
+{
+  "archetype": "deployment-thesis",
+  "fact_ids": [
+    "modular_containerized_model",
+    "ogboinbiri_operational_since_2025_02"
+  ],
+  "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T175321Z-source-of-truth-sprint/modular-systems-win",
+  "pillar": "modular-deployment",
+  "publish_day": "Friday",
+  "slug": "modular-systems-win",
+  "target_channel": "x-thread",
+  "title": "Why Modular Systems Win at the Energy Edge",
+  "verification": {
+    "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T175321Z-source-of-truth-sprint/modular-systems-win/verification.json",
+    "verified": true
+  }
+}

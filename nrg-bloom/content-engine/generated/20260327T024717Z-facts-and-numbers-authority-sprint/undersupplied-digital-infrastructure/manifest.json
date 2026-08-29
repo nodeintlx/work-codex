@@ -1,0 +1,21 @@
+{
+  "archetype": "market-gap",
+  "fact_ids": [
+    "nigeria_data_center_capacity_pipeline_2025",
+    "ogboinbiri_operational_capacity_1_5mw",
+    "modular_containerized_model",
+    "ogboinbiri_operational_since_2025_02"
+  ],
+  "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260327T024717Z-facts-and-numbers-authority-sprint/undersupplied-digital-infrastructure",
+  "pillar": "digital-infrastructure",
+  "publish_day": "Friday",
+  "quote_card_html": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260327T024717Z-facts-and-numbers-authority-sprint/undersupplied-digital-infrastructure/quote-card-portrait.html",
+  "quote_card_png": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260327T024717Z-facts-and-numbers-authority-sprint/undersupplied-digital-infrastructure/quote-card-portrait.png",
+  "slug": "undersupplied-digital-infrastructure",
+  "target_channel": "x-thread",
+  "title": "Nigeria Is Growing Data Centers, But the Market Is Still Small Enough for Edge Operators to Matter",
+  "verification": {
+    "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260327T024717Z-facts-and-numbers-authority-sprint/undersupplied-digital-infrastructure/verification.json",
+    "verified": true
+  }
+}

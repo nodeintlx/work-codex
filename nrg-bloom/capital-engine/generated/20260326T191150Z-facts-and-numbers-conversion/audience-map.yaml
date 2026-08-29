@@ -1,0 +1,64 @@
+generated_from: NRG Bloom Facts and Numbers Conversion Layer
+audiences:
+- slug: energy-infrastructure-capital
+  name: Energy and Infrastructure Capital
+  role_in_funnel: Primary capital
+  thesis: NRG Bloom should look like a distributed infrastructure operator monetizing
+    energy that the grid or market currently fails to use.
+  conversion_goal: Advance to memo review and diligence call.
+  channels:
+  - LinkedIn
+  - Email
+  - Warm intros
+  cta: Review the investor memo and discuss deployment sequencing.
+  proof_fact_ids:
+  - ogboinbiri_operational_since_2025_02
+  - nigeria_power_access_and_losses
+  - nigeria_grid_delivery_gap
+- slug: compute-and-ai-investors
+  name: Compute and AI Investors
+  role_in_funnel: Primary capital
+  thesis: The company should be framed as energy-edge compute infrastructure for a
+    world where power availability is becoming a first-order constraint.
+  conversion_goal: Advance to thesis discussion around where modular compute belongs
+    in the stack.
+  channels:
+  - X
+  - LinkedIn
+  - Email
+  cta: Review the one-page brief and discuss how energy access shapes compute deployment.
+  proof_fact_ids:
+  - global_data_center_demand_doubles_2030
+  - nigeria_data_center_capacity_pipeline_2025
+  - ogboinbiri_operational_capacity_1_5mw
+- slug: africa-focused-capital
+  name: Africa-Focused Investors and DFIs
+  role_in_funnel: Primary capital
+  thesis: NRG Bloom should be positioned as a company already operating in-market
+    while most others are still explaining the opportunity from afar.
+  conversion_goal: Advance to diligence around field credibility, regulatory fit,
+    and expansion logic.
+  channels:
+  - LinkedIn
+  - Warm intros
+  - Targeted outreach
+  cta: Review the diligence snapshot and discuss the Nigeria expansion path.
+  proof_fact_ids:
+  - ogboinbiri_operational_since_2025_02
+  - ngfcp_permits_power_potential_2025
+  - nigeria_power_access_and_losses
+- slug: industry-validators
+  name: Industry Validators and Strategic Operators
+  role_in_funnel: Credibility
+  thesis: Public validation from operators and market interpreters helps turn NRG
+    Bloom from an interesting company into a reference point in the category.
+  conversion_goal: Earn public validation, partner intros, and ecosystem credibility.
+  channels:
+  - X
+  - LinkedIn
+  - Direct outreach
+  cta: React publicly, comment, or make a relevant introduction.
+  proof_fact_ids:
+  - ngfcp_permits_power_potential_2025
+  - green_flare_nigeria_53mw_2025
+  - crusoe_divestiture_2025

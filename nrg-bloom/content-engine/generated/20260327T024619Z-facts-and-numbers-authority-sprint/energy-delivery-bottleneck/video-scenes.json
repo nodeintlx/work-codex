@@ -1,0 +1,54 @@
+{
+  "brand": {
+    "colors": {
+      "accent": "#00C896",
+      "accent_warm": "#F59E0B",
+      "bg": "#0A0E1A",
+      "border": "#1F2937",
+      "quote_accent": "#6BA3E8",
+      "quote_accent_deep": "#14489B",
+      "quote_surface": "#1A1A1A",
+      "surface": "#111827",
+      "text": "#F9FAFB",
+      "text_dim": "#6B7280",
+      "text_muted": "#9CA3AF"
+    },
+    "fonts": {
+      "body": "Inter",
+      "display": "Space Grotesk"
+    }
+  },
+  "cta": "That is the layer NRG Bloom is building around: where stranded energy, modular infrastructure, and real compute demand finally meet.",
+  "format": "tiktok_story_arc",
+  "scenes": [
+    {
+      "highlight": "The",
+      "text": "If your compute thesis ignores energy delivery, it is missing the bottleneck."
+    },
+    {
+      "highlight": "IEA",
+      "text": "IEA says data-centre electricity demand could more than double by 2030. World Bank materials still describe Nigeria as having the world's largest electricity-access deficit."
+    },
+    {
+      "highlight": "operators",
+      "text": "Compute is moving into a period where electricity availability matters more than slideware."
+    },
+    {
+      "highlight": "capital",
+      "text": "Nigeria forces you to separate energy supply from energy delivery. They are not the same thing."
+    },
+    {
+      "highlight": "speed",
+      "text": "NRG Bloom's model matters because it goes to trapped or wasted energy instead of waiting for the grid to behave."
+    },
+    {
+      "highlight": "contrarian",
+      "text": "The market does not need another polished Africa data-centre narrative. It needs people who understand that if power cannot be delivered, compute does not happen."
+    },
+    {
+      "highlight": "NRG Bloom",
+      "text": "The winners in this market will be the teams that know where energy can actually be turned into compute."
+    }
+  ],
+  "title": "The Constraint Is Not Demand. It Is Energy Delivery."
+}

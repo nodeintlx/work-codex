@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NRG Bloom Standalone Pieces</title>
+  <style>
+    :root { --bg:#0A0E1A; --surface:#111827; --border:#1F2937; --accent:#00C896; --text:#F9FAFB; --muted:#9CA3AF; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:"Inter",system-ui,sans-serif; color:var(--text); background:linear-gradient(180deg,#0b1020,#0A0E1A); padding:40px 24px 72px; }
+    .wrap { max-width:1200px; margin:0 auto; }
+    .hero, .card { background:linear-gradient(180deg,rgba(17,24,39,.95),rgba(10,14,26,.98)); border:1px solid rgba(31,41,55,.95); border-radius:28px; }
+    .hero { padding:30px; margin-bottom:24px; }
+    .eyebrow { display:inline-block; border:1px solid rgba(0,200,150,.28); color:var(--accent); border-radius:999px; padding:10px 16px; text-transform:uppercase; letter-spacing:.08em; font-size:12px; font-weight:700; }
+    h1,h2 { font-family:"Space Grotesk","Inter",sans-serif; letter-spacing:-.03em; }
+    h1 { margin:16px 0 10px; font-size:54px; line-height:.95; }
+    p { color:var(--muted); line-height:1.6; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+    .card { padding:20px; }
+    .thumb { display:block; width:100%; border-radius:18px; border:1px solid rgba(255,255,255,.05); margin-bottom:16px; }
+    .links { display:flex; flex-wrap:wrap; gap:10px; margin-top:14px; }
+    a.btn { text-decoration:none; color:var(--text); font-size:14px; padding:10px 14px; border-radius:999px; border:1px solid rgba(0,200,150,.28); background:rgba(0,200,150,.08); }
+    @media (max-width:1000px){ .grid{grid-template-columns:1fr;} h1{font-size:42px;} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Open Each Piece Directly</div>
+      <h1>NRG Bloom Standalone HTML Pieces</h1>
+      <p>These are the Codex equivalents of Claude’s openable HTML assets. Each piece has its own dedicated page, with motion, copy, carousel, and proof in one browser-native file.</p>
+    </section>
+    <div class="grid">
+      <section class="card">
+        <img class="thumb" src="./20260326T175321Z-source-of-truth-sprint/motion-pack/proof-before-promises-square.png" alt="Proof Before Promises">
+        <h2>Proof Before Promises</h2>
+        <p>Founder authority piece anchored on dated operating proof.</p>
+        <div class="links">
+          <a class="btn" href="./piece-proof-before-promises.html">Open Piece</a>
+          <a class="btn" href="./20260326T175321Z-source-of-truth-sprint/motion-pack/proof-before-promises-vertical.html">Open Animation</a>
+        </div>
+      </section>
+      <section class="card">
+        <img class="thumb" src="./20260326T180258Z-north-america-analog-sprint/motion-pack/bakken-proving-ground-square.png" alt="Bakken Proving Ground">
+        <h2>Bakken Proving Ground</h2>
+        <p>Category authority piece linking North Dakota pressure to model validation.</p>
+        <div class="links">
+          <a class="btn" href="./piece-bakken-proving-ground.html">Open Piece</a>
+          <a class="btn" href="./20260326T180258Z-north-america-analog-sprint/motion-pack/bakken-proving-ground-vertical.html">Open Animation</a>
+        </div>
+      </section>
+      <section class="card">
+        <img class="thumb" src="./20260326T180258Z-north-america-analog-sprint/motion-pack/permian-scale-square.png" alt="Permian Scale">
+        <h2>Permian Scale</h2>
+        <p>Short-form contrast piece: Texas scale versus African execution.</p>
+        <div class="links">
+          <a class="btn" href="./piece-permian-scale.html">Open Piece</a>
+          <a class="btn" href="./20260326T180258Z-north-america-analog-sprint/motion-pack/permian-scale-vertical.html">Open Animation</a>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

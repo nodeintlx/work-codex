@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-03-26T19:11:50.177034+00:00",
+  "outputs": {
+    "audience_map": "/home/dowsmasternode/repos/work-codex/nrg-bloom/capital-engine/generated/20260326T191150Z-facts-and-numbers-conversion/audience-map.yaml",
+    "content_backlog": "/home/dowsmasternode/repos/work-codex/nrg-bloom/capital-engine/generated/20260326T191150Z-facts-and-numbers-conversion/content-backlog.yaml",
+    "diligence_snapshot": "/home/dowsmasternode/repos/work-codex/nrg-bloom/capital-engine/generated/20260326T191150Z-facts-and-numbers-conversion/diligence-room/diligence-snapshot.md",
+    "investor_memo": "/home/dowsmasternode/repos/work-codex/nrg-bloom/capital-engine/generated/20260326T191150Z-facts-and-numbers-conversion/investor-thesis/investor-memo.md",
+    "market_and_timing": "/home/dowsmasternode/repos/work-codex/nrg-bloom/capital-engine/generated/20260326T191150Z-facts-and-numbers-conversion/diligence-room/market-and-timing.md",
+    "one_page_brief": "/home/dowsmasternode/repos/work-codex/nrg-bloom/capital-engine/generated/20260326T191150Z-facts-and-numbers-conversion/investor-thesis/one-page-brief.md",
+    "proof_of_execution": "/home/dowsmasternode/repos/work-codex/nrg-bloom/capital-engine/generated/20260326T191150Z-facts-and-numbers-conversion/diligence-room/proof-of-execution.md"
+  },
+  "plan": {
+    "slug": "facts-and-numbers-conversion",
+    "title": "NRG Bloom Facts and Numbers Conversion Layer"
+  }
+}

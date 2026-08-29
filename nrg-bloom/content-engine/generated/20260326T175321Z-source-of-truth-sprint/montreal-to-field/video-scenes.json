@@ -1,0 +1,51 @@
+{
+  "brand": {
+    "colors": {
+      "accent": "#00C896",
+      "accent_warm": "#F59E0B",
+      "bg": "#0A0E1A",
+      "border": "#1F2937",
+      "surface": "#111827",
+      "text": "#F9FAFB",
+      "text_dim": "#6B7280",
+      "text_muted": "#9CA3AF"
+    },
+    "fonts": {
+      "body": "Inter",
+      "display": "Space Grotesk"
+    }
+  },
+  "cta": "NRG Bloom is documenting the real operating lessons behind cross-border infrastructure execution.",
+  "format": "tiktok_story_arc",
+  "scenes": [
+    {
+      "highlight": "From",
+      "text": "Montreal to Bayelsa is not a slogan. It is an operating system."
+    },
+    {
+      "highlight": "NRG",
+      "text": "NRG Bloom is a Montreal-based company operating infrastructure in Nigeria."
+    },
+    {
+      "highlight": "operators",
+      "text": "NRG Bloom's records tie Montreal headquarters directly to an active Nigerian operating footprint."
+    },
+    {
+      "highlight": "capital",
+      "text": "Remote infrastructure management demands process, trust, and constant on-the-ground coordination."
+    },
+    {
+      "highlight": "speed",
+      "text": "The companies that bridge continents well build more than projects. They build execution credibility."
+    },
+    {
+      "highlight": "contrarian",
+      "text": "Distance is not the weakness. Lack of operating discipline is."
+    },
+    {
+      "highlight": "NRG Bloom",
+      "text": "Cross-border infrastructure works when discipline travels with the company."
+    }
+  ],
+  "title": "From Montreal to the Niger Delta"
+}

@@ -7,6 +7,9 @@ from pathlib import Path
 import sys
 
 from .actions import strategic_action_lines
+from .authority_engine import generate_authority_system, generate_weekly_authority_batch
+from .capital_engine import generate_capital_stack, generate_weekly_capital_batch
+from .content_engine import generate_content_campaign
 from .doctor import summarize_doctor
 from .drafting import (
     alberta_skeleton_lines,
@@ -15,10 +18,19 @@ from .drafting import (
     facts_section_lines,
     write_draft_bundle,
 )
+from .exchange import (
+    apply_agent_proposal,
+    ingest_exchange_artifacts,
+    pending_review_entries,
+    proposal_status_summary,
+    write_litigation_handoff,
+)
+from .factcheck import factcheck_campaign, write_factcheck_report
 from .filing import filing_outline_lines, filing_validation_errors, load_filing_package
 from .scheduler import run_scheduler_loop, scheduler_lines
 from .store import SafeWorkspaceStore, StoreError
 from .litigation import artifact_gaps, context_snapshot, litigation_deadlines, load_litigation_matter
+from .motion_pack import build_motion_pack
 from .workspace import (
     Workspace,
     blocked_tasks,
@@ -78,6 +90,35 @@ def _build_parser() -> argparse.ArgumentParser:
     memory_append.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
     memory_append.add_argument("--json", required=True, help="JSON object to append as a JSONL record")
 
+    content_campaign_generate = subparsers.add_parser("content-campaign-generate")
+    content_campaign_generate.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    content_campaign_generate.add_argument("--campaign", required=True)
+
+    content_factcheck_run = subparsers.add_parser("content-factcheck-run")
+    content_factcheck_run.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    content_factcheck_run.add_argument("--campaign", required=True)
+    content_factcheck_run.add_argument("--output")
+
+    content_motion_build = subparsers.add_parser("content-motion-build")
+    content_motion_build.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    content_motion_build.add_argument("--source")
+
+    capital_infra_build = subparsers.add_parser("capital-infra-build")
+    capital_infra_build.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    capital_infra_build.add_argument("--plan", required=True)
+
+    capital_weekly_batch = subparsers.add_parser("capital-weekly-batch-generate")
+    capital_weekly_batch.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    capital_weekly_batch.add_argument("--plan", required=True)
+
+    authority_os_build = subparsers.add_parser("authority-os-build")
+    authority_os_build.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    authority_os_build.add_argument("--plan", required=True)
+
+    authority_weekly_batch = subparsers.add_parser("authority-weekly-batch-generate")
+    authority_weekly_batch.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    authority_weekly_batch.add_argument("--plan", required=True)
+
     litigation_status = subparsers.add_parser("litigation-status")
     litigation_status.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
 
@@ -107,6 +148,24 @@ def _build_parser() -> argparse.ArgumentParser:
 
     draft_write_bundle = subparsers.add_parser("draft-write-bundle")
     draft_write_bundle.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+
+    litigation_handoff_write = subparsers.add_parser("litigation-handoff-write")
+    litigation_handoff_write.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    litigation_handoff_write.add_argument("--exchange-root", required=True)
+
+    agent_exchange_ingest = subparsers.add_parser("agent-exchange-ingest")
+    agent_exchange_ingest.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    agent_exchange_ingest.add_argument("--exchange-root", required=True)
+
+    agent_review_queue = subparsers.add_parser("agent-review-queue")
+    agent_review_queue.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+
+    agent_proposal_status = subparsers.add_parser("agent-proposal-status")
+    agent_proposal_status.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+
+    agent_proposal_apply = subparsers.add_parser("agent-proposal-apply")
+    agent_proposal_apply.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
+    agent_proposal_apply.add_argument("--path", required=True)
 
     litigation_next_actions = subparsers.add_parser("litigation-next-actions")
     litigation_next_actions.add_argument("--workspace", default=argparse.SUPPRESS, help=argparse.SUPPRESS)
@@ -233,6 +292,63 @@ def run(argv: list[str] | None = None) -> int:
             payload = json.loads(args.json)
             result = store.append_memory(payload)
             print(result.message)
+            return 0
+
+        if args.command == "content-campaign-generate":
+            generated = generate_content_campaign(Path(args.workspace).resolve(), Path(args.campaign).resolve())
+            print(f"generated content campaign: {generated.output_dir}")
+            for path in generated.written_paths:
+                print(f"- {path}")
+            return 0
+
+        if args.command == "content-factcheck-run":
+            campaign_path = Path(args.campaign).resolve()
+            result = factcheck_campaign(Path(args.workspace).resolve(), campaign_path)
+            output_dir = (
+                Path(args.output).resolve()
+                if args.output
+                else Path(args.workspace).resolve() / "nrg-bloom" / "content-engine" / "factcheck" / campaign_path.stem
+            )
+            written_paths = write_factcheck_report(output_dir, result)
+            print(f"wrote factcheck report: {output_dir}")
+            for path in written_paths:
+                print(f"- {path}")
+            return 0
+
+        if args.command == "content-motion-build":
+            source = Path(args.source).resolve() if args.source else None
+            built = build_motion_pack(Path(args.workspace).resolve(), source)
+            print(f"built motion pack: {built.output_dir}")
+            for path in built.written_paths:
+                print(f"- {path}")
+            return 0
+
+        if args.command == "capital-infra-build":
+            built = generate_capital_stack(Path(args.workspace).resolve(), Path(args.plan).resolve())
+            print(f"built capital infrastructure: {built.output_dir}")
+            for path in built.written_paths:
+                print(f"- {path}")
+            return 0
+
+        if args.command == "capital-weekly-batch-generate":
+            built = generate_weekly_capital_batch(Path(args.workspace).resolve(), Path(args.plan).resolve())
+            print(f"built weekly capital batch: {built.output_dir}")
+            for path in built.written_paths:
+                print(f"- {path}")
+            return 0
+
+        if args.command == "authority-os-build":
+            built = generate_authority_system(Path(args.workspace).resolve(), Path(args.plan).resolve())
+            print(f"built authority system: {built.output_dir}")
+            for path in built.written_paths:
+                print(f"- {path}")
+            return 0
+
+        if args.command == "authority-weekly-batch-generate":
+            built = generate_weekly_authority_batch(Path(args.workspace).resolve(), Path(args.plan).resolve())
+            print(f"built weekly authority batch: {built.output_dir}")
+            for path in built.written_paths:
+                print(f"- {path}")
             return 0
 
         if args.command == "litigation-validate":
@@ -387,6 +503,57 @@ def run(argv: list[str] | None = None) -> int:
             print("wrote draft bundle")
             for path in paths:
                 print(f"- {path}")
+            return 0
+
+        if args.command == "litigation-handoff-write":
+            root = Path(args.workspace).resolve()
+            paths = write_litigation_handoff(root, Path(args.exchange_root).resolve(), today=today)
+            print("wrote litigation handoff")
+            for path in paths:
+                print(f"- {path}")
+            return 0
+
+        if args.command == "agent-exchange-ingest":
+            root = Path(args.workspace).resolve()
+            ingested = ingest_exchange_artifacts(root, Path(args.exchange_root).resolve())
+            if not ingested:
+                print("no new exchange artifacts ingested")
+                return 0
+            print(f"ingested {len(ingested)} exchange artifact(s)")
+            for item in ingested:
+                print(f"  [{item.kind}] {item.proposal_id}: {item.title}")
+                print(f"    source: {item.source_path}")
+                print(f"    queue: {item.queue_path}")
+            return 0
+
+        if args.command == "agent-review-queue":
+            entries = pending_review_entries(Path(args.workspace).resolve())
+            print("pending review items")
+            if not entries:
+                print("  none")
+                return 0
+            for entry in entries:
+                print(f"  [{entry.get('kind', 'proposal')}] {entry.get('proposal_id', '')}: {entry.get('title', '')}")
+                print(f"    status: {entry.get('status', 'pending_review')}")
+                print(f"    file: {entry.get('_path', '')}")
+                if entry.get("source_artifact"):
+                    print(f"    source: {entry.get('source_artifact')}")
+            return 0
+
+        if args.command == "agent-proposal-status":
+            summary = proposal_status_summary(Path(args.workspace).resolve())
+            print("proposal status")
+            for key in ("pending_review", "applied", "rejected"):
+                print(f"  {key}: {summary.get(key, 0)}")
+            return 0
+
+        if args.command == "agent-proposal-apply":
+            applied = apply_agent_proposal(Path(args.workspace).resolve(), Path(args.path).resolve())
+            print(f"applied proposal: {applied.proposal_id}")
+            print(f"title: {applied.title}")
+            for message in applied.messages:
+                print(f"  {message}")
+            print(f"archived: {applied.archive_path}")
             return 0
 
         if args.command == "litigation-next-actions":

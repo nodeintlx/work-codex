@@ -1,0 +1,51 @@
+{
+  "brand": {
+    "colors": {
+      "accent": "#00C896",
+      "accent_warm": "#F59E0B",
+      "bg": "#0A0E1A",
+      "border": "#1F2937",
+      "surface": "#111827",
+      "text": "#F9FAFB",
+      "text_dim": "#6B7280",
+      "text_muted": "#9CA3AF"
+    },
+    "fonts": {
+      "body": "Inter",
+      "display": "Space Grotesk"
+    }
+  },
+  "cta": "NRG Bloom is building its public voice around what the records already prove.",
+  "format": "tiktok_story_arc",
+  "scenes": [
+    {
+      "highlight": "Proof",
+      "text": "Here is a simple rule for African compute: no site, no authority."
+    },
+    {
+      "highlight": "NRG",
+      "text": "NRG Bloom has been operational at Ogboinbiri since February 2025."
+    },
+    {
+      "highlight": "operators",
+      "text": "NRG Bloom has documented site operations at Ogboinbiri beginning in February 2025."
+    },
+    {
+      "highlight": "capital",
+      "text": "Operating continuity matters because frontier infrastructure fails first in execution, not in concept decks."
+    },
+    {
+      "highlight": "speed",
+      "text": "Teams that can show dated operating proof earn the right to shape the market conversation."
+    },
+    {
+      "highlight": "contrarian",
+      "text": "In frontier infrastructure, the most valuable marketing asset is not polish. It is documented operating history."
+    },
+    {
+      "highlight": "NRG Bloom",
+      "text": "Proof comes first. Narrative comes second."
+    }
+  ],
+  "title": "Proof Before Promises"
+}

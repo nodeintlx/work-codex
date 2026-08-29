@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-03-26T19:50:17.639172+00:00",
+  "outputs": {
+    "authority_operating_system": "/home/dowsmasternode/repos/work-codex/nrg-bloom/authority-engine/generated/20260326T195017Z-external-intel-authority/authority-operating-system.md",
+    "evergreen_franchise_map": "/home/dowsmasternode/repos/work-codex/nrg-bloom/authority-engine/generated/20260326T195017Z-external-intel-authority/evergreen-franchise-map.yaml",
+    "external_intel_queue": "/home/dowsmasternode/repos/work-codex/nrg-bloom/authority-engine/generated/20260326T195017Z-external-intel-authority/external-intel-queue.yaml",
+    "investor_objection_bank": "/home/dowsmasternode/repos/work-codex/nrg-bloom/authority-engine/generated/20260326T195017Z-external-intel-authority/investor-objection-bank.yaml",
+    "source_watchlist": "/home/dowsmasternode/repos/work-codex/nrg-bloom/authority-engine/generated/20260326T195017Z-external-intel-authority/source-watchlist.yaml"
+  },
+  "plan": {
+    "slug": "external-intel-authority",
+    "title": "NRG Bloom External Intelligence Authority System"
+  }
+}

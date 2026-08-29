@@ -1,0 +1,47 @@
+{
+  "assets": [
+    {
+      "filename": "remote-ops-moat-vertical.html",
+      "title": "Remote Data Centers Will Be Won by Operators, Not Architects (vertical)"
+    },
+    {
+      "filename": "remote-ops-moat-square.html",
+      "title": "Remote Data Centers Will Be Won by Operators, Not Architects (square)"
+    },
+    {
+      "filename": "flare-to-compute-vertical.html",
+      "title": "Stop Treating Gas Flaring as an ESG Problem Only (vertical)"
+    },
+    {
+      "filename": "flare-to-compute-square.html",
+      "title": "Stop Treating Gas Flaring as an ESG Problem Only (square)"
+    },
+    {
+      "filename": "modular-speed-moat-vertical.html",
+      "title": "Speed Is Not a Feature in African Compute. It Is a Survival Trait. (vertical)"
+    },
+    {
+      "filename": "modular-speed-moat-square.html",
+      "title": "Speed Is Not a Feature in African Compute. It Is a Survival Trait. (square)"
+    }
+  ],
+  "brand": {
+    "colors": {
+      "accent": "#00C896",
+      "accent_warm": "#F59E0B",
+      "bg": "#0A0E1A",
+      "border": "#1F2937",
+      "surface": "#111827",
+      "text": "#F9FAFB",
+      "text_dim": "#6B7280",
+      "text_muted": "#9CA3AF"
+    },
+    "fonts": {
+      "body": "Inter",
+      "display": "Space Grotesk"
+    },
+    "name": "NRG Bloom",
+    "tagline": "Remote compute infrastructure on stranded energy"
+  },
+  "source_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T173842Z-authority-sprint"
+}

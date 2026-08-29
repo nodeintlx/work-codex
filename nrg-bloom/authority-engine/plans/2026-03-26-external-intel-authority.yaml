@@ -1,0 +1,184 @@
+slug: "external-intel-authority"
+title: "NRG Bloom External Intelligence Authority System"
+fact_registry: "../../content-engine/facts/facts-and-numbers-verified-2026-03-26.yaml"
+
+core_principle: "When fresh operating disclosure is constrained, NRG Bloom should stay visible by becoming the clearest interpreter of the stranded-energy compute category in Africa."
+
+inputs:
+  - "Market signals from trusted external sources"
+  - "Category analogs from North America and Nigeria"
+  - "Sanitized founder insight that does not depend on live-sensitive details"
+  - "Investor objections that need repeated answers"
+
+constraints:
+  - "Do not rely on live TON-sensitive operating updates."
+  - "Do not publish claims that require private commercial disclosure."
+  - "Favor recurring authority over one-off hype."
+  - "Use verified facts first, interpretation second."
+
+intake_fields:
+  - "source link"
+  - "what changed"
+  - "why it matters"
+  - "which objection it strengthens"
+  - "whether it is public-safe"
+
+source_watchlist:
+  - name: "IEA"
+    tier: "institutional_primary"
+    type: "energy_and_compute"
+    url: "https://www.iea.org"
+    why_it_matters: "Best source for the global energy-and-compute constraint story."
+    tracking_focus: ["AI power demand", "data centre demand", "electricity outlook"]
+  - name: "World Bank"
+    tier: "institutional_primary"
+    type: "power_access_and_losses"
+    url: "https://www.worldbank.org"
+    why_it_matters: "Best source for Nigerian electricity access, reliability, and economic-loss framing."
+    tracking_focus: ["electricity access", "economic losses", "Nigeria power sector"]
+  - name: "African Development Bank"
+    tier: "institutional_primary"
+    type: "africa_infrastructure"
+    url: "https://www.afdb.org"
+    why_it_matters: "Useful for continent-scale infrastructure and capital framing."
+    tracking_focus: ["digital economy", "electrification", "infrastructure finance"]
+  - name: "NUPRC"
+    tier: "regulator"
+    type: "flare_gas_market"
+    url: "https://www.nuprc.gov.ng"
+    why_it_matters: "Primary regulatory source for NGFCP and flare-gas commercialization."
+    tracking_focus: ["NGFCP", "flare permits", "gas commercialization"]
+  - name: "EIA"
+    tier: "institutional_primary"
+    type: "north_america_analogs"
+    url: "https://www.eia.gov"
+    why_it_matters: "Best baseline for Texas, Permian, associated gas, and basin scale."
+    tracking_focus: ["Texas gas", "Permian growth", "associated gas"]
+  - name: "Arizton / market intelligence"
+    tier: "industry_analysis"
+    type: "data_center_market"
+    url: "https://www.arizton.com"
+    why_it_matters: "Useful for Nigeria data-center market sizing and pipeline framing."
+    tracking_focus: ["Nigeria capacity", "pipeline growth", "market investment"]
+  - name: "Crusoe"
+    tier: "company_signal"
+    type: "category_analog"
+    url: "https://www.crusoe.ai/resources/newsroom"
+    why_it_matters: "Public benchmark for flare-to-compute validation and category evolution."
+    tracking_focus: ["AI pivot", "modular deployments", "flare mitigation history"]
+  - name: "Green Flare"
+    tier: "company_signal"
+    type: "nigeria_analog"
+    url: "https://www.theenergymag.com/news/2025-05-28/green-flare-bitcoin-nigeria"
+    why_it_matters: "Visible Nigerian analog that helps prove local market legibility."
+    tracking_focus: ["project progress", "MW announcements", "Nigeria flare-to-compute"]
+
+objections:
+  - slug: "is_the_market_real"
+    question: "Is this category real or still mostly narrative?"
+    answer: "Answer with regulation, public analogs, and category lineage rather than vague optimism."
+    formats: ["LinkedIn company post", "thread", "market note"]
+    fact_ids:
+      - "ngfcp_permits_power_potential_2025"
+      - "green_flare_nigeria_53mw_2025"
+      - "crusoe_divestiture_2025"
+  - slug: "why_now"
+    question: "Why does this matter now?"
+    answer: "Answer with the convergence of energy-constrained compute, Nigeria's power bottlenecks, and a growing but still early digital-infrastructure market."
+    formats: ["Founder post", "thread", "short video"]
+    fact_ids:
+      - "global_data_center_demand_doubles_2030"
+      - "nigeria_power_access_and_losses"
+      - "nigeria_data_center_capacity_pipeline_2025"
+  - slug: "why_not_hyperscale_only"
+    question: "Why does modular edge infrastructure still matter if centralized data centers are growing?"
+    answer: "Answer by showing that market growth does not eliminate edge constraints or stranded-energy opportunities."
+    formats: ["thread", "carousel", "market note"]
+    fact_ids:
+      - "nigeria_data_center_capacity_pipeline_2025"
+      - "nigeria_grid_delivery_gap"
+      - "modular_containerized_model"
+  - slug: "why_listen_to_nrg_bloom"
+    question: "Why should people listen to NRG Bloom on this topic?"
+    answer: "Answer by tying category interpretation back to real operating proof and field-informed judgment without disclosing live-sensitive details."
+    formats: ["Founder post", "founder note", "interview talking points"]
+    fact_ids:
+      - "ogboinbiri_operational_since_2025_02"
+      - "ogboinbiri_operational_capacity_1_5mw"
+      - "modular_containerized_model"
+
+franchises:
+  - slug: "market-intelligence"
+    name: "Market Intelligence"
+    purpose: "Turn trusted external developments into clear investor-relevant framing."
+    audiences: ["energy infrastructure capital", "compute and AI investors", "analysts"]
+    tone: "measured, data-first, non-hype"
+    formats: ["thread", "market note", "founder post"]
+    fact_ids:
+      - "global_data_center_demand_doubles_2030"
+      - "nigeria_power_access_and_losses"
+      - "nigeria_grid_delivery_gap"
+    notes: "This franchise should dominate during disclosure-constrained periods."
+  - slug: "category-lineage"
+    name: "Category Lineage"
+    purpose: "Make the category legible by connecting Nigeria to known analogs and public market moves."
+    audiences: ["industry validators", "investors", "partners"]
+    tone: "authoritative, comparative, operator-aware"
+    formats: ["LinkedIn company post", "thread", "video script"]
+    fact_ids:
+      - "ngfcp_permits_power_potential_2025"
+      - "green_flare_nigeria_53mw_2025"
+      - "crusoe_divestiture_2025"
+  - slug: "founder-conviction"
+    name: "Founder Conviction"
+    purpose: "Keep Makir's voice present without needing live-sensitive updates."
+    audiences: ["Africa-focused capital", "founders", "operators"]
+    tone: "direct, disciplined, insight-led"
+    formats: ["Founder post", "founder note", "interview prompt"]
+    fact_ids:
+      - "ogboinbiri_operational_since_2025_02"
+      - "ogboinbiri_operational_capacity_1_5mw"
+      - "modular_containerized_model"
+    notes: "Use abstract lessons, not live commercial details."
+  - slug: "modular-edge-positioning"
+    name: "Modular Edge Positioning"
+    purpose: "Explain where NRG Bloom fits in a market that is growing beyond early-stage emptiness."
+    audiences: ["compute and AI investors", "digital infrastructure investors"]
+    tone: "strategic, comparative, thesis-driven"
+    formats: ["carousel", "thread", "market note"]
+    fact_ids:
+      - "nigeria_data_center_capacity_pipeline_2025"
+      - "nigeria_grid_delivery_gap"
+      - "modular_containerized_model"
+
+distribution_rules:
+  - "At least one weekly piece should answer a named investor objection."
+  - "At least one weekly piece should use a source from the watchlist published or checked recently."
+  - "Do not publish more than one abstract founder-insight piece in a row without a hard fact-led piece."
+  - "If a topic requires live-sensitive operating detail to be persuasive, do not force it into content."
+
+founder_insight_rules:
+  - "Talk about operating principles, not confidential counterparties."
+  - "Translate field experience into lessons about logistics, uptime, remote execution, and trust."
+  - "Avoid describing active disputes, live negotiations, or partner-sensitive specifics."
+  - "Sound like an operator interpreting the market, not a victim narrating constraints."
+
+weekly_lanes:
+  - day: "Monday"
+    lane: "market-intelligence"
+    objective: "Own the market bottleneck discussion early in the week."
+    output: "Founder post or thread"
+    objection: "Why does this matter now?"
+    objection_slug: "why_now"
+  - day: "Wednesday"
+    lane: "category-lineage"
+    objective: "Make the category feel more legible than competitors make it."
+    output: "LinkedIn company post or carousel"
+    objection: "Is this category real or still mostly narrative?"
+    objection_slug: "is_the_market_real"
+  - day: "Friday"
+    lane: "founder-conviction"
+    objective: "Keep founder voice present with sanitized insight."
+    output: "Founder note or market interpretation"
+    objection: "Why should people listen to NRG Bloom?"
+    objection_slug: "why_listen_to_nrg_bloom"

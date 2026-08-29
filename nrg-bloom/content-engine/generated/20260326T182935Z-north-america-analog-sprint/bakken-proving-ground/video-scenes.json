@@ -1,0 +1,54 @@
+{
+  "brand": {
+    "colors": {
+      "accent": "#00C896",
+      "accent_warm": "#F59E0B",
+      "bg": "#0A0E1A",
+      "border": "#1F2937",
+      "quote_accent": "#6BA3E8",
+      "quote_accent_deep": "#14489B",
+      "quote_surface": "#1A1A1A",
+      "surface": "#111827",
+      "text": "#F9FAFB",
+      "text_dim": "#6B7280",
+      "text_muted": "#9CA3AF"
+    },
+    "fonts": {
+      "body": "Inter",
+      "display": "Space Grotesk"
+    }
+  },
+  "cta": "NRG Bloom is studying the Bakken as an operating blueprint, not just as industry trivia.",
+  "format": "tiktok_story_arc",
+  "scenes": [
+    {
+      "highlight": "The",
+      "text": "If you ignore the Bakken, you miss one of the category's most important proving grounds."
+    },
+    {
+      "highlight": "North",
+      "text": "North Dakota hit a 94% gross gas-capture rate in July 2024."
+    },
+    {
+      "highlight": "operators",
+      "text": "North Dakota's policy framework kept pushing gas capture higher while production stayed large."
+    },
+    {
+      "highlight": "capital",
+      "text": "That is exactly the kind of environment where flare-to-compute solutions either prove themselves or get exposed."
+    },
+    {
+      "highlight": "speed",
+      "text": "NRG Bloom should speak about African deployment with the same seriousness that Bakken operators brought to gas handling and utilization."
+    },
+    {
+      "highlight": "contrarian",
+      "text": "The lesson from North Dakota is not just that flare mitigation is possible. It is that policy pressure and infrastructure constraint can create the conditions for category winners."
+    },
+    {
+      "highlight": "NRG Bloom",
+      "text": "North Dakota showed what it looks like when stranded-gas logic meets industrial pressure."
+    }
+  ],
+  "title": "The Bakken Was a Proving Ground, Not a Footnote"
+}

@@ -1,0 +1,71 @@
+audiences:
+  - slug: energy_infrastructure_capital
+    priority: 1
+    who_they_are: "Infrastructure, power, energy-transition, and asset-heavy investors"
+    core_question: "Is this a real infrastructure business or still a frontier story?"
+    what_they_need_to_believe:
+      - "NRG Bloom is already operating, not just planning"
+      - "The market bottleneck is real and expensive"
+      - "The model solves a delivery problem, not just a theory problem"
+    best_proof:
+      - "ogboinbiri_operational_since_2025_02"
+      - "ogboinbiri_operational_capacity_1_5mw"
+      - "nigeria_power_access_and_losses"
+      - "nigeria_grid_delivery_gap"
+    strongest_angles:
+      - "Energy delivery is the real bottleneck"
+      - "Distributed infrastructure belongs where power delivery breaks"
+      - "Field proof reduces frontier-market uncertainty"
+
+  - slug: compute_ai_investors
+    priority: 2
+    who_they_are: "Compute, AI, data-centre, and energy-adjacent technology investors"
+    core_question: "Why does this matter in a world of hyperscale and large data-centre campuses?"
+    what_they_need_to_believe:
+      - "Energy is becoming a first-order compute constraint"
+      - "Nigeria is still early enough for edge infrastructure to matter"
+      - "NRG Bloom fits where centralized demand and edge energy meet"
+    best_proof:
+      - "global_data_center_demand_doubles_2030"
+      - "nigeria_data_center_capacity_pipeline_2025"
+      - "modular_containerized_model"
+      - "ogboinbiri_operational_capacity_1_5mw"
+    strongest_angles:
+      - "Compute follows energy access"
+      - "The market is growing, but the edge is still open"
+      - "Modular deployments are complementary to larger campuses"
+
+  - slug: africa_focused_capital
+    priority: 3
+    who_they_are: "Africa-focused funds, DFIs, and cross-border investors"
+    core_question: "Why should we trust this team to operate in-market?"
+    what_they_need_to_believe:
+      - "The team already knows how to operate in Nigeria"
+      - "The company understands local complexity better than remote commentators"
+      - "The business fits real Nigerian infrastructure conditions"
+    best_proof:
+      - "ogboinbiri_operational_since_2025_02"
+      - "ogboinbiri_operational_capacity_1_5mw"
+      - "ngfcp_permits_power_potential_2025"
+      - "nigeria_power_access_and_losses"
+    strongest_angles:
+      - "Operator truth over frontier storytelling"
+      - "Nigeria execution from Montreal is not a theory"
+      - "Live market structure plus live field proof"
+
+  - slug: industry_validators
+    priority: 4
+    who_they_are: "Oil and gas operators, market interpreters, category builders, technical validators"
+    core_question: "Does NRG Bloom understand the category deeply enough to be worth listening to?"
+    what_they_need_to_believe:
+      - "The company understands basin logic and category analogs"
+      - "The company can read regulation, flaring, and deployment reality together"
+      - "The company is not just repeating surface-level crypto-mining rhetoric"
+    best_proof:
+      - "ngfcp_permits_power_potential_2025"
+      - "green_flare_nigeria_53mw_2025"
+      - "crusoe_divestiture_2025"
+    strongest_angles:
+      - "NGFCP made the market more legible"
+      - "Public analogs matter because categories become fundable when people can map them"
+      - "The question is no longer whether the category is real"

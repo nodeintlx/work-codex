@@ -1,0 +1,98 @@
+# Filing-oriented claims model for the TON matter.
+# This file is the canonical structured claim inventory for Codex.
+
+last_updated: "2026-03-07"
+matter: "NRG Bloom Inc. v. TON Infrastructure Ltd."
+claims:
+  - id: C1
+    title: Bad-faith termination and appropriation
+    forum_track: nigeria_primary
+    status: ready_to_plead
+    pleading_priority: critical
+    remedy_objective: Damages and pressure for early negotiated resolution
+    theory: TON used contractual termination rights as a vehicle to remove NRG Bloom and take over its work, relationships, and on-ground operations.
+    key_facts:
+      - Tyler threatened withdrawal during earlier negotiations and the pressure continued through the May 2025 restructuring.
+      - TON refused operating support, then relied on the resulting deterioration as a termination pretext.
+      - Internal statements reflect a takeover posture rather than a neutral contract exit.
+    evidence_ids:
+      - E-JV-AGREEMENT
+      - E-SIGNED-SDA
+      - E-CALL-TRANSCRIPTS
+      - E-RISK-ASSESSMENT
+      - E-TON-RESPONSE-ANALYSIS
+    chronology_event_ids:
+      - CH2
+      - CH5
+      - CH7
+    damages_anchor: Supports the Nigerian damages and leverage narrative even if the contract narrows some direct remedies.
+    pleading_notes: Keep the chronology tight and link refusal to fund, site deterioration, and termination sequence.
+
+  - id: C2
+    title: Axxela circumvention and non-circumvention breach
+    forum_track: canada_or_cross_border
+    status: ready_to_plead
+    pleading_priority: critical
+    remedy_objective: Preserve the highest-value leverage point and support any protective Alberta filing.
+    theory: NRG Bloom originated and developed the Axxela opportunity, then TON excluded NRG Bloom from the email thread and positioned itself as the direct counterparty.
+    key_facts:
+      - NRG Bloom handled the Axxela relationship before TON appeared in the email record.
+      - Makir introduced TON to Axxela as NRG Bloom's investors and infrastructure partners.
+      - The exclusion window and July 4 communication show direct circumvention.
+    evidence_ids:
+      - E-AXXELA-EVIDENCE-INDEX
+      - E-EMAIL-TIMELINE
+      - E-AXXELA-ANALYSIS
+      - E-MNDA
+      - E-TON-NARRATIVE
+    chronology_event_ids:
+      - CH1
+      - CH3
+      - CH4
+    damages_anchor: This is the main leverage claim because it threatens TON's larger Nigeria upside.
+    pleading_notes: Preserve exact exclusion dates and the July 4 false statement as central pleaded facts.
+
+  - id: C3
+    title: Misrepresentation to Axxela and bad-faith conduct
+    forum_track: nigeria_primary
+    status: needs_forum_review
+    pleading_priority: high
+    remedy_objective: Increase pressure by showing the exclusion was not accidental but affirmatively misrepresented.
+    theory: TON represented to Axxela that NRG Bloom was aware of and aligned with a direct TON-Axxela structure when the record suggests the opposite.
+    key_facts:
+      - Marley told Axxela that NRG Bloom was fully aware of the direct arrangement.
+      - The same period contains objections and contrary call evidence from NRG Bloom.
+      - TON's response letter does not directly answer the specific misrepresentation record.
+    evidence_ids:
+      - E-AXXELA-EVIDENCE-INDEX
+      - E-TON-RESPONSE-ANALYSIS
+      - E-TON-COUNTER-ANALYSIS
+      - E-TON-NARRATIVE
+    chronology_event_ids:
+      - CH4
+      - CH6
+    damages_anchor: Useful for leverage, credibility attack, and forum-neutral bad-faith framing.
+    pleading_notes: Confirm the preferred forum framing before turning this into a standalone pleaded count.
+
+  - id: C4
+    title: Unjust enrichment and uncompensated operational work
+    forum_track: nigeria_primary
+    status: in_progress
+    pleading_priority: high
+    remedy_objective: Capture value for the 13 months of on-ground work, site support, logistics, and stakeholder management.
+    theory: NRG Bloom provided substantial services, introductions, local operations management, and project support for which it was never properly paid.
+    key_facts:
+      - NRG Bloom coordinated the Nigeria trip, stakeholder access, and site groundwork.
+      - NRG Bloom continued supporting site operations and protection after TON refused operating support.
+      - TON's own response acknowledges direct staff payments after the relationship had already been destabilized.
+    evidence_ids:
+      - E-CHRONOLOGY
+      - E-MASTER-EVIDENCE-SUMMARY
+      - E-EXPENDITURE-LEDGER
+      - E-RISK-ASSESSMENT
+    chronology_event_ids:
+      - CH1
+      - CH5
+      - CH7
+    damages_anchor: Needs a cleaner quantified schedule before it is filing-ready.
+    pleading_notes: Pair this with an updated quantified ledger and a concise services summary.

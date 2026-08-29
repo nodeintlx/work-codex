@@ -1,0 +1,95 @@
+{
+  "assets": [
+    {
+      "filename": "proof-before-promises-vertical.html",
+      "title": "Proof Before Promises (vertical)"
+    },
+    {
+      "filename": "proof-before-promises-vertical.png",
+      "title": "Proof Before Promises (vertical poster)"
+    },
+    {
+      "filename": "proof-before-promises-vertical.gif",
+      "title": "Proof Before Promises (vertical animated proof)"
+    },
+    {
+      "filename": "proof-before-promises-square.html",
+      "title": "Proof Before Promises (square)"
+    },
+    {
+      "filename": "proof-before-promises-square.png",
+      "title": "Proof Before Promises (square poster)"
+    },
+    {
+      "filename": "proof-before-promises-proof.png",
+      "title": "Proof Before Promises (source of truth)"
+    },
+    {
+      "filename": "montreal-to-field-vertical.html",
+      "title": "From Montreal to the Niger Delta (vertical)"
+    },
+    {
+      "filename": "montreal-to-field-vertical.png",
+      "title": "From Montreal to the Niger Delta (vertical poster)"
+    },
+    {
+      "filename": "montreal-to-field-vertical.gif",
+      "title": "From Montreal to the Niger Delta (vertical animated proof)"
+    },
+    {
+      "filename": "montreal-to-field-square.html",
+      "title": "From Montreal to the Niger Delta (square)"
+    },
+    {
+      "filename": "montreal-to-field-square.png",
+      "title": "From Montreal to the Niger Delta (square poster)"
+    },
+    {
+      "filename": "montreal-to-field-proof.png",
+      "title": "From Montreal to the Niger Delta (source of truth)"
+    },
+    {
+      "filename": "modular-systems-win-vertical.html",
+      "title": "Why Modular Systems Win at the Energy Edge (vertical)"
+    },
+    {
+      "filename": "modular-systems-win-vertical.png",
+      "title": "Why Modular Systems Win at the Energy Edge (vertical poster)"
+    },
+    {
+      "filename": "modular-systems-win-vertical.gif",
+      "title": "Why Modular Systems Win at the Energy Edge (vertical animated proof)"
+    },
+    {
+      "filename": "modular-systems-win-square.html",
+      "title": "Why Modular Systems Win at the Energy Edge (square)"
+    },
+    {
+      "filename": "modular-systems-win-square.png",
+      "title": "Why Modular Systems Win at the Energy Edge (square poster)"
+    },
+    {
+      "filename": "modular-systems-win-proof.png",
+      "title": "Why Modular Systems Win at the Energy Edge (source of truth)"
+    }
+  ],
+  "brand": {
+    "colors": {
+      "accent": "#00C896",
+      "accent_warm": "#F59E0B",
+      "bg": "#0A0E1A",
+      "border": "#1F2937",
+      "surface": "#111827",
+      "text": "#F9FAFB",
+      "text_dim": "#6B7280",
+      "text_muted": "#9CA3AF"
+    },
+    "fonts": {
+      "body": "Inter",
+      "display": "Space Grotesk"
+    },
+    "name": "NRG Bloom",
+    "tagline": "Remote compute infrastructure on stranded energy"
+  },
+  "source_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T175321Z-source-of-truth-sprint"
+}

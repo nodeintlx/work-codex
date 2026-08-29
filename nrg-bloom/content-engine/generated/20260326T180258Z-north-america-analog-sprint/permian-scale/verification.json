@@ -1,0 +1,88 @@
+{
+  "fact_ids": [
+    "texas_permian_scale",
+    "giga_texas_to_nd_flare_path"
+  ],
+  "facts": [
+    {
+      "claim": "Texas and the Permian are the core U.S. associated-gas frontier: Texas produced record gas in 2024 and the Permian accounted for most U.S. production growth.",
+      "id": "texas_permian_scale",
+      "scope": "external",
+      "sources": [
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "In 2024, Texas accounted for 28% of the nation's natural gas gross withdrawals... the state produced a record 13 trillion cubic feet of natural gas gross withdrawals.",
+          "path": "EIA Texas profile",
+          "published_on": "2025-08-01",
+          "source_type": "official_report",
+          "title": "Texas State Energy Profile",
+          "url": "https://www.eia.gov/state/analysis.php?sid=TX"
+        },
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "In 2024, marketed natural gas production in the Permian rose by 12%, or 2.7 Bcf/d, to average 25.4 Bcf/d.",
+          "path": "EIA U.S. natural gas production remained flat in 2024",
+          "published_on": "2025-04-17",
+          "source_type": "official_report",
+          "title": "U.S. natural gas production remained flat in 2024",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=65025"
+        },
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "Associated natural gas production in the Permian region in oil-rich western Texas and southeastern New Mexico accounted for most of the growth in 2024, increasing 8% to 12.5 Bcf/d.",
+          "path": "EIA associated gas growth",
+          "published_on": "2025-11-21",
+          "source_type": "official_report",
+          "title": "U.S. associated natural gas production increased 6% in 2024",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=66684"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "claim": "Public sources tie Giga's early modular build work to Texas and its flare-gas JV activity to North Dakota.",
+      "id": "giga_texas_to_nd_flare_path",
+      "scope": "external",
+      "sources": [
+        {
+          "authority": "company",
+          "checked_on": "2026-03-26",
+          "excerpt": "Back in 2019, Brent and Matt welded their first modular data centers in East Texas.",
+          "path": "Giga company about page",
+          "published_on": "2026-03-01",
+          "source_type": "company_profile",
+          "title": "About Us - Giga Energy",
+          "url": "https://www.gigaenergy.com/about"
+        },
+        {
+          "authority": "media",
+          "checked_on": "2026-03-26",
+          "excerpt": "Giga Energy... started in 2019 after directly witnessing the CO2 emissions and waste of natural gas from flaring around College Station, Texas.",
+          "path": "Forbes profile",
+          "published_on": "2024-01-01",
+          "source_type": "trusted_media",
+          "title": "Giga Energy",
+          "url": "https://www.forbes.com/profile/giga-energy/"
+        },
+        {
+          "authority": "media",
+          "checked_on": "2026-03-26",
+          "excerpt": "Williston, North Dakota... a joint venture to utilize stranded and flare gas for bitcoin mining operations.",
+          "path": "POWER Magazine release",
+          "published_on": "2023-05-08",
+          "source_type": "trusted_media",
+          "title": "Atlas Power and Giga Energy Announce a Joint Venture to Harness Stranded and Flare Gas for Bitcoin Mining",
+          "url": "https://www.powermag.com/press-releases/atlas-power-and-giga-energy-announce-a-joint-venture-to-harness-stranded-and-flare-gas-for-bitcoin-mining/"
+        }
+      ],
+      "status": "verified"
+    }
+  ],
+  "slug": "permian-scale",
+  "title": "If You Want Scale, You Have to Understand Texas",
+  "verification_standard": "3 local sources minimum per fact",
+  "verified": true
+}

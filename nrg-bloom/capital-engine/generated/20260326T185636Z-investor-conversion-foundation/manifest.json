@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-03-26T18:56:36.277239+00:00",
+  "outputs": {
+    "audience_map": "/home/dowsmasternode/repos/work-codex/nrg-bloom/capital-engine/generated/20260326T185636Z-investor-conversion-foundation/audience-map.yaml",
+    "content_backlog": "/home/dowsmasternode/repos/work-codex/nrg-bloom/capital-engine/generated/20260326T185636Z-investor-conversion-foundation/content-backlog.yaml",
+    "diligence_snapshot": "/home/dowsmasternode/repos/work-codex/nrg-bloom/capital-engine/generated/20260326T185636Z-investor-conversion-foundation/diligence-room/diligence-snapshot.md",
+    "investor_memo": "/home/dowsmasternode/repos/work-codex/nrg-bloom/capital-engine/generated/20260326T185636Z-investor-conversion-foundation/investor-thesis/investor-memo.md",
+    "market_and_timing": "/home/dowsmasternode/repos/work-codex/nrg-bloom/capital-engine/generated/20260326T185636Z-investor-conversion-foundation/diligence-room/market-and-timing.md",
+    "one_page_brief": "/home/dowsmasternode/repos/work-codex/nrg-bloom/capital-engine/generated/20260326T185636Z-investor-conversion-foundation/investor-thesis/one-page-brief.md",
+    "proof_of_execution": "/home/dowsmasternode/repos/work-codex/nrg-bloom/capital-engine/generated/20260326T185636Z-investor-conversion-foundation/diligence-room/proof-of-execution.md"
+  },
+  "plan": {
+    "slug": "investor-conversion-foundation",
+    "title": "NRG Bloom Investor Conversion Foundation"
+  }
+}

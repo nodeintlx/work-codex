@@ -1,0 +1,54 @@
+items:
+- id: capital-01
+  theme: Energy Delivery Thesis
+  investor_problem: Why does this category matter beyond hype?
+  asset_types:
+  - Founder post
+  - quote card
+  - short video
+  conversion_target: Move general interest into memo review.
+  fact_ids:
+  - global_data_center_demand_doubles_2030
+  - nigeria_power_access_and_losses
+  - nigeria_grid_delivery_gap
+  status: ready
+- id: capital-02
+  theme: Operator Proof
+  investor_problem: Can the team actually operate?
+  asset_types:
+  - Founder post
+  - quote card
+  - proof excerpt
+  conversion_target: Reduce execution skepticism.
+  fact_ids:
+  - ogboinbiri_operational_since_2025_02
+  - ogboinbiri_operational_capacity_1_5mw
+  - modular_containerized_model
+  status: ready
+- id: capital-03
+  theme: Governed Flare Market
+  investor_problem: Is there a real market structure here?
+  asset_types:
+  - LinkedIn company post
+  - thread
+  - video
+  conversion_target: Make the category feel institutionally legible.
+  fact_ids:
+  - ngfcp_permits_power_potential_2025
+  - green_flare_nigeria_53mw_2025
+  - crusoe_divestiture_2025
+  status: ready
+- id: capital-04
+  theme: Digital Infrastructure Gap
+  investor_problem: Where does NRG Bloom fit if larger data-centre players are also
+    building?
+  asset_types:
+  - Thread
+  - carousel
+  - market note
+  conversion_target: Frame modular edge compute as complementary, not redundant.
+  fact_ids:
+  - nigeria_data_center_capacity_pipeline_2025
+  - ogboinbiri_operational_capacity_1_5mw
+  - modular_containerized_model
+  status: ready

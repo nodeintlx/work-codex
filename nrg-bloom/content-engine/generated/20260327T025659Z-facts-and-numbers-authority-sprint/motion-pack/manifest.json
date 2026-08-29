@@ -1,0 +1,110 @@
+{
+  "assets": [
+    {
+      "filename": "energy-delivery-bottleneck-vertical.html",
+      "title": "The Constraint Is Not Demand. It Is Energy Delivery. (vertical)"
+    },
+    {
+      "filename": "energy-delivery-bottleneck-vertical.png",
+      "title": "The Constraint Is Not Demand. It Is Energy Delivery. (vertical poster)"
+    },
+    {
+      "filename": "energy-delivery-bottleneck-vertical.gif",
+      "title": "The Constraint Is Not Demand. It Is Energy Delivery. (vertical animated proof)"
+    },
+    {
+      "filename": "energy-delivery-bottleneck-square.html",
+      "title": "The Constraint Is Not Demand. It Is Energy Delivery. (square)"
+    },
+    {
+      "filename": "energy-delivery-bottleneck-square.png",
+      "title": "The Constraint Is Not Demand. It Is Energy Delivery. (square poster)"
+    },
+    {
+      "filename": "energy-delivery-bottleneck-proof.png",
+      "title": "The Constraint Is Not Demand. It Is Energy Delivery. (source of truth)"
+    },
+    {
+      "filename": "ngfcp-governed-market-vertical.html",
+      "title": "NGFCP Turned Flare Monetization Into a Governed Market (vertical)"
+    },
+    {
+      "filename": "ngfcp-governed-market-vertical.png",
+      "title": "NGFCP Turned Flare Monetization Into a Governed Market (vertical poster)"
+    },
+    {
+      "filename": "ngfcp-governed-market-vertical.gif",
+      "title": "NGFCP Turned Flare Monetization Into a Governed Market (vertical animated proof)"
+    },
+    {
+      "filename": "ngfcp-governed-market-square.html",
+      "title": "NGFCP Turned Flare Monetization Into a Governed Market (square)"
+    },
+    {
+      "filename": "ngfcp-governed-market-square.png",
+      "title": "NGFCP Turned Flare Monetization Into a Governed Market (square poster)"
+    },
+    {
+      "filename": "ngfcp-governed-market-proof.png",
+      "title": "NGFCP Turned Flare Monetization Into a Governed Market (source of truth)"
+    },
+    {
+      "filename": "undersupplied-digital-infrastructure-vertical.html",
+      "title": "Nigeria Is Growing Data Centers, But the Market Is Still Small Enough for Edge Operators to Matter (vertical)"
+    },
+    {
+      "filename": "undersupplied-digital-infrastructure-vertical.png",
+      "title": "Nigeria Is Growing Data Centers, But the Market Is Still Small Enough for Edge Operators to Matter (vertical poster)"
+    },
+    {
+      "filename": "undersupplied-digital-infrastructure-vertical.gif",
+      "title": "Nigeria Is Growing Data Centers, But the Market Is Still Small Enough for Edge Operators to Matter (vertical animated proof)"
+    },
+    {
+      "filename": "undersupplied-digital-infrastructure-square.html",
+      "title": "Nigeria Is Growing Data Centers, But the Market Is Still Small Enough for Edge Operators to Matter (square)"
+    },
+    {
+      "filename": "undersupplied-digital-infrastructure-square.png",
+      "title": "Nigeria Is Growing Data Centers, But the Market Is Still Small Enough for Edge Operators to Matter (square poster)"
+    },
+    {
+      "filename": "undersupplied-digital-infrastructure-proof.png",
+      "title": "Nigeria Is Growing Data Centers, But the Market Is Still Small Enough for Edge Operators to Matter (source of truth)"
+    }
+  ],
+  "brand": {
+    "assets": {
+      "founder_headshot": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260327T025659Z-facts-and-numbers-authority-sprint/brand-founder-headshot.png",
+      "logo_white": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260327T025659Z-facts-and-numbers-authority-sprint/brand-logo-white.png"
+    },
+    "colors": {
+      "accent": "#00C896",
+      "accent_warm": "#F59E0B",
+      "bg": "#0A0E1A",
+      "border": "#1F2937",
+      "quote_accent": "#6BA3E8",
+      "quote_accent_deep": "#14489B",
+      "quote_surface": "#1A1A1A",
+      "surface": "#111827",
+      "text": "#F9FAFB",
+      "text_dim": "#6B7280",
+      "text_muted": "#9CA3AF"
+    },
+    "fonts": {
+      "body": "Inter",
+      "display": "Space Grotesk"
+    },
+    "name": "NRG Bloom",
+    "signature": {
+      "handle_tagline": "Remote Compute Infrastructure",
+      "image_asset": "founder_headshot",
+      "name": "Makir Volcy",
+      "title": "Founder & CEO",
+      "website": "nrgbloom.com"
+    },
+    "social_handle": "@NRGBloom",
+    "tagline": "Remote compute infrastructure on stranded energy"
+  },
+  "source_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260327T025659Z-facts-and-numbers-authority-sprint"
+}

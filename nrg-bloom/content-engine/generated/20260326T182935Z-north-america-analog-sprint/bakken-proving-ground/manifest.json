@@ -1,0 +1,19 @@
+{
+  "archetype": "operator-map",
+  "fact_ids": [
+    "north_dakota_bakken_capture",
+    "crusoe_field_footprint_2025"
+  ],
+  "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/bakken-proving-ground",
+  "pillar": "flare-mitigation",
+  "publish_day": "Wednesday",
+  "quote_card_html": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/bakken-proving-ground/quote-card-portrait.html",
+  "quote_card_png": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/bakken-proving-ground/quote-card-portrait.png",
+  "slug": "bakken-proving-ground",
+  "target_channel": "linkedin-company",
+  "title": "The Bakken Was a Proving Ground, Not a Footnote",
+  "verification": {
+    "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/bakken-proving-ground/verification.json",
+    "verified": true
+  }
+}

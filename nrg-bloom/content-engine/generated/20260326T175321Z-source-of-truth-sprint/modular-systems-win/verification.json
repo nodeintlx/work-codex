@@ -1,0 +1,50 @@
+{
+  "fact_ids": [
+    "modular_containerized_model",
+    "ogboinbiri_operational_since_2025_02"
+  ],
+  "facts": [
+    {
+      "claim": "NRG Bloom's operating model is modular and containerized for remote energy-edge deployment.",
+      "id": "modular_containerized_model",
+      "sources": [
+        {
+          "excerpt": "Modular container-based data centers (Kifaru design)",
+          "path": "nrg-bloom/CLAUDE.md"
+        },
+        {
+          "excerpt": "We design and deploy modular data centers for emerging markets \u2014 specifically containerized computing infrastructure powered by stranded gas and flare gas in West Africa.",
+          "path": "nrg-bloom/projects/funding/sred-call-scripts-2026-03-04.md"
+        },
+        {
+          "excerpt": "NRG Bloom deploys modular data centers at Oando's upstream sites",
+          "path": "nrg-bloom/projects/oando/pathway-summary-1-pager-2026-02-26.md"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "claim": "NRG Bloom has been operational at Ogboinbiri in Bayelsa State since February 2025.",
+      "id": "ogboinbiri_operational_since_2025_02",
+      "sources": [
+        {
+          "excerpt": "We have been operational at Ogboinbiri (Bayelsa State) since February 2025, proving this model works in the Niger Delta environment.",
+          "path": "nrg-bloom/projects/oando/pathway-summary-1-pager-2026-02-26.md"
+        },
+        {
+          "excerpt": "NRG Bloom has been operational at Ogboinbiri since Feb 2025 \u2014 over one year on-site",
+          "path": "nrg-bloom/projects/oando/intro-call-brief-2026-02-26.md"
+        },
+        {
+          "excerpt": "We've been operating at Ogboinbiri since February 2025 \u2014 over 13 months, on Oando's own infrastructure.",
+          "path": "nrg-bloom/projects/oando/call-card-2026-03-06.md"
+        }
+      ],
+      "status": "verified"
+    }
+  ],
+  "slug": "modular-systems-win",
+  "title": "Why Modular Systems Win at the Energy Edge",
+  "verification_standard": "3 local sources minimum per fact",
+  "verified": true
+}

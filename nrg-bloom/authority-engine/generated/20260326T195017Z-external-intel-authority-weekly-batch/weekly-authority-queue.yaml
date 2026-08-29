@@ -1,0 +1,23 @@
+week_of: '2026-03-26'
+queue:
+- day: Monday
+  lane: market-intelligence
+  output: Founder post or thread
+  objective: Own the market bottleneck discussion early in the week.
+  objection: Why does this matter now?
+  objection_slug: why_now
+  status: planned
+- day: Wednesday
+  lane: category-lineage
+  output: LinkedIn company post or carousel
+  objective: Make the category feel more legible than competitors make it.
+  objection: Is this category real or still mostly narrative?
+  objection_slug: is_the_market_real
+  status: planned
+- day: Friday
+  lane: founder-conviction
+  output: Founder note or market interpretation
+  objective: Keep founder voice present with sanitized insight.
+  objection: Why should people listen to NRG Bloom?
+  objection_slug: why_listen_to_nrg_bloom
+  status: planned

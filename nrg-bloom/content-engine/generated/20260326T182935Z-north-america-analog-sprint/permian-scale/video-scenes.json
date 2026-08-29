@@ -1,0 +1,54 @@
+{
+  "brand": {
+    "colors": {
+      "accent": "#00C896",
+      "accent_warm": "#F59E0B",
+      "bg": "#0A0E1A",
+      "border": "#1F2937",
+      "quote_accent": "#6BA3E8",
+      "quote_accent_deep": "#14489B",
+      "quote_surface": "#1A1A1A",
+      "surface": "#111827",
+      "text": "#F9FAFB",
+      "text_dim": "#6B7280",
+      "text_muted": "#9CA3AF"
+    },
+    "fonts": {
+      "body": "Inter",
+      "display": "Space Grotesk"
+    }
+  },
+  "cta": "NRG Bloom is building a voice that can compare Permian scale with African field execution honestly.",
+  "format": "tiktok_story_arc",
+  "scenes": [
+    {
+      "highlight": "If",
+      "text": "If your stranded-gas thesis has no view on Texas, it probably has no view on scale."
+    },
+    {
+      "highlight": "Texas",
+      "text": "Texas produced record natural gas volumes in 2024, and the Permian drove most U.S. production growth."
+    },
+    {
+      "highlight": "operators",
+      "text": "EIA data shows Texas and the Permian remain central to U.S. gas-growth dynamics."
+    },
+    {
+      "highlight": "capital",
+      "text": "That scale explains why modular power and compute operators keep showing up in and around Texas-linked energy infrastructure."
+    },
+    {
+      "highlight": "speed",
+      "text": "NRG Bloom should use Texas as a scale analog, then explain why African execution demands a different field operating model."
+    },
+    {
+      "highlight": "contrarian",
+      "text": "The real signal from Texas is not hype. It is that scale belongs to operators who move at the speed of the basin."
+    },
+    {
+      "highlight": "NRG Bloom",
+      "text": "Know Texas for scale. Know Africa for execution. Win by understanding both."
+    }
+  ],
+  "title": "If You Want Scale, You Have to Understand Texas"
+}

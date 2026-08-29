@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NRG Bloom — Proof Before Promises</title>
+  <style>
+    :root {
+      --bg: #0A0E1A;
+      --surface: #111827;
+      --border: #1F2937;
+      --accent: #00C896;
+      --accent-warm: #F59E0B;
+      --text: #F9FAFB;
+      --muted: #9CA3AF;
+      --dim: #6B7280;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(0,200,150,0.12), transparent 22%),
+        radial-gradient(circle at bottom left, rgba(245,158,11,0.10), transparent 24%),
+        linear-gradient(180deg, #0b1020, #0A0E1A);
+      padding: 32px 24px 72px;
+    }
+    .wrap { max-width: 1480px; margin: 0 auto; }
+    .hero, .section, .quote-card {
+      background: linear-gradient(180deg, rgba(17,24,39,0.95), rgba(10,14,26,0.98));
+      border: 1px solid rgba(31,41,55,0.95);
+      border-radius: 28px;
+      box-shadow: 0 24px 90px rgba(0,0,0,0.32);
+    }
+    .hero { padding: 30px; margin-bottom: 24px; }
+    .eyebrow {
+      display: inline-block;
+      border: 1px solid rgba(0,200,150,0.28);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 10px 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    h1, h2, h3 { font-family: "Space Grotesk", "Inter", sans-serif; letter-spacing: -0.03em; }
+    h1 { margin: 18px 0 10px; font-size: 60px; line-height: 0.94; max-width: 900px; }
+    .sub { margin: 0; max-width: 940px; color: var(--muted); font-size: 19px; line-height: 1.55; }
+    .grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 24px; }
+    .section { padding: 22px; }
+    .frame { border-radius: 22px; overflow: hidden; border: 1px solid rgba(31,41,55,0.95); background: #060914; }
+    iframe { display: block; width: 100%; height: 820px; border: 0; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+    .actions a {
+      text-decoration: none; color: var(--text); font-size: 14px;
+      padding: 10px 14px; border-radius: 999px;
+      border: 1px solid rgba(0,200,150,0.28); background: rgba(0,200,150,0.08);
+    }
+    .quote-card { padding: 28px; margin-bottom: 24px; }
+    .quote {
+      font-size: 34px; line-height: 1.18; max-width: 900px; margin: 14px 0 0;
+      color: var(--text);
+    }
+    .quote strong { color: var(--accent-warm); }
+    .copy { display: grid; gap: 16px; }
+    .copy p { margin: 0; color: var(--muted); line-height: 1.7; font-size: 17px; }
+    .copy p.lead { color: var(--text); font-size: 21px; }
+    .proofs { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 18px; }
+    .proofs img { width: 100%; display: block; border-radius: 18px; border: 1px solid rgba(255,255,255,0.05); }
+    .carousel { display: grid; gap: 14px; }
+    .slide {
+      border: 1px solid rgba(31,41,55,0.95);
+      border-radius: 20px;
+      padding: 16px;
+      background: rgba(255,255,255,0.02);
+    }
+    .slide .num { color: var(--accent); font-weight: 700; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; }
+    .slide h3 { margin: 10px 0 8px; font-size: 22px; }
+    .slide p { margin: 0; color: var(--muted); line-height: 1.55; }
+    .mini { margin-top: 16px; color: var(--dim); font-size: 13px; line-height: 1.55; }
+    @media (max-width: 1100px) {
+      .grid { grid-template-columns: 1fr; }
+      iframe { height: 680px; }
+      .proofs { grid-template-columns: 1fr; }
+      h1 { font-size: 46px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Standalone Piece / Founder Authority</div>
+      <h1>Proof Before Promises</h1>
+      <p class="sub">A browser-native content piece built from Codex’s verification pipeline. This version is meant to feel publishable on its own: motion, post copy, carousel structure, and source-of-truth proof in one page.</p>
+    </section>
+
+    <section class="quote-card">
+      <div class="eyebrow">Core Line</div>
+      <div class="quote">If you are talking about African compute without an operating site, you are still talking in theory. <strong>NRG Bloom has been operational at Ogboinbiri since February 2025.</strong></div>
+    </section>
+
+    <div class="grid">
+      <section class="section">
+        <div class="frame">
+          <iframe src="./20260326T175321Z-source-of-truth-sprint/motion-pack/proof-before-promises-vertical.html" title="Proof Before Promises animation"></iframe>
+        </div>
+        <div class="actions">
+          <a href="./20260326T175321Z-source-of-truth-sprint/motion-pack/proof-before-promises-vertical.html">Open Animation HTML</a>
+          <a href="./20260326T175321Z-source-of-truth-sprint/motion-pack/proof-before-promises-vertical.gif">Open GIF</a>
+          <a href="./20260326T175321Z-source-of-truth-sprint/proof-before-promises/video-script.md">Open Script</a>
+          <a href="./20260326T175321Z-source-of-truth-sprint/proof-before-promises/carousel.md">Open Carousel Brief</a>
+        </div>
+        <div class="proofs">
+          <img src="./20260326T175321Z-source-of-truth-sprint/motion-pack/proof-before-promises-square.png" alt="Square still">
+          <img src="./20260326T175321Z-source-of-truth-sprint/motion-pack/proof-before-promises-proof.png" alt="Proof board">
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="copy">
+          <p class="lead">Most people talking about African compute are still talking in theory.</p>
+          <p>NRG Bloom has been operational at Ogboinbiri since February 2025.</p>
+          <p>In remote infrastructure, authority does not come from aesthetic confidence. It comes from operating continuity, site history, and the ability to point to field proof when everyone else is still pointing to market slides.</p>
+          <p>That is the point of this piece. It does not try to sound clever first. It tries to make one credible claim and force the audience to react to the difference between lived execution and borrowed commentary.</p>
+        </div>
+
+        <div class="carousel" style="margin-top:22px;">
+          <div class="slide"><div class="num">Slide 1</div><h3>Proof Before Promises</h3><p>If you are talking about African compute without an operating site, you are still talking in theory.</p></div>
+          <div class="slide"><div class="num">Slide 2</div><h3>The Stat</h3><p>NRG Bloom has been operational at Ogboinbiri since February 2025.</p></div>
+          <div class="slide"><div class="num">Slide 3</div><h3>What Most People Miss</h3><p>Authority in remote data centers comes from field proof, not abstract demand narratives.</p></div>
+          <div class="slide"><div class="num">Slide 4</div><h3>Operator Truth</h3><p>Teams that can show dated operating proof earn the right to shape the market conversation.</p></div>
+          <div class="slide"><div class="num">Slide 5</div><h3>Close</h3><p>NRG Bloom is building its public voice around what the records already prove.</p></div>
+        </div>
+
+        <div class="mini">Source base: internal operating records with 3-source verification. Use this piece when the goal is to establish who has actually earned authority in the category.</div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

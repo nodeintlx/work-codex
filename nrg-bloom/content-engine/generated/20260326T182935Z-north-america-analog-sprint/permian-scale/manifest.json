@@ -1,0 +1,19 @@
+{
+  "archetype": "scale-thesis",
+  "fact_ids": [
+    "texas_permian_scale",
+    "giga_texas_to_nd_flare_path"
+  ],
+  "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/permian-scale",
+  "pillar": "modular-deployment",
+  "publish_day": "Friday",
+  "quote_card_html": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/permian-scale/quote-card-portrait.html",
+  "quote_card_png": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/permian-scale/quote-card-portrait.png",
+  "slug": "permian-scale",
+  "target_channel": "x-thread",
+  "title": "If You Want Scale, You Have to Understand Texas",
+  "verification": {
+    "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/permian-scale/verification.json",
+    "verified": true
+  }
+}

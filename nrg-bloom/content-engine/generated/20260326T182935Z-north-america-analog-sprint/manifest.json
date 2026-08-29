@@ -1,0 +1,103 @@
+{
+  "brand": {
+    "assets": {
+      "founder_headshot": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/brand-founder-headshot.png",
+      "logo_white": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/brand-logo-white.png"
+    },
+    "colors": {
+      "accent": "#00C896",
+      "accent_warm": "#F59E0B",
+      "bg": "#0A0E1A",
+      "border": "#1F2937",
+      "quote_accent": "#6BA3E8",
+      "quote_accent_deep": "#14489B",
+      "quote_surface": "#1A1A1A",
+      "surface": "#111827",
+      "text": "#F9FAFB",
+      "text_dim": "#6B7280",
+      "text_muted": "#9CA3AF"
+    },
+    "fonts": {
+      "body": "Inter",
+      "display": "Space Grotesk"
+    },
+    "name": "NRG Bloom",
+    "signature": {
+      "handle_tagline": "Remote Compute Infrastructure",
+      "image_asset": "founder_headshot",
+      "name": "Makir Volcy",
+      "title": "Founder & CEO",
+      "website": "nrgbloom.com"
+    },
+    "social_handle": "@NRGBloom",
+    "tagline": "Remote compute infrastructure on stranded energy"
+  },
+  "briefs": [
+    {
+      "archetype": "market-bridge",
+      "fact_ids": [
+        "alberta_gas_heavyweight"
+      ],
+      "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/alberta-lessons",
+      "pillar": "stranded-energy",
+      "publish_day": "Monday",
+      "quote_card_html": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/alberta-lessons/quote-card-portrait.html",
+      "quote_card_png": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/alberta-lessons/quote-card-portrait.png",
+      "slug": "alberta-lessons",
+      "target_channel": "linkedin-founder",
+      "title": "Why Alberta Still Matters to the Flare-to-Compute Conversation",
+      "verification": {
+        "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/alberta-lessons/verification.json",
+        "verified": true
+      }
+    },
+    {
+      "archetype": "operator-map",
+      "fact_ids": [
+        "north_dakota_bakken_capture",
+        "crusoe_field_footprint_2025"
+      ],
+      "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/bakken-proving-ground",
+      "pillar": "flare-mitigation",
+      "publish_day": "Wednesday",
+      "quote_card_html": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/bakken-proving-ground/quote-card-portrait.html",
+      "quote_card_png": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/bakken-proving-ground/quote-card-portrait.png",
+      "slug": "bakken-proving-ground",
+      "target_channel": "linkedin-company",
+      "title": "The Bakken Was a Proving Ground, Not a Footnote",
+      "verification": {
+        "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/bakken-proving-ground/verification.json",
+        "verified": true
+      }
+    },
+    {
+      "archetype": "scale-thesis",
+      "fact_ids": [
+        "texas_permian_scale",
+        "giga_texas_to_nd_flare_path"
+      ],
+      "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/permian-scale",
+      "pillar": "modular-deployment",
+      "publish_day": "Friday",
+      "quote_card_html": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/permian-scale/quote-card-portrait.html",
+      "quote_card_png": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/permian-scale/quote-card-portrait.png",
+      "slug": "permian-scale",
+      "target_channel": "x-thread",
+      "title": "If You Want Scale, You Have to Understand Texas",
+      "verification": {
+        "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/permian-scale/verification.json",
+        "verified": true
+      }
+    }
+  ],
+  "campaign": {
+    "slug": "north-america-analog-sprint",
+    "title": "NRG Bloom North America Analog Sprint"
+  },
+  "generated_at": "2026-03-26T18:29:35.898809+00:00",
+  "verification": {
+    "enabled": true,
+    "fact_registry": "../facts/north-america-analog-facts-2026-03-26.yaml",
+    "standard": "3 local sources minimum per fact"
+  }
+}

@@ -1,7 +1,7 @@
 # Settlement Negotiation Tracker — NRG Bloom v. TON Infrastructure
 # CONFIDENTIAL — ATTORNEY-CLIENT PRIVILEGED
 
-last_updated: "2026-03-07"
+last_updated: "2026-07-11"
 matter: "NRG Bloom Inc. v. TON Infrastructure Ltd."
 status: active
 framework:
@@ -13,7 +13,7 @@ framework:
 
 parameters:
   nrg_bloom_opening: "$727,000 USD (₦1.2B)"
-  nrg_bloom_floor: "$500,000 USD"
+  nrg_bloom_floor: "walk-away below $250,000-300,000 USD cash (post-mediation posture 2026-07-11; opening $1.6M, target $450-600K)"
   full_claim_range_naira: "₦1.8B - ₦4B"
   full_claim_range_usd: "$1.1M - $2.4M"
   mccarthy_litigation_conservative: "$1.6M"
@@ -154,3 +154,25 @@ leverage_points:
   - name: "Axxela injunction threat"
     deployed: false
     impact: "Nuclear — threatens TON's $15.3M deal"
+
+# --- Post-mediation posture, added 2026-07-11 (STATE-DELTA update #97, ratified by Makir) ---
+post_mediation_posture:
+  mediation_failed: "2026-03-27"
+  prior_arc_status: "CLOSED_MEDIATION_FAILED ($727K demand vs $10K counter; rejection 2026-03-10)"
+  main_front: "Nigerian arbitration (Dr. Agbelusi, seat Lagos per PO2 2026-07-07)"
+  opening: "$1,600,000 USD global peace: arbitration + Bayelsa + Alberta exposure + mutual release + confidentiality"
+  target_band: "$450,000 to $600,000 USD cash + mutual release + confidentiality + site return/value-credit"
+  walk_away: "below $250,000 to $300,000 USD cash -> Alberta BATNA (MNDA s.6, limitation safe to 2027-07)"
+  sequencing:
+    - "Now to 2026-07-27: no number; silence and execution; wire deposit; serve maximum-credibility Points of Claim."
+    - "2026-08-01 to 2026-09-10: conversion window; open without-prejudice channel through Dayo at $1.6M."
+    - "PO1 s16.4 fee-relief clock: settle before pre-hearing review (Oct 9-16) and tribunal fee halves."
+    - "Phase E if TON stonewalls past the review: file Alberta (public record lever)."
+  leverage_notes:
+    - "TON's SAN-led five-lawyer Aelex team against a recorded USD 650K claim is economically irrational; they are paying to keep the tail closed (Alberta, wallet/Axxela discovery, disgorgement, personal exposure of Tyler and Broda)."
+    - "Confidentiality is genuinely valuable to TON: the arbitration is confidential, an Alberta filing is not."
+
+# --- R-package corrections 2026-07-12 (STATE-DELTA-2, ratified) ---
+r_package_corrections_2026_07_12:
+  verified_exchange_record: "NRG as-sent position = USD 600,000 lump (14 days) + USD 50,000 legal fees, in the 168-page Position Summary sent by Dayo Adu to Marley Broda 2026-03-04 18:21 ET (thread 'Re: 25-101-01 - Ogboinbiri - Termination Letter'). Full-claim table NGN 1.8B-4B; punitive reserved for arbitration; offer stated withdrawn upon commencement of mediation/arbitration. TON's USD 10,000 full-and-final arrived 2026-03-05 17:57 ET inside TON's own position summary (under the 2026-02-24 WP framework); Dayo rejected it in writing 18:36/18:38 ET the same evening."
+  demoted_figures: "The $727,000 and $585,000 values appearing in earlier register rows are DRAFT-STAGE ARTIFACTS, never transmitted; do not cite them as 'the demand'."

@@ -1,0 +1,215 @@
+slug: "investor-conversion-foundation"
+title: "NRG Bloom Investor Conversion Foundation"
+fact_registry: "../facts/investor-conversion-foundation-2026-03-26.yaml"
+positioning: "NRG Bloom should present as a field-proven remote compute operator that turns stranded energy into monetizable digital infrastructure, not as a speculative Africa narrative."
+
+company:
+  name: "NRG Bloom"
+  headquarters: "Montreal, Canada"
+  operating_geography: "Nigeria, with category analogs benchmarked against North America"
+  operating_model: "Modular, containerized remote compute infrastructure deployed against stranded or underutilized energy"
+  current_stage: "Operating proof established; capital stack, market authority, and structured scale narrative now need to converge"
+
+capital:
+  core_thesis: "The company is most compelling when investors see a rare combination of real field execution in Nigeria, modular deployment logic, and a category that already has external proof in North American basins."
+  why_now: "Gas-utilization pressure, African digital-infrastructure demand, and global proof from stranded-gas compute analogs are all stronger than they were even one year ago. The opportunity is to fund the operator that can adapt that logic to African field conditions before the category narrative gets crowded."
+  winning_hypothesis: "NRG Bloom can win if it keeps proving that remote operations discipline, local execution credibility, and modular deployment speed matter more than generic hyperscale storytelling."
+  investor_fit: "Best fit is investors who understand infrastructure execution risk, energy monetization, and why operational proof reduces frontier-market uncertainty."
+  raise_status: "Building an investor-ready stack that converts authority into diligence and diligence into capital."
+  weekly_goal: "Use content to create repeated high-quality investor touches while improving the diligence stack every week."
+  use_of_funds:
+    - "Scale modular deployment capacity and shorten time from site approval to compute revenue."
+    - "Strengthen field operations, monitoring, and logistics infrastructure across Nigeria."
+    - "Expand commercial development with upstream gas counterparties and strategic partners."
+    - "Turn a working remote-operations base into a repeatable expansion platform."
+  next_step: "Move qualified investors from social engagement into a memo review, then into a diligence call centered on proof of execution and deployment path."
+
+evidence:
+  company_proof:
+    - "ogboinbiri_operational_since_2025_02"
+    - "montreal_based_nigeria_operator"
+    - "modular_containerized_model"
+  market_timing:
+    - "global_flaring_2024_151bcm"
+    - "africa_digital_economy_712b"
+    - "ngfcp_permits_2025"
+  category_lineage:
+    - "north_dakota_bakken_capture"
+    - "texas_permian_scale"
+    - "crusoe_field_footprint_2025"
+
+audiences:
+  - slug: "infrastructure-energy-funds"
+    name: "Infrastructure and Energy Funds"
+    role_in_funnel: "Primary capital"
+    thesis: "NRG Bloom should look like a disciplined energy monetization platform with digital upside, not a speculative media company."
+    conversion_goal: "Advance to memo review and diligence call."
+    channels: ["LinkedIn", "Email", "Warm intros"]
+    cta: "Review the investor memo and schedule a proof-of-execution call."
+    trigger_asset: "founder proof post"
+    proof_fact_ids:
+      - "ogboinbiri_operational_since_2025_02"
+      - "global_flaring_2024_151bcm"
+      - "ngfcp_permits_2025"
+
+  - slug: "ai-compute-investors"
+    name: "AI and Compute Investors"
+    role_in_funnel: "Primary capital"
+    thesis: "The company should be framed as energy-edge compute infrastructure, with today’s economics grounded in real deployment logic rather than pure data-center speculation."
+    conversion_goal: "Advance to thesis discussion around energy-constrained compute."
+    channels: ["X", "LinkedIn", "Email"]
+    cta: "Review the one-page brief and discuss the deployment model."
+    trigger_asset: "market timing thread"
+    proof_fact_ids:
+      - "montreal_based_nigeria_operator"
+      - "modular_containerized_model"
+      - "africa_digital_economy_712b"
+
+  - slug: "africa-focused-capital"
+    name: "Africa-Focused Investors and DFIs"
+    role_in_funnel: "Primary capital"
+    thesis: "NRG Bloom should be positioned as an operator that reduces frontier uncertainty by already being in-market and already operating."
+    conversion_goal: "Advance to diligence around local operating credibility and scale path."
+    channels: ["LinkedIn", "Warm intros", "Targeted outreach"]
+    cta: "Review the diligence snapshot and discuss scale path in Nigeria."
+    trigger_asset: "operator truth quote card"
+    proof_fact_ids:
+      - "ogboinbiri_operational_since_2025_02"
+      - "montreal_based_nigeria_operator"
+      - "ngfcp_permits_2025"
+
+  - slug: "industry-validators"
+    name: "Industry Validators and Strategic Operators"
+    role_in_funnel: "Credibility"
+    thesis: "Their public validation helps investors treat NRG Bloom as a serious category operator."
+    conversion_goal: "Earn amplification, intros, and validation."
+    channels: ["X", "LinkedIn", "Direct message"]
+    cta: "React publicly or introduce the company to relevant capital or partners."
+    trigger_asset: "North America analog post"
+    proof_fact_ids:
+      - "north_dakota_bakken_capture"
+      - "texas_permian_scale"
+      - "crusoe_field_footprint_2025"
+
+  - slug: "media-analysts"
+    name: "Analysts, Journalists, and Market Interpreters"
+    role_in_funnel: "Amplification"
+    thesis: "They should see NRG Bloom as one of the few companies that can speak credibly about stranded-energy compute in Africa."
+    conversion_goal: "Earn citations, coverage, and category visibility."
+    channels: ["X", "LinkedIn", "Email"]
+    cta: "Use the company as a source or invite the founder into the conversation."
+    trigger_asset: "timing and category lineage thread"
+    proof_fact_ids:
+      - "global_flaring_2024_151bcm"
+      - "africa_digital_economy_712b"
+      - "crusoe_field_footprint_2025"
+
+objections:
+  - question: "Is this still a concept or is there real operating proof?"
+    answer: "The company should answer this with site history first, not ambition. Investors should see operating proof before they see scale claims."
+    fact_ids:
+      - "ogboinbiri_operational_since_2025_02"
+      - "montreal_based_nigeria_operator"
+
+  - question: "Why this market now?"
+    answer: "The market case improves when gas waste, digital demand, and regulatory movement are all visible at once."
+    fact_ids:
+      - "global_flaring_2024_151bcm"
+      - "africa_digital_economy_712b"
+      - "ngfcp_permits_2025"
+
+  - question: "Why does the category itself deserve belief?"
+    answer: "The category should not be sold as a brand-new idea. It should be shown as a proven logic already visible in other gas basins."
+    fact_ids:
+      - "north_dakota_bakken_capture"
+      - "texas_permian_scale"
+      - "crusoe_field_footprint_2025"
+
+  - question: "Why can NRG Bloom specifically win?"
+    answer: "The company wins if investors believe field execution, remote coordination, and modular deployment are harder to replicate than slideware."
+    fact_ids:
+      - "ogboinbiri_operational_since_2025_02"
+      - "modular_containerized_model"
+
+franchises:
+  - slug: "operator-proof"
+    name: "Operator Proof"
+    investor_problem: "Can the team actually operate in the field?"
+    asset_types: ["LinkedIn founder post", "quote card", "proof memo excerpt"]
+    conversion_target: "Move skeptical investors into diligence."
+    fact_ids:
+      - "ogboinbiri_operational_since_2025_02"
+      - "montreal_based_nigeria_operator"
+
+  - slug: "market-window"
+    name: "Market Window"
+    investor_problem: "Why is this worth attention now?"
+    asset_types: ["X thread", "carousel", "market note"]
+    conversion_target: "Create urgency around timing."
+    fact_ids:
+      - "global_flaring_2024_151bcm"
+      - "africa_digital_economy_712b"
+      - "ngfcp_permits_2025"
+
+  - slug: "category-lineage"
+    name: "Category Lineage"
+    investor_problem: "Is this category real or imagined?"
+    asset_types: ["LinkedIn company post", "quote card", "short video"]
+    conversion_target: "Make the category feel institutionally legible."
+    fact_ids:
+      - "north_dakota_bakken_capture"
+      - "texas_permian_scale"
+      - "crusoe_field_footprint_2025"
+
+  - slug: "modular-moat"
+    name: "Modular Moat"
+    investor_problem: "What makes the model defensible?"
+    asset_types: ["carousel", "short explainer video", "one-page chart note"]
+    conversion_target: "Reframe speed and modularity as capital efficiency."
+    fact_ids:
+      - "modular_containerized_model"
+      - "ogboinbiri_operational_since_2025_02"
+
+weekly_sequence:
+  - day: "Monday"
+    asset_type: "Founder post + quote card"
+    audience: "Infrastructure and Energy Funds"
+    objective: "Lead with proof of execution."
+    theme: "Field proof before promises"
+    franchise: "operator-proof"
+
+  - day: "Tuesday"
+    asset_type: "X thread"
+    audience: "AI and Compute Investors"
+    objective: "Frame the market window."
+    theme: "Why stranded-energy compute matters now"
+    franchise: "market-window"
+
+  - day: "Wednesday"
+    asset_type: "Carousel"
+    audience: "Africa-Focused Investors and DFIs"
+    objective: "Reduce frontier-market uncertainty."
+    theme: "Montreal discipline, Nigerian field execution"
+    franchise: "operator-proof"
+
+  - day: "Thursday"
+    asset_type: "Short video or animated card"
+    audience: "Industry Validators and Strategic Operators"
+    objective: "Earn public validation and category reinforcement."
+    theme: "North America analogs, Africa adaptation"
+    franchise: "category-lineage"
+
+  - day: "Friday"
+    asset_type: "Contrarian market note"
+    audience: "Analysts, Journalists, and Market Interpreters"
+    objective: "Own the category framing going into the next week."
+    theme: "Why remote execution matters more than hyperscale rhetoric"
+    franchise: "modular-moat"
+
+public_site_sources:
+  - title: "NRG Bloom / Renewable Energy Solutions"
+    url: "https://www.nrgbloom.com/services/renewable-energy"
+  - title: "NRG Bloom / What is Stranded Energy? Why it Matters to Bitcoin"
+    url: "https://www.nrgbloom.com/blog/stranded-energy-bitcoin-waste-recovery-explained"
+  - title: "NRG Bloom / Facts and Numbers"
+    url: "https://www.nrgbloom.com/facts-and-numbers"

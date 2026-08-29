@@ -1,0 +1,95 @@
+{
+  "assets": [
+    {
+      "filename": "alberta-lessons-vertical.html",
+      "title": "Why Alberta Still Matters to the Flare-to-Compute Conversation (vertical)"
+    },
+    {
+      "filename": "alberta-lessons-vertical.png",
+      "title": "Why Alberta Still Matters to the Flare-to-Compute Conversation (vertical poster)"
+    },
+    {
+      "filename": "alberta-lessons-vertical.gif",
+      "title": "Why Alberta Still Matters to the Flare-to-Compute Conversation (vertical animated proof)"
+    },
+    {
+      "filename": "alberta-lessons-square.html",
+      "title": "Why Alberta Still Matters to the Flare-to-Compute Conversation (square)"
+    },
+    {
+      "filename": "alberta-lessons-square.png",
+      "title": "Why Alberta Still Matters to the Flare-to-Compute Conversation (square poster)"
+    },
+    {
+      "filename": "alberta-lessons-proof.png",
+      "title": "Why Alberta Still Matters to the Flare-to-Compute Conversation (source of truth)"
+    },
+    {
+      "filename": "bakken-proving-ground-vertical.html",
+      "title": "The Bakken Was a Proving Ground, Not a Footnote (vertical)"
+    },
+    {
+      "filename": "bakken-proving-ground-vertical.png",
+      "title": "The Bakken Was a Proving Ground, Not a Footnote (vertical poster)"
+    },
+    {
+      "filename": "bakken-proving-ground-vertical.gif",
+      "title": "The Bakken Was a Proving Ground, Not a Footnote (vertical animated proof)"
+    },
+    {
+      "filename": "bakken-proving-ground-square.html",
+      "title": "The Bakken Was a Proving Ground, Not a Footnote (square)"
+    },
+    {
+      "filename": "bakken-proving-ground-square.png",
+      "title": "The Bakken Was a Proving Ground, Not a Footnote (square poster)"
+    },
+    {
+      "filename": "bakken-proving-ground-proof.png",
+      "title": "The Bakken Was a Proving Ground, Not a Footnote (source of truth)"
+    },
+    {
+      "filename": "permian-scale-vertical.html",
+      "title": "If You Want Scale, You Have to Understand Texas (vertical)"
+    },
+    {
+      "filename": "permian-scale-vertical.png",
+      "title": "If You Want Scale, You Have to Understand Texas (vertical poster)"
+    },
+    {
+      "filename": "permian-scale-vertical.gif",
+      "title": "If You Want Scale, You Have to Understand Texas (vertical animated proof)"
+    },
+    {
+      "filename": "permian-scale-square.html",
+      "title": "If You Want Scale, You Have to Understand Texas (square)"
+    },
+    {
+      "filename": "permian-scale-square.png",
+      "title": "If You Want Scale, You Have to Understand Texas (square poster)"
+    },
+    {
+      "filename": "permian-scale-proof.png",
+      "title": "If You Want Scale, You Have to Understand Texas (source of truth)"
+    }
+  ],
+  "brand": {
+    "colors": {
+      "accent": "#00C896",
+      "accent_warm": "#F59E0B",
+      "bg": "#0A0E1A",
+      "border": "#1F2937",
+      "surface": "#111827",
+      "text": "#F9FAFB",
+      "text_dim": "#6B7280",
+      "text_muted": "#9CA3AF"
+    },
+    "fonts": {
+      "body": "Inter",
+      "display": "Space Grotesk"
+    },
+    "name": "NRG Bloom",
+    "tagline": "Remote compute infrastructure on stranded energy"
+  },
+  "source_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T180258Z-north-america-analog-sprint"
+}

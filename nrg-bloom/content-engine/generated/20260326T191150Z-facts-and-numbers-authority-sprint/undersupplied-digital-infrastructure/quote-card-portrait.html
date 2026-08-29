@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=1080">
+        <title>Nigeria Is Growing Data Centers, But the Market Is Still Small Enough for Edge Operators to Matter Quote Card</title>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+          * { margin: 0; padding: 0; box-sizing: border-box; }
+          body {
+            font-family: 'Inter', sans-serif;
+            background: #000;
+            margin: 0;
+            padding: 0;
+          }
+          .card {
+            width: 1080px;
+            height: 1350px;
+            background: #000;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            padding: 60px;
+          }
+          .ambient {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(100px);
+            pointer-events: none;
+            opacity: 0.4;
+          }
+          .ambient-1 {
+            width: 500px;
+            height: 500px;
+            top: -100px;
+            left: -100px;
+            background: radial-gradient(ellipse, rgba(107,163,232,0.15) 0%, transparent 70%);
+          }
+          .ambient-2 {
+            width: 400px;
+            height: 400px;
+            bottom: 100px;
+            right: -50px;
+            background: radial-gradient(ellipse, rgba(107,163,232,0.10) 0%, transparent 70%);
+          }
+          .top-accent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #6BA3E8 30%, #14489B 70%, transparent);
+            z-index: 5;
+          }
+          .quote-card {
+            position: relative;
+            background: #1A1A1A;
+            border-radius: 20px;
+            padding: 64px 56px 80px;
+            border: 1px solid rgba(255,255,255,0.06);
+            z-index: 2;
+          }
+          .quote-mark,
+          .quote-mark-close {
+            font-size: 72px;
+            font-weight: 900;
+            color: #6BA3E8;
+            opacity: 0.8;
+          }
+          .quote-mark {
+            line-height: 0.6;
+            margin-bottom: 20px;
+          }
+          .quote-mark-close {
+            line-height: 0.4;
+            text-align: right;
+            margin-top: 20px;
+          }
+          .quote-text {
+            font-size: 28px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.5;
+            letter-spacing: -0.3px;
+          }
+          .quote-text .accent {
+            color: #6BA3E8;
+          }
+          .speaker-section {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 20px;
+            z-index: 3;
+            margin-top: 40px;
+          }
+          .speaker-info {
+            text-align: right;
+          }
+          .speaker-name {
+            font-size: 22px;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 0.3px;
+          }
+          .speaker-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #6BA3E8;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-top: 4px;
+          }
+          .speaker-photo-ring {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            padding: 4px;
+            background: linear-gradient(135deg, #6BA3E8, #14489B, #6BA3E8);
+            flex-shrink: 0;
+            box-shadow: 0 4px 24px rgba(107,163,232,0.3);
+          }
+          .speaker-photo-inner {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #000;
+            position: relative;
+          }
+          .speaker-photo {
+            width: 250%;
+            height: 250%;
+            object-fit: cover;
+            object-position: center 20%;
+            filter: brightness(0.75) contrast(1.15);
+            margin-left: -80%;
+            margin-top: -25%;
+          }
+          .bottom-line {
+            height: 1px;
+            background: rgba(255,255,255,0.06);
+            z-index: 3;
+            margin-top: 40px;
+          }
+          .brand-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 24px;
+            z-index: 3;
+            position: relative;
+          }
+          .brand-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+          }
+          .brand-logo {
+            height: 50px;
+            width: auto;
+            filter: brightness(0) invert(1);
+          }
+          .brand-fallback {
+            color: #fff;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+          }
+          .brand-divider {
+            width: 1px;
+            height: 36px;
+            background: rgba(255,255,255,0.06);
+          }
+          .brand-url {
+            font-size: 13px;
+            font-weight: 600;
+            color: rgba(255,255,255,0.35);
+            letter-spacing: 1px;
+          }
+          .handle-section {
+            text-align: right;
+          }
+          .handle {
+            font-size: 16px;
+            font-weight: 600;
+            color: #6BA3E8;
+          }
+          .handle-tagline {
+            font-size: 11px;
+            font-weight: 600;
+            color: rgba(255,255,255,0.35);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-top: 5px;
+          }
+        </style>
+        </head>
+        <body>
+        <div class="card">
+          <div class="top-accent"></div>
+          <div class="ambient ambient-1"></div>
+          <div class="ambient ambient-2"></div>
+          <div class="quote-card">
+            <div class="quote-mark">&ldquo;</div>
+            <div class="quote-text">Early markets do not just <span class="accent">reward</span> the biggest builder. They reward the operator who understands where infrastructure is still <span class="accent">missing</span>.</div>
+            <div class="quote-mark-close">&rdquo;</div>
+          </div>
+          <div class="speaker-section">
+            <div class="speaker-info">
+              <div class="speaker-name">Makir Volcy</div>
+              <div class="speaker-title">Founder &amp; CEO</div>
+            </div>
+            <div class="speaker-photo-ring">
+  <div class="speaker-photo-inner">
+    <img src="../brand-founder-headshot.png" alt="Makir Volcy" class="speaker-photo">
+  </div>
+</div>
+          </div>
+          <div class="bottom-line"></div>
+          <div class="brand-row">
+            <div class="brand-left">
+              <img src="../brand-logo-white.png" alt="NRG Bloom" class="brand-logo">
+              <div class="brand-divider"></div>
+              <div class="brand-url">nrgbloom.com</div>
+            </div>
+            <div class="handle-section">
+              <div class="handle">@NRGBloom</div>
+              <div class="handle-tagline">Remote Compute Infrastructure</div>
+            </div>
+          </div>
+        </div>
+        </body>
+        </html>

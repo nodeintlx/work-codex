@@ -1,0 +1,18 @@
+{
+  "archetype": "market-bridge",
+  "fact_ids": [
+    "alberta_gas_heavyweight"
+  ],
+  "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/alberta-lessons",
+  "pillar": "stranded-energy",
+  "publish_day": "Monday",
+  "quote_card_html": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/alberta-lessons/quote-card-portrait.html",
+  "quote_card_png": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/alberta-lessons/quote-card-portrait.png",
+  "slug": "alberta-lessons",
+  "target_channel": "linkedin-founder",
+  "title": "Why Alberta Still Matters to the Flare-to-Compute Conversation",
+  "verification": {
+    "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T182935Z-north-america-analog-sprint/alberta-lessons/verification.json",
+    "verified": true
+  }
+}

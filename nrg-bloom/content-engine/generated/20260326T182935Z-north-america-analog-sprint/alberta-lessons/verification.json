@@ -1,0 +1,49 @@
+{
+  "fact_ids": [
+    "alberta_gas_heavyweight"
+  ],
+  "facts": [
+    {
+      "claim": "Official Canadian and Alberta sources describe Alberta as producing most of Canada's natural gas.",
+      "id": "alberta_gas_heavyweight",
+      "scope": "external",
+      "sources": [
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "In 2023, natural gas production in Alberta averaged 10.9 Bcf/d. Alberta produced 61% of Canada's total natural gas production in 2023.",
+          "path": "Canada Energy Regulator Alberta profile",
+          "published_on": "2026-03-06",
+          "source_type": "official_report",
+          "title": "Provincial and Territorial Energy Profiles - Alberta",
+          "url": "https://www.cer-rec.gc.ca/en/data-analysis/energy-markets/provincial-territorial-energy-profiles/provincial-territorial-energy-profiles-alberta.html"
+        },
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "Alberta produces more than half of all the natural gas in Canada.",
+          "path": "Alberta natural gas overview",
+          "published_on": "2026-03-01",
+          "source_type": "official_report",
+          "title": "Natural gas",
+          "url": "https://www.alberta.ca/natural-gas"
+        },
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "Canada is among the world's top 5 producers of natural gas, with about two-thirds of production coming from Alberta.",
+          "path": "Alberta natural gas vision",
+          "published_on": "2026-02-01",
+          "source_type": "official_report",
+          "title": "Natural gas vision and strategy",
+          "url": "https://www.alberta.ca/natural-gas-vision-and-strategy"
+        }
+      ],
+      "status": "verified"
+    }
+  ],
+  "slug": "alberta-lessons",
+  "title": "Why Alberta Still Matters to the Flare-to-Compute Conversation",
+  "verification_standard": "3 local sources minimum per fact",
+  "verified": true
+}

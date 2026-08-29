@@ -1,0 +1,51 @@
+{
+  "brand": {
+    "colors": {
+      "accent": "#00C896",
+      "accent_warm": "#F59E0B",
+      "bg": "#0A0E1A",
+      "border": "#1F2937",
+      "surface": "#111827",
+      "text": "#F9FAFB",
+      "text_dim": "#6B7280",
+      "text_muted": "#9CA3AF"
+    },
+    "fonts": {
+      "body": "Inter",
+      "display": "Space Grotesk"
+    }
+  },
+  "cta": "NRG Bloom is building around modular speed because speed changes both economics and control.",
+  "format": "tiktok_story_arc",
+  "scenes": [
+    {
+      "highlight": "Speed",
+      "text": "If your African data-center plan takes two years to prove, you probably do not have an African data-center plan."
+    },
+    {
+      "highlight": "A",
+      "text": "A two-year data-center timeline is not just slow in frontier markets. It is often structurally wrong."
+    },
+    {
+      "highlight": "operators",
+      "text": "A modular deployment can prove value before a conventional project would even finish its permitting deck."
+    },
+    {
+      "highlight": "capital",
+      "text": "Portable infrastructure changes negotiating leverage because the asset is not trapped to one site on day one."
+    },
+    {
+      "highlight": "speed",
+      "text": "In emerging-market infrastructure, speed compounds into trust, proof, and better capital efficiency."
+    },
+    {
+      "highlight": "contrarian",
+      "text": "The future of frontier compute will be built by teams that think like expeditionary infrastructure companies, not suburban real-estate developers."
+    },
+    {
+      "highlight": "NRG Bloom",
+      "text": "Modular speed is not cosmetic. It is the difference between momentum and drift."
+    }
+  ],
+  "title": "Speed Is Not a Feature in African Compute. It Is a Survival Trait."
+}

@@ -1,34 +1,86 @@
 # Live matter posture for the TON dispute.
 # This file is the current operational truth for the litigation agent.
+# Patched 2026-07-11 from the Sentinel reactivation sync (STATE-DELTA update #97), ratified by Makir.
 
 matter: "NRG Bloom Inc. v. TON Infrastructure Ltd."
 status: active
-phase: filing_strategy
+phase: arbitration_pleadings
 
 representation:
-  mode: self_directed_with_ai
+  mode: counsel_led_with_ai_support
+  nigerian_counsel:
+    firm: "Moroom Africa"
+    lead: "Dayo Adu"
+    team: ["Mercy Airiohuodion", "Joshua Adedokun"]
+    fee_basis: contingency
+  opposing_counsel:
+    firm: "Aelex"
+    lead: "Anga SAN"
+    team: ["Ogbuagu (partner)", "Juwah (day-to-day)"]
   canadian_counsel: paused
-  nigerian_counsel: active
 
 forum:
-  current_track: negotiation_plus_canadian_pre_filing
-  canadian_path: under_active_evaluation
-  nigerian_path: active
+  current_track: nigerian_arbitration_main_front
+  arbitration:
+    status: constituted
+    sole_arbitrator: "Dr. Agbelusi"
+    seat: "Lagos (PO2, 2026-07-07; NRG won the seat dispute in full, costs reserved)"
+    procedural_orders:
+      - "PO1 2026-06-18: timetable; mediation material inadmissible (s15.7/s19); tribunal fee halves if settled before pre-hearing review (s16.4)"
+      - "PO2 2026-07-07: seat = Lagos"
+  bayelsa_suit:
+    case_no: "BYHC/YHC/CV/215/2026"
+    interim_orders: "granted 2026-05-06, constraining TON site, equipment, and dealings"
+    status: "TON strike-out filed; Agnes counter affidavit filed; discharge hearing (2026-06-29) adjourned, no new date"
+    posture: monitor_only
+  alberta_path:
+    role: BATNA_only
+    basis: "MNDA s.6 exclusive jurisdiction; Edmonton-domiciled respondents; limitation safe to 2027-07"
+    trigger: "TON stonewalls past the pre-hearing review"
 
-filing:
-  filing_readiness: in_progress
-  limitation_status: not_expired
-  protective_filing_needed: to_be_determined
+mediation:
+  status: failed
+  failed_on: "2026-03-27"
+  note: "Mediation material inadmissible in the arbitration under PO1 s15.7/s19."
+
+deadlines:
+  - "2026-07-17: wire tribunal deposit (~USD 8.6K, funded; formally due 2026-07-21)"
+  - "2026-07-18: reply to Sentinel's 7 reasoning tasks (agent exchange)"
+  - "2026-07-20: close 3 verification gaps (Trojan payer record, JVA p4 signature render, SDA supersession answer); litigation-grade telemetry memo"
+  - "2026-07-27: POINTS OF CLAIM due"
+  - "2026-09-10: TON Defence due"
+  - "2026-08-01 to 2026-09-10: without-prejudice settlement window"
+  - "2026-10-09 to 2026-10-16: pre-hearing review (PO1 s16.4 fee relief if settled before)"
 
 settlement:
-  opening: "$727,000 USD (₦1.2B)"
-  floor: "$500,000 USD"
-  current_posture: awaiting_counterparty_response
+  opening: "$1,600,000 USD, framed as global peace (arbitration + Bayelsa + Alberta exposure + mutual release + confidentiality)"
+  target_band: "$450,000 to $600,000 USD cash plus mutual release, confidentiality, and return or value-credit for the NRG-built site"
+  walk_away: "below $250,000 to $300,000 USD cash, take the Alberta BATNA"
+  current_posture: "no number communicated to TON before 2026-07-27; silence and execution until the pleading is served"
+
+evidence_doctrine:
+  wallet_retraction: "BTC wallet attributions bc1q38ck9... and bc1qshn... RETRACTED 2026-05-26; not court-defensible; tripwire program retired"
+  surviving_telemetry: "Luxor floor 2025-12-22; partnership-era production 0.04136329 BTC (2025-12-22 to 2026-01-21); 2026-01-27 instant shutdown; 2026-03-06 blip with 13 positive-hash worker IDs"
+  information_and_belief_only: "post-2026-03-07 quantifications (0.01124447 BTC/day, 8.4x and 6.8x multiples)"
+  framing_cautions:
+    - "Do not lead with sabotage/unlawful-takeover framing (AG3 clean-hands trap: 2026-02-02 email authorized equipment removal)."
+    - "Do not plead the gross NGN 68.4M ledger as NRG capital."
+    - "Soft numbers ride on information and belief only."
+  state_delta_3_2026_07_12:
+    canonical_chronology: "MASTER-CHRONOLOGY-VERIFIED-2026-07-12-r2.md governs (supersedes the original upload and the 2026-03-09 chronology); its 16 section-A corrections applied across registers."
+    feb12_call_quotes: "Raw 301-line READ.AI transcript held (engine source 11). All key quotes CONFIRMED at lines 23/26/80/86/101/155/170/179; the line-179 do-not-plead flag is LIFTED. Transcript supersedes verified-call-transcripts.md where they differ. Pleading fidelity: 'Energy Bloom' [sic]; 'we're just do it ourselves' [sic]."
+    instrument_status: "The 2026-02-12 Notice of Termination terminates BOTH the May-16 SDA AND Addendum No. 1."
+    ag1: "Held first-hand (dated 2026-02-02, addressed to Makir); no longer hearsay-only; notice Feb 2, Agnes call Feb 3."
+    land_lease: "Julie 2025-06-23 .eml closes the [D] flag; the $2,800 figure belongs to FENCING, not the lease."
+    nrg_shugamine_2024: "Pre-TON origination instrument held at [P] until the signature page is visually verified."
+    bayelsa_page_render: "Verification of Broda paras 28/29 + Agnes paras 6/12 vs originals PENDING (R7 re-ship requested); those quotes stay MEDIUM confidence."
 
 next_actions:
-  - "Decide whether to prepare a protective Alberta filing package now."
-  - "Update settlement tracker to reflect self-directed Canadian litigation posture."
-  - "Convert core claims, chronology, and evidence map into filing-ready structure."
+  - "Confirm exact wire figure with Registrar via Dayo before 2026-07-17, then wire with SWIFT copy to Kemi Afesojaye and Moroom."
+  - "Put founder decisions 1 (pleaded quantum, USD 1.4-1.6M vs 650K, fee-scale question) and 2 (witnesses: Makir + Julie) to Dayo."
+  - "Close the three verification gaps by ~2026-07-20."
+  - "Deliver litigation-grade telemetry memo (DB/CSV-sourced, no retracted material) by 2026-07-20."
+  - "Serve maximum-credibility Points of Claim 2026-07-27."
 
-notes: "McCarthy Tetrault engagement is paused. Canadian path is now self-directed with AI support. The runtime should prefer this file over older March 2026 references that assume a live McCarthy call."
-last_updated: "2026-03-07"
+notes: "Arbitration is the main front per founder decision 2026-07-10. Bayelsa interim orders provide standing pressure while adjourned. Alberta is the public-record lever and belongs in every settlement conversation as a credible threat, not a filing."
+last_updated: "2026-07-12"

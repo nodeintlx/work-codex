@@ -1,0 +1,82 @@
+{
+  "brand": {
+    "colors": {
+      "accent": "#00C896",
+      "accent_warm": "#F59E0B",
+      "bg": "#0A0E1A",
+      "border": "#1F2937",
+      "surface": "#111827",
+      "text": "#F9FAFB",
+      "text_dim": "#6B7280",
+      "text_muted": "#9CA3AF"
+    },
+    "fonts": {
+      "body": "Inter",
+      "display": "Space Grotesk"
+    },
+    "name": "NRG Bloom",
+    "tagline": "Remote compute infrastructure on stranded energy"
+  },
+  "briefs": [
+    {
+      "archetype": "operator-proof",
+      "fact_ids": [
+        "ogboinbiri_operational_since_2025_02"
+      ],
+      "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T175321Z-source-of-truth-sprint/proof-before-promises",
+      "pillar": "remote-operations",
+      "publish_day": "Monday",
+      "slug": "proof-before-promises",
+      "target_channel": "linkedin-founder",
+      "title": "Proof Before Promises",
+      "verification": {
+        "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T175321Z-source-of-truth-sprint/proof-before-promises/verification.json",
+        "verified": true
+      }
+    },
+    {
+      "archetype": "operator-journal",
+      "fact_ids": [
+        "ogboinbiri_operational_since_2025_02",
+        "montreal_based_nigeria_operator"
+      ],
+      "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T175321Z-source-of-truth-sprint/montreal-to-field",
+      "pillar": "remote-operations",
+      "publish_day": "Wednesday",
+      "slug": "montreal-to-field",
+      "target_channel": "linkedin-company",
+      "title": "From Montreal to the Niger Delta",
+      "verification": {
+        "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T175321Z-source-of-truth-sprint/montreal-to-field/verification.json",
+        "verified": true
+      }
+    },
+    {
+      "archetype": "deployment-thesis",
+      "fact_ids": [
+        "modular_containerized_model",
+        "ogboinbiri_operational_since_2025_02"
+      ],
+      "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T175321Z-source-of-truth-sprint/modular-systems-win",
+      "pillar": "modular-deployment",
+      "publish_day": "Friday",
+      "slug": "modular-systems-win",
+      "target_channel": "x-thread",
+      "title": "Why Modular Systems Win at the Energy Edge",
+      "verification": {
+        "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260326T175321Z-source-of-truth-sprint/modular-systems-win/verification.json",
+        "verified": true
+      }
+    }
+  ],
+  "campaign": {
+    "slug": "source-of-truth-sprint",
+    "title": "NRG Bloom Source of Truth Sprint"
+  },
+  "generated_at": "2026-03-26T17:53:21.297674+00:00",
+  "verification": {
+    "enabled": true,
+    "fact_registry": "../facts/nrg-bloom-verified-facts.yaml",
+    "standard": "3 local sources minimum per fact"
+  }
+}

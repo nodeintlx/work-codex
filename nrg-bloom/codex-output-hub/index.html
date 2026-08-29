@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NRG Bloom Codex Hub</title>
+  <style>
+    :root {
+      --bg: #07111f;
+      --surface: #102038;
+      --surface-2: #152b4d;
+      --border: rgba(107, 163, 232, 0.22);
+      --text: #f5f7fb;
+      --muted: #9bb1d1;
+      --accent: #6ba3e8;
+      --accent-2: #14489b;
+      --good: #b6d7ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background: linear-gradient(180deg, #08101c 0%, #07111f 100%);
+      color: var(--text);
+    }
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 24px 64px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 40px;
+      letter-spacing: -0.02em;
+    }
+    .sub {
+      margin: 0 0 28px;
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 880px;
+      line-height: 1.5;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+    }
+    .eyebrow {
+      color: var(--accent);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 24px;
+    }
+    p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+    ul {
+      margin: 14px 0 0;
+      padding-left: 18px;
+    }
+    li {
+      margin: 8px 0;
+      color: var(--good);
+    }
+    a {
+      color: var(--good);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    .path {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+      word-break: break-all;
+    }
+    .status {
+      margin-top: 24px;
+      padding: 16px 18px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: rgba(255,255,255,0.03);
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .error {
+      color: #ffb4b4;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>NRG Bloom Codex Hub</h1>
+    <p class="sub">
+      One place to access the latest Codex output for NRG Bloom. This page reads the latest
+      generated content, capital, and authority runs directly from the repo so you do not need
+      to hunt through folders.
+    </p>
+
+    <div class="grid" id="cards"></div>
+    <div class="status" id="status">Loading latest outputs...</div>
+  </div>
+
+  <script>
+    const sections = [
+      {
+        name: "Content Engine",
+        latestTxt: "../content-engine/generated/latest/LATEST.txt",
+        description: "Latest content campaign, factcheck report, and core drafted pieces.",
+        links: [
+          ["Campaign Overview", "campaign-overview.md"],
+          ["Factcheck Report", "factcheck-report.md"],
+          ["Energy Delivery Founder Post", "energy-delivery-bottleneck/linkedin-founder.md"],
+          ["NGFCP Carousel", "ngfcp-governed-market/carousel.md"],
+          ["Digital Infrastructure Video Script", "undersupplied-digital-infrastructure/video-script.md"]
+        ]
+      },
+      {
+        name: "Capital Engine",
+        latestTxt: "../capital-engine/generated/latest/LATEST.txt",
+        description: "Latest investor conversion stack: memo, one-pager, diligence docs, and audience map.",
+        links: [
+          ["Investor Memo", "investor-thesis/investor-memo.md"],
+          ["One-Page Brief", "investor-thesis/one-page-brief.md"],
+          ["Diligence Snapshot", "diligence-room/diligence-snapshot.md"],
+          ["Audience Map", "audience-map.yaml"],
+          ["Content Backlog", "content-backlog.yaml"]
+        ]
+      },
+      {
+        name: "Authority Engine",
+        latestTxt: "../authority-engine/generated/latest/LATEST.txt",
+        description: "Latest external-intelligence authority system, queue, and weekly batch.",
+        links: [
+          ["Authority Operating System", "authority-operating-system.md"],
+          ["Source Watchlist", "source-watchlist.md"],
+          ["Investor Objection Bank", "investor-objection-bank.md"],
+          ["External Intel Queue", "external-intel-queue.yaml"]
+        ],
+        extraLatestTxt: "../authority-engine/generated/latest/LATEST.txt",
+        extraTitle: "Weekly Batch",
+        extraBaseSuffix: "-weekly-batch",
+        extraLinks: [
+          ["Weekly Authority Batch", "weekly-authority-batch.md"],
+          ["Weekly Authority Queue", "weekly-authority-queue.yaml"],
+          ["Editorial Prompt Pack", "editorial-prompt-pack.md"]
+        ]
+      }
+    ];
+
+    const cards = document.getElementById("cards");
+    const status = document.getElementById("status");
+
+    function toRelativeUrl(absPath) {
+      const prefix = "/home/dowsmasternode/repos/work-codex/nrg-bloom/";
+      if (!absPath.startsWith(prefix)) return null;
+      return absPath.slice(prefix.length);
+    }
+
+    function renderCard(title, description, baseDir, links) {
+      const div = document.createElement("section");
+      div.className = "card";
+      const list = links.map(([label, suffix]) => {
+        const href = `${baseDir}/${suffix}`;
+        return `<li><a href="${href}" target="_blank" rel="noopener noreferrer">${label}</a></li>`;
+      }).join("");
+      div.innerHTML = `
+        <div class="eyebrow">Codex Output</div>
+        <h2>${title}</h2>
+        <p>${description}</p>
+        <ul>${list}</ul>
+        <div class="path">${baseDir}</div>
+      `;
+      cards.appendChild(div);
+    }
+
+    async function loadLatest(path) {
+      const response = await fetch(path, { cache: "no-store" });
+      if (!response.ok) throw new Error(`Failed to read ${path}`);
+      return (await response.text()).trim();
+    }
+
+    async function main() {
+      try {
+        for (const section of sections) {
+          const absPath = await loadLatest(section.latestTxt);
+          const relBase = toRelativeUrl(absPath);
+          if (!relBase) throw new Error(`Could not map latest path for ${section.name}`);
+          renderCard(section.name, section.description, relBase, section.links);
+
+          if (section.extraBaseSuffix && section.extraLinks) {
+            const batchBase = `${relBase}${section.extraBaseSuffix}`;
+            renderCard(`${section.name} ${section.extraTitle}`, "Current weekly operating output for this engine.", batchBase, section.extraLinks);
+          }
+        }
+        status.textContent = "Latest outputs loaded successfully.";
+      } catch (error) {
+        status.innerHTML = `<span class="error">Failed to load Codex hub: ${String(error)}</span>`;
+      }
+    }
+
+    main();
+  </script>
+</body>
+</html>

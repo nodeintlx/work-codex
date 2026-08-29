@@ -1,7 +1,7 @@
 # Structured evidence register for filing preparation.
 # Each item should resolve to a real file in the workspace.
 
-last_updated: "2026-03-07"
+last_updated: "2026-07-12"
 matter: "NRG Bloom Inc. v. TON Infrastructure Ltd."
 evidence:
   - id: E-MATTER-STATUS
@@ -168,3 +168,244 @@ evidence:
     issues:
       - admissions
       - takeover
+
+  # --- Added 2026-07-11 from the Sentinel data package (STATE-DELTA update #97, ratified by Makir) ---
+  # Wallet retraction: any analysis derived from BTC wallet attributions bc1q38ck9... / bc1qshn...
+  # is RETRACTED as of 2026-05-26 and must not be relied on. Telemetry-sourced findings survive.
+
+  - id: E-PO1
+    title: Procedural Order 1 with Appendix A timetable (2026-06-18)
+    source_type: document
+    path: exchange-mirror PO1-NRG-v-TON-2026-06-18.pdf + PO1-Appendix-A-Timetable-2026-06-18.pdf
+    strength: critical
+    issues:
+      - arbitration_procedure
+      - deadlines
+      - mediation_inadmissibility
+
+  - id: E-PO2
+    title: Procedural Order 2, seat of arbitration awarded to NRG (Lagos, 2026-07-07)
+    source_type: document
+    path: exchange-mirror PO2-Seat-of-Arbitration-2026-07-07.pdf
+    strength: critical
+    issues:
+      - arbitration_procedure
+      - seat_win
+      - costs_reserved
+
+  - id: E-SEAT-CLAIMANT-ADDRESS
+    title: NRG written address on seat (2026-06-24)
+    source_type: filing
+    path: exchange-mirror SEAT-Claimant-written-address-2026-06-24.pdf
+    strength: high
+    issues:
+      - arbitration_procedure
+
+  - id: E-SEAT-RESPONDENT-SUBMISSION
+    title: TON seat submission (2026-06-24)
+    source_type: filing
+    path: "Drive only (19MB): https://drive.google.com/file/d/1eWNUMFByLVWt8W9vDCOZ8T8WwgVmzd-3/view"
+    strength: high
+    issues:
+      - arbitration_procedure
+      - defense_map
+
+  - id: E-JVA-SIGNED-EXHIBIT
+    title: Signed JVA exhibit (2025-02-19)
+    source_type: document
+    path: exchange-mirror EXH-JVA-signed-2025-02-19.pdf
+    strength: critical
+    issues:
+      - contract
+      - broda_para29_inconsistency
+
+  - id: E-WHATSAPP-TYLER-JVA
+    title: Tyler WhatsApp returning the signed JVA (screenshot, 2025-02-19 08:43)
+    source_type: exhibit_image
+    path: exchange-mirror EXH-WHATSAPP-tyler-jva-sent-2025-02-19.png
+    strength: critical
+    issues:
+      - contract
+      - broda_para29_inconsistency
+
+  - id: E-TROJAN-STATEMENT
+    title: Trojan financial statement (2024-09-17)
+    source_type: document
+    path: exchange-mirror EXH-TROJAN-financial-statement-2024-09-17.pdf
+    strength: medium
+    issues:
+      - origination
+      - verification_gap_trojan_payer
+
+  - id: E-ESA-AGNES
+    title: Electricity Supply Agreement in NRG's name (Agnes entity, 2025-05-06)
+    source_type: document
+    path: exchange-mirror ELECTRICITY-SUPPLY-AGREEMENT-Agnes-2025-05-06.pdf
+    strength: high
+    issues:
+      - origination
+      - operations
+
+  - id: E-SOURCE-FILINGS-TRANSCRIPTION
+    title: Transcription of Bayelsa source filings (2026-06-04)
+    source_type: analysis
+    path: exchange-mirror SOURCE-FILINGS-TRANSCRIPTION-2026-06-04.md
+    strength: high
+    issues:
+      - bayelsa_suit
+      - broda_para29_inconsistency
+
+  - id: E-COLLECTED-FACTS
+    title: Collected facts, 8 readers incl. Gmail sweep to 2026-07-08
+    source_type: fact_base
+    path: exchange-mirror COLLECTED-FACTS-8-READERS-2026-07-10.json
+    strength: high
+    issues:
+      - cross_reference
+      - email_record
+
+  - id: E-WAR-PLAN
+    title: War plan for the pleadings window (2026-07-10)
+    source_type: strategy
+    path: exchange-mirror WAR-PLAN-PLEADINGS-WINDOW-2026-07-10.md
+    strength: operational
+    issues:
+      - strategy
+      - founder_decisions
+
+  - id: E-SETTLEMENT-STRATEGY-MEMO
+    title: Settlement strategy memo (2026-06-11)
+    source_type: strategy
+    path: exchange-mirror SETTLEMENT-STRATEGY-2026-06-11.md
+    strength: operational
+    issues:
+      - settlement
+      - leverage_inventory
+
+  - id: E-SENTINEL-SYNC
+    title: Sentinel reactivation sync and master case assessment (2026-07-10/11)
+    source_type: agent_memo
+    path: exchange-mirror sentinel-reactivation-case-sync-2026-07-10.md + sentinel-master-case-assessment-2026-07-11.md
+    strength: operational
+    issues:
+      - posture_sync
+      - wallet_retraction
+
+  # --- R-package additions 2026-07-12 (STATE-DELTA-2, ratified) ---
+  # E-SIGNED-SDA above = SDA #1 (effective 2025-04-02, 40/60): devaluation BASELINE, superseded as operative instrument.
+
+  - id: E-SDA2-MAY16-OPERATIVE
+    title: "SDA #2, Ogboinbiri 5MW (effective 2025-05-16, wet-ink signed): THE OPERATIVE INSTRUMENT"
+    source_type: document
+    path: exchange-mirror incoming/2026-07-12-r-package/SDA2-ogboinbiri-May-16-2025-Alberta-signed.pdf
+    strength: critical
+    issues:
+      - contract
+      - supersession_construction
+      - devaluation_ladder
+      - dispute_resolution_ladder
+
+  - id: E-MNDA-TRANSCRIPTION
+    title: "MNDA clean-text transcription (executed 2025-01-10): s.6 Alberta exclusive jurisdiction, s.8 non-circumvention, s.9 survival to 2027-01-10"
+    source_type: derived_transcription
+    path: exchange-mirror incoming/2026-07-12-r-package/R3-MNDA-CLEAN-TEXT-TRANSCRIPTION-2026-07-12.md
+    strength: critical
+    issues:
+      - non_circumvention
+      - alberta_batna
+      - survival_window
+
+  - id: E-JUL4-EML-ORIGINAL
+    title: "Original 2025-07-04 Marley-to-Axxela email (.eml, DKIM intact): canonical circumvention statement, Makir and Julie on CC"
+    source_type: document
+    path: exchange-mirror incoming/2026-07-12-r-package/R6-marley-to-axxela-2025-07-04-original.eml
+    strength: critical
+    issues:
+      - circumvention
+      - misrepresentation
+      - real_time_contradiction
+
+  - id: E-POSITION-SUMMARY-AS-SENT
+    title: "NRG Position Summary AS SENT (168 pages, transmitted 2026-03-04 18:21 ET; USD 600K + 50K fees position)"
+    source_type: document
+    path: "Drive only (12MB): https://drive.google.com/file/d/1dTJysbm2Ewwiqp-vJt_nnpucGKVUv2jI/view"
+    strength: high
+    issues:
+      - settlement_history
+      - damages_presentation
+
+  - id: E-R1-TRANSMISSION-EML
+    title: "Raw transmission .eml of the Position Summary (Dayo to Broda, 2026-03-04, full headers)"
+    source_type: document
+    path: "Drive only (16.4MB): https://drive.google.com/file/d/1K9WgjXaP6eWkKnC1exKI3Y97Z5DQOwTa/view"
+    strength: high
+    issues:
+      - settlement_history
+      - authenticity
+
+  # --- STATE-DELTA-3 additions 2026-07-12 (packages 5+6, ratified by Makir) ---
+
+  - id: E-RAW-TRANSCRIPT-FEB12
+    title: "Raw READ.AI transcript of the 2026-02-12 termination call (301 lines): key quotes CONFIRMED at lines 23/26/80/86/101/155/170/179"
+    source_type: transcript_raw
+    path: exchange-mirror incoming/2026-07-12-founder-vault/EVID-RAW-TRANSCRIPT-termination-call-2026-02-12.txt (engine source 11)
+    strength: critical
+    issues:
+      - termination_call
+      - admissions
+      - supersedes_verified_call_transcripts_where_differing
+
+  - id: E-TERMINATION-NOTICE-INSTRUMENT
+    title: "Notice of Termination PDF + raw transmittal .eml (2026-02-12 18:31 UTC): terminates BOTH the May-16 SDA AND Addendum No. 1"
+    source_type: document
+    path: exchange-mirror incoming/2026-07-12-completion/EVID-TERMINATION-NOTICE-2026-02-12.pdf (+ transmittal .eml)
+    strength: critical
+    issues:
+      - termination
+      - instrument_status
+
+  - id: E-AG1-FIRSTHAND
+    title: "AG1 Shugamine termination notice, held FIRST-HAND (dated 2026-02-02, addressed to Makir): no longer hearsay-only; notice Feb 2, Agnes call Feb 3"
+    source_type: document
+    path: exchange-mirror incoming/2026-07-12-founder-vault/EVID-SHUGAMINE-TERMINATION-AG1-2026-02-02.pdf
+    strength: high
+    issues:
+      - shugamine_termination
+      - ag1_register_upgrade
+
+  - id: E-EMAIL-RECORD-COMPLETE
+    title: "Complete verbatim Gmail record to 2026-03-09 (message IDs, headers, quoted-reply chains): strongest source in the corpus"
+    source_type: email_record_export
+    path: exchange-mirror incoming/2026-07-12-completion/EVID-EMAILS-complete-record-2026-03-09.md (engine source 10)
+    strength: critical
+    issues:
+      - email_record
+      - raw_layer
+
+  - id: E-NRG-SHUGAMINE-2024
+    title: "2024 NRG-Shugamine Partnership Agreement (pre-TON origination instrument): HOLD AT [P], execution unverified (blank date fields)"
+    source_type: document
+    path: exchange-mirror incoming/2026-07-12-founder-vault/EVID-NRG-SHUGAMINE-PARTNERSHIP-2024.pdf
+    strength: pending_verification
+    issues:
+      - origination
+      - execution_unverified
+
+  - id: E-TON-PS-AS-RECEIVED
+    title: "TON Position Summary as received 2026-03-05 (carried the $10K full-and-final): WITHOUT-PREJUDICE, settlement-register use only (PO1 s15.7/s19)"
+    source_type: document
+    path: exchange-mirror incoming/2026-07-12-completion/EVID-TON-POSITION-SUMMARY-AS-RECEIVED-2026-03-05.pdf
+    strength: settlement_register_only
+    issues:
+      - settlement_history
+      - without_prejudice
+
+  - id: E-BAYELSA-ORIGINALS
+    title: "Original Bayelsa scans (Counter Affidavit 36pp; Motion to Strike Out 40pp), image-only, Drive-held: page-render verification of Broda 28/29 + Agnes 6/12 PENDING (delivery is not verification; quotes stay MEDIUM confidence until it reports)"
+    source_type: document
+    path: "Drive: Counter-Affidavit 1xRLeb1pWJ7m_Udizi8c3wchQR1UZ62Xj (44MB); Motion 1pEJS49fnnw3bFwsZZu47zyt3FDTj8uF4 (10.46MB); re-ship in <8MB parts requested (R7)"
+    strength: pending_verification
+    issues:
+      - bayelsa_suit
+      - para_29_spear
+      - verification_queued

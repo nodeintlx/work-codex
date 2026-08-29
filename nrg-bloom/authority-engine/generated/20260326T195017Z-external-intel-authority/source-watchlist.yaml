@@ -1,0 +1,75 @@
+generated_from: NRG Bloom External Intelligence Authority System
+sources:
+- name: IEA
+  tier: institutional_primary
+  type: energy_and_compute
+  url: https://www.iea.org
+  why_it_matters: Best source for the global energy-and-compute constraint story.
+  tracking_focus:
+  - AI power demand
+  - data centre demand
+  - electricity outlook
+- name: World Bank
+  tier: institutional_primary
+  type: power_access_and_losses
+  url: https://www.worldbank.org
+  why_it_matters: Best source for Nigerian electricity access, reliability, and economic-loss
+    framing.
+  tracking_focus:
+  - electricity access
+  - economic losses
+  - Nigeria power sector
+- name: African Development Bank
+  tier: institutional_primary
+  type: africa_infrastructure
+  url: https://www.afdb.org
+  why_it_matters: Useful for continent-scale infrastructure and capital framing.
+  tracking_focus:
+  - digital economy
+  - electrification
+  - infrastructure finance
+- name: NUPRC
+  tier: regulator
+  type: flare_gas_market
+  url: https://www.nuprc.gov.ng
+  why_it_matters: Primary regulatory source for NGFCP and flare-gas commercialization.
+  tracking_focus:
+  - NGFCP
+  - flare permits
+  - gas commercialization
+- name: EIA
+  tier: institutional_primary
+  type: north_america_analogs
+  url: https://www.eia.gov
+  why_it_matters: Best baseline for Texas, Permian, associated gas, and basin scale.
+  tracking_focus:
+  - Texas gas
+  - Permian growth
+  - associated gas
+- name: Arizton / market intelligence
+  tier: industry_analysis
+  type: data_center_market
+  url: https://www.arizton.com
+  why_it_matters: Useful for Nigeria data-center market sizing and pipeline framing.
+  tracking_focus:
+  - Nigeria capacity
+  - pipeline growth
+  - market investment
+- name: Crusoe
+  tier: company_signal
+  type: category_analog
+  url: https://www.crusoe.ai/resources/newsroom
+  why_it_matters: Public benchmark for flare-to-compute validation and category evolution.
+  tracking_focus:
+  - AI pivot
+  - modular deployments
+  - flare mitigation history
+- name: Green Flare
+  tier: company_signal
+  type: nigeria_analog
+  url: https://www.theenergymag.com/news/2025-05-28/green-flare-bitcoin-nigeria
+  why_it_matters: Visible Nigerian analog that helps prove local market legibility.
+  tracking_focus:
+  - project progress
+  - MW announcements
+  - Nigeria flare-to-compute

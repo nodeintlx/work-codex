@@ -1,0 +1,162 @@
+queue:
+  - id: q01
+    status: ready
+    priority: high
+    audience: energy_infrastructure_capital
+    objective: build_authority
+    format: founder_post
+    working_title: "Energy Delivery Is the Real Bottleneck"
+    core_claim: "The next compute bottleneck is energy delivery, not abstract demand."
+    fact_ids:
+      - global_data_center_demand_doubles_2030
+      - nigeria_power_access_and_losses
+      - nigeria_grid_delivery_gap
+    why_this_matters: "This is the cleanest narrative bridge between global compute demand and Nigeria's infrastructure reality."
+
+  - id: q02
+    status: ready
+    priority: high
+    audience: africa_focused_capital
+    objective: reduce_execution_doubt
+    format: founder_post
+    working_title: "Operational Since February 2025 Changes the Conversation"
+    core_claim: "The strongest proof in frontier infrastructure is not ambition. It is already operating."
+    fact_ids:
+      - ogboinbiri_operational_since_2025_02
+      - ogboinbiri_operational_capacity_1_5mw
+      - modular_containerized_model
+    why_this_matters: "This should become one of NRG Bloom's core repeated signals."
+
+  - id: q03
+    status: ready
+    priority: high
+    audience: industry_validators
+    objective: make_category_legible
+    format: company_post
+    working_title: "NGFCP Turned Flare Monetization Into a Governed Market"
+    core_claim: "Flare-to-compute in Nigeria is no longer a fringe idea. It is entering a permit-backed market phase."
+    fact_ids:
+      - ngfcp_permits_power_potential_2025
+      - green_flare_nigeria_53mw_2025
+      - crusoe_divestiture_2025
+    why_this_matters: "This is the best category-legibility piece currently available."
+
+  - id: q04
+    status: ready
+    priority: high
+    audience: compute_ai_investors
+    objective: explain_market_positioning
+    format: x_thread
+    working_title: "Nigeria Is Growing, But Still Early Enough for Edge Operators to Matter"
+    core_claim: "A growing centralized data-centre market does not eliminate the edge case. It can strengthen it."
+    fact_ids:
+      - nigeria_data_center_capacity_pipeline_2025
+      - modular_containerized_model
+      - ogboinbiri_operational_capacity_1_5mw
+    why_this_matters: "This is the main answer to the hyperscale objection."
+
+  - id: q05
+    status: ready
+    priority: high
+    audience: energy_infrastructure_capital
+    objective: investor_conversion
+    format: memo_excerpt
+    working_title: "Why Power Delivery Failure Creates a Business"
+    core_claim: "Distributed energy-compute is investable because it monetizes power the formal system fails to deliver."
+    fact_ids:
+      - nigeria_power_access_and_losses
+      - nigeria_grid_delivery_gap
+      - ogboinbiri_operational_since_2025_02
+    why_this_matters: "This belongs in investor outreach and one-pagers as much as in social content."
+
+  - id: q06
+    status: ready
+    priority: medium
+    audience: africa_focused_capital
+    objective: founder_credibility
+    format: founder_note
+    working_title: "What 13+ Months in Ogboinbiri Actually Taught Us"
+    core_claim: "Remote infrastructure authority is earned through coordination, logistics, uptime, and local trust."
+    fact_ids:
+      - ogboinbiri_operational_since_2025_02
+      - ogboinbiri_operational_capacity_1_5mw
+    why_this_matters: "This becomes stronger when more field detail is added."
+    needs_input:
+      - "specific operating lessons"
+      - "examples of what failed and what changed"
+
+  - id: q07
+    status: ready
+    priority: medium
+    audience: industry_validators
+    objective: category_depth
+    format: market_note
+    working_title: "Why Crusoe's Exit Did Not Kill the Category"
+    core_claim: "Crusoe's pivot is evidence of category maturation, not category invalidation."
+    fact_ids:
+      - crusoe_divestiture_2025
+      - ngfcp_permits_power_potential_2025
+    why_this_matters: "This lets NRG Bloom sound more sophisticated than surface-level market commentators."
+
+  - id: q08
+    status: ready
+    priority: medium
+    audience: compute_ai_investors
+    objective: thesis_reframing
+    format: carousel
+    working_title: "Compute Follows Energy Reality"
+    core_claim: "Where energy can be delivered and monetized will shape where modular compute gets built."
+    fact_ids:
+      - global_data_center_demand_doubles_2030
+      - nigeria_grid_delivery_gap
+      - modular_containerized_model
+    why_this_matters: "This is a good educational asset for repeat distribution."
+
+  - id: q09
+    status: research_needed
+    priority: medium
+    audience: africa_focused_capital
+    objective: partner_signal
+    format: company_post
+    working_title: "How Real Are Current Commercial Partnership Conversations?"
+    core_claim: "NRG Bloom is moving from proof to structured commercial deployment."
+    why_this_matters: "This could be strong, but only once Oando and other partner updates are cleared for public use."
+    needs_input:
+      - "what can be said publicly about Oando"
+      - "whether Heirs should be excluded entirely"
+
+  - id: q10
+    status: research_needed
+    priority: medium
+    audience: compute_ai_investors
+    objective: customer_legibility
+    format: case_note
+    working_title: "What Enterprise Compute Demand Looks Like for NRG Bloom"
+    core_claim: "There is a path from energy validation to enterprise workloads."
+    why_this_matters: "This becomes valuable once there is a public-safe customer or workload story."
+    needs_input:
+      - "what can be said about Canurta or any replacement client story"
+
+  - id: q11
+    status: hold
+    priority: low
+    audience: energy_infrastructure_capital
+    objective: cost_efficiency
+    format: founder_post
+    working_title: "What We Built With Very Little Capital"
+    core_claim: "Capital efficiency is one of the company's strongest hidden advantages."
+    why_this_matters: "Could become strong later, but current public proof for the exact build-cost claim is not strong enough."
+    blocked_by:
+      - "47K build-cost claim not yet cleared"
+
+  - id: q12
+    status: hold
+    priority: low
+    audience: impact_capital
+    objective: climate_credibility
+    format: memo_note
+    working_title: "Methane Reduction as a Supplementary Value Stream"
+    core_claim: "The climate layer may strengthen the investment case, but it should not be overstated."
+    why_this_matters: "Good later, weak now."
+    blocked_by:
+      - "Verra and carbon-credit methodology not yet cleared"

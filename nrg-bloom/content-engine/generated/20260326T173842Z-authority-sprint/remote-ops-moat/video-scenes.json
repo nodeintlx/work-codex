@@ -1,0 +1,51 @@
+{
+  "brand": {
+    "colors": {
+      "accent": "#00C896",
+      "accent_warm": "#F59E0B",
+      "bg": "#0A0E1A",
+      "border": "#1F2937",
+      "surface": "#111827",
+      "text": "#F9FAFB",
+      "text_dim": "#6B7280",
+      "text_muted": "#9CA3AF"
+    },
+    "fonts": {
+      "body": "Inter",
+      "display": "Space Grotesk"
+    }
+  },
+  "cta": "NRG Bloom is building the operating model for that category now.",
+  "format": "tiktok_story_arc",
+  "scenes": [
+    {
+      "highlight": "Remote",
+      "text": "Remote data centers in Africa will not be won by the prettiest designs. They will be won by the best operators."
+    },
+    {
+      "highlight": "13+",
+      "text": "13+ months operating at Ogboinbiri from Montreal is a stronger moat than any slide about hyperscale demand."
+    },
+    {
+      "highlight": "operators",
+      "text": "A remote site does not fail first at the rack. It fails first at coordination, site response, and power discipline."
+    },
+    {
+      "highlight": "capital",
+      "text": "Whoever can standardize remote operations across weak infrastructure environments will scale faster than whoever simply copies Western campus models."
+    },
+    {
+      "highlight": "speed",
+      "text": "In frontier environments, deployment speed matters, but recoverability matters more."
+    },
+    {
+      "highlight": "contrarian",
+      "text": "The winners in African compute will look less like hyperscale developers and more like industrial operators with software discipline."
+    },
+    {
+      "highlight": "NRG Bloom",
+      "text": "The future belongs to the teams that can operate remotely, recover fast, and stay disciplined in the field."
+    }
+  ],
+  "title": "Remote Data Centers Will Be Won by Operators, Not Architects"
+}

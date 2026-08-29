@@ -1,0 +1,13 @@
+{
+  "files": [
+    "/home/dowsmasternode/repos/work-codex/nrg-bloom/authority-engine/generated/20260326T195017Z-external-intel-authority-weekly-batch/weekly-authority-batch.md",
+    "/home/dowsmasternode/repos/work-codex/nrg-bloom/authority-engine/generated/20260326T195017Z-external-intel-authority-weekly-batch/weekly-authority-queue.yaml",
+    "/home/dowsmasternode/repos/work-codex/nrg-bloom/authority-engine/generated/20260326T195017Z-external-intel-authority-weekly-batch/source-priority-list.md",
+    "/home/dowsmasternode/repos/work-codex/nrg-bloom/authority-engine/generated/20260326T195017Z-external-intel-authority-weekly-batch/editorial-prompt-pack.md"
+  ],
+  "generated_at": "2026-03-26T19:50:17.543673+00:00",
+  "plan": {
+    "slug": "external-intel-authority",
+    "title": "NRG Bloom External Intelligence Authority System"
+  }
+}

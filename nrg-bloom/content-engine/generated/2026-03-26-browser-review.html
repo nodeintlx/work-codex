@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NRG Bloom Codex Review Board</title>
+  <style>
+    :root {
+      --bg: #0A0E1A;
+      --surface: #111827;
+      --surface-2: #0f1726;
+      --border: #1F2937;
+      --accent: #00C896;
+      --accent-warm: #F59E0B;
+      --text: #F9FAFB;
+      --text-muted: #9CA3AF;
+      --text-dim: #6B7280;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(0, 200, 150, 0.12), transparent 20%),
+        radial-gradient(circle at bottom left, rgba(245, 158, 11, 0.08), transparent 22%),
+        linear-gradient(180deg, #09101d, #0A0E1A);
+      color: var(--text);
+      padding: 40px 28px 80px;
+    }
+    .wrap {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+    .hero {
+      padding: 32px;
+      border: 1px solid rgba(31, 41, 55, 0.9);
+      border-radius: 28px;
+      background: linear-gradient(180deg, rgba(17,24,39,0.96), rgba(10,14,26,0.98));
+      box-shadow: 0 24px 80px rgba(0,0,0,0.35);
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(0, 200, 150, 0.28);
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      font-size: 12px;
+    }
+    h1, h2, h3 {
+      font-family: "Space Grotesk", "Inter", sans-serif;
+      letter-spacing: -0.03em;
+    }
+    h1 {
+      margin: 20px 0 12px;
+      font-size: 56px;
+      line-height: 0.94;
+      max-width: 860px;
+    }
+    .lede {
+      max-width: 980px;
+      font-size: 20px;
+      line-height: 1.5;
+      color: var(--text-muted);
+      margin: 0;
+    }
+    .grid {
+      display: grid;
+      gap: 24px;
+      margin-top: 28px;
+    }
+    .piece {
+      border: 1px solid rgba(31, 41, 55, 0.9);
+      border-radius: 28px;
+      background: linear-gradient(180deg, rgba(17,24,39,0.94), rgba(10,14,26,0.98));
+      overflow: hidden;
+    }
+    .piece-head {
+      padding: 28px 28px 18px;
+      border-bottom: 1px solid rgba(31, 41, 55, 0.9);
+    }
+    .piece-head h2 {
+      margin: 10px 0 8px;
+      font-size: 38px;
+      line-height: 1.02;
+    }
+    .piece-head p {
+      margin: 0;
+      color: var(--text-muted);
+      line-height: 1.5;
+      font-size: 17px;
+      max-width: 980px;
+    }
+    .piece-body {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 22px;
+      padding: 22px;
+    }
+    .preview {
+      display: grid;
+      gap: 18px;
+    }
+    .frame {
+      border: 1px solid rgba(31, 41, 55, 0.9);
+      border-radius: 22px;
+      overflow: hidden;
+      background: var(--surface-2);
+      min-height: 760px;
+    }
+    iframe {
+      width: 100%;
+      height: 760px;
+      border: 0;
+      background: #050814;
+    }
+    .proof-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    .proof-card {
+      border: 1px solid rgba(31, 41, 55, 0.9);
+      border-radius: 22px;
+      background: var(--surface-2);
+      padding: 16px;
+    }
+    .proof-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+    .proof-card h3 {
+      margin: 0 0 14px;
+      font-size: 18px;
+    }
+    .meta {
+      display: grid;
+      gap: 16px;
+    }
+    .panel {
+      border: 1px solid rgba(31, 41, 55, 0.9);
+      border-radius: 22px;
+      background: var(--surface-2);
+      padding: 18px 18px 20px;
+    }
+    .panel h3 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      color: var(--accent);
+    }
+    .panel p, .panel li {
+      color: var(--text-muted);
+      line-height: 1.55;
+      font-size: 15px;
+    }
+    .panel ul {
+      margin: 0;
+      padding-left: 20px;
+      display: grid;
+      gap: 10px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .actions a {
+      color: var(--text);
+      text-decoration: none;
+      border: 1px solid rgba(0, 200, 150, 0.28);
+      background: rgba(0, 200, 150, 0.08);
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+    }
+    .actions a:hover {
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+    .mini {
+      color: var(--text-dim);
+      font-size: 13px;
+      margin-top: 12px;
+      line-height: 1.5;
+    }
+    @media (max-width: 1080px) {
+      .piece-body {
+        grid-template-columns: 1fr;
+      }
+      .proof-row {
+        grid-template-columns: 1fr;
+      }
+      iframe {
+        height: 640px;
+      }
+      .frame {
+        min-height: 640px;
+      }
+      h1 {
+        font-size: 42px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="badge">Codex Review Board / Browser First</div>
+      <h1>NRG Bloom Content Pipeline Review</h1>
+      <p class="lede">
+        Three review pieces built from the Codex content engine. Each section embeds the HTML animation for immediate browser review,
+        plus the proof board, square visual, carousel brief, and video script so you can judge both creativity and source discipline.
+      </p>
+    </section>
+
+    <div class="grid">
+      <section class="piece">
+        <div class="piece-head">
+          <div class="badge">1 / Proof-Led Founder Angle</div>
+          <h2>Proof Before Promises</h2>
+          <p>This piece is designed to establish operator legitimacy fast. It uses dated site proof to challenge generic commentary and position NRG Bloom as a company that has earned the right to speak.</p>
+        </div>
+        <div class="piece-body">
+          <div class="preview">
+            <div class="frame">
+              <iframe src="./20260326T175321Z-source-of-truth-sprint/motion-pack/proof-before-promises-vertical.html" title="Proof Before Promises Animation"></iframe>
+            </div>
+            <div class="proof-row">
+              <div class="proof-card">
+                <h3>Square Review Still</h3>
+                <img src="./20260326T175321Z-source-of-truth-sprint/motion-pack/proof-before-promises-square.png" alt="Proof Before Promises square still">
+              </div>
+              <div class="proof-card">
+                <h3>Source-of-Truth Board</h3>
+                <img src="./20260326T175321Z-source-of-truth-sprint/motion-pack/proof-before-promises-proof.png" alt="Proof Before Promises proof board">
+              </div>
+            </div>
+          </div>
+          <div class="meta">
+            <div class="panel">
+              <h3>Creative Logic</h3>
+              <ul>
+                <li>Lead with a clean founder challenge: no site, no authority.</li>
+                <li>Center one dated claim instead of spreading attention across too many stats.</li>
+                <li>Use the proof board to make the content system visibly different from generic social content.</li>
+              </ul>
+            </div>
+            <div class="panel">
+              <h3>Review Links</h3>
+              <div class="actions">
+                <a href="./20260326T175321Z-source-of-truth-sprint/proof-before-promises/carousel.md">Carousel</a>
+                <a href="./20260326T175321Z-source-of-truth-sprint/proof-before-promises/video-script.md">Video Script</a>
+                <a href="./20260326T175321Z-source-of-truth-sprint/motion-pack/proof-before-promises-vertical.html">Animation HTML</a>
+                <a href="./20260326T175321Z-source-of-truth-sprint/motion-pack/proof-before-promises-vertical.gif">Animated GIF</a>
+                <a href="./20260326T175321Z-source-of-truth-sprint/proof-before-promises/social-card.html">Social Card HTML</a>
+              </div>
+              <div class="mini">Positioning target: founder authority, investor trust, anti-hype category framing.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="piece">
+        <div class="piece-head">
+          <div class="badge">2 / Market Authority Angle</div>
+          <h2>The Bakken Was a Proving Ground, Not a Footnote</h2>
+          <p>This piece makes NRG Bloom sound category-literate. It links North Dakota's gas-capture pressure to the real industrial conditions where flare-to-compute models had to prove themselves.</p>
+        </div>
+        <div class="piece-body">
+          <div class="preview">
+            <div class="frame">
+              <iframe src="./20260326T180258Z-north-america-analog-sprint/motion-pack/bakken-proving-ground-vertical.html" title="Bakken Proving Ground Animation"></iframe>
+            </div>
+            <div class="proof-row">
+              <div class="proof-card">
+                <h3>Square Review Still</h3>
+                <img src="./20260326T180258Z-north-america-analog-sprint/motion-pack/bakken-proving-ground-square.png" alt="Bakken square still">
+              </div>
+              <div class="proof-card">
+                <h3>Source-of-Truth Board</h3>
+                <img src="./20260326T180258Z-north-america-analog-sprint/motion-pack/bakken-proving-ground-proof.png" alt="Bakken proof board">
+              </div>
+            </div>
+          </div>
+          <div class="meta">
+            <div class="panel">
+              <h3>Creative Logic</h3>
+              <ul>
+                <li>Turn Bakken history into a serious authority claim instead of a trivia reference.</li>
+                <li>Blend regulator, report, and operator-footprint evidence into one narrative arc.</li>
+                <li>Position NRG Bloom as the company translating proven basin logic into African execution.</li>
+              </ul>
+            </div>
+            <div class="panel">
+              <h3>Review Links</h3>
+              <div class="actions">
+                <a href="./20260326T180258Z-north-america-analog-sprint/bakken-proving-ground/carousel.md">Carousel</a>
+                <a href="./20260326T180258Z-north-america-analog-sprint/bakken-proving-ground/video-script.md">Video Script</a>
+                <a href="./20260326T180258Z-north-america-analog-sprint/motion-pack/bakken-proving-ground-vertical.html">Animation HTML</a>
+                <a href="./20260326T180258Z-north-america-analog-sprint/motion-pack/bakken-proving-ground-vertical.gif">Animated GIF</a>
+                <a href="./20260326T180258Z-north-america-analog-sprint/bakken-proving-ground/verification.md">Verification Pack</a>
+              </div>
+              <div class="mini">Positioning target: market authority, industrial seriousness, flare-mitigation credibility.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="piece">
+        <div class="piece-head">
+          <div class="badge">3 / Scale Contrast Angle</div>
+          <h2>If You Want Scale, You Have to Understand Texas</h2>
+          <p>This piece is built for fast retention. It uses Texas and the Permian as the scale benchmark, then pivots to the claim that African execution requires a different operating muscle.</p>
+        </div>
+        <div class="piece-body">
+          <div class="preview">
+            <div class="frame">
+              <iframe src="./20260326T180258Z-north-america-analog-sprint/motion-pack/permian-scale-vertical.html" title="Permian Scale Animation"></iframe>
+            </div>
+            <div class="proof-row">
+              <div class="proof-card">
+                <h3>Square Review Still</h3>
+                <img src="./20260326T180258Z-north-america-analog-sprint/motion-pack/permian-scale-square.png" alt="Permian square still">
+              </div>
+              <div class="proof-card">
+                <h3>Source-of-Truth Board</h3>
+                <img src="./20260326T180258Z-north-america-analog-sprint/motion-pack/permian-scale-proof.png" alt="Permian proof board">
+              </div>
+            </div>
+          </div>
+          <div class="meta">
+            <div class="panel">
+              <h3>Creative Logic</h3>
+              <ul>
+                <li>Use Texas to establish basin-scale credibility quickly.</li>
+                <li>Shift from scale to execution so NRG Bloom does not sound like it is copying U.S. narratives blindly.</li>
+                <li>Keep the reel language crisp enough for X, LinkedIn video, and TikTok repurposing.</li>
+              </ul>
+            </div>
+            <div class="panel">
+              <h3>Review Links</h3>
+              <div class="actions">
+                <a href="./20260326T180258Z-north-america-analog-sprint/permian-scale/carousel.md">Carousel</a>
+                <a href="./20260326T180258Z-north-america-analog-sprint/permian-scale/video-script.md">Video Script</a>
+                <a href="./20260326T180258Z-north-america-analog-sprint/motion-pack/permian-scale-vertical.html">Animation HTML</a>
+                <a href="./20260326T180258Z-north-america-analog-sprint/motion-pack/permian-scale-vertical.gif">Animated GIF</a>
+                <a href="./20260326T180258Z-north-america-analog-sprint/permian-scale/x-thread.md">X Thread</a>
+              </div>
+              <div class="mini">Positioning target: scale literacy, founder sharpness, cross-basin comparative authority.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

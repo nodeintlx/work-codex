@@ -1,0 +1,51 @@
+items:
+- id: capital-01
+  theme: Operator Proof
+  investor_problem: Can the team actually operate in the field?
+  asset_types:
+  - LinkedIn founder post
+  - quote card
+  - proof memo excerpt
+  conversion_target: Move skeptical investors into diligence.
+  fact_ids:
+  - ogboinbiri_operational_since_2025_02
+  - montreal_based_nigeria_operator
+  status: ready
+- id: capital-02
+  theme: Market Window
+  investor_problem: Why is this worth attention now?
+  asset_types:
+  - X thread
+  - carousel
+  - market note
+  conversion_target: Create urgency around timing.
+  fact_ids:
+  - global_flaring_2024_151bcm
+  - africa_digital_economy_712b
+  - ngfcp_permits_2025
+  status: ready
+- id: capital-03
+  theme: Category Lineage
+  investor_problem: Is this category real or imagined?
+  asset_types:
+  - LinkedIn company post
+  - quote card
+  - short video
+  conversion_target: Make the category feel institutionally legible.
+  fact_ids:
+  - north_dakota_bakken_capture
+  - texas_permian_scale
+  - crusoe_field_footprint_2025
+  status: ready
+- id: capital-04
+  theme: Modular Moat
+  investor_problem: What makes the model defensible?
+  asset_types:
+  - carousel
+  - short explainer video
+  - one-page chart note
+  conversion_target: Reframe speed and modularity as capital efficiency.
+  fact_ids:
+  - modular_containerized_model
+  - ogboinbiri_operational_since_2025_02
+  status: ready

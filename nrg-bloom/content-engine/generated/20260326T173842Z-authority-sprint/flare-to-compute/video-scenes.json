@@ -1,0 +1,51 @@
+{
+  "brand": {
+    "colors": {
+      "accent": "#00C896",
+      "accent_warm": "#F59E0B",
+      "bg": "#0A0E1A",
+      "border": "#1F2937",
+      "surface": "#111827",
+      "text": "#F9FAFB",
+      "text_dim": "#6B7280",
+      "text_muted": "#9CA3AF"
+    },
+    "fonts": {
+      "body": "Inter",
+      "display": "Space Grotesk"
+    }
+  },
+  "cta": "NRG Bloom is focused on the infrastructure layer that makes that shift executable.",
+  "format": "tiktok_story_arc",
+  "scenes": [
+    {
+      "highlight": "Stop",
+      "text": "Gas flaring is usually framed as an ESG problem. That framing is too small."
+    },
+    {
+      "highlight": "Gas",
+      "text": "Gas flaring is not just an emissions line item. It is stranded monetization capacity waiting for the right operating model."
+    },
+    {
+      "highlight": "operators",
+      "text": "A flare site can be reframed from penalty exposure into a site-level monetization asset."
+    },
+    {
+      "highlight": "capital",
+      "text": "Modular compute creates an offtake path where pipelines, grid upgrades, or industrial load are too slow or too expensive."
+    },
+    {
+      "highlight": "speed",
+      "text": "The best projects are not climate theater. They are hard-nosed operating businesses that happen to reduce emissions."
+    },
+    {
+      "highlight": "contrarian",
+      "text": "The real breakthrough is not carbon accounting. It is making methane mitigation economically irresistible."
+    },
+    {
+      "highlight": "NRG Bloom",
+      "text": "The moment stranded gas earns more in compute than it costs in penalties, the conversation changes."
+    }
+  ],
+  "title": "Stop Treating Gas Flaring as an ESG Problem Only"
+}

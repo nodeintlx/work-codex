@@ -1,0 +1,71 @@
+week_of: '2026-03-26'
+queue:
+- id: authority-01
+  franchise: market-intelligence
+  theme: Market Intelligence
+  purpose: Turn trusted external developments into clear investor-relevant framing.
+  audiences:
+  - energy infrastructure capital
+  - compute and AI investors
+  - analysts
+  formats:
+  - thread
+  - market note
+  - founder post
+  fact_ids:
+  - global_data_center_demand_doubles_2030
+  - nigeria_power_access_and_losses
+  - nigeria_grid_delivery_gap
+  status: ready
+- id: authority-02
+  franchise: category-lineage
+  theme: Category Lineage
+  purpose: Make the category legible by connecting Nigeria to known analogs and public
+    market moves.
+  audiences:
+  - industry validators
+  - investors
+  - partners
+  formats:
+  - LinkedIn company post
+  - thread
+  - video script
+  fact_ids:
+  - ngfcp_permits_power_potential_2025
+  - green_flare_nigeria_53mw_2025
+  - crusoe_divestiture_2025
+  status: ready
+- id: authority-03
+  franchise: founder-conviction
+  theme: Founder Conviction
+  purpose: Keep Makir's voice present without needing live-sensitive updates.
+  audiences:
+  - Africa-focused capital
+  - founders
+  - operators
+  formats:
+  - Founder post
+  - founder note
+  - interview prompt
+  fact_ids:
+  - ogboinbiri_operational_since_2025_02
+  - ogboinbiri_operational_capacity_1_5mw
+  - modular_containerized_model
+  status: ready
+- id: authority-04
+  franchise: modular-edge-positioning
+  theme: Modular Edge Positioning
+  purpose: Explain where NRG Bloom fits in a market that is growing beyond early-stage
+    emptiness.
+  audiences:
+  - compute and AI investors
+  - digital infrastructure investors
+  formats:
+  - carousel
+  - thread
+  - market note
+  fact_ids:
+  - nigeria_data_center_capacity_pipeline_2025
+  - nigeria_grid_delivery_gap
+  - modular_containerized_model
+  status: ready

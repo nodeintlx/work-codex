@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NRG Bloom Inc. — Investor Overview</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+  :root {
+    --blue: #14489b;
+    --blue-dark: #0e3470;
+    --blue-light: #1a5bc4;
+    --blue-wash: #f3f6fb;
+    --blue-wash-2: #e8eef7;
+    --gray: #6b6b6b;
+    --gray-light: #999999;
+    --gray-pale: #b0b0b0;
+    --gray-rule: #d9d9d9;
+    --gray-bg: #f7f7f7;
+    --white: #ffffff;
+    --text-dark: #1a1a2e;
+    --text-body: #3d3d3d;
+    --gold: #b8860b;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; font-size: 16px; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--white);
+    color: var(--text-body);
+    line-height: 1.75;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--gray-rule);
+    height: 56px;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  .nav-inner {
+    width: 100%; max-width: 1100px;
+    padding: 0 2.5rem;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+
+  .nav-logo {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--blue);
+    letter-spacing: -0.02em;
+  }
+
+  .nav-links { display: flex; gap: 1.75rem; list-style: none; }
+
+  .nav-links a {
+    color: var(--gray);
+    text-decoration: none;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--blue); }
+
+  /* ── LAYOUT ── */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+  }
+
+  .section-pad { padding: 6rem 0; }
+
+  .full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+
+  .full-blue { background: var(--blue); color: var(--white); }
+  .full-gray { background: var(--gray-bg); }
+  .full-wash { background: var(--blue-wash); border-top: 1px solid var(--blue-wash-2); border-bottom: 1px solid var(--blue-wash-2); }
+  .full-dark { background: var(--text-dark); color: var(--white); }
+
+  .divider {
+    width: 48px; height: 2px;
+    background: var(--blue);
+    margin-bottom: 1.5rem;
+  }
+
+  .section-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+
+  /* ── TYPOGRAPHY ── */
+  h1 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: clamp(2.2rem, 4.5vw, 3.25rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.4rem;
+    letter-spacing: -0.01em;
+  }
+
+  .subtitle {
+    font-size: 1.05rem;
+    font-weight: 300;
+    color: var(--gray);
+    line-height: 1.7;
+    max-width: 720px;
+  }
+
+  .accent { color: var(--blue); }
+
+  /* ── HERO ── */
+  .hero-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    font-weight: 500;
+    color: var(--gray-light);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-stats {
+    display: flex; gap: 3.5rem; margin-top: 3.5rem; flex-wrap: wrap;
+    padding-top: 2.5rem;
+    border-top: 1px solid var(--gray-rule);
+  }
+
+  .hero-stat-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--blue);
+    line-height: 1;
+  }
+
+  .hero-stat-label {
+    font-size: 0.72rem;
+    color: var(--gray-light);
+    font-weight: 400;
+    margin-top: 0.35rem;
+  }
+
+  /* ── CARDS ── */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .card {
+    background: var(--white);
+    border: 1px solid var(--gray-rule);
+    border-radius: 2px;
+    padding: 1.75rem;
+    transition: border-color 0.2s;
+  }
+
+  .card:hover { border-color: var(--blue); }
+  .card h3 { font-size: 0.92rem; }
+  .card p { font-size: 0.87rem; color: var(--gray); line-height: 1.65; }
+
+  .card-number {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 0.75rem;
+    line-height: 1;
+  }
+
+  /* ── BLUE CARDS ── */
+  .blue-card {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 4px;
+    padding: 1.5rem;
+    transition: background 0.2s;
+  }
+
+  .blue-card:hover { background: rgba(255,255,255,0.1); }
+  .blue-card h3 { color: var(--white); font-size: 0.9rem; }
+  .blue-card p { color: rgba(255,255,255,0.65); font-size: 0.85rem; line-height: 1.6; }
+
+  /* ── TIER SECTION ── */
+  .tier-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2.5rem 0;
+    border: 1px solid var(--gray-rule);
+    border-radius: 2px;
+    overflow: hidden;
+    font-size: 0.84rem;
+  }
+
+  .tier-table th {
+    padding: 1rem 1.25rem;
+    text-align: left;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gray-light);
+    background: var(--gray-bg);
+    border-bottom: 2px solid var(--gray-rule);
+  }
+
+  .tier-table td {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid #ebebeb;
+    color: var(--text-body);
+    vertical-align: top;
+  }
+
+  .tier-table tr:last-child td { border-bottom: none; }
+  .tier-table tr:hover { background: var(--blue-wash); }
+
+  .tier-amount {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--blue);
+    display: block;
+    line-height: 1;
+    margin-bottom: 0.2rem;
+  }
+
+  .tier-name {
+    font-size: 0.68rem;
+    font-weight: 500;
+    color: var(--gray-light);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .tier-detail-strong {
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+
+  .tier-detail-sub {
+    font-size: 0.78rem;
+    color: var(--gray-light);
+    margin-top: 0.15rem;
+  }
+
+  /* ── EXPANDED TIER CARDS ── */
+  .tier-expand {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin: 3rem 0;
+  }
+
+  .tier-expand-card {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    gap: 0;
+    border: 1px solid var(--gray-rule);
+    border-bottom: none;
+    background: var(--white);
+  }
+
+  .tier-expand-card:last-child { border-bottom: 1px solid var(--gray-rule); }
+
+  .tier-expand-card:hover { background: var(--blue-wash); }
+
+  .tier-expand-left {
+    padding: 2rem 1.5rem;
+    border-right: 1px solid var(--gray-rule);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tier-expand-mid {
+    padding: 2rem 1.5rem;
+    border-right: 1px solid var(--gray-rule);
+  }
+
+  .tier-expand-right {
+    padding: 2rem 1.5rem;
+  }
+
+  .tier-expand-amount {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--blue);
+    line-height: 1;
+  }
+
+  .tier-expand-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gray-light);
+    margin-top: 0.4rem;
+  }
+
+  .tier-expand-mid h4, .tier-expand-right h4 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gray-pale);
+    margin-bottom: 0.6rem;
+  }
+
+  .tier-expand-mid ul, .tier-expand-right ul {
+    list-style: none;
+    font-size: 0.84rem;
+  }
+
+  .tier-expand-mid li, .tier-expand-right li {
+    padding: 0.25rem 0;
+    color: var(--text-body);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tier-expand-right li {
+    display: block;
+    color: var(--gray);
+    line-height: 1.55;
+  }
+
+  .metric-val {
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 0.82rem;
+  }
+
+  /* ── TABLES ── */
+  .clean-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.75rem 0;
+    font-size: 0.85rem;
+  }
+
+  .clean-table th {
+    padding: 0.85rem 1rem;
+    text-align: left;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gray-light);
+    background: var(--gray-bg);
+    border-bottom: 2px solid var(--gray-rule);
+  }
+
+  .clean-table td {
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid #ebebeb;
+    color: var(--text-body);
+  }
+
+  .clean-table tr:last-child td { border-bottom: none; }
+  .col-strong { font-weight: 600; color: var(--blue); }
+
+  /* ── CALLOUT ── */
+  .callout {
+    border-left: 3px solid var(--blue);
+    padding: 1.25rem 1.5rem;
+    margin: 2rem 0;
+    background: var(--blue-wash);
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: var(--text-body);
+    border-radius: 0 2px 2px 0;
+  }
+
+  .callout strong { color: var(--text-dark); }
+
+  .callout-gold {
+    border-left-color: var(--gold);
+    background: #faf6ee;
+  }
+
+  .callout-white {
+    border-left-color: rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.07);
+    color: rgba(255,255,255,0.8);
+  }
+
+  .callout-white strong { color: var(--white); }
+
+  /* ── IMPACT METRICS ── */
+  .impact-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    margin: 2.5rem 0;
+    border: 1px solid var(--gray-rule);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .impact-row.five-col { grid-template-columns: repeat(5, 1fr); }
+  .impact-row.three-col { grid-template-columns: repeat(3, 1fr); }
+
+  .impact-box {
+    padding: 1.75rem 1.25rem;
+    text-align: center;
+    border-right: 1px solid var(--gray-rule);
+    background: var(--white);
+  }
+
+  .impact-box:last-child { border-right: none; }
+
+  .impact-number {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--blue);
+    line-height: 1.1;
+  }
+
+  .impact-label {
+    font-size: 0.72rem;
+    color: var(--gray-light);
+    margin-top: 0.3rem;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  .impact-box.highlight-box { background: var(--blue-wash); }
+
+  /* ── REVENUE BARS ── */
+  .revenue-bar-group {
+    display: flex; align-items: flex-end; gap: 1.25rem;
+    margin: 2.5rem 0; height: 220px; padding: 0 1rem;
+  }
+
+  .rev-bar-item {
+    flex: 1;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: flex-end;
+    height: 100%;
+  }
+
+  .rev-bar {
+    width: 100%; max-width: 120px;
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    display: flex; align-items: flex-start; justify-content: center;
+    padding-top: 10px;
+  }
+
+  .rev-bar-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem; font-weight: 700;
+    color: var(--white);
+    text-align: center;
+  }
+
+  .rev-bar-label {
+    font-size: 0.72rem; font-weight: 600;
+    margin-top: 0.6rem;
+  }
+
+  .rev-bar-sublabel {
+    font-size: 0.62rem;
+  }
+
+  /* ── COMPETITIVE TABLE ── */
+  .comp-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.84rem;
+  }
+
+  .comp-table th {
+    padding: 0.85rem 1rem;
+    text-align: left;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+  }
+
+  .comp-table td {
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    color: rgba(255,255,255,0.7);
+  }
+
+  .comp-table tr:last-child td { border-bottom: none; }
+
+  .comp-table .highlight-col {
+    color: var(--white);
+    font-weight: 600;
+    background: rgba(255,255,255,0.04);
+  }
+
+  .comp-table .row-label {
+    color: rgba(255,255,255,0.5);
+    font-weight: 500;
+  }
+
+  /* ── TIMELINE ── */
+  .timeline { margin: 2.5rem 0; }
+  .tl-step { display: flex; gap: 1.5rem; margin-bottom: 0.25rem; }
+
+  .tl-connector {
+    width: 32px;
+    display: flex; flex-direction: column; align-items: center; flex-shrink: 0;
+  }
+
+  .tl-dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    flex-shrink: 0; z-index: 2; border: 2px solid;
+  }
+
+  .tl-dot.done { background: var(--blue); border-color: var(--blue); }
+  .tl-dot.current { background: var(--white); border-color: var(--blue); }
+  .tl-dot.future { background: var(--white); border-color: var(--gray-pale); }
+
+  .tl-line { width: 1px; flex-grow: 1; background: var(--gray-rule); margin: 4px 0; }
+
+  .tl-content {
+    flex-grow: 1; padding: 0 0 2rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 0.75rem;
+  }
+
+  .tl-content h4 { font-size: 0.92rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.15rem; }
+  .tl-content p { font-size: 0.84rem; color: var(--gray); line-height: 1.6; }
+
+  .tl-date {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--gray-pale); margin-bottom: 0.25rem;
+  }
+
+  /* ── TEAM ── */
+  .team-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 0; border: 1px solid var(--gray-rule);
+    border-radius: 2px; overflow: hidden; margin-top: 2rem;
+  }
+
+  .team-member {
+    padding: 1.75rem 1.25rem;
+    border-right: 1px solid var(--gray-rule);
+    text-align: center;
+  }
+
+  .team-member:last-child { border-right: none; }
+  .team-member h3 { font-size: 0.92rem; margin-bottom: 0.15rem; }
+
+  .team-member .role {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem; color: var(--blue);
+    font-weight: 500; margin-bottom: 0.6rem;
+  }
+
+  .team-member p { font-size: 0.8rem; color: var(--gray); line-height: 1.5; }
+
+  /* ── FOOTER ── */
+  footer {
+    text-align: center; padding: 3.5rem 2.5rem;
+    border-top: 1px solid var(--gray-rule);
+    color: var(--gray-light); font-size: 0.8rem;
+  }
+
+  footer strong { color: var(--text-dark); font-weight: 600; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .tier-expand-card { grid-template-columns: 1fr; }
+    .tier-expand-left { border-right: none; border-bottom: 1px solid var(--gray-rule); }
+    .tier-expand-mid { border-right: none; border-bottom: 1px solid var(--gray-rule); }
+  }
+
+  @media (max-width: 768px) {
+    .nav-inner { padding: 0 1.5rem; }
+    .nav-links { display: none; }
+    .container { padding: 0 1.5rem; }
+    .section-pad { padding: 4rem 0; }
+    .impact-row, .impact-row.five-col, .impact-row.three-col { grid-template-columns: 1fr 1fr; }
+    .impact-box { border-bottom: 1px solid var(--gray-rule); }
+    .team-grid { grid-template-columns: 1fr 1fr; }
+    .team-member { border-bottom: 1px solid var(--gray-rule); }
+    .revenue-bar-group { height: 160px; gap: 0.75rem; padding: 0; }
+    .hero-stats { gap: 2rem; }
+  }
+
+  @media print {
+    nav { display: none; }
+
+    /* Preserve backgrounds and colors */
+    * {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+      color-adjust: exact !important;
+    }
+
+    /* Reset min-height on hero so it doesn't force a full page */
+    #hero { min-height: auto !important; padding-top: 2rem !important; padding-bottom: 3rem !important; }
+
+    /* Remove viewport-dependent sizing */
+    .full-width { width: 100% !important; left: auto !important; right: auto !important; margin-left: 0 !important; margin-right: 0 !important; }
+
+    /* Each major section starts on a new page */
+    #thesis { page-break-before: always; }
+    #model { page-break-before: always; }
+    #scale { page-break-before: always; }
+    #market { page-break-before: always; }
+    #competitive { page-break-before: always; }
+    #comparable { page-break-before: always; }
+    #impact { page-break-before: always; }
+    #traction { page-break-before: always; }
+    #team { page-break-before: always; }
+
+    /* The financial trajectory (blue bar section after scale) gets its own page */
+    .full-width.full-blue { page-break-before: always; }
+
+    /* CTA / closing section on its own page */
+    .full-width.full-wash { page-break-before: always; }
+
+    /* Never break inside these elements */
+    .card { page-break-inside: avoid; }
+    .blue-card { page-break-inside: avoid; }
+    .callout { page-break-inside: avoid; }
+    .callout-gold { page-break-inside: avoid; }
+    .callout-white { page-break-inside: avoid; }
+    .impact-row { page-break-inside: avoid; }
+    .impact-box { page-break-inside: avoid; }
+    .tier-expand-card { page-break-inside: avoid; }
+    .comp-table { page-break-inside: avoid; }
+    .clean-table { page-break-inside: avoid; }
+    .tl-step { page-break-inside: avoid; }
+    .revenue-bar-group { page-break-inside: avoid; }
+    .card-grid { page-break-inside: avoid; }
+
+    /* Keep headings with their content */
+    h2, h3, h4 { page-break-after: avoid; }
+    .section-label { page-break-after: avoid; }
+    .divider { page-break-after: avoid; }
+    .subtitle { page-break-after: avoid; }
+
+    /* Keep tables together */
+    table { page-break-inside: avoid; }
+    thead { display: table-header-group; }
+    tr { page-break-inside: avoid; }
+
+    /* Tier expand section — allow breaks between cards but not within */
+    .tier-expand { page-break-inside: auto; }
+
+    /* Team grid stays together */
+    #team .blue-card { page-break-inside: avoid; }
+
+    /* Timeline steps stay together */
+    .timeline { page-break-inside: auto; }
+    .tl-step { page-break-inside: avoid; margin-bottom: 0.5rem; }
+
+    /* Reduce padding to fit more per page */
+    .section-pad { padding: 3rem 0; }
+    .container { padding: 0 2rem; }
+
+    /* Footer notes */
+    footer { page-break-inside: avoid; page-break-before: auto; }
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "NRG Bloom Operational Metrics",
+  "description": "Key operational, environmental, and financial metrics from NRG Bloom's modular data center deployments on stranded energy sources.",
+  "url": "https://www.nrgbloom.com/facts-and-numbers",
+  "publisher": {
+    "@type": "Organization",
+    "name": "NRG Bloom Inc.",
+    "url": "https://www.nrgbloom.com"
+  },
+  "license": "https://www.nrgbloom.com/terms-of-service.html",
+  "temporalCoverage": "2025/..",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Bayelsa State, Nigeria"
+  },
+  "variableMeasured": [
+    {"@type": "PropertyValue", "name": "Operational Capacity", "value": "1.5 MW"},
+    {"@type": "PropertyValue", "name": "Energy Cost", "value": "$0.02-$0.032/kWh"},
+    {"@type": "PropertyValue", "name": "CO2e Mitigated", "value": "300+ tonnes"},
+    {"@type": "PropertyValue", "name": "Uptime", "value": "95%"},
+    {"@type": "PropertyValue", "name": "PUE Target", "value": "<1.2"}
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">NRG Bloom Inc.</div>
+    <ul class="nav-links">
+      <li><a href="#thesis">Thesis</a></li>
+      <li><a href="#model">Model</a></li>
+      <li><a href="#scale">Scale</a></li>
+      <li><a href="#market">Market</a></li>
+      <li><a href="#competitive">Why Us</a></li>
+      <li><a href="#comparable">Comparable</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#traction">Traction</a></li>
+      <li><a href="#team">Team</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════════════════════════
+     HERO
+     ══════════════════════════════════════════════════════════════ -->
+<div id="hero" style="min-height: 100vh; display: flex; align-items: center; padding-top: 56px; border-bottom: 1px solid var(--gray-rule);">
+  <div class="container">
+    <div class="hero-eyebrow">Clean Technology &bull; Energy Infrastructure &bull; Emerging Markets</div>
+    <h1>Building Africa's distributed<br>energy-compute<br><span class="accent">infrastructure platform</span>.</h1>
+    <p class="subtitle">
+      NRG Bloom converts stranded energy &mdash; flared gas, curtailed hydro, surplus renewables &mdash; into high-value compute infrastructure across emerging markets. We've proven the model works. Now we're building the platform.
+    </p>
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-value">13+ months</div>
+        <div class="hero-stat-label">Continuous operations, Niger Delta</div>
+      </div>
+      <div>
+        <div class="hero-stat-value">3 GW</div>
+        <div class="hero-stat-label">Nigeria NGFCP flare gas potential</div>
+      </div>
+      <div>
+        <div class="hero-stat-value">$29B/yr</div>
+        <div class="hero-stat-label">Nigeria power deficit economic cost</div>
+      </div>
+      <div>
+        <div class="hero-stat-value">211</div>
+        <div class="hero-stat-label">Total data centers for 1.4B people</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════
+     INVESTMENT THESIS
+     ══════════════════════════════════════════════════════════════ -->
+<div class="section-pad" id="thesis">
+  <div class="container">
+    <div class="divider"></div>
+    <span class="section-label">Investment Thesis</span>
+    <h2>The world is running out of energy<br>for compute. Africa has it in abundance.</h2>
+    <p class="subtitle" style="margin-bottom: 2.5rem;">
+      Global data center capacity must double by 2030 &mdash; and the binding constraint is energy, not demand. Meanwhile, Africa wastes billions of dollars worth of energy every year through gas flaring, while approximately 87 million Nigerians have zero grid access. NRG Bloom is the bridge between wasted energy and the global compute shortage.
+    </p>
+
+    <div class="callout">
+      <strong>The core insight:</strong> Africa's energy problem is a transmission problem, not a generation problem. Nigeria has 14 GW of installed capacity but delivers only 4&ndash;5 GW &mdash; a utilization rate below 35%. NRG Bloom bypasses transmission entirely. On-site generation, on-site compute. No pipeline, no grid, no waste. This structural advantage is what makes the model work where billions of dollars in traditional infrastructure have failed.
+    </div>
+
+    <div class="card-grid" style="margin-top: 2.5rem;">
+      <div class="card">
+        <div class="card-number">$1.5B</div>
+        <h3>Wasted every year</h3>
+        <p>Nigeria flares 6&ndash;7 billion cubic meters of gas annually (2023&ndash;2024) &mdash; $1.2&ndash;1.57 billion in wasted energy. Cumulative losses since 2002 exceed $120 billion. This gas has zero value to the producer today. We turn it into revenue.</p>
+      </div>
+      <div class="card">
+        <div class="card-number">65.8 MW</div>
+        <h3>Total Africa data center capacity</h3>
+        <p>Nigeria has 65.8 MW of operational data center capacity for 220 million people, with 327.8 MW in the pipeline. Africa has 211 data centers for 1.4 billion people &mdash; less than 1% of global hyperscale capacity. The gap is staggering.</p>
+      </div>
+      <div class="card">
+        <div class="card-number">$30T+</div>
+        <h3>ESG capital looking for exactly this</h3>
+        <p>$30.3 trillion in global sustainable investment AUM (GSIA 2022), projected to reach $35T+ by 2030 (Bloomberg Intelligence). Climate infrastructure in emerging markets is among the highest-demand asset classes. Methane reduction is a stated G7 priority.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════
+     BUSINESS MODEL
+     ══════════════════════════════════════════════════════════════ -->
+<div class="section-pad" id="model" style="border-top: 1px solid var(--gray-rule);">
+  <div class="container">
+    <div class="divider"></div>
+    <span class="section-label">Business Model</span>
+    <h2>Three compute layers.<br>One energy source. Zero waste.</h2>
+    <p class="subtitle" style="margin-bottom: 2rem;">
+      Every NRG Bloom site runs a progressive compute stack. Layer 1 validates energy with immediate revenue. Layer 2 proves enterprise demand. Layer 3 scales to the highest-margin workloads. Our proprietary NEXUS system orchestrates allocation in real time across all layers.
+    </p>
+
+    <table class="clean-table">
+      <thead>
+        <tr>
+          <th>Layer</th>
+          <th>Compute Type</th>
+          <th>Revenue / MW / Month</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col-strong">Layer 1: Hashrate</td>
+          <td>ASIC Bitcoin mining</td>
+          <td style="font-weight: 600;">$68&ndash;85K USD</td>
+          <td>Site validation + immediate cash flow from day one</td>
+        </tr>
+        <tr>
+          <td class="col-strong">Layer 2: HPC</td>
+          <td>Client-specific compute (pharma, biotech, simulation)</td>
+          <td style="font-weight: 600;">$100&ndash;120K USD</td>
+          <td>Enterprise demand validation + recurring contracts</td>
+        </tr>
+        <tr>
+          <td class="col-strong">Layer 3: AI Compute</td>
+          <td>GPU clusters for training &amp; inference</td>
+          <td style="font-weight: 600;">$150&ndash;250K+ USD</td>
+          <td>Long-term revenue engine at scale</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout">
+      <strong>Project NEXUS (Patent Pending)</strong> &mdash; A real-time orchestration engine that dynamically allocates power across compute types based on market pricing, demand signals, and energy availability. Target: 95%+ energy utilization at all times. No existing patent covers behind-the-meter stranded energy with heterogeneous compute optimization. NEXUS becomes a licensable technology asset at scale.
+    </div>
+
+    <h3 style="margin-top: 3rem; font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray-light); font-weight: 600;">Value to Energy Partner (per 10 MW)</h3>
+    <p style="font-size: 0.88rem; color: var(--gray); margin-bottom: 0.75rem;">NRG Bloom absorbs deployment CAPEX. The energy partner receives three revenue streams from gas that was previously worthless:</p>
+
+    <div class="impact-row">
+      <div class="impact-box">
+        <div class="impact-number">$500K</div>
+        <div class="impact-label">Fixed annual payment<br>(floor guarantee)</div>
+      </div>
+      <div class="impact-box">
+        <div class="impact-number">~$2M</div>
+        <div class="impact-label">Compute revenue share<br>(20% of output)</div>
+      </div>
+      <div class="impact-box">
+        <div class="impact-number">$300&ndash;500K</div>
+        <div class="impact-label">Carbon credit share<br>(50&ndash;70% of VCUs)</div>
+      </div>
+      <div class="impact-box highlight-box">
+        <div class="impact-number">~$3M/yr</div>
+        <div class="impact-label">Total value to partner<br>(vs. $0 from flaring)</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════
+     SCALING ROADMAP — 5 TIERS
+     ══════════════════════════════════════════════════════════════ -->
+<div class="full-width full-gray" id="scale">
+  <div class="container section-pad">
+    <div class="divider"></div>
+    <span class="section-label">Capital Deployment Roadmap</span>
+    <h2>Five stages from proven concept<br>to continental infrastructure.</h2>
+    <p class="subtitle" style="margin-bottom: 1rem;">
+      We've proven the model works at community scale. Every dollar from here is about replicating what works &mdash; faster, bigger, across more sites and more countries. Each stage builds on the last. Each is independently viable.
+    </p>
+
+    <!-- TIER 1: $10M -->
+    <div class="tier-expand">
+      <div class="tier-expand-card">
+        <div class="tier-expand-left">
+          <div class="tier-expand-amount">$10M</div>
+          <div class="tier-expand-label">Stage 1 &mdash; First Commercial Site</div>
+        </div>
+        <div class="tier-expand-mid">
+          <h4>What We Deploy</h4>
+          <ul>
+            <li><span>Capacity</span> <span class="metric-val">10 MW</span></li>
+            <li><span>Sites</span> <span class="metric-val">1 (Nigeria)</span></li>
+            <li><span>Containers</span> <span class="metric-val">20 units</span></li>
+            <li><span>Annual revenue</span> <span class="metric-val">$8&ndash;10M</span></li>
+            <li><span>Payback</span> <span class="metric-val">18&ndash;24 months*</span></li>
+            <li><span>Jobs created</span> <span class="metric-val">15&ndash;25</span></li>
+          </ul>
+        </div>
+        <div class="tier-expand-right">
+          <h4>What This Proves</h4>
+          <ul>
+            <li>Full commercial-scale deployment with partner-provided gas. Validates unit economics, operator relationships, and carbon credit pathway at institutional scale. Generates immediate revenue from Layer 1 hashrate. Bridges from proof of concept to institutional raise.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TIER 2: $25M -->
+      <div class="tier-expand-card">
+        <div class="tier-expand-left">
+          <div class="tier-expand-amount">$25M</div>
+          <div class="tier-expand-label">Stage 2 &mdash; Multi-Site Replication</div>
+        </div>
+        <div class="tier-expand-mid">
+          <h4>What We Deploy</h4>
+          <ul>
+            <li><span>Capacity</span> <span class="metric-val">30 MW</span></li>
+            <li><span>Sites</span> <span class="metric-val">3 (Nigeria)</span></li>
+            <li><span>Compute layers</span> <span class="metric-val">Hashrate + HPC</span></li>
+            <li><span>Annual revenue</span> <span class="metric-val">$18&ndash;30M</span></li>
+            <li><span>Gross margin</span> <span class="metric-val">64&ndash;68%</span></li>
+            <li><span>CO2e avoided / yr</span> <span class="metric-val">150&ndash;195K tonnes</span></li>
+          </ul>
+        </div>
+        <div class="tier-expand-right">
+          <h4>What This Unlocks</h4>
+          <ul>
+            <li>Proves the model is replicable &mdash; not a one-site wonder. Own all gensets and compute hardware. HPC workloads activated at Site 1 (Canurta pharmaceutical pipeline). Carbon credit verification initiated with Verra. Attracts DFI capital for Stage 3.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TIER 3: $60M -->
+      <div class="tier-expand-card">
+        <div class="tier-expand-left">
+          <div class="tier-expand-amount">$60M</div>
+          <div class="tier-expand-label">Stage 3 &mdash; Regional Dominance</div>
+        </div>
+        <div class="tier-expand-mid">
+          <h4>What We Deploy</h4>
+          <ul>
+            <li><span>Capacity</span> <span class="metric-val">80 MW</span></li>
+            <li><span>Sites</span> <span class="metric-val">6&ndash;8 (Nigeria + Ghana)</span></li>
+            <li><span>Compute layers</span> <span class="metric-val">All 3 layers active</span></li>
+            <li><span>Annual revenue</span> <span class="metric-val">$48&ndash;85M</span></li>
+            <li><span>Gross margin</span> <span class="metric-val">68%+</span></li>
+            <li><span>CO2e avoided / yr</span> <span class="metric-val">400&ndash;520K tonnes</span></li>
+          </ul>
+        </div>
+        <div class="tier-expand-right">
+          <h4>What This Unlocks</h4>
+          <ul>
+            <li>West Africa's largest distributed compute infrastructure. Full three-layer stack at every site. AI compute generating $150K+/MW/month. NEXUS platform licensing begins. Carbon credit portfolio at institutional scale. IPO preparation starts. Government data infrastructure contracts in pipeline.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TIER 4: $80M -->
+      <div class="tier-expand-card">
+        <div class="tier-expand-left">
+          <div class="tier-expand-amount">$80M</div>
+          <div class="tier-expand-label">Stage 4 &mdash; Continental Infrastructure</div>
+        </div>
+        <div class="tier-expand-mid">
+          <h4>What We Deploy</h4>
+          <ul>
+            <li><span>Capacity</span> <span class="metric-val">150 MW</span></li>
+            <li><span>Sites</span> <span class="metric-val">12&ndash;15 (4+ countries)</span></li>
+            <li><span>Markets</span> <span class="metric-val">Nigeria, Ghana, Cameroon, Alberta</span></li>
+            <li><span>Annual revenue</span> <span class="metric-val">$90&ndash;160M</span></li>
+            <li><span>CO2e avoided / yr</span> <span class="metric-val">750K&ndash;1M tonnes</span></li>
+          </ul>
+        </div>
+        <div class="tier-expand-right">
+          <h4>What This Unlocks</h4>
+          <ul>
+            <li>Pan-African infrastructure platform. NEXUS licensed to third-party operators. Government data center and power contracts secured. Energy-agnostic across gas, hydro, geothermal. Carbon credit portfolio worth $5&ndash;15M/year. Institutional-grade asset with audited financials and multi-country revenue.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TIER 5: $100M -->
+      <div class="tier-expand-card" style="border-bottom: 1px solid var(--gray-rule);">
+        <div class="tier-expand-left" style="background: var(--blue-wash);">
+          <div class="tier-expand-amount">$100M</div>
+          <div class="tier-expand-label">Stage 5 &mdash; The Platform</div>
+        </div>
+        <div class="tier-expand-mid" style="background: var(--blue-wash);">
+          <h4>What We Deploy</h4>
+          <ul>
+            <li><span>Capacity</span> <span class="metric-val">250+ MW</span></li>
+            <li><span>Sites</span> <span class="metric-val">20+ (6+ countries)</span></li>
+            <li><span>Markets</span> <span class="metric-val">Pan-Africa + Alberta + LATAM</span></li>
+            <li><span>Annual revenue</span> <span class="metric-val">$150&ndash;300M+</span></li>
+            <li><span>CO2e avoided / yr</span> <span class="metric-val">1.25&ndash;1.6M tonnes</span></li>
+          </ul>
+        </div>
+        <div class="tier-expand-right" style="background: var(--blue-wash);">
+          <h4>What This Becomes</h4>
+          <ul>
+            <li>The distributed energy-compute infrastructure platform for Africa. 250+ MW across 20+ sites in 6+ countries. AI compute as the dominant revenue driver. NEXUS as a standalone technology company. Carbon credit portfolio at sovereign scale. IPO-ready. This is how you build the Crusoe Energy of the Global South.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout callout-gold">
+      <strong>Why this isn't delusional:</strong> Nigeria's NGFCP alone encompasses 49 flare sites awarded to 42 companies (28 with final permits) with 3 GW of power potential and $2&ndash;3.5B in projected investment. Green Flare Holdings has 53 MW planned across three sites in Delta State &mdash; and that's considered a small fraction of the opportunity. 250 MW is 8% of what one government programme in one country has already allocated. The market isn't the constraint &mdash; capital and execution are. We've already proven we can execute.
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════
+     FINANCIAL TRAJECTORY
+     ══════════════════════════════════════════════════════════════ -->
+<div class="full-width full-blue">
+  <div class="container section-pad">
+    <span class="section-label" style="color: rgba(255,255,255,0.5);">Financial Trajectory</span>
+    <h2 style="color: var(--white);">Revenue projection across deployment stages</h2>
+    <p class="subtitle" style="color: rgba(255,255,255,0.65);">Conservative case. Bitcoin at $80K. 92% uptime. All-in CAPEX at $1&ndash;1.5M/MW. Near-zero fuel cost (&lt;$0.02/kWh). Carbon credit revenue recognized only at verified sites. HPC/AI compute priced below market rate.</p>
+
+    <div class="revenue-bar-group" style="margin-top: 2.5rem;">
+      <div class="rev-bar-item">
+        <div class="rev-bar" style="height: 8%; background: rgba(255,255,255,0.12); min-height: 40px;">
+          <span class="rev-bar-value">$0</span>
+        </div>
+        <div class="rev-bar-label" style="color: rgba(255,255,255,0.6);">Year 1</div>
+        <div class="rev-bar-sublabel" style="color: rgba(255,255,255,0.35);">Build</div>
+      </div>
+      <div class="rev-bar-item">
+        <div class="rev-bar" style="height: 18%; background: rgba(255,255,255,0.16);">
+          <span class="rev-bar-value">$8M</span>
+        </div>
+        <div class="rev-bar-label" style="color: rgba(255,255,255,0.6);">Year 2</div>
+        <div class="rev-bar-sublabel" style="color: rgba(255,255,255,0.35);">10 MW</div>
+      </div>
+      <div class="rev-bar-item">
+        <div class="rev-bar" style="height: 35%; background: rgba(255,255,255,0.2);">
+          <span class="rev-bar-value">$25M</span>
+        </div>
+        <div class="rev-bar-label" style="color: rgba(255,255,255,0.6);">Year 3</div>
+        <div class="rev-bar-sublabel" style="color: rgba(255,255,255,0.35);">30 MW</div>
+      </div>
+      <div class="rev-bar-item">
+        <div class="rev-bar" style="height: 65%; background: rgba(255,255,255,0.24);">
+          <span class="rev-bar-value">$70M</span>
+        </div>
+        <div class="rev-bar-label" style="color: rgba(255,255,255,0.6);">Year 4</div>
+        <div class="rev-bar-sublabel" style="color: rgba(255,255,255,0.35);">80 MW</div>
+      </div>
+      <div class="rev-bar-item">
+        <div class="rev-bar" style="height: 100%; background: rgba(255,255,255,0.28);">
+          <span class="rev-bar-value">$160M+</span>
+        </div>
+        <div class="rev-bar-label" style="color: rgba(255,255,255,0.6);">Year 5</div>
+        <div class="rev-bar-sublabel" style="color: rgba(255,255,255,0.35);">150+ MW</div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 2.5rem; border: 1px solid rgba(255,255,255,0.12); border-radius: 2px; overflow: hidden;">
+      <div class="blue-card" style="text-align: center; border-radius: 0; border: none; border-right: 1px solid rgba(255,255,255,0.08);">
+        <h3 style="font-family: 'JetBrains Mono', monospace; font-size: 1.35rem; font-weight: 700;">64&ndash;68%</h3>
+        <p>Gross margin</p>
+      </div>
+      <div class="blue-card" style="text-align: center; border-radius: 0; border: none; border-right: 1px solid rgba(255,255,255,0.08);">
+        <h3 style="font-family: 'JetBrains Mono', monospace; font-size: 1.35rem; font-weight: 700;">&lt;$0.02</h3>
+        <p>Fuel cost per kWh (flare gas)</p>
+      </div>
+      <div class="blue-card" style="text-align: center; border-radius: 0; border: none; border-right: 1px solid rgba(255,255,255,0.08);">
+        <h3 style="font-family: 'JetBrains Mono', monospace; font-size: 1.35rem; font-weight: 700;">Daily</h3>
+        <p>Revenue settlement</p>
+      </div>
+      <div class="blue-card" style="text-align: center; border-radius: 0; border: none;">
+        <h3 style="font-family: 'JetBrains Mono', monospace; font-size: 1.35rem; font-weight: 700;">18&ndash;24 mo</h3>
+        <p>Payback period per site</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════
+     MARKET
+     ══════════════════════════════════════════════════════════════ -->
+<div class="section-pad" id="market">
+  <div class="container">
+    <div class="divider"></div>
+    <span class="section-label">Market Opportunity</span>
+    <h2>This market is measured in gigawatts,<br>not megawatts.</h2>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-number">3 GW</div>
+        <h3>NGFCP Programme Potential</h3>
+        <p>Nigeria's National Gas Flare Commercialisation Programme encompasses 49 sites awarded to 42 companies (28 with final permits as of December 2025). 3 GW of power potential. $2&ndash;3.5B in projected investment (NUPRC). Execution phase begins 2026. NRG Bloom is positioned for this wave.</p>
+      </div>
+      <div class="card">
+        <div class="card-number">$29B/yr</div>
+        <h3>Power Deficit Economic Cost</h3>
+        <p>Nigeria's power system delivers only 4&ndash;5 GW of its 14 GW installed capacity &mdash; a utilization rate below 35%. The World Bank estimates $25&ndash;29B/year in economic losses. Nigerians spend $22B/year running backup generators (Energy Commission of Nigeria). Distributed energy-compute bypasses this entirely.</p>
+      </div>
+      <div class="card">
+        <div class="card-number">$2.94B</div>
+        <h3>Nigeria Data Center Investment</h3>
+        <p>$2.94B in projected Nigeria data center investment through 2030 (Arizton). Only 65.8 MW operational today, 327.8 MW in pipeline. Africa has 211 data centers for 1.4 billion people &mdash; less than 1% of global hyperscale. The structural undersupply is massive.</p>
+      </div>
+      <div class="card">
+        <div class="card-number">148B m&sup3;</div>
+        <h3>Global Flaring Opportunity</h3>
+        <p>148 billion cubic meters of gas flared globally in 2023 (World Bank GGFR) &mdash; a 7% increase over 2022. Russia, Iraq, Iran, the United States, Nigeria &mdash; each is a potential market. Nigeria's NGFCP is the regulatory framework that creates the entry point. Then we replicate across every flaring nation.</p>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top: 2.5rem;">
+      <strong>Regulatory tailwind:</strong> Nigeria signed the World Bank's Zero Routine Flaring initiative in 2016 with a 2030 target deadline. The Petroleum Industry Act 2021 and the 2023 Gas Flaring Regulations set penalties of $3.50/Mscf for unauthorized flaring &mdash; and grant third parties the legal right to commercialize flare gas if operators fail to act. Oil companies paid hundreds of millions in cumulative flaring penalties between 2018&ndash;2022 (NEITI). The regulatory pressure to monetize flare gas has never been higher. NRG Bloom gives operators a way to comply profitably.
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════
+     COMPETITIVE — WHY US
+     ══════════════════════════════════════════════════════════════ -->
+<div class="full-width full-dark" id="competitive">
+  <div class="container section-pad">
+    <div class="divider" style="background: rgba(255,255,255,0.3);"></div>
+    <span class="section-label" style="color: rgba(255,255,255,0.4);">Competitive Positioning</span>
+    <h2 style="color: var(--white);">The market is 3 GW.<br>The largest planned operation is 53 MW.<br>There is room.</h2>
+    <p class="subtitle" style="color: rgba(255,255,255,0.55); margin-bottom: 2rem;">
+      Green Flare Holdings has the largest announced flare gas project in Nigeria at 53 MW planned &mdash; still in civil works, not yet operational. Crusoe Energy raised $3.9B+ and proved flare-to-compute at scale in North America &mdash; then exited the space entirely, selling its mining division to NYDIG in March 2025 to focus on AI hyperscale. The pioneer validated the model, then left the frontier. NRG Bloom is built for the markets Crusoe walked away from.
+    </p>
+
+    <table class="comp-table">
+      <thead>
+        <tr>
+          <th style="width: 22%;">Metric</th>
+          <th style="width: 26%;">Green Flare (Nigeria)</th>
+          <th style="width: 26%;">Crusoe Energy (US)</th>
+          <th class="highlight-col" style="width: 26%;">NRG Bloom</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="row-label">Capacity</td>
+          <td>53 MW planned (pre-operational)</td>
+          <td>1.2 GW+ (AI focused; sold mining div.)</td>
+          <td class="highlight-col">Proven at community scale, targeting 250 MW</td>
+        </tr>
+        <tr>
+          <td class="row-label">Output</td>
+          <td>Bitcoin mining (single layer)</td>
+          <td>AI compute only (exited Bitcoin Mar 2025)</td>
+          <td class="highlight-col">3-layer stack: hashrate + HPC + AI</td>
+        </tr>
+        <tr>
+          <td class="row-label">Revenue per MW</td>
+          <td>~$800K&ndash;$1M/yr (Bitcoin mining)</td>
+          <td>$300K&ndash;$3M/yr (AI compute)</td>
+          <td class="highlight-col">$800K&ndash;$3M+/yr (3-layer)</td>
+        </tr>
+        <tr>
+          <td class="row-label">Africa presence</td>
+          <td>Nigeria (development stage)</td>
+          <td>No Sub-Saharan Africa operations</td>
+          <td class="highlight-col">13+ months continuous ops, Niger Delta</td>
+        </tr>
+        <tr>
+          <td class="row-label">Technology IP</td>
+          <td>Mobile gas generators</td>
+          <td>DFM (sold to NYDIG); proprietary AI infra</td>
+          <td class="highlight-col">NEXUS orchestration (patent pending)</td>
+        </tr>
+        <tr>
+          <td class="row-label">Carbon credits</td>
+          <td>None documented</td>
+          <td>ESG-reported (1.3M+ mtCO2e); no confirmed Verra VCS</td>
+          <td class="highlight-col">Yes (Verra VCS VM0029)</td>
+        </tr>
+        <tr>
+          <td class="row-label">Community model</td>
+          <td>PIA-compliant MOUs + rural electrification</td>
+          <td>None (US/developed market operations)</td>
+          <td class="highlight-col">25% power to host community</td>
+        </tr>
+        <tr>
+          <td class="row-label">HPC/AI pathway</td>
+          <td>None &mdash; Bitcoin only</td>
+          <td>Core business (exited flare gas)</td>
+          <td class="highlight-col">Progressive 3-layer upgrade per site</td>
+        </tr>
+        <tr>
+          <td class="row-label">Operational status</td>
+          <td>Civil works (not yet live)</td>
+          <td>Operational at GW scale (North America)</td>
+          <td class="highlight-col">13+ months continuous operations</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout callout-white" style="margin-top: 2rem;">
+      <strong>Why NRG Bloom wins:</strong> Green Flare is Bitcoin-only with no pathway to HPC or AI compute &mdash; a single revenue layer. NRG Bloom's 3-layer stack generates $800K&ndash;$3M+ per MW per year as workloads progress from hashrate to HPC to AI. Crusoe proved flare-to-compute at $10B+ scale in North America &mdash; then abandoned the frontier entirely, selling its mining division to focus on US hyperscale AI. The pioneer validated the model, then left the market. NRG Bloom has 13 months of continuous operations in one of the most challenging operating environments on earth. The technology is the easy part. Operating in the Niger Delta is the hard part &mdash; and we've already done it.
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.5rem;">
+      <div class="blue-card">
+        <h3>Consume at source</h3>
+        <p>100% of transmission loss eliminated. No grid dependency. We bypass the infrastructure that operates below 35% utilization in Nigeria.</p>
+      </div>
+      <div class="blue-card">
+        <h3>Energy-agnostic platform</h3>
+        <p>Gas today. Hydro, geothermal, and solar tomorrow. NEXUS adapts to any energy source, any country, any regulatory framework.</p>
+      </div>
+      <div class="blue-card">
+        <h3>Zero CAPEX to energy partner</h3>
+        <p>NRG Bloom absorbs deployment costs. Partners contribute gas and receive $3M+/year from a stranded asset.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════
+     COMPARABLE — HUSK POWER
+     ══════════════════════════════════════════════════════════════ -->
+<div class="section-pad" id="comparable">
+  <div class="container">
+    <div class="divider"></div>
+    <span class="section-label">Market Comparable</span>
+    <h2>Husk Power proves the thesis.<br>NRG Bloom improves the economics.</h2>
+    <p class="subtitle" style="margin-bottom: 2.5rem;">
+      Husk Power Systems &mdash; 400+ mini-grid sites across India and Nigeria, $203M raised from Shell Ventures, IFC, ENGIE, Swedfund, FMO, DFC, and others across 16 rounds. Currently seeking $400M in pre-IPO funding ahead of a planned 2027 IPO. Husk proves that distributed energy in emerging markets is an investable, scalable asset class. NRG Bloom applies the same thesis with fundamentally better unit economics.
+    </p>
+
+    <table class="clean-table" style="background: var(--white);">
+      <thead>
+        <tr>
+          <th style="width: 28%;">Metric</th>
+          <th style="width: 36%;">Husk Power Systems</th>
+          <th style="width: 36%;">NRG Bloom</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-weight: 600; color: var(--text-dark);">Revenue per MW / year</td>
+          <td>~$25K per site <span style="color: var(--gray-light);">(rural retail, 30&ndash;50 kW avg.)</span></td>
+          <td class="col-strong">$800K&ndash;$3M+ <span style="font-weight: 400; color: var(--gray-light);">(compute per MW)</span></td>
+        </tr>
+        <tr>
+          <td style="font-weight: 600; color: var(--text-dark);">Capital cost per MW</td>
+          <td>$500K&ndash;$1M+ <span style="color: var(--gray-light);">(solar + distribution; industry avg. higher)</span></td>
+          <td class="col-strong">$1&ndash;1.5M <span style="font-weight: 400; color: var(--gray-light);">(containers + ASICs + power infra)</span></td>
+        </tr>
+        <tr>
+          <td style="font-weight: 600; color: var(--text-dark);">Time to EBITDA positive</td>
+          <td>14 years <span style="color: var(--gray-light);">(reached Q4 2022)</span></td>
+          <td class="col-strong">Year 1 <span style="font-weight: 400; color: var(--gray-light);">(projected)</span></td>
+        </tr>
+        <tr>
+          <td style="font-weight: 600; color: var(--text-dark);">Customer acquisition cost</td>
+          <td>High <span style="color: var(--gray-light);">(thousands of retail customers/site)</span></td>
+          <td class="col-strong">~$0 <span style="font-weight: 400; color: var(--gray-light);">(permissionless network)</span></td>
+        </tr>
+        <tr>
+          <td style="font-weight: 600; color: var(--text-dark);">Deployment speed</td>
+          <td>3&ndash;6 months <span style="color: var(--gray-light);">(community + build)</span></td>
+          <td class="col-strong">8&ndash;12 weeks <span style="font-weight: 400; color: var(--gray-light);">(containerized, modular)</span></td>
+        </tr>
+        <tr>
+          <td style="font-weight: 600; color: var(--text-dark);">Total raised</td>
+          <td>$203M <span style="color: var(--gray-light);">(14 years)</span></td>
+          <td class="col-strong">Pre-institutional</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout" style="margin-top: 2rem;">
+      <strong>The capital efficiency case:</strong> Husk raised $203M over 14 years to reach 400+ sites and EBITDA positive. NRG Bloom targets EBITDA positive in Year 1 of a single $10M deployment &mdash; because Bitcoin provides immediate revenue with near-zero customer acquisition cost, and HPC/AI compute delivers higher revenue per megawatt compared to rural energy distribution. Husk validates the asset class; NRG Bloom improves the unit economics.
+    </div>
+
+    <h3 style="margin-top: 3rem; font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray-light); font-weight: 600;">Key Investors in the Distributed Energy Thesis</h3>
+    <p style="font-size: 0.88rem; color: var(--gray); margin-bottom: 0.75rem;">Husk Power's investor base confirms institutional appetite for this exact asset class:</p>
+
+    <div class="impact-row five-col">
+      <div class="impact-box">
+        <div class="impact-number" style="font-size: 1rem;">Shell</div>
+        <div class="impact-label">New Energies<br>Recurring investor</div>
+      </div>
+      <div class="impact-box">
+        <div class="impact-number" style="font-size: 1rem;">IFC</div>
+        <div class="impact-label">World Bank Group<br>Private sector</div>
+      </div>
+      <div class="impact-box">
+        <div class="impact-number" style="font-size: 1rem;">ENGIE</div>
+        <div class="impact-label">Impact arm<br>Energy major</div>
+      </div>
+      <div class="impact-box">
+        <div class="impact-number" style="font-size: 1rem;">Swedfund</div>
+        <div class="impact-label">Swedish DFI<br>Early backer</div>
+      </div>
+      <div class="impact-box">
+        <div class="impact-number" style="font-size: 1rem;">FMO</div>
+        <div class="impact-label">Dutch dev bank<br>Climate infra</div>
+      </div>
+    </div>
+
+    <div class="callout callout-gold" style="margin-top: 2rem;">
+      <strong>Why this matters:</strong> Husk is currently seeking $400M in pre-IPO funding ahead of a planned 2027 IPO &mdash; signaling that distributed energy in emerging markets is entering a liquidity cycle. NRG Bloom enters with a different energy source (flare gas vs. solar), better compute-layer unit economics, and a more capital-efficient path to scale. The same investor class that backed Husk is exactly the audience for NRG Bloom.
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════
+     IMPACT
+     ══════════════════════════════════════════════════════════════ -->
+<div class="full-width full-gray" id="impact">
+  <div class="container section-pad">
+    <div class="divider"></div>
+    <span class="section-label">Environmental Impact</span>
+    <h2>Every megawatt we deploy is a<br>measurable climate outcome.</h2>
+
+    <div class="impact-row" style="margin-top: 2.5rem;">
+      <div class="impact-box" style="background: var(--white);">
+        <div class="impact-number">50&ndash;65K</div>
+        <div class="impact-label">Tonnes CO2e avoided<br>per 10 MW per year</div>
+      </div>
+      <div class="impact-box" style="background: var(--white);">
+        <div class="impact-number">$5&ndash;20</div>
+        <div class="impact-label">VCU price per tonne<br>(current market)</div>
+      </div>
+      <div class="impact-box" style="background: var(--white);">
+        <div class="impact-number">25%</div>
+        <div class="impact-label">Power allocated to<br>host community</div>
+      </div>
+      <div class="impact-box" style="background: var(--white);">
+        <div class="impact-number">$13&ndash;42</div>
+        <div class="impact-label">Projected VCU price<br>by 2030 (BloombergNEF)</div>
+      </div>
+    </div>
+
+    <table class="clean-table" style="margin-top: 2rem; background: var(--white);">
+      <thead>
+        <tr>
+          <th>Deployment Scale</th>
+          <th>CO2e Avoided / Year</th>
+          <th>Carbon Credit Revenue (current)</th>
+          <th>Carbon Credit Revenue (2030 est.)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col-strong">10 MW (Stage 1)</td>
+          <td>50,000&ndash;65,000 tonnes</td>
+          <td>$250K&ndash;$1.3M</td>
+          <td>$650K&ndash;2.7M</td>
+        </tr>
+        <tr>
+          <td class="col-strong">80 MW (Stage 3)</td>
+          <td>400,000&ndash;520,000 tonnes</td>
+          <td>$2&ndash;10.4M</td>
+          <td>$5.2&ndash;21.8M</td>
+        </tr>
+        <tr>
+          <td class="col-strong">250 MW (Stage 5)</td>
+          <td>1.25&ndash;1.6 million tonnes</td>
+          <td>$6.25&ndash;32M</td>
+          <td>$16.3&ndash;67.2M</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size: 0.76rem; color: var(--gray-pale); margin-top: 0.75rem;">Methodology: Verra Verified Carbon Standard, VM0029. Flare gas conversion with methane slip reduction. Carbon credit revenue is a supplementary stream, not factored into base revenue projections. 2030 estimates based on BloombergNEF price projections ($13&ndash;42/tonne depending on market scenario).</p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════
+     TRACTION
+     ══════════════════════════════════════════════════════════════ -->
+<div class="section-pad" id="traction">
+  <div class="container">
+    <div class="divider"></div>
+    <span class="section-label">Traction &amp; Roadmap</span>
+    <h2>We've already done the hardest part.<br>Now we scale.</h2>
+
+    <div class="timeline">
+      <div class="tl-step">
+        <div class="tl-connector">
+          <div class="tl-dot done"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-content">
+          <div class="tl-date">February 2025 &mdash; Present</div>
+          <h4>Proof of Concept &mdash; Ogboinbiri, Bayelsa State, Nigeria</h4>
+          <p>13+ months of continuous operations in the Niger Delta. Validated technology, community relations, local workforce management, and revenue generation. Built for $47K. One of a small number of Canadian companies with active, continuous operations in Nigeria's upstream oil &amp; gas sector. The hardest part of this business isn't the technology &mdash; it's operating in these environments. We've already proven we can.</p>
+        </div>
+      </div>
+
+      <div class="tl-step">
+        <div class="tl-connector">
+          <div class="tl-dot current"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-content">
+          <div class="tl-date">Active</div>
+          <h4>Commercial Partnerships &mdash; Oando Energy + Heirs Energies</h4>
+          <p>Gas monetization proposals under review with two major Nigerian upstream operators. Oando (publicly traded, gas business division) and Heirs Energies (Tony Elumelu group). Both engagements target flare gas conversion at production sites with NRG Bloom as the technology and compute provider.</p>
+        </div>
+      </div>
+
+      <div class="tl-step">
+        <div class="tl-connector">
+          <div class="tl-dot current"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-content">
+          <div class="tl-date">Active</div>
+          <h4>Enterprise Compute Client &mdash; Canurta</h4>
+          <p>Canadian pharmaceutical company secured as the first HPC pilot client for drug discovery and molecular simulation workloads. Validates Layer 2 enterprise compute demand ahead of commercial site deployment.</p>
+        </div>
+      </div>
+
+      <div class="tl-step">
+        <div class="tl-connector">
+          <div class="tl-dot future"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-content">
+          <div class="tl-date">2026&ndash;2027</div>
+          <h4>Stage 1 &mdash; First 10 MW Commercial Site</h4>
+          <p>Gas purchase agreement, genset procurement, container deployment. Hashrate generating from day one. HPC workloads added by month six. Revenue from year one. The bridge from proof of concept to institutional-grade infrastructure.</p>
+        </div>
+      </div>
+
+      <div class="tl-step">
+        <div class="tl-connector">
+          <div class="tl-dot future"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-content">
+          <div class="tl-date">2027&ndash;2028</div>
+          <h4>Stages 2&ndash;3 &mdash; 30&ndash;80 MW, Multi-Site, Multi-Country</h4>
+          <p>Replicate across Nigeria, expand into Ghana. All three compute layers active. Carbon credit portfolio verified. DFI capital secured. Government infrastructure contracts in pipeline. NEXUS platform licensing begins.</p>
+        </div>
+      </div>
+
+      <div class="tl-step">
+        <div class="tl-connector">
+          <div class="tl-dot future"></div>
+        </div>
+        <div class="tl-content" style="border-bottom: none;">
+          <div class="tl-date">2029&ndash;2030</div>
+          <h4>Stages 4&ndash;5 &mdash; 150&ndash;250+ MW Pan-African Platform</h4>
+          <p>Continental infrastructure across 6+ countries. AI compute as dominant revenue driver. NEXUS as a standalone technology asset. Carbon credits at sovereign scale. IPO-ready. The distributed energy-compute infrastructure platform for Africa.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════
+     TEAM
+     ══════════════════════════════════════════════════════════════ -->
+<div class="full-width full-blue" id="team">
+  <div class="container section-pad">
+    <span class="section-label" style="color: rgba(255,255,255,0.5);">Leadership</span>
+    <h2 style="color: var(--white);">Built by operators, not consultants.</h2>
+
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid rgba(255,255,255,0.12); border-radius: 2px; overflow: hidden; margin-top: 2rem;">
+      <div class="blue-card" style="text-align: center; border-radius: 0; border: none; border-right: 1px solid rgba(255,255,255,0.08);">
+        <h3>Makir Volcy</h3>
+        <p style="color: rgba(255,255,255,0.5); font-size: 0.72rem; font-family: 'JetBrains Mono', monospace; margin-bottom: 0.5rem;">Founder &amp; CEO</p>
+        <p>Canadian entrepreneur. 13+ months managing continuous operations in the Niger Delta. Built the proof of concept from the ground up with $47K.</p>
+      </div>
+      <div class="blue-card" style="text-align: center; border-radius: 0; border: none; border-right: 1px solid rgba(255,255,255,0.08);">
+        <h3>Julie Peeters</h3>
+        <p style="color: rgba(255,255,255,0.5); font-size: 0.72rem; font-family: 'JetBrains Mono', monospace; margin-bottom: 0.5rem;">Director of Finance &amp; Operations</p>
+        <p>Technology development. NEXUS orchestration system architecture. Compute stack design and patent strategy.</p>
+      </div>
+      <div class="blue-card" style="text-align: center; border-radius: 0; border: none; border-right: 1px solid rgba(255,255,255,0.08);">
+        <h3>Gus Anyim</h3>
+        <p style="color: rgba(255,255,255,0.5); font-size: 0.72rem; font-family: 'JetBrains Mono', monospace; margin-bottom: 0.5rem;">Commercial Lead, Nigeria</p>
+        <p>On-the-ground commercial operations. Managing energy partner relationships with Oando and Heirs Energies.</p>
+      </div>
+      <div class="blue-card" style="text-align: center; border-radius: 0; border: none;">
+        <h3>Dayo Adu</h3>
+        <p style="color: rgba(255,255,255,0.5); font-size: 0.72rem; font-family: 'JetBrains Mono', monospace; margin-bottom: 0.5rem;">Legal Advisor</p>
+        <p>Nigerian counsel, Moroom Africa. Regulatory navigation, contract structuring, dispute resolution.</p>
+      </div>
+    </div>
+
+    <div class="callout callout-white" style="margin-top: 2.5rem;">
+      <strong>Canadian headquarters, global deployment.</strong> All R&amp;D, operations monitoring, and management run from Montreal, Quebec. Accessing the Canadian clean tech ecosystem: Futurpreneur, PME MTL, NRC IRAP, and SR&amp;ED tax credits. Canadian government involvement strengthens international credibility and unlocks DFI co-investment.
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════
+     CTA
+     ══════════════════════════════════════════════════════════════ -->
+<div class="full-width full-wash">
+  <div class="container" style="text-align: center; padding: 5rem 2.5rem;">
+    <span class="section-label" style="display: block; text-align: center;">The Opportunity</span>
+    <h2>The energy is stranded. The demand is real.<br>The model is <span class="accent">proven</span>.<br>The market is <span class="accent">enormous</span>.</h2>
+    <p style="font-size: 1rem; color: var(--gray); max-width: 580px; margin: 0 auto;">
+      NRG Bloom is raising capital to build the distributed energy-compute infrastructure platform for Africa. We've done it at community scale. Now we do it at continental scale.
+    </p>
+    <div style="display: inline-flex; gap: 3rem; margin-top: 2rem; flex-wrap: wrap; justify-content: center;">
+      <div style="text-align: center;">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 1rem; font-weight: 600; color: var(--blue);">makir@nrgbloom.com</div>
+        <div style="font-size: 0.7rem; color: var(--gray-pale); margin-top: 0.15rem;">Makir Volcy, Founder &amp; CEO</div>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 1rem; font-weight: 600; color: var(--blue);">nrgbloom.com</div>
+        <div style="font-size: 0.7rem; color: var(--gray-pale); margin-top: 0.15rem;">Company Website</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <strong>NRG Bloom Inc.</strong> &nbsp;&middot;&nbsp; Montreal, Quebec, Canada &nbsp;&middot;&nbsp; nrgbloom.com
+  <br><br>
+  <span style="font-size: 0.7rem; color: var(--gray-pale);">Confidential &mdash; March 2026. This document is for informational purposes only and does not constitute an offer of securities.</span>
+  <br><br>
+  <span style="font-size: 0.62rem; color: var(--gray-pale); line-height: 1.6; display: block; max-width: 800px; margin: 0 auto; text-align: left;">
+    <strong style="color: var(--gray-light);">Key Assumptions &amp; Notes:</strong><br>
+    *Payback period assumes BTC at $80K and full deployment from day one. At BTC $60K, payback extends to approximately 28&ndash;32 months.<br>
+    Revenue per MW figures are projections based on March 2026 market conditions (BTC hashprice, colocation market rates, GPU compute pricing). Actual results will vary with market conditions.<br>
+    Fuel cost reflects effective all-in cost including gas conditioning, compression, and generator maintenance (&lt;$0.02/kWh) vs. Nigeria grid at $0.05&ndash;0.12/kWh.<br>
+    All-in CAPEX per MW ($1&ndash;1.5M) includes mining containers, ASIC hardware, electrical infrastructure, generators, and site preparation.<br>
+    Carbon credit pricing based on BloombergNEF 2025 projections. Current VCM average: ~$6.34/tonne (Ecosystem Marketplace 2025).<br>
+    Competitor data: Green Flare status as of Feb 2026 (Data Center Dynamics). Crusoe data as of Mar 2026 (Crusoe newsroom, SEC filings). Husk Power data as of Jan 2026 (Bloomberg, CB Insights).<br>
+    Market data sources: World Bank GGFR, Arizton, GSIA, NUPRC, IEA, Springer Nature/Discover Environment (2025).
+  </span>
+</footer>
+
+</body>
+</html>

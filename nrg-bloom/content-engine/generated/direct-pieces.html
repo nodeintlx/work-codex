@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NRG Bloom Direct Pieces</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Inter, system-ui, sans-serif;
+    background: linear-gradient(180deg, #0b1020, #0A0E1A);
+    color: #F9FAFB;
+    padding: 36px 24px 64px;
+  }
+  .wrap { max-width: 1180px; margin: 0 auto; }
+  .hero, .card {
+    background: linear-gradient(180deg, rgba(17,24,39,.95), rgba(10,14,26,.98));
+    border: 1px solid rgba(31,41,55,.95);
+    border-radius: 28px;
+  }
+  .hero { padding: 28px; margin-bottom: 24px; }
+  .eyebrow {
+    display: inline-block; padding: 10px 16px; border-radius: 999px;
+    border: 1px solid rgba(107,163,232,.28); color: #6ba3e8; text-transform: uppercase;
+    letter-spacing: .08em; font-size: 12px; font-weight: 700;
+  }
+  h1 { font-family: "Space Grotesk", Inter, sans-serif; margin: 18px 0 10px; font-size: 52px; line-height: .96; letter-spacing: -.03em; }
+  p { color: #9CA3AF; line-height: 1.6; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .card { padding: 18px; }
+  .thumb { display: block; width: 100%; border-radius: 16px; margin-bottom: 14px; border: 1px solid rgba(255,255,255,.05); }
+  h2 { font-family: "Space Grotesk", Inter, sans-serif; font-size: 24px; line-height: 1.05; letter-spacing: -.03em; margin-bottom: 10px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+  .links a {
+    text-decoration: none; color: #F9FAFB; font-size: 14px;
+    padding: 10px 14px; border-radius: 999px; border: 1px solid rgba(107,163,232,.28);
+    background: rgba(107,163,232,.08);
+  }
+  @media (max-width: 980px) { .grid { grid-template-columns: 1fr; } h1 { font-size: 42px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <div class="eyebrow">Direct HTML Assets</div>
+    <h1>NRG Bloom Browser Pieces</h1>
+    <p>These are direct, standalone HTML content pieces. Open any one and you should see the asset itself, not a review dashboard.</p>
+  </section>
+  <div class="grid">
+    <section class="card">
+      <img class="thumb" src="./20260326T175321Z-source-of-truth-sprint/motion-pack/proof-before-promises-square.png" alt="Proof Before Promises">
+      <h2>Proof Before Promises</h2>
+      <p>Direct vertical motion piece built around operator proof.</p>
+      <div class="links">
+        <a href="./proof-before-promises-direct.html">Open Direct Piece</a>
+      </div>
+    </section>
+    <section class="card">
+      <img class="thumb" src="./20260326T180258Z-north-america-analog-sprint/motion-pack/bakken-proving-ground-square.png" alt="Bakken Proving Ground">
+      <h2>Bakken Proving Ground</h2>
+      <p>Direct square stat-card style piece built around North Dakota validation.</p>
+      <div class="links">
+        <a href="./bakken-proving-ground-direct.html">Open Direct Piece</a>
+      </div>
+    </section>
+    <section class="card">
+      <img class="thumb" src="./20260326T180258Z-north-america-analog-sprint/motion-pack/permian-scale-square.png" alt="Permian Scale">
+      <h2>Permian Scale</h2>
+      <p>Direct vertical motion piece built around Texas scale and African execution.</p>
+      <div class="links">
+        <a href="./permian-scale-direct.html">Open Direct Piece</a>
+      </div>
+    </section>
+  </div>
+</div>
+</body>
+</html>

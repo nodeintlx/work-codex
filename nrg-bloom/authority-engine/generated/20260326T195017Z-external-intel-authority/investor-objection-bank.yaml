@@ -1,0 +1,47 @@
+generated_from: NRG Bloom External Intelligence Authority System
+objections:
+- question: Is this category real or still mostly narrative?
+  answer: Answer with regulation, public analogs, and category lineage rather than
+    vague optimism.
+  formats:
+  - LinkedIn company post
+  - thread
+  - market note
+  fact_ids:
+  - ngfcp_permits_power_potential_2025
+  - green_flare_nigeria_53mw_2025
+  - crusoe_divestiture_2025
+- question: Why does this matter now?
+  answer: Answer with the convergence of energy-constrained compute, Nigeria's power
+    bottlenecks, and a growing but still early digital-infrastructure market.
+  formats:
+  - Founder post
+  - thread
+  - short video
+  fact_ids:
+  - global_data_center_demand_doubles_2030
+  - nigeria_power_access_and_losses
+  - nigeria_data_center_capacity_pipeline_2025
+- question: Why does modular edge infrastructure still matter if centralized data
+    centers are growing?
+  answer: Answer by showing that market growth does not eliminate edge constraints
+    or stranded-energy opportunities.
+  formats:
+  - thread
+  - carousel
+  - market note
+  fact_ids:
+  - nigeria_data_center_capacity_pipeline_2025
+  - nigeria_grid_delivery_gap
+  - modular_containerized_model
+- question: Why should people listen to NRG Bloom on this topic?
+  answer: Answer by tying category interpretation back to real operating proof and
+    field-informed judgment without disclosing live-sensitive details.
+  formats:
+  - Founder post
+  - founder note
+  - interview talking points
+  fact_ids:
+  - ogboinbiri_operational_since_2025_02
+  - ogboinbiri_operational_capacity_1_5mw
+  - modular_containerized_model

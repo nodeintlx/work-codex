@@ -1,0 +1,185 @@
+slug: "facts-and-numbers-conversion"
+title: "NRG Bloom Facts and Numbers Conversion Layer"
+fact_registry: "../../content-engine/facts/facts-and-numbers-verified-2026-03-26.yaml"
+positioning: "NRG Bloom should sound like the operator that can translate stranded energy, unreliable grids, and underbuilt digital infrastructure into a financeable compute platform."
+
+company:
+  name: "NRG Bloom"
+  headquarters: "Montreal, Canada"
+  operating_geography: "Nigeria, with category benchmarks drawn from global energy and compute markets"
+  operating_model: "Modular, containerized compute infrastructure deployed against stranded or hard-to-deliver energy"
+  current_stage: "Operating proof established; investor-grade market narrative now anchored to audited public claims"
+
+capital:
+  core_thesis: "NRG Bloom becomes capital-worthy when investors see four truths together: real operating proof in Nigeria, a real power-delivery bottleneck, a permit-backed flare-gas monetization market, and a still-underbuilt data-infrastructure layer."
+  why_now: "The timing is stronger because IEA has made the energy side of the compute story explicit, World Bank materials still show Nigeria's structural electricity gap, and NGFCP plus public Nigerian flare-to-compute announcements have made the category more legible."
+  winning_hypothesis: "NRG Bloom can win if it keeps sounding like a field operator rather than a futurist: show site proof, speak clearly about grid reality, and explain why modular deployment belongs in the same conversation as larger digital-infrastructure build-out."
+  investor_fit: "Best fit is investors who understand that energy constraints, remote operations, and modular execution are not side details. They are the business."
+  raise_status: "Turning the investor page into a disciplined diligence layer and content engine."
+  weekly_goal: "Use audited facts to create repeated investor touches that move from authority to diligence."
+  use_of_funds:
+    - "Scale site deployment capacity from proof-of-concept operations into repeatable commercial infrastructure."
+    - "Strengthen field operations, monitoring, partner onboarding, and logistics execution."
+    - "Deepen commercial development with flare-gas counterparties and compute customers."
+    - "Convert a live operating proof into an investable platform with disciplined expansion sequencing."
+  next_step: "Move qualified investors from public content into the one-page brief, then into a diligence call centered on verified operating proof and market structure."
+
+evidence:
+  company_proof:
+    - "ogboinbiri_operational_since_2025_02"
+    - "ogboinbiri_operational_capacity_1_5mw"
+    - "modular_containerized_model"
+  market_timing:
+    - "global_data_center_demand_doubles_2030"
+    - "nigeria_power_access_and_losses"
+    - "nigeria_grid_delivery_gap"
+    - "nigeria_data_center_capacity_pipeline_2025"
+  category_lineage:
+    - "ngfcp_permits_power_potential_2025"
+    - "green_flare_nigeria_53mw_2025"
+    - "crusoe_divestiture_2025"
+
+audiences:
+  - slug: "energy-infrastructure-capital"
+    name: "Energy and Infrastructure Capital"
+    role_in_funnel: "Primary capital"
+    thesis: "NRG Bloom should look like a distributed infrastructure operator monetizing energy that the grid or market currently fails to use."
+    conversion_goal: "Advance to memo review and diligence call."
+    channels: ["LinkedIn", "Email", "Warm intros"]
+    cta: "Review the investor memo and discuss deployment sequencing."
+    trigger_asset: "energy delivery bottleneck post"
+    proof_fact_ids:
+      - "ogboinbiri_operational_since_2025_02"
+      - "nigeria_power_access_and_losses"
+      - "nigeria_grid_delivery_gap"
+
+  - slug: "compute-and-ai-investors"
+    name: "Compute and AI Investors"
+    role_in_funnel: "Primary capital"
+    thesis: "The company should be framed as energy-edge compute infrastructure for a world where power availability is becoming a first-order constraint."
+    conversion_goal: "Advance to thesis discussion around where modular compute belongs in the stack."
+    channels: ["X", "LinkedIn", "Email"]
+    cta: "Review the one-page brief and discuss how energy access shapes compute deployment."
+    trigger_asset: "undersupplied digital infrastructure thread"
+    proof_fact_ids:
+      - "global_data_center_demand_doubles_2030"
+      - "nigeria_data_center_capacity_pipeline_2025"
+      - "ogboinbiri_operational_capacity_1_5mw"
+
+  - slug: "africa-focused-capital"
+    name: "Africa-Focused Investors and DFIs"
+    role_in_funnel: "Primary capital"
+    thesis: "NRG Bloom should be positioned as a company already operating in-market while most others are still explaining the opportunity from afar."
+    conversion_goal: "Advance to diligence around field credibility, regulatory fit, and expansion logic."
+    channels: ["LinkedIn", "Warm intros", "Targeted outreach"]
+    cta: "Review the diligence snapshot and discuss the Nigeria expansion path."
+    trigger_asset: "proof-backed founder post"
+    proof_fact_ids:
+      - "ogboinbiri_operational_since_2025_02"
+      - "ngfcp_permits_power_potential_2025"
+      - "nigeria_power_access_and_losses"
+
+  - slug: "industry-validators"
+    name: "Industry Validators and Strategic Operators"
+    role_in_funnel: "Credibility"
+    thesis: "Public validation from operators and market interpreters helps turn NRG Bloom from an interesting company into a reference point in the category."
+    conversion_goal: "Earn public validation, partner intros, and ecosystem credibility."
+    channels: ["X", "LinkedIn", "Direct outreach"]
+    cta: "React publicly, comment, or make a relevant introduction."
+    trigger_asset: "ngfcp governed market post"
+    proof_fact_ids:
+      - "ngfcp_permits_power_potential_2025"
+      - "green_flare_nigeria_53mw_2025"
+      - "crusoe_divestiture_2025"
+
+objections:
+  - question: "Is this a real operating company or still a concept?"
+    answer: "Lead with live site proof, current operating capacity, and modular deployment logic before any growth narrative."
+    fact_ids:
+      - "ogboinbiri_operational_since_2025_02"
+      - "ogboinbiri_operational_capacity_1_5mw"
+
+  - question: "Why is this market worth attention now?"
+    answer: "The opportunity is sharper because compute demand is becoming more energy constrained at the same time Nigeria's grid gap and digital-infrastructure gap remain visible."
+    fact_ids:
+      - "global_data_center_demand_doubles_2030"
+      - "nigeria_power_access_and_losses"
+      - "nigeria_data_center_capacity_pipeline_2025"
+
+  - question: "Why should anyone believe flare-gas compute is financeable in Nigeria?"
+    answer: "Because the category now has public regulatory structure, public local analogs, and a global precedent."
+    fact_ids:
+      - "ngfcp_permits_power_potential_2025"
+      - "green_flare_nigeria_53mw_2025"
+      - "crusoe_divestiture_2025"
+
+franchises:
+  - slug: "energy-delivery-thesis"
+    name: "Energy Delivery Thesis"
+    investor_problem: "Why does this category matter beyond hype?"
+    asset_types: ["Founder post", "quote card", "short video"]
+    conversion_target: "Move general interest into memo review."
+    fact_ids:
+      - "global_data_center_demand_doubles_2030"
+      - "nigeria_power_access_and_losses"
+      - "nigeria_grid_delivery_gap"
+
+  - slug: "operator-proof"
+    name: "Operator Proof"
+    investor_problem: "Can the team actually operate?"
+    asset_types: ["Founder post", "quote card", "proof excerpt"]
+    conversion_target: "Reduce execution skepticism."
+    fact_ids:
+      - "ogboinbiri_operational_since_2025_02"
+      - "ogboinbiri_operational_capacity_1_5mw"
+      - "modular_containerized_model"
+
+  - slug: "governed-flare-market"
+    name: "Governed Flare Market"
+    investor_problem: "Is there a real market structure here?"
+    asset_types: ["LinkedIn company post", "thread", "video"]
+    conversion_target: "Make the category feel institutionally legible."
+    fact_ids:
+      - "ngfcp_permits_power_potential_2025"
+      - "green_flare_nigeria_53mw_2025"
+      - "crusoe_divestiture_2025"
+
+  - slug: "digital-infrastructure-gap"
+    name: "Digital Infrastructure Gap"
+    investor_problem: "Where does NRG Bloom fit if larger data-centre players are also building?"
+    asset_types: ["Thread", "carousel", "market note"]
+    conversion_target: "Frame modular edge compute as complementary, not redundant."
+    fact_ids:
+      - "nigeria_data_center_capacity_pipeline_2025"
+      - "ogboinbiri_operational_capacity_1_5mw"
+      - "modular_containerized_model"
+
+weekly_sequence:
+  - day: "Monday"
+    asset_type: "Founder post + quote card"
+    audience: "Energy and Infrastructure Capital"
+    objective: "Lead with the real bottleneck."
+    theme: "Energy delivery, not abstract demand"
+    franchise: "energy-delivery-thesis"
+
+  - day: "Wednesday"
+    asset_type: "LinkedIn company post + quote card"
+    audience: "Industry Validators and Strategic Operators"
+    objective: "Make the flare-gas market feel legible and timely."
+    theme: "NGFCP changed the category"
+    franchise: "governed-flare-market"
+
+  - day: "Friday"
+    asset_type: "X thread + motion asset"
+    audience: "Compute and AI Investors"
+    objective: "Explain why the data-infrastructure market is still open enough for modular operators to matter."
+    theme: "Nigeria is growing, but still early"
+    franchise: "digital-infrastructure-gap"
+
+public_site_sources:
+  - title: "NRG Bloom / Facts and Numbers"
+    url: "https://www.nrgbloom.com/facts-and-numbers"
+  - title: "NRG Bloom / Renewable Energy Solutions"
+    url: "https://www.nrgbloom.com/services/renewable-energy"
+  - title: "NRG Bloom / What is Stranded Energy? Why it Matters to Bitcoin"
+    url: "https://www.nrgbloom.com/blog/stranded-energy-bitcoin-waste-recovery-explained"

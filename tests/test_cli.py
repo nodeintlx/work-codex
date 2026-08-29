@@ -383,6 +383,95 @@ class WorkCodexTests(unittest.TestCase):
         self.assertTrue((latest_dir / "claim-outline.md").exists())
         self.assertTrue((latest_dir / "next-actions.md").exists())
 
+    def test_agent_exchange_commands(self) -> None:
+        exchange_root = self.root / "exchange-root"
+        (exchange_root / "incoming").mkdir(parents=True)
+        proposal_payload = {
+            "proposal_id": "proposal-1",
+            "title": "Update litigation posture",
+            "command": "litigation-update",
+            "fields": {
+                "phase": "filing_preparation",
+                "forum.current_track": "canadian_pre_filing",
+                "next_actions": ["Draft claim", "Audit limitation"],
+            },
+        }
+        (exchange_root / "incoming" / "proposal.json").write_text(
+            json.dumps(proposal_payload) + "\n",
+            encoding="utf-8",
+        )
+
+        stdout = StringIO()
+        with patch("sys.stdout", stdout), patch("work_codex.cli.date") as mocked_date:
+            mocked_date.today.return_value = date(2026, 3, 7)
+            code = run(
+                [
+                    "--workspace",
+                    str(self.root),
+                    "litigation-handoff-write",
+                    "--exchange-root",
+                    str(exchange_root),
+                ]
+            )
+        self.assertEqual(code, 0)
+        self.assertIn("wrote litigation handoff", stdout.getvalue())
+        self.assertTrue((exchange_root / "handoff" / "litigation-handoff.json").exists())
+        self.assertTrue((self.root / "agent-exchange" / "handoff" / "litigation-handoff.json").exists())
+
+        stdout = StringIO()
+        with patch("sys.stdout", stdout):
+            code = run(
+                [
+                    "--workspace",
+                    str(self.root),
+                    "agent-exchange-ingest",
+                    "--exchange-root",
+                    str(exchange_root),
+                ]
+            )
+        self.assertEqual(code, 0)
+        self.assertIn("ingested 1 exchange artifact", stdout.getvalue())
+
+        stdout = StringIO()
+        with patch("sys.stdout", stdout):
+            code = run(["--workspace", str(self.root), "agent-review-queue"])
+        self.assertEqual(code, 0)
+        self.assertIn("proposal-1", stdout.getvalue())
+
+        stdout = StringIO()
+        with patch("sys.stdout", stdout):
+            code = run(["--workspace", str(self.root), "agent-proposal-status"])
+        self.assertEqual(code, 0)
+        self.assertIn("pending_review: 1", stdout.getvalue())
+
+        proposal_path = self.root / "agent-exchange" / "pending_review" / "proposal-1.json"
+        stdout = StringIO()
+        with patch("sys.stdout", stdout):
+            code = run(
+                [
+                    "--workspace",
+                    str(self.root),
+                    "agent-proposal-apply",
+                    "--path",
+                    str(proposal_path),
+                ]
+            )
+        self.assertEqual(code, 0)
+        self.assertIn("applied proposal: proposal-1", stdout.getvalue())
+        updated_text = (self.root / "nrg-bloom" / "litigation-ton" / "matter-status.yaml").read_text(encoding="utf-8")
+        self.assertIn("phase: filing_preparation", updated_text)
+        self.assertIn("current_track: canadian_pre_filing", updated_text)
+        self.assertIn("- Draft claim", updated_text)
+        self.assertFalse(proposal_path.exists())
+        self.assertTrue((self.root / "agent-exchange" / "applied" / "proposal-1.json").exists())
+
+        stdout = StringIO()
+        with patch("sys.stdout", stdout):
+            code = run(["--workspace", str(self.root), "agent-proposal-status"])
+        self.assertEqual(code, 0)
+        self.assertIn("pending_review: 0", stdout.getvalue())
+        self.assertIn("applied: 1", stdout.getvalue())
+
     def test_litigation_next_actions_command(self) -> None:
         stdout = StringIO()
         with patch("sys.stdout", stdout), patch("work_codex.cli.date") as mocked_date:

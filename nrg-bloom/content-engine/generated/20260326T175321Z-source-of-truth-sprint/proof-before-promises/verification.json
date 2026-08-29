@@ -1,0 +1,30 @@
+{
+  "fact_ids": [
+    "ogboinbiri_operational_since_2025_02"
+  ],
+  "facts": [
+    {
+      "claim": "NRG Bloom has been operational at Ogboinbiri in Bayelsa State since February 2025.",
+      "id": "ogboinbiri_operational_since_2025_02",
+      "sources": [
+        {
+          "excerpt": "We have been operational at Ogboinbiri (Bayelsa State) since February 2025, proving this model works in the Niger Delta environment.",
+          "path": "nrg-bloom/projects/oando/pathway-summary-1-pager-2026-02-26.md"
+        },
+        {
+          "excerpt": "NRG Bloom has been operational at Ogboinbiri since Feb 2025 \u2014 over one year on-site",
+          "path": "nrg-bloom/projects/oando/intro-call-brief-2026-02-26.md"
+        },
+        {
+          "excerpt": "We've been operating at Ogboinbiri since February 2025 \u2014 over 13 months, on Oando's own infrastructure.",
+          "path": "nrg-bloom/projects/oando/call-card-2026-03-06.md"
+        }
+      ],
+      "status": "verified"
+    }
+  ],
+  "slug": "proof-before-promises",
+  "title": "Proof Before Promises",
+  "verification_standard": "3 local sources minimum per fact",
+  "verified": true
+}

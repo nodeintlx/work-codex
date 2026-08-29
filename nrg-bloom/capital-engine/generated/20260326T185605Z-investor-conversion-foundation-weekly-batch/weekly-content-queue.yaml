@@ -1,0 +1,37 @@
+week_of: '2026-03-26'
+queue:
+- day: Monday
+  asset_type: Founder post + quote card
+  audience: Infrastructure and Energy Funds
+  objective: Lead with proof of execution.
+  theme: Field proof before promises
+  franchise: operator-proof
+  status: planned
+- day: Tuesday
+  asset_type: X thread
+  audience: AI and Compute Investors
+  objective: Frame the market window.
+  theme: Why stranded-energy compute matters now
+  franchise: market-window
+  status: planned
+- day: Wednesday
+  asset_type: Carousel
+  audience: Africa-Focused Investors and DFIs
+  objective: Reduce frontier-market uncertainty.
+  theme: Montreal discipline, Nigerian field execution
+  franchise: operator-proof
+  status: planned
+- day: Thursday
+  asset_type: Short video or animated card
+  audience: Industry Validators and Strategic Operators
+  objective: Earn public validation and category reinforcement.
+  theme: North America analogs, Africa adaptation
+  franchise: category-lineage
+  status: planned
+- day: Friday
+  asset_type: Contrarian market note
+  audience: Analysts, Journalists, and Market Interpreters
+  objective: Own the category framing going into the next week.
+  theme: Why remote execution matters more than hyperscale rhetoric
+  franchise: modular-moat
+  status: planned

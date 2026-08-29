@@ -1,0 +1,24 @@
+week_of: '2026-03-26'
+queue:
+- day: Monday
+  asset_type: Founder post + quote card
+  audience: Energy and Infrastructure Capital
+  objective: Lead with the real bottleneck.
+  theme: Energy delivery, not abstract demand
+  franchise: energy-delivery-thesis
+  status: planned
+- day: Wednesday
+  asset_type: LinkedIn company post + quote card
+  audience: Industry Validators and Strategic Operators
+  objective: Make the flare-gas market feel legible and timely.
+  theme: NGFCP changed the category
+  franchise: governed-flare-market
+  status: planned
+- day: Friday
+  asset_type: X thread + motion asset
+  audience: Compute and AI Investors
+  objective: Explain why the data-infrastructure market is still open enough for modular
+    operators to matter.
+  theme: Nigeria is growing, but still early
+  franchise: digital-infrastructure-gap
+  status: planned

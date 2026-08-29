@@ -1,0 +1,79 @@
+generated_from: NRG Bloom Investor Conversion Foundation
+audiences:
+- slug: infrastructure-energy-funds
+  name: Infrastructure and Energy Funds
+  role_in_funnel: Primary capital
+  thesis: NRG Bloom should look like a disciplined energy monetization platform with
+    digital upside, not a speculative media company.
+  conversion_goal: Advance to memo review and diligence call.
+  channels:
+  - LinkedIn
+  - Email
+  - Warm intros
+  cta: Review the investor memo and schedule a proof-of-execution call.
+  proof_fact_ids:
+  - ogboinbiri_operational_since_2025_02
+  - global_flaring_2024_151bcm
+  - ngfcp_permits_2025
+- slug: ai-compute-investors
+  name: AI and Compute Investors
+  role_in_funnel: Primary capital
+  thesis: "The company should be framed as energy-edge compute infrastructure, with\
+    \ today\u2019s economics grounded in real deployment logic rather than pure data-center\
+    \ speculation."
+  conversion_goal: Advance to thesis discussion around energy-constrained compute.
+  channels:
+  - X
+  - LinkedIn
+  - Email
+  cta: Review the one-page brief and discuss the deployment model.
+  proof_fact_ids:
+  - montreal_based_nigeria_operator
+  - modular_containerized_model
+  - africa_digital_economy_712b
+- slug: africa-focused-capital
+  name: Africa-Focused Investors and DFIs
+  role_in_funnel: Primary capital
+  thesis: NRG Bloom should be positioned as an operator that reduces frontier uncertainty
+    by already being in-market and already operating.
+  conversion_goal: Advance to diligence around local operating credibility and scale
+    path.
+  channels:
+  - LinkedIn
+  - Warm intros
+  - Targeted outreach
+  cta: Review the diligence snapshot and discuss scale path in Nigeria.
+  proof_fact_ids:
+  - ogboinbiri_operational_since_2025_02
+  - montreal_based_nigeria_operator
+  - ngfcp_permits_2025
+- slug: industry-validators
+  name: Industry Validators and Strategic Operators
+  role_in_funnel: Credibility
+  thesis: Their public validation helps investors treat NRG Bloom as a serious category
+    operator.
+  conversion_goal: Earn amplification, intros, and validation.
+  channels:
+  - X
+  - LinkedIn
+  - Direct message
+  cta: React publicly or introduce the company to relevant capital or partners.
+  proof_fact_ids:
+  - north_dakota_bakken_capture
+  - texas_permian_scale
+  - crusoe_field_footprint_2025
+- slug: media-analysts
+  name: Analysts, Journalists, and Market Interpreters
+  role_in_funnel: Amplification
+  thesis: They should see NRG Bloom as one of the few companies that can speak credibly
+    about stranded-energy compute in Africa.
+  conversion_goal: Earn citations, coverage, and category visibility.
+  channels:
+  - X
+  - LinkedIn
+  - Email
+  cta: Use the company as a source or invite the founder into the conversation.
+  proof_fact_ids:
+  - global_flaring_2024_151bcm
+  - africa_digital_economy_712b
+  - crusoe_field_footprint_2025

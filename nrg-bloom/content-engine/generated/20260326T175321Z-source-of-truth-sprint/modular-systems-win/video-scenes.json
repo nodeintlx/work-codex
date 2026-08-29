@@ -1,0 +1,51 @@
+{
+  "brand": {
+    "colors": {
+      "accent": "#00C896",
+      "accent_warm": "#F59E0B",
+      "bg": "#0A0E1A",
+      "border": "#1F2937",
+      "surface": "#111827",
+      "text": "#F9FAFB",
+      "text_dim": "#6B7280",
+      "text_muted": "#9CA3AF"
+    },
+    "fonts": {
+      "body": "Inter",
+      "display": "Space Grotesk"
+    }
+  },
+  "cta": "NRG Bloom is building a brand around modular infrastructure truths that operators can actually use.",
+  "format": "tiktok_story_arc",
+  "scenes": [
+    {
+      "highlight": "Why",
+      "text": "If your infrastructure model cannot move, it probably cannot win at the energy edge."
+    },
+    {
+      "highlight": "NRG",
+      "text": "NRG Bloom's operating model is modular and containerized for remote energy-edge deployment."
+    },
+    {
+      "highlight": "operators",
+      "text": "NRG Bloom's documented model is modular and containerized by design."
+    },
+    {
+      "highlight": "capital",
+      "text": "Portable systems match the realities of stranded gas, remote logistics, and phased deployment."
+    },
+    {
+      "highlight": "speed",
+      "text": "At the energy edge, the ability to deploy, relocate, and standardize beats overbuilt permanence."
+    },
+    {
+      "highlight": "contrarian",
+      "text": "In frontier compute, modularity is not a compromise. It is the strategy."
+    },
+    {
+      "highlight": "NRG Bloom",
+      "text": "Modular speed is what turns stranded energy into usable compute."
+    }
+  ],
+  "title": "Why Modular Systems Win at the Energy Edge"
+}

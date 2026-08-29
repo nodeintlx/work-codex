@@ -1,0 +1,166 @@
+{
+  "fact_ids": [
+    "global_data_center_demand_doubles_2030",
+    "nigeria_power_access_and_losses",
+    "nigeria_grid_delivery_gap",
+    "ogboinbiri_operational_since_2025_02"
+  ],
+  "facts": [
+    {
+      "claim": "IEA analysis in 2025 said electricity demand from data centres worldwide is set to more than double by 2030 to around 945 TWh.",
+      "id": "global_data_center_demand_doubles_2030",
+      "scope": "external",
+      "sources": [
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "Data centre electricity consumption is set to more than double to around 945 TWh by 2030.",
+          "path": "IEA Energy and AI executive summary",
+          "published_on": null,
+          "source_type": "official_report",
+          "title": "Executive summary - Energy and AI",
+          "url": "https://www.iea.org/reports/energy-and-ai/executive-summary"
+        },
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "The report includes projections for how much electricity AI could consume over the next decade.",
+          "path": "IEA Energy and AI report",
+          "published_on": null,
+          "source_type": "official_report",
+          "title": "Energy and AI",
+          "url": "https://www.iea.org/reports/energy-and-ai"
+        },
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "The report projects that electricity demand from data centres worldwide is set to more than double by 2030 to around 945 terawatt-hours.",
+          "path": "IEA spotlight",
+          "published_on": null,
+          "source_type": "official_report",
+          "title": "The deepening ties between energy and AI",
+          "url": "https://www.iea.org/spotlights/the-deepening-ties-between-energy-and-ai"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "claim": "Recent World Bank materials describe Nigeria as having the world's largest electricity access deficit, with roughly 85-90 million people lacking access and annual economic losses from poor power supply in roughly the $26-29 billion range.",
+      "id": "nigeria_power_access_and_losses",
+      "scope": "external",
+      "sources": [
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "Lack of access to the electricity grid affects 45 percent of the population (90 million people), making Nigeria the country with the largest number of people not connected to electricity.",
+          "path": "World Bank press release",
+          "published_on": "2023-06-09",
+          "source_type": "multilateral",
+          "title": "The World Bank Approves Additional Financing to Consolidate the Gains of Nigeria's Power Sector Recovery Program",
+          "url": "https://www.worldbank.org/en/news/press-release/2023/06/09/the-world-bank-approves-additional-financing-to-consolidate-the-gains-of-nigeria-s-power-sector-recovery-program"
+        },
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "About 85 million Nigerians do not have access to electricity and economic losses due to poor electricity supply are estimated at US$26.2 billion.",
+          "path": "World Bank DARES results brief",
+          "published_on": "2024-11-20",
+          "source_type": "multilateral",
+          "title": "Nigeria Distributed Access through Renewable Energy Scale-up (DARES) Program-for-Results",
+          "url": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099082124112015103/p17968714b12670871924f3b6c5d0ff4d8"
+        },
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "About 47% of Nigerians do not have access to grid electricity... the economic cost of power shortages in Nigeria is estimated at around $28 billion.",
+          "path": "World Bank PSRO press release",
+          "published_on": "2020-06-23",
+          "source_type": "multilateral",
+          "title": "Nigeria to Keep the Lights on and Power its Economy",
+          "url": "https://www.worldbank.org/en/news/press-release/2020/06/23/nigeria-to-keep-the-lights-on-and-power-its-economy"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "claim": "Recent institutional analyses describe Nigeria's grid as delivering only roughly 3-5 GW on average despite materially higher installed or nominal capacity.",
+      "id": "nigeria_grid_delivery_gap",
+      "scope": "external",
+      "sources": [
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "Nigeria\u2019s installed generation capacity rose to 14 GW in 2024, but average daily available capacity was 4.14 GW.",
+          "path": "IEA Electricity 2025",
+          "published_on": null,
+          "source_type": "official_report",
+          "title": "Electricity 2025",
+          "url": "https://www.iea.org/reports/electricity-2025"
+        },
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "The electricity produced and distributed within Nigeria hovers between 3 GW and 4 GW, peaking at 5 GW.",
+          "path": "World Bank project document",
+          "published_on": null,
+          "source_type": "multilateral",
+          "title": "Nigeria Power Sector Guarantees Project",
+          "url": "https://documents1.worldbank.org/curated/en/193911617633470778/pdf/Nigeria-Power-Sector-Guarantees-Project.pdf"
+        },
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "Nearly 14 GW... is generated through inefficient and costly generation solutions, showing how far real electricity demand outruns formal grid delivery.",
+          "path": "African Development Bank project document",
+          "published_on": null,
+          "source_type": "multilateral",
+          "title": "Nigeria Electrification Project",
+          "url": "https://www.afdb.org/fileadmin/uploads/afdb/Documents/Project-and-Operations/PESR_NG_NIGERIA_ELECTRIFICATION_PROJECT_CORR_EN-final.pdf"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "claim": "NRG Bloom has been operational at Ogboinbiri in Bayelsa State since February 2025.",
+      "id": "ogboinbiri_operational_since_2025_02",
+      "scope": "internal",
+      "sources": [
+        {
+          "authority": "internal",
+          "checked_on": null,
+          "excerpt": "We have been operational at Ogboinbiri (Bayelsa State) since February 2025, proving this model works in the Niger Delta environment.",
+          "path": "nrg-bloom/projects/oando/pathway-summary-1-pager-2026-02-26.md",
+          "published_on": null,
+          "source_type": "internal_doc",
+          "title": null,
+          "url": null
+        },
+        {
+          "authority": "internal",
+          "checked_on": null,
+          "excerpt": "NRG Bloom has been operational at Ogboinbiri since Feb 2025 \u2014 over one year on-site.",
+          "path": "nrg-bloom/projects/oando/intro-call-brief-2026-02-26.md",
+          "published_on": null,
+          "source_type": "internal_doc",
+          "title": null,
+          "url": null
+        },
+        {
+          "authority": "internal",
+          "checked_on": null,
+          "excerpt": "We've been operating at Ogboinbiri since February 2025 \u2014 over 13 months, on Oando's own infrastructure.",
+          "path": "nrg-bloom/projects/oando/call-card-2026-03-06.md",
+          "published_on": null,
+          "source_type": "internal_doc",
+          "title": null,
+          "url": null
+        }
+      ],
+      "status": "verified"
+    }
+  ],
+  "slug": "energy-delivery-bottleneck",
+  "title": "The Constraint Is Not Demand. It Is Energy Delivery.",
+  "verification_standard": "3 corroborating sources minimum per fact; public and hybrid claims require at least 2 authoritative external sources",
+  "verified": true
+}

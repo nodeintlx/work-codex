@@ -1,0 +1,54 @@
+{
+  "brand": {
+    "colors": {
+      "accent": "#00C896",
+      "accent_warm": "#F59E0B",
+      "bg": "#0A0E1A",
+      "border": "#1F2937",
+      "quote_accent": "#6BA3E8",
+      "quote_accent_deep": "#14489B",
+      "quote_surface": "#1A1A1A",
+      "surface": "#111827",
+      "text": "#F9FAFB",
+      "text_dim": "#6B7280",
+      "text_muted": "#9CA3AF"
+    },
+    "fonts": {
+      "body": "Inter",
+      "display": "Space Grotesk"
+    }
+  },
+  "cta": "That is the part of the market NRG Bloom cares about: where energy realism and modular execution still create edge.",
+  "format": "tiktok_story_arc",
+  "scenes": [
+    {
+      "highlight": "Nigeria",
+      "text": "Nigeria's data-centre market is growing, but it is still early enough for edge operators to matter."
+    },
+    {
+      "highlight": "Market",
+      "text": "Market coverage in 2025 said Nigeria had about 65.8 MW of third-party data-centre capacity and about 327.8 MW more in the pipeline."
+    },
+    {
+      "highlight": "operators",
+      "text": "The capacity online today is still small relative to the country's digital demand and power constraints."
+    },
+    {
+      "highlight": "capital",
+      "text": "Pipeline growth is real, but more campuses do not eliminate stranded-energy problems."
+    },
+    {
+      "highlight": "speed",
+      "text": "NRG Bloom's 1.5 MW operating proof matters because this market will not be won only by the biggest site. It will also be won by operators who can deploy where energy already exists."
+    },
+    {
+      "highlight": "contrarian",
+      "text": "The mistake is assuming the whole market resolves into hyperscale campuses. Early markets usually reward the teams that solve the awkward parts first."
+    },
+    {
+      "highlight": "NRG Bloom",
+      "text": "The companies that understand both centralized demand and edge energy constraints will shape what gets built next."
+    }
+  ],
+  "title": "Nigeria Is Growing Data Centers, But the Market Is Still Small Enough for Edge Operators to Matter"
+}

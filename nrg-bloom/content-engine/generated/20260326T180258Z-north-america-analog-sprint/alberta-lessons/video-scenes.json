@@ -1,0 +1,51 @@
+{
+  "brand": {
+    "colors": {
+      "accent": "#00C896",
+      "accent_warm": "#F59E0B",
+      "bg": "#0A0E1A",
+      "border": "#1F2937",
+      "surface": "#111827",
+      "text": "#F9FAFB",
+      "text_dim": "#6B7280",
+      "text_muted": "#9CA3AF"
+    },
+    "fonts": {
+      "body": "Inter",
+      "display": "Space Grotesk"
+    }
+  },
+  "cta": "NRG Bloom is building category authority by connecting African execution to the strongest global analogs.",
+  "format": "tiktok_story_arc",
+  "scenes": [
+    {
+      "highlight": "Why",
+      "text": "Want to sound serious about flare-to-compute? Start by knowing Alberta."
+    },
+    {
+      "highlight": "Alberta",
+      "text": "Alberta still produces most of Canada's natural gas."
+    },
+    {
+      "highlight": "operators",
+      "text": "Canadian and Alberta sources still describe Alberta as the country's dominant gas-producing province."
+    },
+    {
+      "highlight": "capital",
+      "text": "That matters because strong gas jurisdictions create the technical and commercial instincts that portable compute operators inherit."
+    },
+    {
+      "highlight": "speed",
+      "text": "NRG Bloom can speak credibly in Africa when it understands the operating logic already proven in North American gas basins."
+    },
+    {
+      "highlight": "contrarian",
+      "text": "The edge in Africa will not come from pretending the category is brand new. It will come from mastering the regions that already taught the category how to think."
+    },
+    {
+      "highlight": "NRG Bloom",
+      "text": "The companies that understand the lineage of the category will define its future."
+    }
+  ],
+  "title": "Why Alberta Still Matters to the Flare-to-Compute Conversation"
+}

@@ -1,0 +1,196 @@
+{
+  "agent_proposals": {
+    "applied": 0,
+    "pending_review": 0,
+    "rejected": 0
+  },
+  "artifact_gaps": [],
+  "chronology": [
+    {
+      "date": "2025-02-12",
+      "event_id": "CH1",
+      "title": "Relationship launch and Nigeria trip planning begins"
+    },
+    {
+      "date": "2025-05-16",
+      "event_id": "CH2",
+      "title": "Site Development Agreement signed after earlier pressure sequence"
+    },
+    {
+      "date": "2025-06-18",
+      "event_id": "CH3",
+      "title": "Axxela email exclusion window begins"
+    },
+    {
+      "date": "2025-07-04",
+      "event_id": "CH4",
+      "title": "Marley sends direct-arrangement statement to Axxela"
+    },
+    {
+      "date": "2025-12-04",
+      "event_id": "CH5",
+      "title": "Operating support refusal hardens the pre-termination pattern"
+    },
+    {
+      "date": "2026-02-20",
+      "event_id": "CH6",
+      "title": "TON response letter relies on contract framing and avoids specific circumvention facts"
+    },
+    {
+      "date": "2026-03-05",
+      "event_id": "CH7",
+      "title": "Negotiation framework starts after position paper exchange"
+    },
+    {
+      "date": "2026-03-05",
+      "event_id": "CH8",
+      "title": "TON's $10,000 counter received and rejected outright in writing the same evening"
+    },
+    {
+      "date": "2026-03-27",
+      "event_id": "CH9",
+      "title": "Mediation lapses without a mediator appointed; filing phase activated"
+    },
+    {
+      "date": "2026-05-06",
+      "event_id": "CH10",
+      "title": "Bayelsa court grants interim orders in BYHC/YHC/CV/215/2026"
+    },
+    {
+      "date": "2026-05-26",
+      "event_id": "CH11",
+      "title": "BTC wallet attributions retracted as not court-defensible"
+    },
+    {
+      "date": "2026-06-18",
+      "event_id": "CH12",
+      "title": "Tribunal issues PO1 (timetable, confidentiality, fee mechanics)"
+    },
+    {
+      "date": "2026-06-24",
+      "event_id": "CH13",
+      "title": "Seat submissions exchanged (NRG written address; TON submission)"
+    },
+    {
+      "date": "2026-07-07",
+      "event_id": "CH14",
+      "title": "PO2 awards the seat dispute to NRG in full; seat is Lagos"
+    },
+    {
+      "date": "2026-02-12",
+      "event_id": "CH15",
+      "title": "TON terminates by call and formal notice at 1:31 PM ET"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C1",
+      "forum_track": "nigeria_primary",
+      "priority": "critical",
+      "status": "ready_to_plead",
+      "title": "Bad-faith termination and appropriation"
+    },
+    {
+      "claim_id": "C2",
+      "forum_track": "canada_or_cross_border",
+      "priority": "critical",
+      "status": "ready_to_plead",
+      "title": "Axxela circumvention and non-circumvention breach"
+    },
+    {
+      "claim_id": "C3",
+      "forum_track": "nigeria_primary",
+      "priority": "high",
+      "status": "needs_forum_review",
+      "title": "Misrepresentation to Axxela and bad-faith conduct"
+    },
+    {
+      "claim_id": "C4",
+      "forum_track": "nigeria_primary",
+      "priority": "high",
+      "status": "in_progress",
+      "title": "Unjust enrichment and uncompensated operational work"
+    }
+  ],
+  "filing": {
+    "critical_claims_ready": 2,
+    "critical_evidence_missing": 10,
+    "readiness": "blocked",
+    "recommendations": [
+      "Restore every missing critical evidence file before drafting a protective filing package.",
+      "Resolve the high-priority claims still marked in_progress or needs_forum_review."
+    ]
+  },
+  "generated_at": "2026-07-13T01:33:10.139865+00:00",
+  "latest_bundle": {
+    "files": [
+      "alberta-protective-skeleton.md",
+      "claim-outline.md",
+      "exhibit-list.md",
+      "facts-section.md",
+      "next-actions.md"
+    ],
+    "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/litigation-ton/generated/latest"
+  },
+  "matter": {
+    "canadian_path": "",
+    "current_track": "nigerian_arbitration_main_front",
+    "filing_readiness": "",
+    "floor": "walk-away below $250,000-300,000 USD cash (post-mediation posture 2026-07-11; opening $1.6M, target $450-600K)",
+    "latest_assessment": "McCarthy Tetrault is paused. Canadian path is now being organized as a self-directed, filing-ready matter with structured runtime support.",
+    "latest_next_step": "Confirm exact wire figure with Registrar via Dayo before 2026-07-17, then wire with SWIFT copy to Kemi Afesojaye and Moroom.",
+    "live_next_actions": [
+      "Confirm exact wire figure with Registrar via Dayo before 2026-07-17, then wire with SWIFT copy to Kemi Afesojaye and Moroom.",
+      "Put founder decisions 1 (pleaded quantum, USD 1.4-1.6M vs 650K, fee-scale question) and 2 (witnesses: Makir + Julie) to Dayo.",
+      "Close the three verification gaps by ~2026-07-20.",
+      "Deliver litigation-grade telemetry memo (DB/CSV-sourced, no retracted material) by 2026-07-20.",
+      "Serve maximum-credibility Points of Claim 2026-07-27."
+    ],
+    "live_notes": "Arbitration is the main front per founder decision 2026-07-10. Bayelsa interim orders provide standing pressure while adjourned. Alberta is the public-record lever and belongs in every settlement conversation as a credible threat, not a filing.",
+    "name": "NRG Bloom Inc. v. TON Infrastructure Ltd.",
+    "opening": "$1,600,000 USD, framed as global peace (arbitration + Bayelsa + Alberta exposure + mutual release + confidentiality)",
+    "phase": "arbitration_pleadings",
+    "protective_filing_needed": "",
+    "representation_mode": "counsel_led_with_ai_support",
+    "status": "active",
+    "ton_zone": "$75K - $150K"
+  },
+  "next_actions": [
+    {
+      "priority": "critical",
+      "rationale": "The Canadian track is still unresolved and the Axxela circumvention claim remains the main cross-border leverage point.",
+      "settlement_pressure": "A credible Alberta filing path makes it more expensive for TON to resist by preserving a second front tied to the Axxela opportunity.",
+      "title": "Decide and prepare the protective Alberta filing path"
+    },
+    {
+      "priority": "critical",
+      "rationale": "At least one tracked litigation deadline is already past in the live matter state.",
+      "settlement_pressure": "A clean live record reduces TON's ability to hide behind delay, drift, or ambiguity in the dispute process.",
+      "title": "Refresh the dispute clock and document the live negotiation posture"
+    },
+    {
+      "priority": "high",
+      "rationale": "Claim C3 is factually mapped but still blocked on forum positioning.",
+      "settlement_pressure": "Locking the forum theory strengthens the July 4 Axxela pressure point and removes a drafting weakness.",
+      "title": "Resolve forum treatment for the Axxela misrepresentation count"
+    },
+    {
+      "priority": "high",
+      "rationale": "The services and expenditure theory is identified, but the damages schedule is still not tight enough.",
+      "settlement_pressure": "A cleaner quantified schedule makes low settlement numbers harder for TON to justify.",
+      "title": "Quantify the unjust-enrichment and operations damages schedule"
+    },
+    {
+      "priority": "high",
+      "rationale": "The witness statement remains one of the fastest ways to harden a contested oral admission.",
+      "settlement_pressure": "Turning the admission into a clearer witness artifact increases mediation and trial risk for TON.",
+      "title": "Secure Julie's witness statement on the calculated-tactic admission"
+    },
+    {
+      "priority": "medium",
+      "rationale": "The prior lawsuit pattern is useful leverage but the record is still incomplete in the live queue.",
+      "settlement_pressure": "A fuller prior-pattern package increases reputational and litigation-cost pressure if TON forces escalation.",
+      "title": "Obtain the full 2022 complaint and outcome package"
+    }
+  ]
+}

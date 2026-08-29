@@ -1,7 +1,7 @@
 # Filing-oriented claims model for the TON matter.
 # This file is the canonical structured claim inventory for Codex.
 
-last_updated: "2026-03-07"
+last_updated: "2026-07-11"
 matter: "NRG Bloom Inc. v. TON Infrastructure Ltd."
 claims:
   - id: C1
@@ -96,3 +96,13 @@ claims:
       - CH7
     damages_anchor: Needs a cleaner quantified schedule before it is filing-ready.
     pleading_notes: Pair this with an updated quantified ledger and a concise services summary.
+
+# --- Doctrine notes, added 2026-07-11 (STATE-DELTA update #97, ratified by Makir) ---
+posture_notes_2026_07_11:
+  forum: "Claims now run in the Nigerian arbitration as the main front (Points of Claim due 2026-07-27); Bayelsa suit persists as interim-order pressure; Alberta is BATNA only."
+  revenue_contradiction_basis: "The 'no mining / no revenue' contradiction stands on telemetry only after the 2026-05-26 wallet retraction: Luxor floor 2025-12-22, partnership-era 0.04136329 BTC (2025-12-22 to 2026-01-21), 2026-01-27 instant shutdown, 2026-03-06 blip with 13 worker IDs. Post-2026-03-07 quantifications ride on information and belief."
+  quantum_discipline: "Do not plead gross NGN 68.4M as NRG capital; soft numbers on information and belief; disgorgement prayed additionally, never the headline number."
+  framing: "Do not lead sabotage/unlawful-takeover (AG3 clean-hands trap). Lead executed contracts and their breach; manufactured-termination loop; third-party-proven origination; the 2025-07-04 circumvention email; Broda para-29 sworn inconsistency deployed calmly."
+
+# --- STATE-DELTA-3 note, 2026-07-12 (ratified) ---
+r2_verified_spine_note: "The nine-beat verified spine in MASTER-CHRONOLOGY-VERIFIED-2026-07-12-r2.md section D is the approved narrative skeleton for the Points of Claim. Feb-12 call quotes are now primary-sourced (raw transcript, engine source 11). Broda para-28 CORRECTION (2026-07-13, verified against the ORIGINAL scan, update #140): the sworn text reads 'entered into only the following binding agreements'; the word BINDING is in the sworn text (r2 correction 13 was itself wrong). Plead it: Broda swore the MNDA, the May-16 SDA, and Addendum No.1 are BINDING while denying the JVA in para 29. Companion contradictions from TON's own motion: its caption recites the arbitration as pending 'UNDER THE JOINT VENTURE AGREEMENT DATED FEBRUARY 19, 2025', and TON2 clause 8 references 'the previous agreement between the parties dated April 2nd, 2025' that para-28's 'entered into only' list omits."
