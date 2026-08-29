@@ -4,7 +4,7 @@
 # Statuses: todo, in_progress, blocked, done
 # Company: nrg_bloom, coldstorm, personal, both
 
-last_updated: "2026-03-06c"
+last_updated: "2026-08-29"
 
 tasks:
   # --- COMPLETED TODAY (Feb 25) ---
@@ -58,9 +58,9 @@ tasks:
     title: "Finalize position paper for March 5 simultaneous exchange"
     company: nrg_bloom
     priority: P0
-    status: in_progress
+    status: done
     due: "2026-03-05"
-    notes: "CORRECTED Mar 4. Both parties agreed on March 5 for simultaneous exchange of position papers. McCarthy Tétrault correspondence being annexed as exhibit. Expenditure ledger, damages analysis, and Alberta litigation research all completed to support position. 5-page constraint from mediator."
+    notes: "CORRECTED Mar 4. Both parties agreed on March 5 for simultaneous exchange of position papers. McCarthy Tétrault correspondence being annexed as exhibit. Expenditure ledger, damages analysis, and Alberta litigation research all completed to support position. 5-page constraint from mediator.\nSuperseded: mediation lapsed 2026-03-27 without a mediator appointed (never reached simultaneous exchange). Matter moved to Nigerian arbitration (Lagos, Dr. Agbelusi) with Bayelsa court suit in parallel. Current source of truth: nrg-bloom/litigation-ton/matter-status.yaml."
     created: "2026-02-25"
 
   - id: 7
@@ -87,7 +87,7 @@ tasks:
     priority: P2
     status: todo
     due: "2026-03-03"
-    notes: "Julie was present when Tyler made the admission. Written statement would be valuable for arbitration. Less urgent now that Tyler's WhatsApp messages document the pattern directly."
+    notes: "Julie was present when Tyler made the admission. Written statement would be valuable for arbitration. Less urgent now that Tyler's WhatsApp messages document the pattern directly.\nSTALE FLAG (2026-08-29 audit): due date is from March 2026; this workspace went ~6 months without a status update or commit while real-world work continued. Status below is UNVERIFIED, not confirmed current. Do not treat as a live overdue item until re-confirmed with Makir."
     created: "2026-02-25"
 
   # --- OANDO PARTNERSHIP (New Business Development) ---
@@ -152,16 +152,16 @@ tasks:
     priority: P0
     status: in_progress
     due: "2026-03-10"
-    notes: "UPDATED Mar 6. One-pager pricing corrected: retainer $6,000-$8,000/mo (was $3,000 — 40-60% underpriced). Per-case pricing updated: Standard EDD $2,000-$3,000, Enhanced EDD $3,500-$7,000, OSINT deep search $1,500-$3,000, crisis investigation $8,000-$25,000. Market research at ~/Work/knowledge/osint-edd-investigation-market-competitive-analysis-2026-03-06.md. One-pager updated at ~/Work/coldstorm/docs/swissfox-one-pager-2026-03-03.md. NEXT: Send updated one-pager + sample deliverable to Swiss Fox."
+    notes: "UPDATED Mar 6. One-pager pricing corrected: retainer $6,000-$8,000/mo (was $3,000 — 40-60% underpriced). Per-case pricing updated: Standard EDD $2,000-$3,000, Enhanced EDD $3,500-$7,000, OSINT deep search $1,500-$3,000, crisis investigation $8,000-$25,000. Market research at ~/Work/knowledge/osint-edd-investigation-market-competitive-analysis-2026-03-06.md. One-pager updated at ~/Work/coldstorm/docs/swissfox-one-pager-2026-03-03.md. NEXT: Send updated one-pager + sample deliverable to Swiss Fox.\nSTALE FLAG (2026-08-29 audit): due date is from March 2026; this workspace went ~6 months without a status update or commit while real-world work continued. Status below is UNVERIFIED, not confirmed current. Do not treat as a live overdue item until re-confirmed with Makir."
     created: "2026-03-06"
 
   - id: 45
     title: "Swiss Fox — build agentic investigation framework (OSINT/EDD/sanctions)"
     company: coldstorm
     priority: P0
-    status: todo
+    status: done
     due: "2026-03-14"
-    notes: "Build the actual agentic system for Swiss Fox's use cases: (1) OSINT deep search on individuals/entities, (2) sanctions/PEP/adverse media screening, (3) corporate registry + UBO mapping, (4) entity relationship linking, (5) structured report output. Stack: Claude API + ComplyAdvantage + OpenCorporates + OSINT APIs. This becomes Coldstorm's first productized vertical."
+    notes: "Build the actual agentic system for Swiss Fox's use cases: (1) OSINT deep search on individuals/entities, (2) sanctions/PEP/adverse media screening, (3) corporate registry + UBO mapping, (4) entity relationship linking, (5) structured report output. Stack: Claude API + ComplyAdvantage + OpenCorporates + OSINT APIs. This becomes Coldstorm's first productized vertical.\nShipped 2026-07 as standalone global Claude skill ~/.claude/skills/forensic-provenance-report/ (distilled from case FH-2026-0188, 'Elliptic Crystal' — issue-ready Swiss-bank source-of-wealth report). Never closed out in this tracker until 2026-08-29 audit."
     created: "2026-03-06"
 
   - id: 42
@@ -170,7 +170,7 @@ tasks:
     priority: P0
     status: in_progress
     due: "2026-03-10"
-    notes: "V1 PPA/JV framing didn't land. V2 must address: (1) gas-focused commercial structure — they supply gas, participate downstream, (2) full value breakdown — hashrate share, fixed power cost, BTC holding, carbon credits, (3) scale roadmap beyond 5MW pilot, (4) deployment timeline with existing site proof, (5) clarity on gas-to-power — who procures/operates gensets, (6) win-win risk/reward structure. Makir already started rewrite. Once Oando comfortable with structure, they'll provide gas composition + volume data."
+    notes: "V1 PPA/JV framing didn't land. V2 must address: (1) gas-focused commercial structure — they supply gas, participate downstream, (2) full value breakdown — hashrate share, fixed power cost, BTC holding, carbon credits, (3) scale roadmap beyond 5MW pilot, (4) deployment timeline with existing site proof, (5) clarity on gas-to-power — who procures/operates gensets, (6) win-win risk/reward structure. Makir already started rewrite. Once Oando comfortable with structure, they'll provide gas composition + volume data.\nSTALE FLAG (2026-08-29 audit): due date is from March 2026; this workspace went ~6 months without a status update or commit while real-world work continued. Status below is UNVERIFIED, not confirmed current. Do not treat as a live overdue item until re-confirmed with Makir."
     created: "2026-03-06"
 
   # --- FUNDING & GRANTS (Standing Workstream) ---
@@ -180,7 +180,7 @@ tasks:
     priority: P1
     status: in_progress
     due: "2026-03-05"
-    notes: "DONE Feb 26: MyTCS portal registered + email sent to quebec.tcs-sdc@international.gc.ca requesting intro meeting with Clean Tech / O&G TC. Expect response within 5 business days (~Mar 5). NEXT: Wait for Montreal to introduce us to TCS Lagos (Godwin Aigbokhan, O&G TC). Not emailing Lagos directly — waiting for the warm handoff. Full guide at ~/Work/knowledge/tcs-client-registration-guide-2026-02-26.md."
+    notes: "DONE Feb 26: MyTCS portal registered + email sent to quebec.tcs-sdc@international.gc.ca requesting intro meeting with Clean Tech / O&G TC. Expect response within 5 business days (~Mar 5). NEXT: Wait for Montreal to introduce us to TCS Lagos (Godwin Aigbokhan, O&G TC). Not emailing Lagos directly — waiting for the warm handoff. Full guide at ~/Work/knowledge/tcs-client-registration-guide-2026-02-26.md.\nSTALE FLAG (2026-08-29 audit): due date is from March 2026; this workspace went ~6 months without a status update or commit while real-world work continued. Status below is UNVERIFIED, not confirmed current. Do not treat as a live overdue item until re-confirmed with Makir."
     created: "2026-02-25"
 
   - id: 15
@@ -189,7 +189,7 @@ tasks:
     priority: P0
     status: todo
     due: "2026-02-28"
-    notes: "OVERDUE. Call 1-800-229-0575. Ask for Trade Advisor for Sub-Saharan Africa. Scope TELP (working capital guarantee through your bank), Political Risk Insurance (90% coverage on Nigeria exposure), and cleantech programs. EDC exceeded $12B cleantech goal 2 years early — actively seeking deals."
+    notes: "OVERDUE. Call 1-800-229-0575. Ask for Trade Advisor for Sub-Saharan Africa. Scope TELP (working capital guarantee through your bank), Political Risk Insurance (90% coverage on Nigeria exposure), and cleantech programs. EDC exceeded $12B cleantech goal 2 years early — actively seeking deals.\nSTALE FLAG (2026-08-29 audit): due date is from March 2026; this workspace went ~6 months without a status update or commit while real-world work continued. Status below is UNVERIFIED, not confirmed current. Do not treat as a live overdue item until re-confirmed with Makir."
     created: "2026-02-25"
 
   - id: 16
@@ -198,7 +198,7 @@ tasks:
     priority: P1
     status: todo
     due: "2026-03-07"
-    notes: "CanExport SMEs: 50% of Nigeria market development costs up to $50K CAD. Covers travel (Nigeria AND China), trade shows, marketing materials. Deadline May 29, 2026. Need: Certificate of Incorporation + GST 34 return. Apply 60 days before first activity. Portal: tradecommissioner.gc.ca"
+    notes: "CanExport SMEs: 50% of Nigeria market development costs up to $50K CAD. Covers travel (Nigeria AND China), trade shows, marketing materials. Deadline May 29, 2026. Need: Certificate of Incorporation + GST 34 return. Apply 60 days before first activity. Portal: tradecommissioner.gc.ca\nSTALE FLAG (2026-08-29 audit): due date is from March 2026; this workspace went ~6 months without a status update or commit while real-world work continued. Status below is UNVERIFIED, not confirmed current. Do not treat as a live overdue item until re-confirmed with Makir."
     created: "2026-02-25"
 
   - id: 17
@@ -216,7 +216,7 @@ tasks:
     priority: P1
     status: in_progress
     due: "2026-03-15"
-    notes: "UPDATED Mar 4. Application submitted Feb 25. Providing additional info as requested. Up to $75K loan + $40K follow-on + mentorship. Black Entrepreneur Startup Program."
+    notes: "UPDATED Mar 4. Application submitted Feb 25. Providing additional info as requested. Up to $75K loan + $40K follow-on + mentorship. Black Entrepreneur Startup Program.\nSTALE FLAG (2026-08-29 audit): due date is from March 2026; this workspace went ~6 months without a status update or commit while real-world work continued. Status below is UNVERIFIED, not confirmed current. Do not treat as a live overdue item until re-confirmed with Makir."
     created: "2026-02-25"
 
   - id: 19
@@ -225,7 +225,7 @@ tasks:
     priority: P0
     status: in_progress
     due: "2026-03-04"
-    notes: "UPDATED Mar 4. OVERDUE — call TODAY. Call scripts prepared at ~/Work/nrg-bloom/projects/funding/sred-call-scripts-2026-03-04.md. NEW INSIGHT: IQ offers bridge financing on tax credits — SR&ED refund can be accessed within weeks of filing, not 6 months. This makes specialist engagement even more valuable. Leyton: (514) 767-1227 | Ayming: (514) 931-0166."
+    notes: "UPDATED Mar 4. OVERDUE — call TODAY. Call scripts prepared at ~/Work/nrg-bloom/projects/funding/sred-call-scripts-2026-03-04.md. NEW INSIGHT: IQ offers bridge financing on tax credits — SR&ED refund can be accessed within weeks of filing, not 6 months. This makes specialist engagement even more valuable. Leyton: (514) 767-1227 | Ayming: (514) 931-0166.\nSTALE FLAG (2026-08-29 audit): due date is from March 2026; this workspace went ~6 months without a status update or commit while real-world work continued. Status below is UNVERIFIED, not confirmed current. Do not treat as a live overdue item until re-confirmed with Makir."
     created: "2026-02-25"
 
   # --- ACCOUNTING / TAX FILING ---
@@ -235,7 +235,7 @@ tasks:
     priority: P1
     status: in_progress
     due: "2026-03-03"
-    notes: "Accountant confirmed Feb 26 they are on it and committed to completing. Covers T2 (CRA) + CO-17 (Quebec) back filings. Follow up March 3 to confirm progress. If not done, escalate or consider self-filing (guide at ~/Work/knowledge/nrg-bloom-corporate-tax-filing-guide-2026-02-25.md). Getting filings current unlocks grant eligibility."
+    notes: "Accountant confirmed Feb 26 they are on it and committed to completing. Covers T2 (CRA) + CO-17 (Quebec) back filings. Follow up March 3 to confirm progress. If not done, escalate or consider self-filing (guide at ~/Work/knowledge/nrg-bloom-corporate-tax-filing-guide-2026-02-25.md). Getting filings current unlocks grant eligibility.\nSTALE FLAG (2026-08-29 audit): due date is from March 2026; this workspace went ~6 months without a status update or commit while real-world work continued. Status below is UNVERIFIED, not confirmed current. Do not treat as a live overdue item until re-confirmed with Makir."
     created: "2026-02-26"
 
   # --- LITIGATION — NEW TASKS (Mar 2) ---
@@ -261,9 +261,9 @@ tasks:
     title: "Position paper simultaneous exchange — March 5"
     company: nrg_bloom
     priority: P0
-    status: in_progress
+    status: done
     due: "2026-03-05"
-    notes: "CORRECTED Mar 4. Both NRG Bloom and TON agreed on March 5 for simultaneous exchange of position papers. McCarthy Tétrault correspondence annexed as NRG Bloom exhibit. Expenditure ledger and damages analysis support quantum position. Review TON's paper immediately upon receipt for counter-arguments, quantum position, and evidence gaps."
+    notes: "CORRECTED Mar 4. Both NRG Bloom and TON agreed on March 5 for simultaneous exchange of position papers. McCarthy Tétrault correspondence annexed as NRG Bloom exhibit. Expenditure ledger and damages analysis support quantum position. Review TON's paper immediately upon receipt for counter-arguments, quantum position, and evidence gaps.\nSuperseded: mediation lapsed 2026-03-27, no simultaneous exchange occurred. See nrg-bloom/litigation-ton/matter-status.yaml for current arbitration status (Points of Claim due 2026-07-27, TON Defence due 2026-09-10)."
     created: "2026-03-02"
 
   - id: 25
@@ -308,7 +308,7 @@ tasks:
     priority: P1
     status: todo
     due: "2026-03-06"
-    notes: "Need full complaint (ECF No. 1-1) from Phoenix Trading FZCO v. Dennis Corp. Ask Dayo if Segun Aluko has it, or retrieve via PACER ($0.10/page). Also need state court outcome after remand — Dillon County Clerk of Court: (843) 774-1421, case 2022-CP-21-00291. Was it settled, dismissed, or judged? Also check Alberta Corporate Registry for The Crypto Can Man Ltd. to confirm Tyler as director/officer."
+    notes: "Need full complaint (ECF No. 1-1) from Phoenix Trading FZCO v. Dennis Corp. Ask Dayo if Segun Aluko has it, or retrieve via PACER ($0.10/page). Also need state court outcome after remand — Dillon County Clerk of Court: (843) 774-1421, case 2022-CP-21-00291. Was it settled, dismissed, or judged? Also check Alberta Corporate Registry for The Crypto Can Man Ltd. to confirm Tyler as director/officer.\nSTALE FLAG (2026-08-29 audit): due date is from March 2026; this workspace went ~6 months without a status update or commit while real-world work continued. Status below is UNVERIFIED, not confirmed current. Do not treat as a live overdue item until re-confirmed with Makir."
     created: "2026-03-02"
 
   - id: 30
@@ -336,7 +336,7 @@ tasks:
     priority: P0
     status: in_progress
     due: "2026-03-07"
-    notes: "Apply at facecoalition.com/en/loans or email info@facecoalition.com. Up to $250K, startups eligible, no revenue minimum."
+    notes: "Apply at facecoalition.com/en/loans or email info@facecoalition.com. Up to $250K, startups eligible, no revenue minimum.\nSTALE FLAG (2026-08-29 audit): due date is from March 2026; this workspace went ~6 months without a status update or commit while real-world work continued. Status below is UNVERIFIED, not confirmed current. Do not treat as a live overdue item until re-confirmed with Makir."
     created: "2026-03-04"
 
   - id: 33
@@ -345,7 +345,7 @@ tasks:
     priority: P0
     status: in_progress
     due: "2026-03-07"
-    notes: "Call 1-888-525-2075. Quebec-specific program for Black entrepreneurs, $50K-$500K."
+    notes: "Call 1-888-525-2075. Quebec-specific program for Black entrepreneurs, $50K-$500K.\nSTALE FLAG (2026-08-29 audit): due date is from March 2026; this workspace went ~6 months without a status update or commit while real-world work continued. Status below is UNVERIFIED, not confirmed current. Do not treat as a live overdue item until re-confirmed with Makir."
     created: "2026-03-04"
 
   - id: 34
@@ -354,7 +354,7 @@ tasks:
     priority: P0
     status: todo
     due: "2026-03-04"
-    notes: "UPDATED Mar 4. Clean Growth Hub is DEAD (shutting down Mar 31, no new clients). Innovation Canada is the live replacement — same department (ISED), 24-hour response time. Call 1-833-201-4358. They assign an Innovation Advisor who maps you to all eligible programs + warm intros to program officers. Also email Clean Growth Hub for a referral before shutdown: cleangrowthhub-carrefourdelacroissancepropre@ised-isde.gc.ca. Full guide: ~/Work/knowledge/clean-growth-hub-and-innovation-canada-guide-2026-03-04.md"
+    notes: "UPDATED Mar 4. Clean Growth Hub is DEAD (shutting down Mar 31, no new clients). Innovation Canada is the live replacement — same department (ISED), 24-hour response time. Call 1-833-201-4358. They assign an Innovation Advisor who maps you to all eligible programs + warm intros to program officers. Also email Clean Growth Hub for a referral before shutdown: cleangrowthhub-carrefourdelacroissancepropre@ised-isde.gc.ca. Full guide: ~/Work/knowledge/clean-growth-hub-and-innovation-canada-guide-2026-03-04.md\nSTALE FLAG (2026-08-29 audit): due date is from March 2026; this workspace went ~6 months without a status update or commit while real-world work continued. Status below is UNVERIFIED, not confirmed current. Do not treat as a live overdue item until re-confirmed with Makir."
     created: "2026-03-04"
 
   - id: 35
@@ -363,7 +363,7 @@ tasks:
     priority: P0
     status: todo
     due: "2026-03-07"
-    notes: "Call 1-877-994-4727. Up to $10M (typical $100K-$500K) NON-REPAYABLE. April 1 = new fiscal year = fresh budget. The ITA is free and proactively finds ALL programs you qualify for. One call unlocks multiple funding streams."
+    notes: "Call 1-877-994-4727. Up to $10M (typical $100K-$500K) NON-REPAYABLE. April 1 = new fiscal year = fresh budget. The ITA is free and proactively finds ALL programs you qualify for. One call unlocks multiple funding streams.\nSTALE FLAG (2026-08-29 audit): due date is from March 2026; this workspace went ~6 months without a status update or commit while real-world work continued. Status below is UNVERIFIED, not confirmed current. Do not treat as a live overdue item until re-confirmed with Makir."
     created: "2026-03-04"
 
   - id: 36
@@ -372,7 +372,7 @@ tasks:
     priority: P0
     status: todo
     due: "2026-03-07"
-    notes: "Free accelerator, no equity, no fees, IP stays yours. Open to public — no Concordia affiliation needed. HIDDEN BENEFIT: District 3 is an AWS Activate Provider — admission unlocks $100K in AWS credits. Apply at district3.co/services."
+    notes: "Free accelerator, no equity, no fees, IP stays yours. Open to public — no Concordia affiliation needed. HIDDEN BENEFIT: District 3 is an AWS Activate Provider — admission unlocks $100K in AWS credits. Apply at district3.co/services.\nSTALE FLAG (2026-08-29 audit): due date is from March 2026; this workspace went ~6 months without a status update or commit while real-world work continued. Status below is UNVERIFIED, not confirmed current. Do not treat as a live overdue item until re-confirmed with Makir."
     created: "2026-03-04"
 
   - id: 37
@@ -381,7 +381,7 @@ tasks:
     priority: P0
     status: todo
     due: "2026-03-07"
-    notes: "Stack all three: (1) AWS Activate Founders $1K immediate at aws.amazon.com/startups/credits, (2) Google Cloud for Startups $100K-$350K at cloud.google.com/startup — use Coldstorm AI (AI framing = higher tier), (3) Microsoft for Startups $5K-$150K at foundershub.startups.microsoft.com. Apply to all — separate programs, can stack."
+    notes: "Stack all three: (1) AWS Activate Founders $1K immediate at aws.amazon.com/startups/credits, (2) Google Cloud for Startups $100K-$350K at cloud.google.com/startup — use Coldstorm AI (AI framing = higher tier), (3) Microsoft for Startups $5K-$150K at foundershub.startups.microsoft.com. Apply to all — separate programs, can stack.\nSTALE FLAG (2026-08-29 audit): due date is from March 2026; this workspace went ~6 months without a status update or commit while real-world work continued. Status below is UNVERIFIED, not confirmed current. Do not treat as a live overdue item until re-confirmed with Makir."
     created: "2026-03-04"
 
   - id: 38
@@ -390,7 +390,7 @@ tasks:
     priority: P1
     status: todo
     due: "2026-03-10"
-    notes: "NON-REPAYABLE grants. Clean tech adoption: up to $60K (75% of costs). Young business: up to $15K. Bring business plan + 2-year financial forecasts. URL: pmemtl.com/en"
+    notes: "NON-REPAYABLE grants. Clean tech adoption: up to $60K (75% of costs). Young business: up to $15K. Bring business plan + 2-year financial forecasts. URL: pmemtl.com/en\nSTALE FLAG (2026-08-29 audit): due date is from March 2026; this workspace went ~6 months without a status update or commit while real-world work continued. Status below is UNVERIFIED, not confirmed current. Do not treat as a live overdue item until re-confirmed with Makir."
     created: "2026-03-04"
 
   - id: 39
@@ -399,7 +399,7 @@ tasks:
     priority: P1
     status: todo
     due: "2026-03-14"
-    notes: "Digital Skills for Youth: government reimburses up to $30K to hire a recent grad. Through ECO Canada (clean tech focus): up to $18K reimbursed (80% of costs). Apply BEFORE hiring. URL: eco.ca. Most entrepreneurs don't know this exists."
+    notes: "Digital Skills for Youth: government reimburses up to $30K to hire a recent grad. Through ECO Canada (clean tech focus): up to $18K reimbursed (80% of costs). Apply BEFORE hiring. URL: eco.ca. Most entrepreneurs don't know this exists.\nSTALE FLAG (2026-08-29 audit): due date is from March 2026; this workspace went ~6 months without a status update or commit while real-world work continued. Status below is UNVERIFIED, not confirmed current. Do not treat as a live overdue item until re-confirmed with Makir."
     created: "2026-03-04"
 
   - id: 40
@@ -417,5 +417,5 @@ tasks:
     priority: P0
     status: todo
     due: "2026-03-07"
-    notes: "Leyton no answer, Ayming didn't understand. Try other Montreal SR&ED firms: G6 Consulting, Northbridge Consultants, RDBASE. SR&ED + CRIC combined = up to 65% refund. IQ bridge financing gets cash within weeks of filing. Contingency fee = zero risk."
+    notes: "Leyton no answer, Ayming didn't understand. Try other Montreal SR&ED firms: G6 Consulting, Northbridge Consultants, RDBASE. SR&ED + CRIC combined = up to 65% refund. IQ bridge financing gets cash within weeks of filing. Contingency fee = zero risk.\nSTALE FLAG (2026-08-29 audit): due date is from March 2026; this workspace went ~6 months without a status update or commit while real-world work continued. Status below is UNVERIFIED, not confirmed current. Do not treat as a live overdue item until re-confirmed with Makir."
     created: "2026-03-04"

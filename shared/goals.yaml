@@ -1,6 +1,15 @@
 # Quarterly OKRs — Q1 2026
 # Makir reviews weekly. Agent uses for prioritization and proactive suggestions.
 # Last weekly review: TBD
+#
+# STALE FLAG (2026-08-29 audit): this file is still Q1 2026 and hasn't been
+# reviewed since 2026-03-02, ~6 months ago. It is now Q3 2026. Real business
+# state has moved well past this (see nrg-bloom/litigation-ton/matter-status.yaml
+# for actual TON matter status, and coldstorm/CLAUDE.md for the now-real Fox
+# Helveticus vertical). Do not treat objective/key-result status below as
+# current until Makir provides a Q3 refresh — no CLI mutation command exists
+# for goals.yaml yet (only tasks/pipeline/funding/litigation/settlement), so
+# this file still requires a manual rewrite when that refresh happens.
 
 quarter: "Q1 2026"
 last_updated: "2026-03-02"

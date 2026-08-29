@@ -1,5 +1,30 @@
 # Makir's AI Chief of Staff — Workspace
 
+## Canonical Runtime (read this first)
+
+This repo has a real software runtime at `src/work_codex/` — see **AGENTS.md** for
+the full contract. In short:
+
+- `.claude/` (this file included) is **legacy/reference material**, not the
+  canonical runtime. Session-start behavior below still applies, but prefer
+  the CLI over manual YAML edits whenever changing tracked state.
+- Litigation state (`nrg-bloom/litigation-ton/matter-status.yaml`,
+  `settlement-tracker.yaml`) is the source of truth for the TON matter — not
+  the narrative notes in `shared/tasks.yaml`, which summarize it and can lag.
+- Before trusting `shared/tasks.yaml` / `goals.yaml` as current, run:
+  ```bash
+  PYTHONPATH=src python3 -m work_codex.cli status --workspace .
+  PYTHONPATH=src python3 -m work_codex.cli doctor --workspace .
+  ```
+- Mutate tracked state (tasks, funding, pipeline, litigation, settlement)
+  through the CLI (`task-update`, `funding-upsert`, `litigation-update`,
+  `settlement-update`, etc.), not by hand-editing YAML — the CLI keeps
+  `last_updated` stamps and audit history (`.work_codex/audit.jsonl`)
+  honest. As of 2026-08, this workspace went ~6 months without a CLI
+  mutation or a git commit while real state (litigation, funding, four new
+  NRG Bloom engines) moved on — check `git log -1` and `status` output at
+  the start of any session, don't assume the YAML is current.
+
 ## Directory Map
 ```
 ~/Work/
