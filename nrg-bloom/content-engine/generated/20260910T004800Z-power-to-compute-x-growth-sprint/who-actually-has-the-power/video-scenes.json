@@ -1,0 +1,54 @@
+{
+  "brand": {
+    "colors": {
+      "accent": "#00C896",
+      "accent_warm": "#F59E0B",
+      "bg": "#0A0E1A",
+      "border": "#1F2937",
+      "quote_accent": "#6BA3E8",
+      "quote_accent_deep": "#14489B",
+      "quote_surface": "#1A1A1A",
+      "surface": "#111827",
+      "text": "#F9FAFB",
+      "text_dim": "#6B7280",
+      "text_muted": "#9CA3AF"
+    },
+    "fonts": {
+      "body": "Inter",
+      "display": "Space Grotesk"
+    }
+  },
+  "cta": "NRG Bloom is building the operating record that makes those megawatts financeable to somebody other than a miner.",
+  "format": "tiktok_story_arc",
+  "scenes": [
+    {
+      "highlight": "The",
+      "text": "The AI buildout became a land grab for energized sites."
+    },
+    {
+      "highlight": "IEA",
+      "text": "IEA expects data centre electricity demand to more than double by 2030 to around 945 TWh. Africa's digital economy is projected near $712 billion by 2050. Those two lines do not currently meet anywhere."
+    },
+    {
+      "highlight": "operators",
+      "text": "The IEA projects global data centre electricity demand more than doubling by 2030 to roughly 945 TWh. That demand has to physically land somewhere with power."
+    },
+    {
+      "highlight": "capital",
+      "text": "Africa's digital economy is projected around $712 billion by 2050, yet Nigeria's third-party data centre base was reported near 65.8 MW live in 2025."
+    },
+    {
+      "highlight": "speed",
+      "text": "Capital is competing hard for scarce energized sites in mature markets while permitted, already-flowing gas sits unmonetized in the Niger Delta."
+    },
+    {
+      "highlight": "contrarian",
+      "text": "Frontier markets are not a discount version of this trade. They are the only place left where you can still buy the input cheap, and the reason it looks risky is that almost nobody has operated there."
+    },
+    {
+      "highlight": "NRG Bloom",
+      "text": "The cheapest megawatts on earth are still sitting in a basin, on fire."
+    }
+  ],
+  "title": "The AI Buildout Became a Land Grab for Energized Sites. Africa Is Not in the Auction."
+}

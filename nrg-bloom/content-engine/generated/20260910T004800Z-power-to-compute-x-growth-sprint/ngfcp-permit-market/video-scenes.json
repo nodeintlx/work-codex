@@ -1,0 +1,54 @@
+{
+  "brand": {
+    "colors": {
+      "accent": "#00C896",
+      "accent_warm": "#F59E0B",
+      "bg": "#0A0E1A",
+      "border": "#1F2937",
+      "quote_accent": "#6BA3E8",
+      "quote_accent_deep": "#14489B",
+      "quote_surface": "#1A1A1A",
+      "surface": "#111827",
+      "text": "#F9FAFB",
+      "text_dim": "#6B7280",
+      "text_muted": "#9CA3AF"
+    },
+    "fonts": {
+      "body": "Inter",
+      "display": "Space Grotesk"
+    }
+  },
+  "cta": "NRG Bloom builds containerized compute at the flare, in Bayelsa State, and has been doing it since February 2025.",
+  "format": "tiktok_story_arc",
+  "scenes": [
+    {
+      "highlight": "Nigeria",
+      "text": "Nigeria auctioned 49 flare sites. The AI industry did not notice."
+    },
+    {
+      "highlight": "28",
+      "text": "28 firms hold final NGFCP permits across 49 awarded flare sites, covering 250 to 300 mmscfd of gas and close to 3 GW of power potential."
+    },
+    {
+      "highlight": "operators",
+      "text": "NUPRC ran an auction. 42 bidders won 49 sites. In December 2025 it issued permits to 28 firms. That is procurement, not speculation."
+    },
+    {
+      "highlight": "capital",
+      "text": "The world flared 151 billion cubic meters of gas in 2024, the highest level since 2007. Nigeria is a significant contributor, and those molecules are already at surface."
+    },
+    {
+      "highlight": "speed",
+      "text": "Flare gas is the one fuel where the alternative use is combustion into the sky. That is what makes the delivered power cost structurally low rather than temporarily low."
+    },
+    {
+      "highlight": "contrarian",
+      "text": "Everyone chasing AI power is fighting over queue positions on congested grids. The uncontested megawatts are in the basins nobody wants to fly to."
+    },
+    {
+      "highlight": "NRG Bloom",
+      "text": "Permitted gas, already burning, close to three gigawatts of potential. That is a market, not a thesis."
+    }
+  ],
+  "title": "Nigeria Turned Flared Gas Into a Permit Market. Compute Barely Noticed."
+}

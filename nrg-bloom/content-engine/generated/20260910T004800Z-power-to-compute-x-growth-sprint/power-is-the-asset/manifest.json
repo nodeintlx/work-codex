@@ -1,0 +1,22 @@
+{
+  "archetype": "market-thesis",
+  "data_sheet": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/power-is-the-asset/data-sheet.md",
+  "fact_ids": [
+    "miner_hpc_revenue_crossover_2026",
+    "powered_shell_repricing_2026",
+    "ogboinbiri_operational_since_2025_02",
+    "global_data_center_demand_doubles_2030"
+  ],
+  "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/power-is-the-asset",
+  "pillar": "energy-to-compute-thesis",
+  "publish_day": "Tuesday (week 1)",
+  "quote_card_html": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/power-is-the-asset/quote-card-portrait.html",
+  "quote_card_png": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/power-is-the-asset/quote-card-portrait.png",
+  "slug": "power-is-the-asset",
+  "target_channel": "x-thread",
+  "title": "Power Is the Asset. Compute Is Just the Tenant.",
+  "verification": {
+    "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/power-is-the-asset/verification.json",
+    "verified": true
+  }
+}

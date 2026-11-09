@@ -1,0 +1,468 @@
+# Power-to-Compute Pivot Fact Registry
+# Compiled: 2026-09-09
+#
+# Purpose: single registry backing the 2026-09-09 power-to-compute X growth sprint.
+# The content engine resolves exactly one fact_registry per campaign, so this file carries
+# forward previously verified facts from facts-and-numbers-verified-2026-03-26.yaml and
+# public-market-facts-2026-03-26.yaml unchanged (original checked_on dates preserved,
+# not re-verified) and adds three newly researched facts checked_on 2026-09-09.
+#
+# New in this file:
+#   - miner_hpc_revenue_crossover_2026
+#   - powered_shell_repricing_2026
+#   - green_flare_ai_compute_roadmap_2025
+#
+# Standard per content-engine/trust-policy.md: 3+ sources per fact; external/hybrid facts
+# need 2+ authoritative external sources with real URLs and dates.
+facts:
+- id: miner_hpc_revenue_crossover_2026
+  claim: TeraWulf's first-quarter 2026 results, released 8 May 2026, reported $34.0 million of total revenue
+    made up of $21.0 million in HPC lease revenue and $13.0 million in bitcoin-mining revenue, the first
+    quarter in which contracted compute hosting outearned mining at the company.
+  status: verified
+  scope: external
+  sources:
+  - path: SEC EDGAR filing archive
+    type: official_report
+    authority: institutional
+    title: TeraWulf Reports First Quarter 2026 Results (Form 8-K exhibit)
+    url: https://www.sec.gov/Archives/edgar/data/1083301/000108330126000083/a_wulfearningsreleaseq1202.htm
+    published_on: '2026-05-08'
+    checked_on: '2026-09-09'
+    excerpt: Revenue of $34.0 million, including $21.0 million of HPC lease revenue and $13.0 million
+      of digital asset revenue.
+  - path: GlobeNewswire company release wire
+    type: trusted_media
+    authority: media
+    title: TeraWulf Reports First Quarter 2026 Results
+    url: https://www.globenewswire.com/news-release/2026/05/08/3290994/0/en/terawulf-reports-first-quarter-2026-results.html
+    published_on: '2026-05-08'
+    checked_on: '2026-09-09'
+    excerpt: HPC lease revenue contributed $21.0 million in the period, representing the initial ramp
+      of long-term customer agreements at Lake Mariner. We expect the business to be increasingly driven
+      by recurring, contracted revenue, reducing exposure to the volatility historically associated with
+      bitcoin mining.
+  - path: crypto.news market coverage
+    type: trusted_media
+    authority: media
+    title: TeraWulf's HPC revenue tops Bitcoin mining for first time as AI pivot accelerates
+    url: https://crypto.news/terawulfs-hpc-revenue-tops-bitcoin-mining-for-first-time-as-ai-pivot-accelerates/
+    published_on: '2026-05-08'
+    checked_on: '2026-09-09'
+    excerpt: HPC/AI hosting revenue of $21 million against under $13 million from bitcoin mining marks
+      the first time HPC has overtaken Bitcoin as TeraWulf's primary revenue driver.
+- id: powered_shell_repricing_2026
+  claim: 'In 2026 the market began pricing Bitcoin miners on their power positions rather than their hashrate:
+    Morgan Stanley research covered in July 2026 framed miners as owners of ''powered shell'' assets whose
+    grid connections, land, and development pipelines can support long-term AI leases, and CleanSpark
+    said in January 2026 it was assembling more than 890 MW of aggregate potential utility capacity in
+    Texas for AI and high-performance computing workloads.'
+  status: verified
+  scope: external
+  sources:
+  - path: Investing.com market coverage
+    type: trusted_media
+    authority: media
+    title: Morgan Stanley sees AI data center pivot unlocking upside for bitcoin miners
+    url: https://www.investing.com/news/stock-market-news/morgan-stanley-sees-ai-data-center-pivot-unlocking-upside-for-bitcoin-miners-4809697
+    published_on: '2026-07-23'
+    checked_on: '2026-09-09'
+    excerpt: Power has become the biggest bottleneck for AI infrastructure, making existing bitcoin mining
+      sites attractive candidates for conversion; Morgan Stanley expects owners of 'powered shell' assets
+      to command attractive lease economics as AI companies seek faster access to electricity.
+  - path: Yahoo Finance syndication of the same research note
+    type: trusted_media
+    authority: media
+    title: Morgan Stanley sees AI data center pivot unlocking upside for bitcoin miners
+    url: https://finance.yahoo.com/technology/ai/articles/morgan-stanley-sees-ai-data-175347881.html
+    published_on: '2026-07-23'
+    checked_on: '2026-09-09'
+    excerpt: Morgan Stanley initiated coverage on Hut 8, Riot Platforms and Applied Digital on the thesis
+      that owners of 'powered shell' assets can command attractive lease economics as AI companies seek
+      faster access to electricity.
+  - path: CleanSpark investor relations release
+    type: company_release
+    authority: company
+    title: CleanSpark Expands Texas Footprint with Major Power Acquisition Near Houston to Support Scaled
+      AI and HPC Development
+    url: https://investors.cleanspark.com/news/news-details/2026/CleanSpark-Expands-Texas-Footprint-with-Major-Power-Acquisition-Near-Houston-to-Support-Scaled-AI-and-HPC-Development/default.aspx
+    published_on: '2026-01-14'
+    checked_on: '2026-09-09'
+    excerpt: More than 890 megawatts of aggregate potential utility capacity across both Houston-area
+      sites, supporting large-scale, next-generation data center campuses designed for artificial intelligence
+      and high-performance computing workloads.
+- id: green_flare_ai_compute_roadmap_2025
+  claim: 'Green Flare''s 53 MW Nigerian flare-gas project was publicly framed from announcement as a sequence
+    rather than an endpoint: Bitcoin mining first because it is the fastest workload to deploy and monetise,
+    then AI compute and cloud services on the same power.'
+  status: verified
+  scope: external
+  sources:
+  - path: TechCabal feature
+    type: trusted_media
+    authority: media
+    title: Green Flare turns Nigeria's waste gas into crypto mining power
+    url: https://techcabal.com/2025/06/05/green-flare-ai-crypto/
+    published_on: '2025-06-05'
+    checked_on: '2026-09-09'
+    excerpt: 'With cheap, off-grid power secured, the company wants to expand into AI and machine learning
+      infrastructure. Board chair Barbara Iyayi: "Whether it''s Bitcoin, AI, or cloud, the world doesn''t
+      have enough compute."'
+  - path: TheEnergyMag / TheMinerMag report
+    type: trusted_media
+    authority: media
+    title: Green Flare Plans 53 MW of Flare Gas Bitcoin Mine in Nigeria
+    url: https://theenergymag.com/news/2025-05-28/green-flare-bitcoin-nigeria
+    published_on: '2025-05-28'
+    checked_on: '2026-09-09'
+    excerpt: The company may expand into related areas such as artificial intelligence computing and high-performance
+      data centers.
+  - path: Daba Finance market brief
+    type: trusted_media
+    authority: media
+    title: Nigeria's Green Flare Turns Waste Gas Into Power for Bitcoin Mining
+    url: https://dabafinance.com/en/news/nigerias-green-flare-turns-waste-gas-into-power-for-bitcoin-mining
+    published_on: '2025-06-05'
+    checked_on: '2026-09-09'
+    excerpt: Green Flare's first three sites in Delta State will deliver a combined 53 MW of capacity.
+      Its goal is to scale into AI compute and cloud services, offering low-cost power to global hyperscalers.
+- id: ogboinbiri_operational_since_2025_02
+  claim: NRG Bloom has been operational at Ogboinbiri in Bayelsa State since February 2025.
+  status: verified
+  scope: internal
+  sources:
+  - path: nrg-bloom/projects/oando/pathway-summary-1-pager-2026-02-26.md
+    type: internal_doc
+    authority: internal
+    excerpt: We have been operational at Ogboinbiri (Bayelsa State) since February 2025, proving this
+      model works in the Niger Delta environment.
+  - path: nrg-bloom/projects/oando/intro-call-brief-2026-02-26.md
+    type: internal_doc
+    authority: internal
+    excerpt: NRG Bloom has been operational at Ogboinbiri since Feb 2025 — over one year on-site.
+  - path: nrg-bloom/projects/oando/call-card-2026-03-06.md
+    type: internal_doc
+    authority: internal
+    excerpt: We've been operating at Ogboinbiri since February 2025 — over 13 months, on Oando's own infrastructure.
+- id: ogboinbiri_operational_capacity_1_5mw
+  claim: NRG Bloom's Ogboinbiri site is described internally and on the investor page as 1.5 MW operational
+    capacity.
+  status: verified
+  scope: internal
+  sources:
+  - path: nrg-bloom/projects/oando/call-prep-2026-03-06.md
+    type: internal_doc
+    authority: internal
+    excerpt: '"1.5 MW operational since Feb 2025. We know the site, the community, the security dynamics."'
+  - path: nrg-bloom/projects/oando/intro-call-brief-2026-02-26.md
+    type: internal_doc
+    authority: internal
+    excerpt: '"We''ve been running 1.5 MW since Feb 2025. We know the site, the community, the security
+      dynamics."'
+  - path: nrg-bloom/capital-engine/facts/facts-and-numbers-2026-03-26.html
+    type: internal_record
+    authority: internal
+    excerpt: 'Dataset markup lists Operational Capacity: 1.5 MW.'
+- id: modular_containerized_model
+  claim: NRG Bloom's operating model is modular and containerized for remote energy-edge deployment.
+  status: verified
+  scope: internal
+  sources:
+  - path: nrg-bloom/CLAUDE.md
+    type: internal_doc
+    authority: internal
+    excerpt: Modular container-based data centers (Kifaru design).
+  - path: nrg-bloom/projects/funding/sred-call-scripts-2026-03-04.md
+    type: internal_doc
+    authority: internal
+    excerpt: We design and deploy modular data centers for emerging markets — specifically containerized
+      computing infrastructure powered by stranded gas and flare gas in West Africa.
+  - path: nrg-bloom/projects/oando/pathway-summary-1-pager-2026-02-26.md
+    type: internal_doc
+    authority: internal
+    excerpt: NRG Bloom deploys modular data centers at Oando's upstream sites.
+- id: global_data_center_demand_doubles_2030
+  claim: IEA analysis in 2025 said electricity demand from data centres worldwide is set to more than
+    double by 2030 to around 945 TWh.
+  status: verified
+  scope: external
+  sources:
+  - path: IEA Energy and AI executive summary
+    type: official_report
+    authority: institutional
+    title: Executive summary - Energy and AI
+    url: https://www.iea.org/reports/energy-and-ai/executive-summary
+    checked_on: '2026-03-26'
+    excerpt: Data centre electricity consumption is set to more than double to around 945 TWh by 2030.
+  - path: IEA Energy and AI report
+    type: official_report
+    authority: institutional
+    title: Energy and AI
+    url: https://www.iea.org/reports/energy-and-ai
+    checked_on: '2026-03-26'
+    excerpt: The report includes projections for how much electricity AI could consume over the next decade.
+  - path: IEA spotlight
+    type: official_report
+    authority: institutional
+    title: The deepening ties between energy and AI
+    url: https://www.iea.org/spotlights/the-deepening-ties-between-energy-and-ai
+    checked_on: '2026-03-26'
+    excerpt: The report projects that electricity demand from data centres worldwide is set to more than
+      double by 2030 to around 945 terawatt-hours.
+- id: nigeria_power_access_and_losses
+  claim: Recent World Bank materials describe Nigeria as having the world's largest electricity access
+    deficit, with roughly 85-90 million people lacking access and annual economic losses from poor power
+    supply in roughly the $26-29 billion range.
+  status: verified
+  scope: external
+  sources:
+  - path: World Bank press release
+    type: multilateral
+    authority: institutional
+    title: The World Bank Approves Additional Financing to Consolidate the Gains of Nigeria's Power Sector
+      Recovery Program
+    url: https://www.worldbank.org/en/news/press-release/2023/06/09/the-world-bank-approves-additional-financing-to-consolidate-the-gains-of-nigeria-s-power-sector-recovery-program
+    published_on: '2023-06-09'
+    checked_on: '2026-03-26'
+    excerpt: Lack of access to the electricity grid affects 45 percent of the population (90 million people),
+      making Nigeria the country with the largest number of people not connected to electricity.
+  - path: World Bank DARES results brief
+    type: multilateral
+    authority: institutional
+    title: Nigeria Distributed Access through Renewable Energy Scale-up (DARES) Program-for-Results
+    url: https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099082124112015103/p17968714b12670871924f3b6c5d0ff4d8
+    published_on: '2024-11-20'
+    checked_on: '2026-03-26'
+    excerpt: About 85 million Nigerians do not have access to electricity and economic losses due to poor
+      electricity supply are estimated at US$26.2 billion.
+  - path: World Bank PSRO press release
+    type: multilateral
+    authority: institutional
+    title: Nigeria to Keep the Lights on and Power its Economy
+    url: https://www.worldbank.org/en/news/press-release/2020/06/23/nigeria-to-keep-the-lights-on-and-power-its-economy
+    published_on: '2020-06-23'
+    checked_on: '2026-03-26'
+    excerpt: About 47% of Nigerians do not have access to grid electricity... the economic cost of power
+      shortages in Nigeria is estimated at around $28 billion.
+- id: nigeria_grid_delivery_gap
+  claim: Recent institutional analyses describe Nigeria's grid as delivering only roughly 3-5 GW on average
+    despite materially higher installed or nominal capacity.
+  status: verified
+  scope: external
+  sources:
+  - path: IEA Electricity 2025
+    type: official_report
+    authority: institutional
+    title: Electricity 2025
+    url: https://www.iea.org/reports/electricity-2025
+    checked_on: '2026-03-26'
+    excerpt: Nigeria’s installed generation capacity rose to 14 GW in 2024, but average daily available
+      capacity was 4.14 GW.
+  - path: World Bank project document
+    type: multilateral
+    authority: institutional
+    title: Nigeria Power Sector Guarantees Project
+    url: https://documents1.worldbank.org/curated/en/193911617633470778/pdf/Nigeria-Power-Sector-Guarantees-Project.pdf
+    checked_on: '2026-03-26'
+    excerpt: The electricity produced and distributed within Nigeria hovers between 3 GW and 4 GW, peaking
+      at 5 GW.
+  - path: African Development Bank project document
+    type: multilateral
+    authority: institutional
+    title: Nigeria Electrification Project
+    url: https://www.afdb.org/fileadmin/uploads/afdb/Documents/Project-and-Operations/PESR_NG_NIGERIA_ELECTRIFICATION_PROJECT_CORR_EN-final.pdf
+    checked_on: '2026-03-26'
+    excerpt: Nearly 14 GW... is generated through inefficient and costly generation solutions, showing
+      how far real electricity demand outruns formal grid delivery.
+- id: ngfcp_permits_power_potential_2025
+  claim: By December 2025, NGFCP reporting said 28 firms had final flare-gas permits across 49 awarded
+    sites, with 42 bidders involved, 250-300 mmscfd of gas to be captured, and nearly 3 GW of power potential.
+  status: verified
+  scope: external
+  sources:
+  - path: NUPRC permit issuance release
+    type: regulator
+    authority: institutional
+    title: NUPRC Issues Permit to 28 Firms for Flare Gas Utilisation, Projects $2bn Investments, 100,000
+      Jobs
+    url: https://www.nuprc.gov.ng/nuprc-issues-permit-to-28-firms-for-flare-gas-utilisation-projects-2bn-investments-i00000-jobs/
+    published_on: '2025-12-15'
+    checked_on: '2026-03-26'
+    excerpt: NUPRC has issued permits to access flare gas to 28 successful awardees under NGFCP.
+  - path: Channels Television coverage
+    type: trusted_media
+    authority: media
+    title: FG Issues 28 Gas Flare Commercialisation Permits, Eyes $2bn Investments, 100,000 Jobs
+    url: https://www.channelstv.com/2025/12/13/fg-issues-28-gas-flare-commercialisation-permits-eyes-2bn-investments-100000-jobs/
+    published_on: '2025-12-13'
+    checked_on: '2026-03-26'
+    excerpt: A total of 49 flare sites have been auctioned. 42 bidders have been awarded the sites. Between
+      250 and 300 mmscfd of currently flared gas will be captured and commercialised.
+  - path: Bloomberg-sourced market coverage
+    type: trusted_media
+    authority: media
+    title: Nigeria approves 28 firms to capture gas lost to flaring, targets $2 billion investment
+    url: https://worldoil.com/news/2025/12/12/nigeria-approves-28-firms-to-capture-gas-lost-to-flaring-targets-2-billion-investment/
+    published_on: '2025-12-12'
+    checked_on: '2026-03-26'
+    excerpt: The initiative is poised to attract between $2 billion and $3.5 billion of investment, and
+      generate as much as 3 gigawatts of power.
+- id: nigeria_data_center_capacity_pipeline_2025
+  claim: 2025 market-intelligence coverage described Nigeria's third-party data-center market as still
+    relatively small, with figures around 65.8 MW live and about 327.8 MW under construction or planned.
+  status: verified
+  scope: external
+  sources:
+  - path: GlobeNewswire / Research and Markets
+    type: trusted_media
+    authority: media
+    title: Nigeria Data Center Market Investment & Growth Report 2026-2031
+    url: https://www.globenewswire.com/news-release/2026/02/17/3238975/0/en/Nigeria-Data-Center-Market-Investment-Growth-Report-2026-2031-Featuring-Key-Investors-21st-Century-Technologies-Africa-Data-Centres-Digital-Realty-Equinix-MTN-Nxtra-Open-Access-Rac.html
+    published_on: '2026-02-17'
+    checked_on: '2026-03-26'
+    excerpt: The market includes existing and upcoming facilities, with a still-limited current base and
+      a meaningful planned pipeline.
+  - path: Arizton portfolio page
+    type: industry_report
+    authority: industry
+    title: Nigeria Data Centers | Upcoming Data Centers Locations in Nigeria
+    url: https://www.arizton.com/market-reports/nigeria-data-center-portfolio
+    checked_on: '2026-03-26'
+    excerpt: Nigeria's existing data center capacity stands at over 40 MW, while the upcoming capacity
+      is projected to exceed 200 MW, representing an almost fivefold expansion.
+  - path: Real News Hub market summary
+    type: trusted_media
+    authority: media
+    title: Nigeria's Data Center Market To Grow From $278 Million In 2024 To $671 Million By 2030
+    url: https://realnewshub.com/nigerias-data-center-market-to-grow-from-278-million-in-2024-to-671-million-by-2030/
+    published_on: '2025-09-23'
+    checked_on: '2026-03-26'
+    excerpt: The market is witnessing a boom in construction, with 327.8 MW of data center capacity under
+      development as of December 2024, expected to increase the current 65.8 MW core and shell power capacity
+      fivefold within the next 4-5 years.
+- id: green_flare_nigeria_53mw_2025
+  claim: Green Flare announced a 53 MW flare-gas compute project in Nigeria in 2025, structured across
+    three Delta State sites.
+  status: verified
+  scope: external
+  sources:
+  - path: TheEnergyMag
+    type: trusted_media
+    authority: media
+    title: Green Flare Plans 53 MW of Flare Gas Bitcoin Mine in Nigeria
+    url: https://www.theenergymag.com/news/2025-05-28/green-flare-bitcoin-nigeria
+    published_on: '2025-05-28'
+    checked_on: '2026-03-26'
+    excerpt: The initial phase of the project will establish three mining sites in Delta State, delivering
+      a combined capacity of 53 MW.
+  - path: TheMinerMag Nigeria archive
+    type: trusted_media
+    authority: media
+    title: Nigeria Archives - TheMinerMag
+    url: https://backend.theminermag.com/tag/nigeria/
+    published_on: '2025-05-28'
+    checked_on: '2026-03-26'
+    excerpt: Green Flare Plans 53 MW of Flare Gas Bitcoin Mine in Nigeria.
+  - path: Joseph Lassen LinkedIn post
+    type: social_post
+    authority: voice
+    title: Green Flare Plans 53 MW of Flare Gas Bitcoin Mine in Nigeria
+    url: https://www.linkedin.com/posts/josephlassen_green-flare-plans-53-mw-of-flare-gas-bitcoin-activity-7334299736402763778-kVts
+    checked_on: '2026-03-26'
+    excerpt: Green Flare Plans 53 MW of Flare Gas Bitcoin Mine in Nigeria.
+- id: crusoe_divestiture_2025
+  claim: In March 2025, Crusoe said it sold its bitcoin-mining operation to NYDIG after deploying more
+    than 425 modular data centers across seven U.S. states and Argentina.
+  status: verified
+  scope: external
+  sources:
+  - path: Crusoe release
+    type: company_release
+    authority: company
+    title: NYDIG to acquire Crusoe's bitcoin mining operation
+    url: https://www.crusoe.ai/resources/newsroom/nydig-to-acquire-crusoes-bitcoin-mining-operation-crusoe-to-scale-vertically
+    published_on: '2025-03-25'
+    checked_on: '2026-03-26'
+    excerpt: To date, it has deployed more than 425 modular data centers (250+ MWs) in the field across
+      seven states and two countries... Moving forward, Crusoe will continue to grow and scale its AI
+      infrastructure solutions.
+  - path: CNBC coverage
+    type: trusted_media
+    authority: media
+    title: Crusoe sells bitcoin mining unit to NYDIG to focus on AI
+    url: https://www.cnbc.com/2025/03/25/crusoe-energy-sells-bitcoin-mining-unit-to-nydig-to-focus-on-ai.html
+    published_on: '2025-03-25'
+    checked_on: '2026-03-26'
+    excerpt: Crusoe is selling its bitcoin mining business to NYDIG as the company sharpens its focus
+      on AI infrastructure.
+  - path: Data Center Dynamics
+    type: trusted_media
+    authority: media
+    title: Crusoe exits crypto operations to focus on AI, sell business to NYDIG
+    url: https://www.datacenterdynamics.com/en/news/crusoe-exits-crypto-operations-to-focus-on-ai-sell-business-to-nydig/
+    published_on: '2025-03-26'
+    checked_on: '2026-03-26'
+    excerpt: Crusoe said it has deployed more than 425 modular data centers totaling more than 250MW across
+      seven states in the US and Argentina.
+- id: global_flaring_2024_151bcm
+  claim: The World Bank's 2025 tracker said global gas flaring reached 151 bcm in 2024.
+  status: verified
+  scope: external
+  sources:
+  - path: World Bank gas flaring data portal
+    type: official_dataset
+    authority: institutional
+    title: Global Gas Flaring Data
+    url: https://www.worldbank.org/en/programs/gasflaringreduction/global-flaring-data
+    published_on: '2025-07-01'
+    checked_on: '2026-03-26'
+    excerpt: Our estimates, derived from satellite data, show that 151 billion cubic meters (bcm) of associated
+      gas was flared... in 2024.
+  - path: World Bank 2025 tracker
+    type: official_report
+    authority: institutional
+    title: 2025 Global Gas Flaring Tracker Report
+    url: https://www.worldbank.org/en/programs/gasflaringreduction/publication/2025-global-gas-flaring-tracker-report
+    published_on: '2025-07-01'
+    checked_on: '2026-03-26'
+    excerpt: In 2024, flaring surged by 3 billion cubic meters (bcm) to 151 bcm, the highest level since
+      2007.
+  - path: World Bank explainer
+    type: official_report
+    authority: institutional
+    title: What is Gas Flaring?
+    url: https://www.worldbank.org/en/programs/gasflaringreduction/gas-flaring-explained
+    published_on: '2025-01-01'
+    checked_on: '2026-03-26'
+    excerpt: The amount of gas currently flared each year – about 151 billion cubic meters (bcm).
+- id: africa_digital_economy_712b
+  claim: Africa's digital economy is widely projected to reach about $712 billion by 2050.
+  status: verified
+  scope: external
+  sources:
+  - path: IFC e-Conomy Africa 2020
+    type: official_report
+    authority: institutional
+    title: e-Conomy Africa 2020 - Africa's $180 Billion Internet Economy Future
+    url: https://www.ifc.org/en/insights-reports/2020/google-e-conomy
+    published_on: '2020-11-11'
+    checked_on: '2026-03-26'
+    excerpt: By 2050, the projected potential contribution could reach $712 billion, 8.5% of the continent's
+      GDP.
+  - path: IFC press release
+    type: official_report
+    authority: institutional
+    title: New Google-IFC report estimates Africa’s Internet economy could be worth $180 billion by 2025
+    url: https://www.ifc.org/en/pressroom/2020/new-google-ifc-report-estimates-africas-internet-economy-could-be-worth-180-billion-by-2025
+    published_on: '2020-11-11'
+    checked_on: '2026-03-26'
+    excerpt: The projected potential contribution could reach $712 billion by 2050.
+  - path: African Development Bank speech
+    type: multilateral
+    authority: institutional
+    title: Tilting Global Capital for Unlocking Investment Opportunities in Africa
+    url: https://www.afdb.org/en/news-and-events/speeches/tilting-global-capital-unlocking-investment-opportunities-africa-keynote-speech-dr-akinwumi-adesina-standard-chartered-bank-africa-summit-july-31-2025-lagos-nigeria-85772
+    published_on: '2025-07-31'
+    checked_on: '2026-03-26'
+    excerpt: The rapid expansion of the digital economy will add $180 billion to Africa’s GDP by 2025,
+      and $712 billion by 2050.

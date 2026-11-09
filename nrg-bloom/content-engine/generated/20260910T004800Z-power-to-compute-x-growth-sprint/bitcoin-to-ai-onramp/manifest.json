@@ -1,0 +1,23 @@
+{
+  "archetype": "trend-analysis",
+  "data_sheet": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/bitcoin-to-ai-onramp/data-sheet.md",
+  "fact_ids": [
+    "green_flare_ai_compute_roadmap_2025",
+    "green_flare_nigeria_53mw_2025",
+    "miner_hpc_revenue_crossover_2026",
+    "crusoe_divestiture_2025",
+    "modular_containerized_model"
+  ],
+  "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/bitcoin-to-ai-onramp",
+  "pillar": "energy-to-compute-thesis",
+  "publish_day": "Monday (week 2)",
+  "quote_card_html": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/bitcoin-to-ai-onramp/quote-card-portrait.html",
+  "quote_card_png": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/bitcoin-to-ai-onramp/quote-card-portrait.png",
+  "slug": "bitcoin-to-ai-onramp",
+  "target_channel": "x-thread",
+  "title": "Bitcoin Mining Is the On-Ramp. It Was Never the Destination.",
+  "verification": {
+    "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/bitcoin-to-ai-onramp/verification.json",
+    "verified": true
+  }
+}

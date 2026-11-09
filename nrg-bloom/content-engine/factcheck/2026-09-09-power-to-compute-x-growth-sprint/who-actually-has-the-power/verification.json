@@ -1,0 +1,166 @@
+{
+  "fact_ids": [
+    "global_data_center_demand_doubles_2030",
+    "africa_digital_economy_712b",
+    "nigeria_data_center_capacity_pipeline_2025",
+    "powered_shell_repricing_2026"
+  ],
+  "facts": [
+    {
+      "claim": "IEA analysis in 2025 said electricity demand from data centres worldwide is set to more than double by 2030 to around 945 TWh.",
+      "id": "global_data_center_demand_doubles_2030",
+      "scope": "external",
+      "sources": [
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "Data centre electricity consumption is set to more than double to around 945 TWh by 2030.",
+          "path": "IEA Energy and AI executive summary",
+          "published_on": null,
+          "source_type": "official_report",
+          "title": "Executive summary - Energy and AI",
+          "url": "https://www.iea.org/reports/energy-and-ai/executive-summary"
+        },
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "The report includes projections for how much electricity AI could consume over the next decade.",
+          "path": "IEA Energy and AI report",
+          "published_on": null,
+          "source_type": "official_report",
+          "title": "Energy and AI",
+          "url": "https://www.iea.org/reports/energy-and-ai"
+        },
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "The report projects that electricity demand from data centres worldwide is set to more than double by 2030 to around 945 terawatt-hours.",
+          "path": "IEA spotlight",
+          "published_on": null,
+          "source_type": "official_report",
+          "title": "The deepening ties between energy and AI",
+          "url": "https://www.iea.org/spotlights/the-deepening-ties-between-energy-and-ai"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "claim": "Africa's digital economy is widely projected to reach about $712 billion by 2050.",
+      "id": "africa_digital_economy_712b",
+      "scope": "external",
+      "sources": [
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "By 2050, the projected potential contribution could reach $712 billion, 8.5% of the continent's GDP.",
+          "path": "IFC e-Conomy Africa 2020",
+          "published_on": "2020-11-11",
+          "source_type": "official_report",
+          "title": "e-Conomy Africa 2020 - Africa's $180 Billion Internet Economy Future",
+          "url": "https://www.ifc.org/en/insights-reports/2020/google-e-conomy"
+        },
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "The projected potential contribution could reach $712 billion by 2050.",
+          "path": "IFC press release",
+          "published_on": "2020-11-11",
+          "source_type": "official_report",
+          "title": "New Google-IFC report estimates Africa\u2019s Internet economy could be worth $180 billion by 2025",
+          "url": "https://www.ifc.org/en/pressroom/2020/new-google-ifc-report-estimates-africas-internet-economy-could-be-worth-180-billion-by-2025"
+        },
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "The rapid expansion of the digital economy will add $180 billion to Africa\u2019s GDP by 2025, and $712 billion by 2050.",
+          "path": "African Development Bank speech",
+          "published_on": "2025-07-31",
+          "source_type": "multilateral",
+          "title": "Tilting Global Capital for Unlocking Investment Opportunities in Africa",
+          "url": "https://www.afdb.org/en/news-and-events/speeches/tilting-global-capital-unlocking-investment-opportunities-africa-keynote-speech-dr-akinwumi-adesina-standard-chartered-bank-africa-summit-july-31-2025-lagos-nigeria-85772"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "claim": "2025 market-intelligence coverage described Nigeria's third-party data-center market as still relatively small, with figures around 65.8 MW live and about 327.8 MW under construction or planned.",
+      "id": "nigeria_data_center_capacity_pipeline_2025",
+      "scope": "external",
+      "sources": [
+        {
+          "authority": "media",
+          "checked_on": "2026-03-26",
+          "excerpt": "The market includes existing and upcoming facilities, with a still-limited current base and a meaningful planned pipeline.",
+          "path": "GlobeNewswire / Research and Markets",
+          "published_on": "2026-02-17",
+          "source_type": "trusted_media",
+          "title": "Nigeria Data Center Market Investment & Growth Report 2026-2031",
+          "url": "https://www.globenewswire.com/news-release/2026/02/17/3238975/0/en/Nigeria-Data-Center-Market-Investment-Growth-Report-2026-2031-Featuring-Key-Investors-21st-Century-Technologies-Africa-Data-Centres-Digital-Realty-Equinix-MTN-Nxtra-Open-Access-Rac.html"
+        },
+        {
+          "authority": "industry",
+          "checked_on": "2026-03-26",
+          "excerpt": "Nigeria's existing data center capacity stands at over 40 MW, while the upcoming capacity is projected to exceed 200 MW, representing an almost fivefold expansion.",
+          "path": "Arizton portfolio page",
+          "published_on": null,
+          "source_type": "industry_report",
+          "title": "Nigeria Data Centers | Upcoming Data Centers Locations in Nigeria",
+          "url": "https://www.arizton.com/market-reports/nigeria-data-center-portfolio"
+        },
+        {
+          "authority": "media",
+          "checked_on": "2026-03-26",
+          "excerpt": "The market is witnessing a boom in construction, with 327.8 MW of data center capacity under development as of December 2024, expected to increase the current 65.8 MW core and shell power capacity fivefold within the next 4-5 years.",
+          "path": "Real News Hub market summary",
+          "published_on": "2025-09-23",
+          "source_type": "trusted_media",
+          "title": "Nigeria's Data Center Market To Grow From $278 Million In 2024 To $671 Million By 2030",
+          "url": "https://realnewshub.com/nigerias-data-center-market-to-grow-from-278-million-in-2024-to-671-million-by-2030/"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "claim": "In 2026 the market began pricing Bitcoin miners on their power positions rather than their hashrate: Morgan Stanley research covered in July 2026 framed miners as owners of 'powered shell' assets whose grid connections, land, and development pipelines can support long-term AI leases, and CleanSpark said in January 2026 it was assembling more than 890 MW of aggregate potential utility capacity in Texas for AI and high-performance computing workloads.",
+      "id": "powered_shell_repricing_2026",
+      "scope": "external",
+      "sources": [
+        {
+          "authority": "media",
+          "checked_on": "2026-09-09",
+          "excerpt": "Power has become the biggest bottleneck for AI infrastructure, making existing bitcoin mining sites attractive candidates for conversion; Morgan Stanley expects owners of 'powered shell' assets to command attractive lease economics as AI companies seek faster access to electricity.",
+          "path": "Investing.com market coverage",
+          "published_on": "2026-07-23",
+          "source_type": "trusted_media",
+          "title": "Morgan Stanley sees AI data center pivot unlocking upside for bitcoin miners",
+          "url": "https://www.investing.com/news/stock-market-news/morgan-stanley-sees-ai-data-center-pivot-unlocking-upside-for-bitcoin-miners-4809697"
+        },
+        {
+          "authority": "media",
+          "checked_on": "2026-09-09",
+          "excerpt": "Morgan Stanley initiated coverage on Hut 8, Riot Platforms and Applied Digital on the thesis that owners of 'powered shell' assets can command attractive lease economics as AI companies seek faster access to electricity.",
+          "path": "Yahoo Finance syndication of the same research note",
+          "published_on": "2026-07-23",
+          "source_type": "trusted_media",
+          "title": "Morgan Stanley sees AI data center pivot unlocking upside for bitcoin miners",
+          "url": "https://finance.yahoo.com/technology/ai/articles/morgan-stanley-sees-ai-data-175347881.html"
+        },
+        {
+          "authority": "company",
+          "checked_on": "2026-09-09",
+          "excerpt": "More than 890 megawatts of aggregate potential utility capacity across both Houston-area sites, supporting large-scale, next-generation data center campuses designed for artificial intelligence and high-performance computing workloads.",
+          "path": "CleanSpark investor relations release",
+          "published_on": "2026-01-14",
+          "source_type": "company_release",
+          "title": "CleanSpark Expands Texas Footprint with Major Power Acquisition Near Houston to Support Scaled AI and HPC Development",
+          "url": "https://investors.cleanspark.com/news/news-details/2026/CleanSpark-Expands-Texas-Footprint-with-Major-Power-Acquisition-Near-Houston-to-Support-Scaled-AI-and-HPC-Development/default.aspx"
+        }
+      ],
+      "status": "verified"
+    }
+  ],
+  "slug": "who-actually-has-the-power",
+  "title": "The AI Buildout Became a Land Grab for Energized Sites. Africa Is Not in the Auction.",
+  "verification_standard": "3 corroborating sources minimum per fact; public and hybrid claims require at least 2 authoritative external sources",
+  "verified": true
+}

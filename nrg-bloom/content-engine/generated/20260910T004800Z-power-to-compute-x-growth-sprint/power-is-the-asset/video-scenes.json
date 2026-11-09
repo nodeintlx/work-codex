@@ -1,0 +1,54 @@
+{
+  "brand": {
+    "colors": {
+      "accent": "#00C896",
+      "accent_warm": "#F59E0B",
+      "bg": "#0A0E1A",
+      "border": "#1F2937",
+      "quote_accent": "#6BA3E8",
+      "quote_accent_deep": "#14489B",
+      "quote_surface": "#1A1A1A",
+      "surface": "#111827",
+      "text": "#F9FAFB",
+      "text_dim": "#6B7280",
+      "text_muted": "#9CA3AF"
+    },
+    "fonts": {
+      "body": "Inter",
+      "display": "Space Grotesk"
+    }
+  },
+  "cta": "NRG Bloom has been converting stranded Niger Delta gas into compute since February 2025. Same playbook, earlier in the curve, cheaper input.",
+  "format": "tiktok_story_arc",
+  "scenes": [
+    {
+      "highlight": "Power",
+      "text": "Bitcoin mining was never the business. Owning power was."
+    },
+    {
+      "highlight": "$21",
+      "text": "$21 million from compute leases against $13 million from mining. That was TeraWulf's Q1 2026, and it was the first quarter hosting outearned hashrate."
+    },
+    {
+      "highlight": "operators",
+      "text": "Morgan Stanley now describes miners as owners of powered shell assets: grid connections, land, and development pipelines that can carry long-term AI leases."
+    },
+    {
+      "highlight": "capital",
+      "text": "CleanSpark said in January 2026 it was assembling more than 890 MW of potential utility capacity in Texas specifically for AI and high-performance computing workloads."
+    },
+    {
+      "highlight": "speed",
+      "text": "None of that logic is uniquely American. It works anywhere a company controls cheap power and can put a container next to it, which is what NRG Bloom has been doing in the Niger Delta since February 2025."
+    },
+    {
+      "highlight": "contrarian",
+      "text": "The scarce input in AI is not chips. It is energized land with a power source and somebody willing to operate it. Nigeria has a lot of the first and very little of the third."
+    },
+    {
+      "highlight": "NRG Bloom",
+      "text": "The operators who control energy will decide who gets to compute."
+    }
+  ],
+  "title": "Power Is the Asset. Compute Is Just the Tenant."
+}

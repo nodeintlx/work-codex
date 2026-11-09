@@ -1,0 +1,22 @@
+{
+  "archetype": "operator-proof",
+  "data_sheet": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/ogboinbiri-operating-proof/data-sheet.md",
+  "fact_ids": [
+    "ogboinbiri_operational_since_2025_02",
+    "ogboinbiri_operational_capacity_1_5mw",
+    "modular_containerized_model",
+    "nigeria_data_center_capacity_pipeline_2025"
+  ],
+  "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/ogboinbiri-operating-proof",
+  "pillar": "remote-ops-notebook",
+  "publish_day": "Friday (week 2)",
+  "quote_card_html": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/ogboinbiri-operating-proof/quote-card-portrait.html",
+  "quote_card_png": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/ogboinbiri-operating-proof/quote-card-portrait.png",
+  "slug": "ogboinbiri-operating-proof",
+  "target_channel": "x-thread",
+  "title": "Everyone Has a 100 MW Announcement. Very Few Have a Running Site.",
+  "verification": {
+    "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/ogboinbiri-operating-proof/verification.json",
+    "verified": true
+  }
+}

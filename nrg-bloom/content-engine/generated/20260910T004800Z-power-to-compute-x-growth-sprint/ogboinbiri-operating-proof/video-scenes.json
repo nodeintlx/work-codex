@@ -1,0 +1,54 @@
+{
+  "brand": {
+    "colors": {
+      "accent": "#00C896",
+      "accent_warm": "#F59E0B",
+      "bg": "#0A0E1A",
+      "border": "#1F2937",
+      "quote_accent": "#6BA3E8",
+      "quote_accent_deep": "#14489B",
+      "quote_surface": "#1A1A1A",
+      "surface": "#111827",
+      "text": "#F9FAFB",
+      "text_dim": "#6B7280",
+      "text_muted": "#9CA3AF"
+    },
+    "fonts": {
+      "body": "Inter",
+      "display": "Space Grotesk"
+    }
+  },
+  "cta": "If you want to know whether an operator can handle the Niger Delta, ask what broke in month four and who fixed it.",
+  "format": "tiktok_story_arc",
+  "scenes": [
+    {
+      "highlight": "Everyone",
+      "text": "Everyone has a 100 MW announcement. Very few have a running site."
+    },
+    {
+      "highlight": "1.5",
+      "text": "1.5 MW operational at Ogboinbiri in Bayelsa State since February 2025. Not announced, not permitted, not planned. Running."
+    },
+    {
+      "highlight": "operators",
+      "text": "NRG Bloom has been operational at Ogboinbiri in Bayelsa State since February 2025, at 1.5 MW."
+    },
+    {
+      "highlight": "capital",
+      "text": "The model is containerized on purpose. Remote Niger Delta sites do not forgive stick-built construction schedules."
+    },
+    {
+      "highlight": "speed",
+      "text": "Nigeria's whole third-party data center base was reported around 65.8 MW live with roughly 327.8 MW in the pipeline. The market is still small enough that operating proof is a real edge."
+    },
+    {
+      "highlight": "contrarian",
+      "text": "Announced capacity in this sector is a marketing number. Energized capacity is a competence number. The distance between the two is where most of these projects quietly die."
+    },
+    {
+      "highlight": "NRG Bloom",
+      "text": "Energized beats announced. Every single time."
+    }
+  ],
+  "title": "Everyone Has a 100 MW Announcement. Very Few Have a Running Site."
+}

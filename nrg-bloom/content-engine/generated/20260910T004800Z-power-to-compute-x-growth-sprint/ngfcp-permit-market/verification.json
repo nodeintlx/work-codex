@@ -1,0 +1,166 @@
+{
+  "fact_ids": [
+    "ngfcp_permits_power_potential_2025",
+    "global_flaring_2024_151bcm",
+    "modular_containerized_model",
+    "ogboinbiri_operational_since_2025_02"
+  ],
+  "facts": [
+    {
+      "claim": "By December 2025, NGFCP reporting said 28 firms had final flare-gas permits across 49 awarded sites, with 42 bidders involved, 250-300 mmscfd of gas to be captured, and nearly 3 GW of power potential.",
+      "id": "ngfcp_permits_power_potential_2025",
+      "scope": "external",
+      "sources": [
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "NUPRC has issued permits to access flare gas to 28 successful awardees under NGFCP.",
+          "path": "NUPRC permit issuance release",
+          "published_on": "2025-12-15",
+          "source_type": "regulator",
+          "title": "NUPRC Issues Permit to 28 Firms for Flare Gas Utilisation, Projects $2bn Investments, 100,000 Jobs",
+          "url": "https://www.nuprc.gov.ng/nuprc-issues-permit-to-28-firms-for-flare-gas-utilisation-projects-2bn-investments-i00000-jobs/"
+        },
+        {
+          "authority": "media",
+          "checked_on": "2026-03-26",
+          "excerpt": "A total of 49 flare sites have been auctioned. 42 bidders have been awarded the sites. Between 250 and 300 mmscfd of currently flared gas will be captured and commercialised.",
+          "path": "Channels Television coverage",
+          "published_on": "2025-12-13",
+          "source_type": "trusted_media",
+          "title": "FG Issues 28 Gas Flare Commercialisation Permits, Eyes $2bn Investments, 100,000 Jobs",
+          "url": "https://www.channelstv.com/2025/12/13/fg-issues-28-gas-flare-commercialisation-permits-eyes-2bn-investments-100000-jobs/"
+        },
+        {
+          "authority": "media",
+          "checked_on": "2026-03-26",
+          "excerpt": "The initiative is poised to attract between $2 billion and $3.5 billion of investment, and generate as much as 3 gigawatts of power.",
+          "path": "Bloomberg-sourced market coverage",
+          "published_on": "2025-12-12",
+          "source_type": "trusted_media",
+          "title": "Nigeria approves 28 firms to capture gas lost to flaring, targets $2 billion investment",
+          "url": "https://worldoil.com/news/2025/12/12/nigeria-approves-28-firms-to-capture-gas-lost-to-flaring-targets-2-billion-investment/"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "claim": "The World Bank's 2025 tracker said global gas flaring reached 151 bcm in 2024.",
+      "id": "global_flaring_2024_151bcm",
+      "scope": "external",
+      "sources": [
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "Our estimates, derived from satellite data, show that 151 billion cubic meters (bcm) of associated gas was flared... in 2024.",
+          "path": "World Bank gas flaring data portal",
+          "published_on": "2025-07-01",
+          "source_type": "official_dataset",
+          "title": "Global Gas Flaring Data",
+          "url": "https://www.worldbank.org/en/programs/gasflaringreduction/global-flaring-data"
+        },
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "In 2024, flaring surged by 3 billion cubic meters (bcm) to 151 bcm, the highest level since 2007.",
+          "path": "World Bank 2025 tracker",
+          "published_on": "2025-07-01",
+          "source_type": "official_report",
+          "title": "2025 Global Gas Flaring Tracker Report",
+          "url": "https://www.worldbank.org/en/programs/gasflaringreduction/publication/2025-global-gas-flaring-tracker-report"
+        },
+        {
+          "authority": "institutional",
+          "checked_on": "2026-03-26",
+          "excerpt": "The amount of gas currently flared each year \u2013 about 151 billion cubic meters (bcm).",
+          "path": "World Bank explainer",
+          "published_on": "2025-01-01",
+          "source_type": "official_report",
+          "title": "What is Gas Flaring?",
+          "url": "https://www.worldbank.org/en/programs/gasflaringreduction/gas-flaring-explained"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "claim": "NRG Bloom's operating model is modular and containerized for remote energy-edge deployment.",
+      "id": "modular_containerized_model",
+      "scope": "internal",
+      "sources": [
+        {
+          "authority": "internal",
+          "checked_on": null,
+          "excerpt": "Modular container-based data centers (Kifaru design).",
+          "path": "nrg-bloom/CLAUDE.md",
+          "published_on": null,
+          "source_type": "internal_doc",
+          "title": null,
+          "url": null
+        },
+        {
+          "authority": "internal",
+          "checked_on": null,
+          "excerpt": "We design and deploy modular data centers for emerging markets \u2014 specifically containerized computing infrastructure powered by stranded gas and flare gas in West Africa.",
+          "path": "nrg-bloom/projects/funding/sred-call-scripts-2026-03-04.md",
+          "published_on": null,
+          "source_type": "internal_doc",
+          "title": null,
+          "url": null
+        },
+        {
+          "authority": "internal",
+          "checked_on": null,
+          "excerpt": "NRG Bloom deploys modular data centers at Oando's upstream sites.",
+          "path": "nrg-bloom/projects/oando/pathway-summary-1-pager-2026-02-26.md",
+          "published_on": null,
+          "source_type": "internal_doc",
+          "title": null,
+          "url": null
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "claim": "NRG Bloom has been operational at Ogboinbiri in Bayelsa State since February 2025.",
+      "id": "ogboinbiri_operational_since_2025_02",
+      "scope": "internal",
+      "sources": [
+        {
+          "authority": "internal",
+          "checked_on": null,
+          "excerpt": "We have been operational at Ogboinbiri (Bayelsa State) since February 2025, proving this model works in the Niger Delta environment.",
+          "path": "nrg-bloom/projects/oando/pathway-summary-1-pager-2026-02-26.md",
+          "published_on": null,
+          "source_type": "internal_doc",
+          "title": null,
+          "url": null
+        },
+        {
+          "authority": "internal",
+          "checked_on": null,
+          "excerpt": "NRG Bloom has been operational at Ogboinbiri since Feb 2025 \u2014 over one year on-site.",
+          "path": "nrg-bloom/projects/oando/intro-call-brief-2026-02-26.md",
+          "published_on": null,
+          "source_type": "internal_doc",
+          "title": null,
+          "url": null
+        },
+        {
+          "authority": "internal",
+          "checked_on": null,
+          "excerpt": "We've been operating at Ogboinbiri since February 2025 \u2014 over 13 months, on Oando's own infrastructure.",
+          "path": "nrg-bloom/projects/oando/call-card-2026-03-06.md",
+          "published_on": null,
+          "source_type": "internal_doc",
+          "title": null,
+          "url": null
+        }
+      ],
+      "status": "verified"
+    }
+  ],
+  "slug": "ngfcp-permit-market",
+  "title": "Nigeria Turned Flared Gas Into a Permit Market. Compute Barely Noticed.",
+  "verification_standard": "3 corroborating sources minimum per fact; public and hybrid claims require at least 2 authoritative external sources",
+  "verified": true
+}

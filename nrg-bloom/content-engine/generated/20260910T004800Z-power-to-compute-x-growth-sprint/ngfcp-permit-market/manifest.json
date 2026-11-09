@@ -1,0 +1,22 @@
+{
+  "archetype": "category-authority",
+  "data_sheet": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/ngfcp-permit-market/data-sheet.md",
+  "fact_ids": [
+    "ngfcp_permits_power_potential_2025",
+    "global_flaring_2024_151bcm",
+    "modular_containerized_model",
+    "ogboinbiri_operational_since_2025_02"
+  ],
+  "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/ngfcp-permit-market",
+  "pillar": "flare-gas",
+  "publish_day": "Wednesday (week 2)",
+  "quote_card_html": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/ngfcp-permit-market/quote-card-portrait.html",
+  "quote_card_png": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/ngfcp-permit-market/quote-card-portrait.png",
+  "slug": "ngfcp-permit-market",
+  "target_channel": "x-thread",
+  "title": "Nigeria Turned Flared Gas Into a Permit Market. Compute Barely Noticed.",
+  "verification": {
+    "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/ngfcp-permit-market/verification.json",
+    "verified": true
+  }
+}

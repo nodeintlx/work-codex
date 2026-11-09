@@ -1,0 +1,180 @@
+{
+  "brand": {
+    "assets": {
+      "founder_headshot": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/brand-founder-headshot.png",
+      "logo_white": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/brand-logo-white.png"
+    },
+    "colors": {
+      "accent": "#00C896",
+      "accent_warm": "#F59E0B",
+      "bg": "#0A0E1A",
+      "border": "#1F2937",
+      "quote_accent": "#6BA3E8",
+      "quote_accent_deep": "#14489B",
+      "quote_surface": "#1A1A1A",
+      "surface": "#111827",
+      "text": "#F9FAFB",
+      "text_dim": "#6B7280",
+      "text_muted": "#9CA3AF"
+    },
+    "fonts": {
+      "body": "Inter",
+      "display": "Space Grotesk"
+    },
+    "name": "NRG Bloom",
+    "signature": {
+      "handle_tagline": "Remote Compute Infrastructure",
+      "image_asset": "founder_headshot",
+      "name": "Makir Volcy",
+      "title": "Founder & CEO",
+      "website": "nrgbloom.com"
+    },
+    "social_handle": "@NRGBloom",
+    "tagline": "Remote compute infrastructure on stranded energy"
+  },
+  "briefs": [
+    {
+      "archetype": "market-thesis",
+      "data_sheet": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/power-is-the-asset/data-sheet.md",
+      "fact_ids": [
+        "miner_hpc_revenue_crossover_2026",
+        "powered_shell_repricing_2026",
+        "ogboinbiri_operational_since_2025_02",
+        "global_data_center_demand_doubles_2030"
+      ],
+      "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/power-is-the-asset",
+      "pillar": "energy-to-compute-thesis",
+      "publish_day": "Tuesday (week 1)",
+      "quote_card_html": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/power-is-the-asset/quote-card-portrait.html",
+      "quote_card_png": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/power-is-the-asset/quote-card-portrait.png",
+      "slug": "power-is-the-asset",
+      "target_channel": "x-thread",
+      "title": "Power Is the Asset. Compute Is Just the Tenant.",
+      "verification": {
+        "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/power-is-the-asset/verification.json",
+        "verified": true
+      }
+    },
+    {
+      "archetype": "myth-teardown",
+      "data_sheet": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/africa-power-myth/data-sheet.md",
+      "fact_ids": [
+        "nigeria_grid_delivery_gap",
+        "nigeria_power_access_and_losses",
+        "global_flaring_2024_151bcm",
+        "modular_containerized_model"
+      ],
+      "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/africa-power-myth",
+      "pillar": "africa-infrastructure-myths",
+      "publish_day": "Thursday (week 1)",
+      "quote_card_html": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/africa-power-myth/quote-card-portrait.html",
+      "quote_card_png": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/africa-power-myth/quote-card-portrait.png",
+      "slug": "africa-power-myth",
+      "target_channel": "x-thread",
+      "title": "Nigeria Does Not Have a Power Shortage. It Has a Delivery Problem.",
+      "verification": {
+        "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/africa-power-myth/verification.json",
+        "verified": true
+      }
+    },
+    {
+      "archetype": "trend-analysis",
+      "data_sheet": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/bitcoin-to-ai-onramp/data-sheet.md",
+      "fact_ids": [
+        "green_flare_ai_compute_roadmap_2025",
+        "green_flare_nigeria_53mw_2025",
+        "miner_hpc_revenue_crossover_2026",
+        "crusoe_divestiture_2025",
+        "modular_containerized_model"
+      ],
+      "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/bitcoin-to-ai-onramp",
+      "pillar": "energy-to-compute-thesis",
+      "publish_day": "Monday (week 2)",
+      "quote_card_html": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/bitcoin-to-ai-onramp/quote-card-portrait.html",
+      "quote_card_png": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/bitcoin-to-ai-onramp/quote-card-portrait.png",
+      "slug": "bitcoin-to-ai-onramp",
+      "target_channel": "x-thread",
+      "title": "Bitcoin Mining Is the On-Ramp. It Was Never the Destination.",
+      "verification": {
+        "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/bitcoin-to-ai-onramp/verification.json",
+        "verified": true
+      }
+    },
+    {
+      "archetype": "category-authority",
+      "data_sheet": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/ngfcp-permit-market/data-sheet.md",
+      "fact_ids": [
+        "ngfcp_permits_power_potential_2025",
+        "global_flaring_2024_151bcm",
+        "modular_containerized_model",
+        "ogboinbiri_operational_since_2025_02"
+      ],
+      "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/ngfcp-permit-market",
+      "pillar": "flare-gas",
+      "publish_day": "Wednesday (week 2)",
+      "quote_card_html": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/ngfcp-permit-market/quote-card-portrait.html",
+      "quote_card_png": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/ngfcp-permit-market/quote-card-portrait.png",
+      "slug": "ngfcp-permit-market",
+      "target_channel": "x-thread",
+      "title": "Nigeria Turned Flared Gas Into a Permit Market. Compute Barely Noticed.",
+      "verification": {
+        "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/ngfcp-permit-market/verification.json",
+        "verified": true
+      }
+    },
+    {
+      "archetype": "operator-proof",
+      "data_sheet": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/ogboinbiri-operating-proof/data-sheet.md",
+      "fact_ids": [
+        "ogboinbiri_operational_since_2025_02",
+        "ogboinbiri_operational_capacity_1_5mw",
+        "modular_containerized_model",
+        "nigeria_data_center_capacity_pipeline_2025"
+      ],
+      "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/ogboinbiri-operating-proof",
+      "pillar": "remote-ops-notebook",
+      "publish_day": "Friday (week 2)",
+      "quote_card_html": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/ogboinbiri-operating-proof/quote-card-portrait.html",
+      "quote_card_png": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/ogboinbiri-operating-proof/quote-card-portrait.png",
+      "slug": "ogboinbiri-operating-proof",
+      "target_channel": "x-thread",
+      "title": "Everyone Has a 100 MW Announcement. Very Few Have a Running Site.",
+      "verification": {
+        "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/ogboinbiri-operating-proof/verification.json",
+        "verified": true
+      }
+    },
+    {
+      "archetype": "market-gap",
+      "data_sheet": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/who-actually-has-the-power/data-sheet.md",
+      "fact_ids": [
+        "global_data_center_demand_doubles_2030",
+        "africa_digital_economy_712b",
+        "nigeria_data_center_capacity_pipeline_2025",
+        "powered_shell_repricing_2026"
+      ],
+      "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/who-actually-has-the-power",
+      "pillar": "digital-infrastructure",
+      "publish_day": "Tuesday (week 3)",
+      "quote_card_html": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/who-actually-has-the-power/quote-card-portrait.html",
+      "quote_card_png": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/who-actually-has-the-power/quote-card-portrait.png",
+      "slug": "who-actually-has-the-power",
+      "target_channel": "x-thread",
+      "title": "The AI Buildout Became a Land Grab for Energized Sites. Africa Is Not in the Auction.",
+      "verification": {
+        "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/who-actually-has-the-power/verification.json",
+        "verified": true
+      }
+    }
+  ],
+  "campaign": {
+    "slug": "power-to-compute-x-growth-sprint",
+    "title": "NRG Bloom Power-to-Compute X Growth Sprint"
+  },
+  "generated_at": "2026-09-10T00:48:00.504128+00:00",
+  "verification": {
+    "enabled": true,
+    "fact_registry": "../facts/power-to-compute-pivot-facts-2026-09-09.yaml",
+    "standard": "3 corroborating sources minimum per fact; public and hybrid claims require at least 2 authoritative external sources"
+  }
+}

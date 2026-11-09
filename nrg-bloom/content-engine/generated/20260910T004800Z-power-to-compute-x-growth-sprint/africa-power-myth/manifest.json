@@ -1,0 +1,22 @@
+{
+  "archetype": "myth-teardown",
+  "data_sheet": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/africa-power-myth/data-sheet.md",
+  "fact_ids": [
+    "nigeria_grid_delivery_gap",
+    "nigeria_power_access_and_losses",
+    "global_flaring_2024_151bcm",
+    "modular_containerized_model"
+  ],
+  "output_dir": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/africa-power-myth",
+  "pillar": "africa-infrastructure-myths",
+  "publish_day": "Thursday (week 1)",
+  "quote_card_html": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/africa-power-myth/quote-card-portrait.html",
+  "quote_card_png": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/africa-power-myth/quote-card-portrait.png",
+  "slug": "africa-power-myth",
+  "target_channel": "x-thread",
+  "title": "Nigeria Does Not Have a Power Shortage. It Has a Delivery Problem.",
+  "verification": {
+    "path": "/home/dowsmasternode/repos/work-codex/nrg-bloom/content-engine/generated/20260910T004800Z-power-to-compute-x-growth-sprint/africa-power-myth/verification.json",
+    "verified": true
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "brand": {
+    "colors": {
+      "accent": "#00C896",
+      "accent_warm": "#F59E0B",
+      "bg": "#0A0E1A",
+      "border": "#1F2937",
+      "quote_accent": "#6BA3E8",
+      "quote_accent_deep": "#14489B",
+      "quote_surface": "#1A1A1A",
+      "surface": "#111827",
+      "text": "#F9FAFB",
+      "text_dim": "#6B7280",
+      "text_muted": "#9CA3AF"
+    },
+    "fonts": {
+      "body": "Inter",
+      "display": "Space Grotesk"
+    }
+  },
+  "cta": "NRG Bloom is on that same arc in the Niger Delta, with containers designed to change tenants without changing sites.",
+  "format": "tiktok_story_arc",
+  "scenes": [
+    {
+      "highlight": "Bitcoin",
+      "text": "Mining was never the destination. It is how you prove the megawatts are real."
+    },
+    {
+      "highlight": "53",
+      "text": "53 MW of Nigerian flare-gas capacity was announced in 2025 with the sequence stated out loud: Bitcoin first because it deploys fastest, then AI compute and cloud on the same power."
+    },
+    {
+      "highlight": "operators",
+      "text": "Green Flare said it at announcement: Bitcoin first because it is easiest to deploy and monetise, then AI compute and cloud services on the same flare gas."
+    },
+    {
+      "highlight": "capital",
+      "text": "TeraWulf proved the back half of that sequence in Q1 2026, when HPC lease revenue passed mining revenue at the company for the first time."
+    },
+    {
+      "highlight": "speed",
+      "text": "Crusoe walked the whole arc: more than 425 modular data centers deployed on stranded gas, then a sale of the mining business to focus on AI infrastructure."
+    },
+    {
+      "highlight": "contrarian",
+      "text": "Calling this a pivot misreads it. Mining is not being abandoned. It is being used as the commissioning load that makes a remote site bankable enough to host anything else."
+    },
+    {
+      "highlight": "NRG Bloom",
+      "text": "Same site, same containers, different tenant. That is the whole thesis."
+    }
+  ],
+  "title": "Bitcoin Mining Is the On-Ramp. It Was Never the Destination."
+}
